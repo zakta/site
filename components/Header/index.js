@@ -17,7 +17,7 @@ export default function Header() {
           <ListItem>Contato</ListItem>
         </List>
       </StyledNav>
-      <MenuToggle onClick={() => setOpen(!open)}>
+      <MenuToggle open={open} onClick={() => setOpen(!open)}>
         <Hamburguer />
       </MenuToggle>
     </Container>
