@@ -109,15 +109,6 @@ export const NavList = styled.li`
 
   @media (min-width: 640px) {
     display: flex;
-    width: 15%;
-    border: none;
-    background: none;
-    justify-content: center;
-
-  }
-
-  @media (min-width: 800px) {
-    display: flex;
     width: 20%;
     border: none;
     background: #1f3961;
@@ -146,7 +137,6 @@ export const Copyright = styled.p`
   @media(min-width: 992px){
     display: flex;
     width: 100%;
-    padding: 0;
     justify-content: center;
   }
 `;
