@@ -7,6 +7,7 @@ export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
   float: right;
+  margin-bottom: 0;
 
   @media (max-width: 768px) {
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
@@ -18,10 +19,10 @@ export const List = styled.ul`
     right: 0;
     width: 100%;
     text-align: center;
-    margin-top: 0;
+    margin: 0;
 
     &:nth-child(1){
-     padding-top: 7rem;
+     padding-top: 2rem;
     }
   }
 `;

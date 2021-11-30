@@ -118,6 +118,9 @@ export const NavList = styled.li`
     &:last-child {
       border-right: none;
     }
+    :hover{
+      background: linear-gradient(278deg, rgba(49,166,167,1) 0%, rgba(36,106,132,1) 14%, rgba(26,57,104,1) 45%, rgba(36,106,132,1) 98%);
+    }
   }
 `;
 
