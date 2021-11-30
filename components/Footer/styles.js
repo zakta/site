@@ -108,8 +108,7 @@ export const NavList = styled.li`
 
   @media (min-width: 640px) {
     display: flex;
-    width: 20%;
-    border: none;
+    width: 25%;
     background: #1f3961;
     border-right: 2px solid #203c66;
     padding: 0.5rem 2rem;
@@ -118,6 +117,7 @@ export const NavList = styled.li`
     &:last-child {
       border-right: none;
     }
+
     :hover{
       background: linear-gradient(278deg, rgba(49,166,167,1) 0%, rgba(36,106,132,1) 14%, rgba(26,57,104,1) 45%, rgba(36,106,132,1) 98%);
     }
