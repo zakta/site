@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container= styled.div` 
+export const Container= styled.div`
   width: 2rem ;
   height: 2rem;
   display: flex;
@@ -17,14 +17,15 @@ export const Burguer= styled.div`
   background-color: ${({open})=> open ? 'white' : '#1a3968'};
   transform-origin: 1px;
   transition: all 0.3s linear;
-  
+
   &:nth-child(1){
     transform: ${({open}) => open ? 'rotate(45deg)' : 'rotate(0)'};
   }
 
   &:nth-child(2){
-    transform: ${({open})=> open ? 'translateX(100%)' : 'translateX(0)'};
-    opacity: ${({open}) => open ? 0 : 1};    
+    transform: ${({open})=> open ? 'translateX(20%)' : 'translateX(0)'};
+    opacity: ${({open}) => open ? 0 : 1};
+    transition: ${({open}) => open ? '0.1s linear' : 'none'};
   }
 
   &:nth-child(3){

@@ -4,6 +4,9 @@ import { Container, List, ListItem, MenuToggle, StyledNav } from "./styles";
 
 export default function Menu() {
   const [open, setOpen] = useState(false);
+
+
+
   return (
     <Container>
       <List open={open}>

@@ -17,8 +17,7 @@ export const List = styled.ul`
     top: 0;
     right: 0;
     width: 100%;
-    text-align: end;
-    padding: 0 2rem ;
+    text-align: center;
     margin-top: 0;
 
     &:nth-child(1){
@@ -34,7 +33,7 @@ export const ListItem = styled.li`
   font-size: 30px;
   text-transform: uppercase;
   color: white;
-  padding: 1rem 0 1rem 0;
+  padding: 2rem 0;
 
 
   @media (min-width: 768px){
