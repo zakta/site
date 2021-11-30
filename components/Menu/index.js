@@ -10,10 +10,10 @@ export default function Menu() {
   return (
     <Container>
       <List open={open}>
-        <ListItem>Home</ListItem>
-        <ListItem>Serviços</ListItem>
-        <ListItem>Sobre</ListItem>
-        <ListItem>Contato</ListItem>
+        <ListItem><a>Home</a></ListItem>
+        <ListItem><a>Serviços</a></ListItem>
+        <ListItem><a>Sobre</a></ListItem>
+        <ListItem><a>Contato</a></ListItem>
       </List>
       <MenuToggle onClick={() => setOpen(!open)}>
         <Hamburguer open={open} />

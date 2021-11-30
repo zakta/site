@@ -35,7 +35,6 @@ export const ListItem = styled.li`
   color: white;
   padding: 2rem 0;
 
-
   @media (min-width: 768px){
     list-style-type: none;
     padding-right: 10px;
@@ -45,10 +44,15 @@ export const ListItem = styled.li`
     font-weight: 800;
     padding: 0 1rem 0 1rem;
     color: #1a3968;
+
+    :hover{
+    color: #33afad;
+    }
   }
 `;
 export const MenuToggle = styled.div`
-  padding: 1.2rem;
+  padding: 0.8rem 1.2rem;
+  margin-right: 0.4rem;
 
   @media (min-width: 768px) {
     display: none;

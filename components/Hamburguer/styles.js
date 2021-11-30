@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container= styled.div`
   width: 2rem ;
-  height: 2rem;
+  height: 2.7rem;
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
@@ -11,9 +11,8 @@ export const Container= styled.div`
 `;
 
 export const Burguer= styled.div`
-  width: 2rem;
-  height: 0.25rem;
-  border-radius: 10px;
+  width: 2.5rem;
+  height: 0.40rem;
   background-color: ${({open})=> open ? 'white' : '#1a3968'};
   transform-origin: 1px;
   transition: all 0.3s linear;
@@ -23,7 +22,7 @@ export const Burguer= styled.div`
   }
 
   &:nth-child(2){
-    transform: ${({open})=> open ? 'translateX(20%)' : 'translateX(0)'};
+    transform: ${({open})=> open ? 'translateX(80%)' : 'translateX(0)'};
     opacity: ${({open}) => open ? 0 : 1};
     transition: ${({open}) => open ? '0.1s linear' : 'none'};
   }
