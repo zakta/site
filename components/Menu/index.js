@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Hamburguer from "../Hamburguer";
-import { Container, List, ListItem, MenuToggle, StyledNav } from "./styles";
+import { Container, List, ListItem, MenuToggle } from "./styles";
 
 export default function Menu() {
   const [open, setOpen] = useState(false);

@@ -32,4 +32,4 @@ const SvgComponent = (props) => (
   </svg>
 )
 
-export const Logo = memo(SvgComponent)
+export const Logo = memo(SvgComponent);
