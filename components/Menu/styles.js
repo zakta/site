@@ -1,14 +1,12 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
- 
-` 
+
+`
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
   float: right;
-  margin: 20px 0;
-  padding: 0 25px;
 
   @media (max-width: 768px) {
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
@@ -20,11 +18,11 @@ export const List = styled.ul`
     right: 0;
     width: 100%;
     text-align: end;
-    padding-top: 5rem;
+    padding: 0 2rem ;
     margin-top: 0;
 
     &:nth-child(1){
-     padding-top: 7rem;    
+     padding-top: 7rem;
     }
   }
 `;
@@ -51,7 +49,7 @@ export const ListItem = styled.li`
   }
 `;
 export const MenuToggle = styled.div`
-  padding: 1rem;
+  padding: 1.2rem;
 
   @media (min-width: 768px) {
     display: none;

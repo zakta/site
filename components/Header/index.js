@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <Container>
       <LogoContainer>
-        <Logo height={40} />
+        <Logo height={35} />
       </LogoContainer>
       <Menu />
     </Container>
