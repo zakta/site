@@ -42,7 +42,7 @@ export const ListItem = styled.li`
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 800;
-    padding: 0 1rem 0 1rem;
+    padding: 0 1rem;
     color: #1a3968;
 
     :hover{

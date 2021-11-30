@@ -4,15 +4,15 @@ export const Container = styled.footer`
   background: #203c66;
   display: flex;
   min-width: 320px;
-  @media(min-width: 640px){
+  @media (min-width: 640px) {
   }
 `;
 
 export const Box = styled.div`
   width: 100%;
 
-  @media(min-width: 640px){
-    display:flex;
+  @media (min-width: 640px) {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -29,7 +29,6 @@ export const PositionLogo = styled.div`
     display: flex;
     padding: 1rem;
     margin: 0;
-
   }
 `;
 
@@ -37,15 +36,15 @@ export const Contact = styled.div`
   display: flex;
   justify-content: space-around;
 
-  @media(min-width:640px){
-    display:flex;
+  @media (min-width: 640px) {
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding-right: 1rem;
   }
 
-  @media(min-width:992px){
-    display:flex;
+  @media (min-width: 992px) {
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding-right: 1rem;
@@ -58,19 +57,19 @@ export const Info = styled.a`
   text-decoration: underline;
   flex-wrap: wrap;
 
-    @media (min-width: 640px) {
-      display: flex;
-      height: 20px;
-      padding-left: 1rem;
-      padding-top: 1rem;
-    }
+  @media (min-width: 640px) {
+    display: flex;
+    height: 20px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
 
-    @media (min-width: 992px) {
-      display: flex;
-      height: 20px;
-      padding-left: 1rem;
-      padding-top: 1rem;
-    }
+  @media (min-width: 992px) {
+    display: flex;
+    height: 20px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
 `;
 
 export const NavBar = styled.ul`
@@ -85,14 +84,14 @@ export const NavBar = styled.ul`
     width: 100%;
     display: flex;
     flex-direction: row;
-
   }
 
   @media (min-width: 992px) {
     width: 100%;
     display: flex;
     flex-direction: row;
-
+    background: #1f3961;
+    padding-top: 0;
   }
 `;
 
@@ -113,28 +112,31 @@ export const NavList = styled.li`
     border: none;
     background: #1f3961;
     border-right: 2px solid #203c66;
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
     justify-content: center;
 
+    &:last-child {
+      border-right: none;
+    }
   }
 `;
 
 export const Copyright = styled.p`
   background: #182e4e;
-  color:white;
+  color: white;
   text-align: center;
   font-size: 0.8rem;
   font-weight: 400;
   margin: 0;
   padding: 1rem;
 
-  @media(min-width: 640px){
+  @media (min-width: 640px) {
     display: flex;
     width: 100%;
     justify-content: center;
   }
 
-  @media(min-width: 992px){
+  @media (min-width: 992px) {
     display: flex;
     width: 100%;
     justify-content: center;

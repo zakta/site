@@ -10,7 +10,6 @@ export const Center = styled.div`
   justify-content: space-between;
 
   @media (min-width: 1280px) {
-    width: 1280px;
     margin: 0 auto;
   }
 `;
