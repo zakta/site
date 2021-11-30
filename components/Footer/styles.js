@@ -84,6 +84,7 @@ export const NavBar = styled.ul`
     width: 100%;
     display: flex;
     flex-direction: row;
+    padding-top: 0;
   }
 
   @media (min-width: 992px) {
@@ -91,7 +92,6 @@ export const NavBar = styled.ul`
     display: flex;
     flex-direction: row;
     background: #1f3961;
-    padding-top: 0;
   }
 `;
 
