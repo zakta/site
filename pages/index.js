@@ -16,7 +16,7 @@ export default function Index() {
   return (
     <div>
       <Header />
-      <Services />
+      <Services id="/serviços" />
       <div id="/sobre" style={{ backgroundColor: 'white', height: 500 }}>
         <h1 style={{ margin: 0 }}>Sobre</h1>
       </div>

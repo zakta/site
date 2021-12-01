@@ -11,8 +11,8 @@ export default function Menu() {
 
   return (
     <Container>
-      <List open={open}>
-        <ListItem><Link href="/">Home</Link></ListItem>
+      <List open={open} onClick={()=> setOpen(false)}>
+        <ListItem ><Link href="/">Home</Link></ListItem>
         <ListItem><Link href="/servicos">Serviços</Link></ListItem>
         <ListItem><Link href="/sobre">Sobre</Link></ListItem>
         <ListItem><Link href="/contato">Contato</Link></ListItem>
