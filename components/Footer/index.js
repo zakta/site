@@ -21,7 +21,7 @@ export function Footer() {
         <NavBar>
           <NavList><Link href="/">Home</Link></NavList>
           <NavList><Link href="/servicos">Serviços</Link></NavList>
-          <NavList><Link href="/sobre">Sobre</Link></NavList>
+          <NavList><Link href="/empresa">Empresa</Link></NavList>
           <NavList><Link href="/contato">Contato</Link></NavList>
         </NavBar>
 

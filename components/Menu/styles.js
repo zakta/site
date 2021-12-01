@@ -49,11 +49,19 @@ export const ListItem = styled.li`
   }
 
   a {
-    color: #1a3968;
+    color: white;
     text-decoration: none;
 
     :hover{
+      color: #1a3968;
+    }
+
+    @media (min-width: 768px){
+      color: #1a3968;
+
+      :hover{
       color: #33afad;
+
     }
   }
 `;

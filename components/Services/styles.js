@@ -20,9 +20,9 @@ export const Container = styled.section`
 export const Title = styled.h1`
   font-size: 40px;
   font-weight: 700;
-  margin: 0;
+  margin-bottom: 0;
   text-transform: uppercase;
-  margin: 1rem 0;
+  margin-top: 1rem;
   text-align: center;
   width: 100%;
   color: #1a3968;
