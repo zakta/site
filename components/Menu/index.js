@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Link from 'next/link';
+
 import Hamburguer from "../Hamburguer";
 import { Container, List, ListItem, MenuToggle } from "./styles";
 
@@ -10,10 +12,10 @@ export default function Menu() {
   return (
     <Container>
       <List open={open}>
-        <ListItem><a>Home</a></ListItem>
-        <ListItem><a>Serviços</a></ListItem>
-        <ListItem><a>Sobre</a></ListItem>
-        <ListItem><a>Contato</a></ListItem>
+        <ListItem><Link href="/">Home</Link></ListItem>
+        <ListItem><Link href="/servicos">Serviços</Link></ListItem>
+        <ListItem><Link href="/sobre">Sobre</Link></ListItem>
+        <ListItem><Link href="/contato">Contato</Link></ListItem>
       </List>
       <MenuToggle onClick={() => setOpen(!open)}>
         <Hamburguer open={open} />

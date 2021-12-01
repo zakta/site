@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { LogoWhite } from "../LogoWhite";
 import { Contact, Box, Container, Info, NavBar, NavList, PositionLogo, Copyright} from "./styles";
 
@@ -17,10 +19,10 @@ export function Footer() {
         </Contact>
 
         <NavBar>
-          <NavList><a>Home</a></NavList>
-          <NavList><a>Serviços</a></NavList>
-          <NavList><a>Sobre</a></NavList>
-          <NavList><a>Contato</a></NavList>
+          <NavList><Link href="/">Home</Link></NavList>
+          <NavList><Link href="/servicos">Serviços</Link></NavList>
+          <NavList><Link href="/sobre">Sobre</Link></NavList>
+          <NavList><Link href="/contato">Contato</Link></NavList>
         </NavBar>
 
         <Copyright>© 2021 ZAKTA Tecnologia todos os direitos reservados.</Copyright>
