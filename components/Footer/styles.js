@@ -96,7 +96,6 @@ export const NavBar = styled.ul`
 `;
 
 export const NavList = styled.li`
-  color: white;
   font-size: 1.2rem;
   font-weight: 800;
   list-style-type: none;
@@ -117,6 +116,11 @@ export const NavList = styled.li`
     &:last-child {
       border-right: none;
     }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
 
     :hover{
       background: linear-gradient(278deg, rgba(49,166,167,1) 0%, rgba(36,106,132,1) 14%, rgba(26,57,104,1) 45%, rgba(36,106,132,1) 98%);

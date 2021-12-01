@@ -33,7 +33,6 @@ export const ListItem = styled.li`
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
-  color: white;
   padding: 2rem 0;
 
   @media (min-width: 768px){
@@ -43,11 +42,15 @@ export const ListItem = styled.li`
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 800;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
+  }
+
+  a {
     color: #1a3968;
+    text-decoration: none;
 
     :hover{
-    color: #33afad;
+      color: #33afad;
     }
   }
 `;
