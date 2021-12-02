@@ -16,6 +16,7 @@ export const Burguer= styled.div`
   background-color: ${({open})=> open ? 'white' : '#1a3968'};
   transform-origin: 1px;
   transition: all 0.3s linear;
+  z-index: ${({open}) => (open ? '11' : '0')};
 
   &:nth-child(1){
     transform: ${({open}) => open ? 'rotate(45deg)' : 'rotate(0)'};

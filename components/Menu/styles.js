@@ -8,6 +8,8 @@ export const List = styled.ul`
   flex-wrap: wrap;
   float: right;
   margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
 
   @media (max-width: 768px) {
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
@@ -20,6 +22,7 @@ export const List = styled.ul`
     width: 100%;
     text-align: center;
     margin: 0;
+    z-index: ${({open}) => (open ? '11' : '0' )};
 
     &:nth-child(1){
      padding-top: 2rem;
@@ -46,11 +49,19 @@ export const ListItem = styled.li`
   }
 
   a {
-    color: #1a3968;
+    color: white;
     text-decoration: none;
 
     :hover{
+      color: #1a3968;
+    }
+
+    @media (min-width: 768px){
+      color: #1a3968;
+
+      :hover{
       color: #33afad;
+
     }
   }
 `;

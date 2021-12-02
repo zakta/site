@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import Company from '../components/Company';
+import Contact from '../components/Contact';
 import { Footer } from '../components/Footer';
 import Header from '../components/Header';
 import Services from '../components/Services';
@@ -16,13 +18,9 @@ export default function Index() {
   return (
     <div>
       <Header />
-      <Services />
-      <div id="/sobre" style={{ backgroundColor: 'white', height: 500 }}>
-        <h1 style={{ margin: 0 }}>Sobre</h1>
-      </div>
-      <div id="/contato" style={{ backgroundColor: 'white', height: 500 }}>
-        <h1 style={{ margin: 0 }}>Contato</h1>
-      </div>
+      <Services id="/serviços" />
+      <Company id="/empresa" />
+      <Contact id="/contato" />
       <Footer />
     </div>
   )

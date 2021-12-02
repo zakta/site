@@ -96,21 +96,22 @@ export const NavBar = styled.ul`
 `;
 
 export const NavList = styled.li`
+  background: #1f3961;
+  border-bottom: 2px solid #203c66;
   font-size: 1.2rem;
   font-weight: 800;
   list-style-type: none;
   text-transform: uppercase;
   text-align: center;
-  padding: 1.3rem 0;
-  background: #1f3961;
-  border-bottom: 2px solid #203c66;
+
 
   @media (min-width: 640px) {
     display: flex;
     width: 25%;
     background: #1f3961;
     border-right: 2px solid #203c66;
-    padding: 0.5rem 2rem;
+    border-bottom: none;
+    padding: 0;
     justify-content: center;
 
     &:last-child {
@@ -119,8 +120,16 @@ export const NavList = styled.li`
   }
 
   a {
+    display: block;
     color: white;
     text-decoration: none;
+    width: 100%;
+    padding: 1.3rem 0;
+
+    @media (min-width: 640px){
+      padding: 0.5rem 1rem;
+      width: 100%;
+    }
 
     :hover{
       background: linear-gradient(278deg, rgba(49,166,167,1) 0%, rgba(36,106,132,1) 14%, rgba(26,57,104,1) 45%, rgba(36,106,132,1) 98%);
