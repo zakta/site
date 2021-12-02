@@ -7,7 +7,7 @@ module.exports = {
         destination: '/',
       },
       {
-        source: '/sobre',
+        source: '/empresa',
         destination: '/',
       },
       {
