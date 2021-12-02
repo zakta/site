@@ -1,41 +1,41 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptop, faShoppingCart, faWindowMaximize, faMobile, faSearch, faEdit, faSyncAlt, faUsersCog } from '@fortawesome/free-solid-svg-icons'
-import { Card, Container, Icon, Title } from "./styles";
+import { Container, Title } from "./styles";
+import { Card, Icon} from "../Card/styles";
 
 
 export default function Services(){
   return(
     <Container>
       <Title>Serviços</Title>
-      <Card>
+      <Card animate={true}>
         <Icon icon={faLaptop} />
         <p>Sites Responsivos</p>
       </Card>
-      <Card>
+      <Card animate={true}>
         <Icon icon={faMobile} />
         <p>Aplicativos</p>
       </Card>
-      <Card>
+      <Card animate={true}>
         <Icon icon={faShoppingCart} />
         <p>E-commerce</p>
       </Card>
-      <Card>
+      <Card animate={true}>
         <Icon icon={faWindowMaximize} />
         <p>Sistemas Web</p>
       </Card>
-      <Card>
+      <Card animate={true}>
         <Icon icon={faSearch} />
         <p>Otimização SEO</p>
       </Card>
-      <Card>
+      <Card animate={true}>
         <Icon icon={faEdit} />
         <p>Blogs</p>
       </Card>
-      <Card>
+      <Card animate={true}>
         <Icon icon={faSyncAlt} />
         <p>Integrações com CRM</p>
       </Card>
-      <Card>
+      <Card animate={true}>
         <Icon icon={faUsersCog} />
         <p>Consultoria</p>
       </Card>
