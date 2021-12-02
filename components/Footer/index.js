@@ -25,7 +25,7 @@ export function Footer() {
           <NavList><Link href="/contato">Contato</Link></NavList>
         </NavBar>
 
-        <Copyright>© 2021 ZAKTA Tecnologia todos os direitos reservados.</Copyright>
+        <Copyright>© 2021 ZAKTA Tecnologia todos direitos reservados.</Copyright>
       </Box>
     </Container>
   );
