@@ -11,7 +11,7 @@ export default function Company(){
       <Text>Enxergamos que na era dos dados, perceber o olhar de cada um, nos ajuda a tomar decisões melhores, construir produtos mais relevantes, antecipar tendências e acelerar as empresas.</Text>
       <Text>Estamos juntos para reinventar!</Text>
       <Picture src="/united-image.jpg" alt="Grupo de trabalhadores com mãos unidas"/>
-      <section>
+
         <Box>
           <div>
             <Notes>
@@ -41,7 +41,7 @@ export default function Company(){
             <Numbers>03</Numbers>
           </div>
         </Box>
-      </section>
+
 
     </Container>
   );

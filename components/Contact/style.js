@@ -118,11 +118,8 @@ export const Form = styled.form`
         rgba(26, 57, 104, 1) 0%,
         rgba(51, 175, 173, 1) 100%
       )
-
     }
   }
-
-
 `;
 
 export const InputForm = styled.input`
