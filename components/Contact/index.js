@@ -3,7 +3,7 @@ import { CardContact, Container, Form, IconContact, InputForm, FormContact } fro
 
 export default function Contact() {
   return (
-    <Container>
+    <Container id="/contato">
       <h2>Contato</h2>
       <div>
         <article>

@@ -2,7 +2,7 @@ import { Container, Picture, Text, Box, Numbers, Notes} from "./styles";
 
 export default function Company(){
   return(
-    <Container>
+    <Container id="/empresa">
       <h2>Empresa</h2>
       <h3>A Zakta existe para facilitar a vida das pessoas e reinventar as empresas através de novos produtos e da tecnologia.</h3>
       <Text> A missão da Zakta é criar produtos e tecnologias que ajudam as pessoas e reinventam o mundo. </Text>

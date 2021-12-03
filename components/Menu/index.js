@@ -6,8 +6,6 @@ import { Container, List, ListItem, MenuToggle } from "./styles";
 export default function Menu() {
   const [open, setOpen] = useState(false);
 
-
-
   return (
     <Container>
       <List open={open} onClick={()=> setOpen(false)}>

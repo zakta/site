@@ -4,7 +4,7 @@ import { Center, Container, LogoContainer } from "./styles";
 
 export default function Header() {
   return (
-    <Container>
+    <Container className="sticky">
       <Center>
         <LogoContainer>
           <Logo height={35} />

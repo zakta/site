@@ -6,6 +6,7 @@ export const Container = styled.section`
   justify-content: space-around;
   background: #f7f7f7;
   width: 100%;
+  min-width: 350px;
 
   @media (min-width: 640px){
     justify-content: center;
