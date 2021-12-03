@@ -40,9 +40,8 @@ export const Box = styled.div`
   }
 
   div {
-    height: 200px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       &:first-child {
         height: 150px;
       }
@@ -50,14 +49,17 @@ export const Box = styled.div`
     .blue-note {
       background: #1a3968;
       opacity: 0.9;
+      padding: 0 1.2rem;
     }
     .gray-note {
       background: #f6f6f6;
       opacity: 0.9;
+      padding: 0 1.2rem;
     }
     .black-note {
       background: #030303;
       opacity: 0.9;
+      padding: 0 1.2rem;
     }
 
     @media (min-width: 768px) {
@@ -74,6 +76,7 @@ export const Box = styled.div`
 `;
 export const Notes = styled.div`
   margin: 0;
+  padding: 0 1.2rem;
 
   h4 {
     color: white;
@@ -99,9 +102,6 @@ export const Notes = styled.div`
     @media (min-width: 768px) {
       padding-top: 1rem;
       font-size: 27px;
-    }
-    @media (min-width: 820px) {
-      font-size: 30px;
     }
   }
 
