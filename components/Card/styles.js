@@ -5,7 +5,8 @@ export const Card = styled.div`
   background: white;
   text-align: center;
   padding-top: 2rem;
-  margin: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
   width: 100%;
   transition: .3s all ease-in-out;
   position: relative;
@@ -46,15 +47,15 @@ export const Card = styled.div`
   }
 
   @media (min-width: 640px){
-    width: 44%;
+    width: 47%;
   }
 
   @media (min-width: 820px){
-    width: 29%;
+    width: 31%;
   }
 
   @media (min-width: 940px){
-    width: 21%;
+    width: 23%;
   }
 `
 export const Icon = styled(FontAwesomeIcon)`

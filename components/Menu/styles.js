@@ -25,7 +25,7 @@ export const List = styled.ul`
     z-index: ${({open}) => (open ? '11' : '0' )};
 
     &:nth-child(1){
-     padding-top: 2rem;
+     justify-content: flex-end;
     }
   }
 `;
@@ -37,6 +37,10 @@ export const ListItem = styled.li`
   font-size: 30px;
   text-transform: uppercase;
   padding: 2rem 0;
+
+ :last-of-type{
+   padding-bottom: 3rem;
+ }
 
   @media (min-width: 768px){
     list-style-type: none;
@@ -51,10 +55,6 @@ export const ListItem = styled.li`
   a {
     color: white;
     text-decoration: none;
-
-    :hover{
-      color: #1a3968;
-    }
 
     @media (min-width: 768px){
       color: #1a3968;

@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 6rem 1rem 3rem 1rem;
+  padding: 4rem 0 0 0;
   min-width: 300px;
 
   div {
     display: flex;
     justify-content: center;
     position: relative;
+
+    .slick-dots{
+      bottom: 5px;
+    }
   }
 `;
 

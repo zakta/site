@@ -6,5 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: Cairo, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    min-width: 320px;
   }
 `;
