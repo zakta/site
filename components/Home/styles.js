@@ -17,9 +17,16 @@ export const Container = styled.div`
 
 export const SliderBox = styled.div`
   width: 100%;
+  max-height: 600px;
+
+  button:before {
+    opacity: .75;
+    color: #fff0f0;
+  }
+  .slick-active button:before {
+    color: #fff0f0;
+  }
 `;
 export const SliderImage = styled.img`
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
 `;

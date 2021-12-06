@@ -35,11 +35,12 @@ export const Form = styled.form`
     background: #1a3968;
     border: none;
     color: white;
-    font-size: 13px;
+    font-size: 15px;
+    font-family: Cairo, sans-serif;
     font-weight: 600;
-    padding: 1rem .5rem;
+    padding: .5rem 1rem;
     margin: 1rem 0;
-    width: 50%;
+    width: 200px;
     text-transform: uppercase;
 
 
