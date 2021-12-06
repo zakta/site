@@ -6,10 +6,8 @@ export const Container = styled.div`
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  float: right;
-  margin-bottom: 0;
-  margin-left: 0;
-  padding-left: 0;
+  margin:0;
+  padding: 0;
 
   @media (max-width: 768px) {
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
@@ -36,20 +34,13 @@ export const ListItem = styled.li`
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
-  padding: 2rem 0;
-
- :last-of-type{
-   padding-bottom: 3rem;
- }
+  padding: 2.5rem;
 
   @media (min-width: 768px){
-    list-style-type: none;
-    padding-right: 10px;
-    background-color: inherit;
+    padding: 0;
+    display: flex;
     font-size: 20px;
-    text-transform: uppercase;
     font-weight: 800;
-    padding: 0 1.5rem;
   }
 
   a {
@@ -58,6 +49,7 @@ export const ListItem = styled.li`
 
     @media (min-width: 768px){
       color: #1a3968;
+      padding: 1rem;
 
       :hover{
       color: #33afad;

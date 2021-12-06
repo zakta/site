@@ -10,6 +10,7 @@ export default function Home(){
     speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
+    easing: true,
   };
 
   return(
