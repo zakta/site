@@ -1,6 +1,6 @@
 import { faPhone, faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { CardContact, Container, IconContact, ContactInfo } from "./style";
-import ContactForm from "../form/index.js";
+import ContactForm from "../Form/index.js";
 
 export default function Contact() {
   return (
