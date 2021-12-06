@@ -11,6 +11,7 @@ export const Card = styled.div`
   transition: .3s all ease-in-out;
   position: relative;
 
+
   :after{
     content: "";
     background: ${({animate}) => ( animate ? "linear-gradient(270deg, rgba(26,57,104,1) 0%, rgba(51,175,173,1) 100%)" : "white") };

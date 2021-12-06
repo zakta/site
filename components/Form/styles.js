@@ -10,6 +10,10 @@ export const Form = styled.form`
     align-items: flex-end;
   }
 
+  @media (min-width: 768px){
+    width: 50%;
+  }
+
   textarea {
     border: none;
     background: #f8f8f8;
@@ -20,7 +24,7 @@ export const Form = styled.form`
     height: 200px;
     padding: 1.1rem .5rem;
     width: 100%;
-    margin-top: .5rem;
+    margin-top: 1rem;
 
     :focus{
     background: white;
@@ -38,6 +42,7 @@ export const Form = styled.form`
     width: 50%;
     text-transform: uppercase;
 
+
     :hover {
       background: linear-gradient(
         270deg,
@@ -54,9 +59,10 @@ export const InputForm = styled.input`
   background: #f8f8f8;
   border-radius: none;
   font-size: 15px;
+  font-family: Cairo, sans-serif;
   font-weight: 500;
   padding: 1.1rem .5rem;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   width: 100%;
 
   :focus{

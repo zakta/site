@@ -57,60 +57,60 @@ export const Box = styled.div`
   flex-direction: column;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 720px) {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1000px) {
     flex-direction: row;
     width: 100%;
   }
+`;
 
-  div {
+export const Notes= styled.div`
+  padding-left: 1rem;
 
-    @media (max-width: 767px) {
-      &:first-child {
-        height: 150px;
-      }
-    }
-    .blue-note {
-      background: #1a3968;
-      opacity: 0.9;
-      padding: 0 1.2rem;
-    }
-    .gray-note {
-      background: #f6f6f6;
-      opacity: 0.9;
-      padding: 0 1.2rem;
-    }
-    .black-note {
-      background: #030303;
-      opacity: 0.9;
-      padding: 0 1.2rem;
-    }
+  :nth-child(2){
+    background: #1a3968;
+  }
+  :nth-child(3){
+    background: #f6f6f6;
+  }
+  :nth-child(4){
+    background: black;
+  }
 
-    @media (min-width: 768px) {
-      padding: 0;
-      margin: 0;
-      height: 300px;
-    }
-    @media (min-width: 840px) {
-      padding: 0;
-      margin: 0;
-      height: 300px;
+  @media (max-width: 720px) {
+    &:first-child {
+      height: 150px;
     }
   }
-`;
-export const Notes = styled.div`
-  margin: 0;
-  padding: 0 1.2rem;
 
+  @media (min-width: 720px) {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+  }
+  @media (min-width: 1000px) {
+    padding: 0;
+    margin: 0;
+    width: 25%;
+  }
   h4 {
     color: white;
-    font-size: 20px;
-    padding: 0.3rem;
+    font-size: 25px;
+    padding: 1rem 1rem 0 1rem;
     margin: 0;
     text-transform: capitalize;
+
+    @media (min-width: 1000px){
+      text-align: center;
+    }
   }
   .title-notes {
     color: black;
-    font-size: 20px;
+    font-size: 23px;
     margin: 0;
     font-weight: 800;
     text-transform: capitalize;
@@ -134,20 +134,27 @@ export const Notes = styled.div`
 
   p {
     color: white;
-    font-size: 14px;
-    padding: 0.4rem;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1rem;
+    margin: 0;
 
     &:nth-child(1) {
-      font-size: 15px;
+      font-size: 18px;
       font-weight: 700;
-      margin: 0;
       padding-bottom: 0;
       text-transform: uppercase;
       color: #1a3968;
     }
+
+    @media (min-width: 1000px){
+      text-align: center;
+    }
   }
-`;
-export const Numbers = styled.div`
+
+`
+
+ /* export const Numbers = styled.div`
   display: none;
   font-size: 167px;
   margin: 0;
@@ -161,3 +168,4 @@ export const Numbers = styled.div`
     transform: translate(24px, -238px);
   }
 `;
+*/

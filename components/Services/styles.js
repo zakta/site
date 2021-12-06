@@ -9,14 +9,12 @@ export const Container = styled.section`
   min-width: 350px;
   padding-top: 1rem;
 
-  @media (min-width: 640px){
-    justify-content: center;
-  }
-
   @media (min-width: 820px){
-    justify-content: center;
+    justify-content: space-between;
   }
-
+  @media (min-width: 940px){
+    justify-content: space-around;
+  }
 `
 export const Title = styled.h1`
   color: #1a3968;
