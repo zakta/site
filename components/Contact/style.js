@@ -5,6 +5,7 @@ export const Container = styled.section`
   background-image: url("18_img.6703f879.png");
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 320px;
 
   article {
     display: flex;
@@ -61,6 +62,10 @@ export const ContactInfo = styled.div`
   width: 80%;
   text-align: left;
   margin: 0 auto;
+
+  @media (min-width: 768px){
+    width: 52%;
+  }
 
   h4{
     margin: 1rem 0;
