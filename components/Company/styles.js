@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding: 1rem 2rem;
+  padding: 1rem;
   background: white;
 
   h2 {
@@ -10,7 +10,8 @@ export const Container = styled.section`
     margin: 0;
     text-align: center;
     text-transform: uppercase;
-    margin: 2rem 0;
+    margin: 0;
+    padding-bottom: 1rem;
   }
   h3 {
     font-size: 30px;
@@ -19,15 +20,37 @@ export const Container = styled.section`
     margin: 0;
   }
 `;
+
+export const Flex = styled.div`
+  @media (min-width: 1280px){
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+   // margin-right: 1rem;
+  }
+`
+export const Division = styled.div`
+  @media (min-width: 1280px){
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+  }
+`
 export const Text = styled.p`
   text-align: left;
   font-size: 20px;
   font-weight: 600;
+
 `;
 export const Picture = styled.img`
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: 1280px){
+    width: 50%;
+
+}
 `;
 export const Box = styled.div`
   display: flex;
