@@ -20,4 +20,9 @@ export const Container = styled.div`
 export const LogoContainer = styled.div`
   height: 35px;
   padding: 1rem 1.5rem;
+  transition: 3s linear ease-in-out;
+
+  :hover{
+    transform: scale(1.1);
+  }
 `;
