@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
   background: #203c66;
-  display: flex;
   min-width: 320px;
-  @media (min-width: 640px) {
-  }
 `;
 
 export const Box = styled.div`
+  margin: auto;
+  max-width: 1700px;
   width: 100%;
 
   @media (min-width: 640px) {

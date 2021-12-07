@@ -21,19 +21,22 @@ export const Container = styled.section`
   }
 `;
 
+export const Center = styled.div`
+  margin: auto;
+  max-width: 1700px;
+`;
+
 export const Flex = styled.div`
   @media (min-width: 1280px){
     display: flex;
     flex-direction: column;
     width: 50%;
-   // margin-right: 1rem;
   }
 `
 export const Division = styled.div`
   @media (min-width: 1280px){
     display: flex;
     flex-direction: row;
-    margin-bottom: 2rem;
   }
 `
 export const Text = styled.p`
@@ -100,7 +103,7 @@ export const Notes= styled.div`
   h4 {
     color: white;
     font-size: 25px;
-    padding: 1rem 1rem 0 1rem;
+    padding: 2rem 2rem 0 2rem;
     margin: 0;
     text-transform: capitalize;
 
@@ -136,7 +139,7 @@ export const Notes= styled.div`
     color: white;
     font-size: 20px;
     font-weight: 400;
-    padding: 1rem;
+    padding: 2rem;
     margin: 0;
 
     &:nth-child(1) {

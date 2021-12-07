@@ -5,10 +5,12 @@ import { Center, Container, LogoContainer } from "./styles";
 export default function Header() {
   return (
     <Container className="sticky">
-      <LogoContainer>
-        <Logo height={35} />
-      </LogoContainer>
-      <Menu />
+      <Center>
+        <LogoContainer>
+          <Logo height={35} />
+        </LogoContainer>
+        <Menu />
+      </Center>
     </Container>
   );
 }
