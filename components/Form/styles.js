@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const Form = styled.form`
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
 
