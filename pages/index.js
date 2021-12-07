@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useEffect } from "react";
 import Company from "../components/Company";
 import Contact from "../components/Contact";
@@ -18,6 +19,9 @@ export default function Index() {
 
   return (
     <div>
+      <Head>
+        <title>Home | Zakta - Tecnologia</title>
+      </Head>
       <Header />
       <Home />
       <Services />
