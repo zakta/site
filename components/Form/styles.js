@@ -42,7 +42,6 @@ export const Form = styled.form`
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    letter-spacing: 1px;
     padding: .75rem;
     margin: 1rem 0;
     width: 200px;
