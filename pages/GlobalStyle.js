@@ -8,5 +8,9 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     overflow-x: hidden;
     min-width: 320px;
+
+    &.hideOverflow{
+      overflow-y: hidden;
+    }
   }
 `;

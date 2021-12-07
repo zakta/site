@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-
+  padding: 0 1.5rem;
 `
 export const List = styled.ul`
   display: flex;
@@ -43,23 +43,30 @@ export const ListItem = styled.li`
     font-weight: 800;
   }
 
-  a {
-    color: white;
-    text-decoration: none;
+    a {
+      color: white;
+      text-decoration: none;
 
-    @media (min-width: 768px){
-      color: #1a3968;
-      padding: 1rem;
+      @media (min-width: 768px){
+        color: #1a3968;
+        padding: 1rem;
+      }
+      @media (min-width: 832px){
+        color: #1a3968;
+        padding: 1.5rem;
 
-      :hover{
-      color: #33afad;
+        :hover{
+        color: #33afad;
 
+        }
+
+      }
     }
-  }
 `;
+
 export const MenuToggle = styled.div`
-  padding: 0.8rem 1.2rem;
-  margin-right: 0.4rem;
+  padding-right: .6rem;
+  margin-right: 0;
 
   @media (min-width: 768px) {
     display: none;

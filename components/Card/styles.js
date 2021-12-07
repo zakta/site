@@ -4,12 +4,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export const Card = styled.div`
   background: white;
   text-align: center;
-  padding-top: 2rem;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
+  margin: .5rem;
   width: 100%;
   transition: .3s all ease-in-out;
   position: relative;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  @media (min-width: 640px){
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+  }
+  @media (min-width: 940px){
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+  }
 
 
   :after{
@@ -42,29 +57,29 @@ export const Card = styled.div`
 
   p{
     z-index: 1;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     position: relative;
   }
 
   @media (min-width: 640px){
     width: 47%;
+    justify-content: center;
   }
 
   @media (min-width: 820px){
     width: 31%;
   }
 
-  @media (min-width: 940px){
+  @media (min-width: 1200px){
     width: 23%;
   }
 `
 export const Icon = styled(FontAwesomeIcon)`
   z-index: 10;
-  height: 50px;
-  margin: auto;
+  //height: 50px;
   color:  rgba(51,175,173,1);
-  font-size: 3rem;
+  font-size: 4rem;
   position: relative;
 
   :hover{

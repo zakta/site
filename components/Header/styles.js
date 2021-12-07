@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  align-items: center;
   background: white;
+  border-bottom: solid 1px #efefef;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
   min-width: 320px;
 
   &.sticky {
@@ -12,16 +17,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Center = styled.div`
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: 1280px) {
-    margin: 0 auto;
-  }
-`;
-
 export const LogoContainer = styled.div`
   height: 35px;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
 `;
