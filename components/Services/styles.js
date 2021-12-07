@@ -7,7 +7,6 @@ export const Container = styled.section`
   background: #f7f7f7;
   width: 100%;
   min-width: 350px;
-  padding-top: 1rem;
 
   @media (min-width: 820px){
     justify-content: space-between;
@@ -21,9 +20,10 @@ export const Title = styled.h1`
   font-size: 40px;
   font-weight: 700;
   margin: 0;
+  line-height: 50px;
+  padding: 1.5rem 0;
   text-transform: uppercase;
   text-align: center;
   width: 100%;
-  padding-bottom: 1rem;
 `;
 

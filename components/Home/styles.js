@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  padding: 4rem 0 0 0;
+export const Container = styled.section`
+  padding: 5rem 0 0 0;
   min-width: 300px;
 
   div {

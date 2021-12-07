@@ -15,6 +15,8 @@ export const Container = styled.section`
 
     @media (min-width: 640px) {
       flex-direction: row;
+      justify-content: center;
+      width: 100%
     }
   }
 
@@ -37,7 +39,7 @@ export const CardContact = styled(Card)`
   width: 80%;
 
   @media (min-width: 640px) {
-    width: 50%;
+    width: 20%;
     display: inline-block;
   }
 
