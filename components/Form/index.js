@@ -4,11 +4,6 @@ import { Erro, Form, InputForm } from "./styles";
 
 export default function ContactForm() {
 
-  function telMask(o) {
-    const change = (mtel(o));
-    console.log(change);
-  }
-
   function mtel(o) {
     o = o.replace(/\D/g,"");
     o = o.replace(/^(\d{2})(\d)/g, "($1) $2");
@@ -29,7 +24,7 @@ export default function ContactForm() {
         .min(3, "O nome precisa ter no mínimo 3 caracteres.")
         .required("É preciso preencher o nome."),
       tel: Yup.string()
-        .max(11, "O telefone precisa ter no máximo 11 números.")
+        .min(15, "O telefone precisa ter no mínimo 11 números.")
         .required("É preciso preencher o número."),
       email: Yup.string()
         .email("E-mail inválido.")
@@ -60,10 +55,14 @@ export default function ContactForm() {
       ) : null}
       <InputForm
         name="tel"
-        type="number"
+        type="text"
+        maxLength={15}
         placeholder="Telefone"
-        onChange={formik.handleChange}
-        onKeyUp={(event) => telMask(event.target.value)}
+        onChange={e => {
+          const value= e.target.value;
+
+          formik.setFieldValue('tel', mtel(value))
+        }}
         onBlur={formik.handleBlur}
         value={formik.values.tel}
       />
