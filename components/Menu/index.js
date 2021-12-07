@@ -13,10 +13,10 @@ export default function Menu() {
   return (
     <Container>
       <List open={open} >
-        <ListItem><Link href="/">Home</Link></ListItem>
-        <ListItem><Link href="/servicos">Serviços</Link></ListItem>
-        <ListItem><Link href="/empresa">Empresa</Link></ListItem>
-        <ListItem><Link href="/contato">Contato</Link></ListItem>
+        <ListItem><Link href="#">Home</Link></ListItem>
+        <ListItem><Link href="#servicos">Serviços</Link></ListItem>
+        <ListItem><Link href="#empresa">Empresa</Link></ListItem>
+        <ListItem><Link href="#contato">Contato</Link></ListItem>
       </List>
       <MenuToggle onClick={() => {
         setOpen(!open)

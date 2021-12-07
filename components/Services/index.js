@@ -5,7 +5,7 @@ import { Card, Icon} from "../Card/styles";
 
 export default function Services(){
   return(
-    <Container id="/servicos">
+    <Container id="servicos">
       <Title>Serviços</Title>
       <Card animate={true}>
         <Icon icon={faLaptop} />
