@@ -10,7 +10,7 @@ import {
 
 export default function Company() {
   return (
-    <Container id="/empresa">
+    <Container id="empresa">
       <h2>Empresa</h2>
       <Division>
         <Flex>

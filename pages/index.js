@@ -8,15 +8,6 @@ import Home from "../components/Home";
 import Services from "../components/Services";
 
 export default function Index() {
-  useEffect(() => {
-    const element = document.getElementById(location.pathname);
-
-    window.scroll({
-      behavior: "smooth",
-      top: element ? element.offsetTop : 0,
-    });
-  });
-
   return (
     <div>
       <Head>

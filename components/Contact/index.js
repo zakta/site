@@ -4,7 +4,7 @@ import ContactForm from "../Form/index.js";
 
 export default function Contact() {
   return (
-    <Container id="/contato">
+    <Container id="contato">
       <h2>Contato</h2>
         <article>
           <CardContact animate={false}>
