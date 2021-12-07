@@ -8,11 +8,9 @@ export const Container = styled.section`
   width: 100%;
   min-width: 350px;
 
-  @media (min-width: 820px){
-    justify-content: space-between;
-  }
-  @media (min-width: 940px){
-    justify-content: space-around;
+  @media (min-width: 640px){
+    justify-content: space-evenly;
+    padding: 0 0 0.5rem 0;
   }
 `
 export const Title = styled.h1`

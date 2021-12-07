@@ -11,20 +11,22 @@ export const Form = styled.form`
   }
 
   @media (min-width: 768px){
-    width: 50%;
+    width: 60%;
+    margin: 0;
+    justify-content: center;
   }
 
   textarea {
-    border: none;
     background: #f8f8f8;
-    border-radius: none;
-    font-family: Cairo, sans-serif;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 500;
     height: 200px;
-    padding: 1.1rem .5rem;
+    padding: 1rem;
     width: 100%;
-    margin-top: 1rem;
+    margin: 1rem 0;
 
     :focus{
     background: white;
@@ -36,9 +38,10 @@ export const Form = styled.form`
     border: none;
     color: white;
     font-size: 15px;
-    font-family: Cairo, sans-serif;
-    font-weight: 600;
-    padding: .5rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: .75rem;
     margin: 1rem 0;
     width: 200px;
     text-transform: uppercase;
@@ -55,14 +58,15 @@ export const Form = styled.form`
 `;
 
 export const InputForm = styled.input`
+  background: #f8f8f8;
+  box-sizing: border-box;
   border: none;
   display: block;
-  background: #f8f8f8;
   border-radius: none;
   font-size: 15px;
-  font-family: Cairo, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  padding: 1.1rem .5rem;
+  padding: 1rem;
   margin: 1rem 0;
   width: 100%;
 

@@ -8,7 +8,7 @@ export const Card = styled.div`
   width: 100%;
   transition: .3s all ease-in-out;
   position: relative;
-  height: 200px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,9 +16,10 @@ export const Card = styled.div`
 
 
   @media (min-width: 640px){
+    margin: .5rem 0;
+    padding: 0;
     flex-direction: column;
-    align-items: center;
-    height: 300px;
+
   }
   @media (min-width: 940px){
     flex-direction: column;
@@ -66,13 +67,12 @@ export const Card = styled.div`
     width: 47%;
     justify-content: center;
   }
-
   @media (min-width: 820px){
-    width: 31%;
+    width: 23%;
   }
 
   @media (min-width: 1200px){
-    width: 23%;
+    width: 24%;
   }
 `
 export const Icon = styled(FontAwesomeIcon)`

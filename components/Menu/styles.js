@@ -51,7 +51,7 @@ export const ListItem = styled.li`
         color: #1a3968;
         padding: 1rem;
       }
-      @media (min-width: 832px){
+      @media (min-width: 880px){
         color: #1a3968;
         padding: 1.5rem;
 
