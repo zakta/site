@@ -7,6 +7,7 @@ export const Container = styled.div`
   height: 80px;
   min-width: 320px;
 
+
   &.sticky {
     position: fixed;
     top: 0;
@@ -24,11 +25,13 @@ export const Center = styled.div`
 `;
 
 export const LogoContainer = styled.div`
+  cursor: pointer;
   height: 35px;
   padding: 1rem 1.5rem;
-  transition: 3s linear ease-in-out;
+  transition: all .3s ease;
+
 
   :hover{
-    transform: scale(1.1);
+    transform: perspective(1px) scale(1.1) translateZ(0);
   }
 `;

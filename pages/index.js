@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useEffect } from "react";
+import ButtonUp from "../components/ButtonUp";
 import Company from "../components/Company";
 import Contact from "../components/Contact";
 import { Footer } from "../components/Footer";
@@ -18,6 +19,7 @@ export default function Index() {
       <Services />
       <Company  />
       <Contact  />
+      <ButtonUp />
       <Footer />
     </div>
   );

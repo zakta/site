@@ -12,18 +12,16 @@ export const Container = styled.section`
 
   article {
     display: flex;
+    box-sizing: border-box;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 1.5rem;
 
-    @media (min-width: 640px) {
+    @media (min-width: 768px) {
       flex-direction: row;
       justify-content: center;
-      width: 80%;
-    }
-    @media (min-width: 768px) {
-      width: 60%;
     }
   }
 
@@ -38,21 +36,19 @@ export const Container = styled.section`
     text-align: center;
     width: 100%;
   }
-
 `;
 
 export const CardContact = styled(Card)`
   border: 1px solid #efefef;
   padding: 2rem;
+  box-sizing: border-box;
   width: 100%;
 
-
-  @media (min-width: 640px) {
-    display: flex;
-
-  }
   @media (min-width: 768px) {
-
+    display: flex;
+    padding: 0;
+    margin: .5rem;
+    width: 28%;
   }
   h3 {
     margin: 0;
@@ -73,9 +69,10 @@ export const IconContact = styled(Icon)`
 
 export const ContactInfo = styled.div`
   box-sizing: border-box;
-  margin: 1rem;
+  margin: 0;
   text-align: left;
-  width: 80%;
+  padding: 1.5rem;
+  width: 100%;
 
   @media (min-width: 768px){
     width: 60%;
