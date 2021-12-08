@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  padding: 0 1.5rem;
+  padding-right: 1.5rem;
 `
 export const List = styled.ul`
   display: flex;
@@ -46,20 +46,19 @@ export const ListItem = styled.li`
     a {
       color: white;
       text-decoration: none;
+      text-shadow: 0 0 4px rgba(0,0,0,0.5);
+      transition: all .15s ease;
 
       @media (min-width: 768px){
-        color: #1a3968;
         padding: 1rem;
       }
+
       @media (min-width: 880px){
-        color: #1a3968;
         padding: 1.5rem;
 
         :hover{
-        color: #33afad;
-
+          color: #33afad;
         }
-
       }
     }
 `;

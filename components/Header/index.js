@@ -1,4 +1,4 @@
-import { Logo } from "../Logo";
+import { LogoWhite } from "../LogoWhite";
 import Menu from "../Menu";
 import Link from "next/link";
 import { Center, Container, LogoContainer } from "./styles";
@@ -9,7 +9,7 @@ export default function Header() {
       <Center>
         <Link href="#">
           <LogoContainer>
-            <Logo height={35} />
+            <LogoWhite height={35} />
           </LogoContainer>
         </Link>
         <Menu />
