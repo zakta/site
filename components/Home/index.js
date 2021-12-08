@@ -1,31 +1,22 @@
-import { Container, SliderBox, SliderImage } from "./styles";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css"
+import { Container, Cover, CoverMask, PageTitle, ButtonLink } from "./styles";
 
 export default function Home(){
-  const settings={
-    dots: true,
-    infinite: true,
-    speed: 400,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    easing: true,
-  };
-
   return(
-    <Container id="/">
-      <Slider {...settings}>
-        <SliderBox>
-          <SliderImage src="./workspace.jpg" alt="Imagem espaço de trabalho"/>
-        </SliderBox>
-        <SliderBox>
-          <SliderImage src="./computer-one.jpg" alt="Imagem espaço de trabalho"/>
-        </SliderBox>
-        <SliderBox>
-          <SliderImage src="./computer-two.jpg" alt="Imagem espaço de trabalho"/>
-        </SliderBox>
-      </Slider>
+    <Container>
+      <Cover />
+
+      <CoverMask />
+
+      <PageTitle>
+        <h1>
+          Tecnologia em<br />
+          Soluções Digitais
+        </h1>
+
+        <p>Somos uma consultoria em soluções digitais que ajuda as empresas a aumentarem sua receita e levar a marca para um crescimento mais rápido.</p>
+
+        <ButtonLink href="#servicos">Saiba mais</ButtonLink>
+      </PageTitle>
     </Container>
   );
-}
+};
