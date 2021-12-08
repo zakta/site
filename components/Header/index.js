@@ -1,7 +1,7 @@
 import { Logo } from "../Logo";
 import Menu from "../Menu";
 import Link from "next/link";
-import { Container, LogoContainer } from "./styles";
+import { Center, Container, LogoContainer } from "./styles";
 
 export default function Header() {
   return (
