@@ -1,13 +1,15 @@
 import Link from 'next/link';
 import { LogoWhite } from "../LogoWhite";
-import { Contact, Box, Container, Info, NavBar, NavList, PositionLogo, Copyright} from "./styles";
+import { Contact, Box, Container, Info, PositionLogo, Copyright} from "./styles";
 
 export function Footer() {
   return (
     <Container>
       <Box>
         <Link href="#">
-          <PositionLogo>
+          <PositionLogo onClick={()=> {
+            window.scrollTo({top:0, behavior: 'smooth'})
+          }}>
             <LogoWhite height={25} />
           </PositionLogo>
         </Link>
