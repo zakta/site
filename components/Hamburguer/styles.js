@@ -13,7 +13,7 @@ export const Container= styled.div`
 export const Burguer= styled.div`
   width: 2.5rem;
   height: 0.40rem;
-  background-color: ${({open})=> open ? 'white' : '#1a3968'};
+  background-color: white;
   transform-origin: 0px;
   transition: all 0.5s linear;
   z-index: 11;

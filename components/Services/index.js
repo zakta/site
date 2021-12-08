@@ -9,39 +9,48 @@ export default function Services(){
       <Center>
         <Card animate={true}>
           <Icon icon={faLaptop} />
-          <p>Criação de Sites</p>
+          <h3>Criação de Sites</h3>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
         </Card>
         <Card animate={true}>
           <Icon icon={faEdit} />
-          <p>Otimização de Sites - SEO</p>
+          <h3>Otimização de Sites - SEO</h3>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
         </Card>
         <Card animate={true}>
           <Icon icon={faShoppingCart} />
-          <p>Sistemas em Nuvem</p>
+          <h3>Sistemas em Nuvem</h3>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
         </Card>
         <Card animate={true}>
           <Icon icon={faWindowMaximize} />
-          <p>Marketing de Conteúdo - SEM</p>
+          <h3>Marketing de Conteúdo - SEM</h3>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
         </Card>
         <Card animate={true}>
           <Icon icon={faSearch} />
-          <p>Campanha Google Adwords</p>
+          <h3>Campanha Google Adwords</h3>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
         </Card>
         <Card animate={true}>
           <Icon icon={faMobile} />
-          <p>Criação de Aplicativos</p>
+          <h3>Criação de Aplicativos</h3>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
         </Card>
         <Card animate={true}>
           <Icon icon={faSyncAlt} />
-          <p>Lojas Virtuais</p>
+          <h3>Lojas Virtuais</h3>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
         </Card>
         <Card animate={true}>
           <Icon icon={faUsersCog} />
-          <p>Intranet e Extranet</p>
+          <h3>Intranet e Extranet</h3>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
         </Card>
         <Card animate={true}>
           <Icon icon={faUsersCog} />
-          <p>Manutenção de Sites</p>
+          <h3>Manutenção de Sites</h3>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
         </Card>
       </Center>
     </Container>

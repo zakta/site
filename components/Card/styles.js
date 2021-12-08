@@ -2,35 +2,24 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Card = styled.div`
+  align-items: center;
   background: white;
-  text-align: center;
-  margin: .5rem;
-  width: 100%;
-  transition: .3s all ease-in-out;
-  position: relative;
-  height: 300px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 83px 0 rgb(6 6 6 / 12%);
   display: flex;
+  height: 100%;
+  position: relative;
+  padding: 2rem;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-
-
-  @media (min-width: 640px){
-    margin: .5rem 0;
-    padding: 0;
-    flex-direction: column;
-
-  }
-  @media (min-width: 940px){
-    flex-direction: column;
-    align-items: center;
-    height: 400px;
-  }
-
+  margin: 1rem;
+  text-align: center;
+  transition: .3s all ease-in-out;
+  max-width: 400px;
 
   :after{
     content: "";
-    background: ${({animate}) => ( animate ? "linear-gradient(270deg, rgba(26,57,104,1) 0%, rgba(51,175,173,1) 100%)" : "white") };
+    background: ${({animate}) => ( animate ? "linear-gradient(278deg, rgba(12,25,29,1) 0%, rgba(26,57,104,1) 37%, rgba(13,28,35,1) 97%);" : "white") };
     transform: scale(0);
     transition: .3s all ease-in-out;
     z-index:0;
@@ -46,6 +35,9 @@ export const Card = styled.div`
     svg {
       color: ${({animate}) => (animate ? "white" : "rgba(51,175,173,1)")};
     }
+    h3{
+      color:${({animate})=>(animate? "white" : "black")}
+    }
     p{
       color: ${({animate}) => (animate ? "white" : "black")}
     }
@@ -56,29 +48,48 @@ export const Card = styled.div`
     opacity: ${({animate}) => (animate ? 1 : 0)};
   }
 
-  p{
+  h3{
     z-index: 1;
     font-size: 20px;
     font-weight: 700;
     position: relative;
+
+    @media (min-width: 768px){
+      font-size: 18px;
+    }
+    @media (min-width: 800px){
+      font-size: 20px;
+    }
+  }
+  p{
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    text-align: justify;
+
+    @media (min-width: 768px){
+      font-size: 16px;
+    }
+    @media (min-width: 800px){
+      font-size: 18px;
+    }
   }
 
-  @media (min-width: 640px){
-    width: 47%;
+  @media (min-width: 768px){
     justify-content: center;
+    width: 29%;
+    height: 450px;
   }
-  @media (min-width: 820px){
-    width: 23%;
-  }
-
-  @media (min-width: 1200px){
-    width: 24%;
+  @media (min-width: 803px){
+    justify-content: center;
+    width: 29%;
   }
 `
 export const Icon = styled(FontAwesomeIcon)`
   z-index: 10;
   //height: 50px;
-  color:  rgba(51,175,173,1);
+  color: #1a3968;
   font-size: 4rem;
   position: relative;
 

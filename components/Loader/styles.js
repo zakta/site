@@ -39,6 +39,6 @@ export const Load = styled.span`
   position: relative;
   width: 200px;
   height: 200px;
-  animation: ${zoomInOut} 2s infinite ease;
+  animation: ${zoomInOut} 1s both;
 
 `

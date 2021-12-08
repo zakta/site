@@ -12,7 +12,9 @@ export default function Menu() {
 
   return (
     <Container>
-      <List open={open} >
+      <List open={open} onClick={ ()=> {
+        setOpen(!open)
+        setOverflow(!open ? "add" : "remove")}} >
         <ListItem><Link href="#">Home</Link></ListItem>
         <ListItem><Link href="#servicos">Serviços</Link></ListItem>
         <ListItem><Link href="#empresa">Empresa</Link></ListItem>

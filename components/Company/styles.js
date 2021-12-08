@@ -27,33 +27,36 @@ export const Center = styled.div`
 `;
 
 export const Flex = styled.div`
-  @media (min-width: 1280px){
+  @media (min-width: 1280px) {
     display: flex;
     flex-direction: column;
     width: 50%;
   }
-`
+`;
 export const Division = styled.div`
-  @media (min-width: 1280px){
+  @media (min-width: 1280px) {
     display: flex;
     flex-direction: row;
   }
-`
+`;
 export const Text = styled.p`
-  text-align: left;
+  text-align: justify;
   font-size: 20px;
   font-weight: 600;
 
+  @media (min-width: 1280px) {
+    padding-right: 1rem;
+  }
 `;
+
 export const Picture = styled.img`
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (min-width: 1280px){
+  @media (min-width: 1280px) {
     width: 50%;
-
-}
+  }
 `;
 export const Box = styled.div`
   display: flex;
@@ -71,22 +74,22 @@ export const Box = styled.div`
   }
 `;
 
-export const Notes= styled.div`
+export const Notes = styled.div`
   padding-left: 1rem;
 
-  :nth-child(2){
+  :nth-child(2) {
     background: #1a3968;
   }
-  :nth-child(3){
+  :nth-child(3) {
     background: #f6f6f6;
   }
-  :nth-child(4){
+  :nth-child(4) {
     background: black;
   }
 
   @media (max-width: 720px) {
     &:first-child {
-      height: 150px;
+      padding-bottom: 1rem;
     }
   }
 
@@ -107,7 +110,7 @@ export const Notes= styled.div`
     margin: 0;
     text-transform: capitalize;
 
-    @media (min-width: 1000px){
+    @media (min-width: 1000px) {
       text-align: center;
     }
   }
@@ -150,14 +153,13 @@ export const Notes= styled.div`
       color: #1a3968;
     }
 
-    @media (min-width: 1000px){
+    @media (min-width: 1000px) {
       text-align: center;
     }
   }
+`;
 
-`
-
- /* export const Numbers = styled.div`
+/* export const Numbers = styled.div`
   display: none;
   font-size: 167px;
   margin: 0;

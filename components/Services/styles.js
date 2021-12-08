@@ -4,17 +4,20 @@ export const Container = styled.section`
   background: #f8f8f8;
   max-width: 100%;
   min-width: 350px;
+  margin:0;
+  padding:0;
 `;
 
 export const Center = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: auto;
   max-width: 1700px;
+  box-sizing: border-box;
 
-  @media (min-width: 640px){
-    justify-content: space-evenly;
-    padding: 0 0 2rem 0;
+  @media (min-width: 768px){
+    justify-content: center;
+    padding: 0;
+    margin: 0;
   }
 `;

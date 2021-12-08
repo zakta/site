@@ -43,6 +43,7 @@ export const CardContact = styled(Card)`
   padding: 2rem;
   box-sizing: border-box;
   width: 100%;
+  box-shadow: none;
 
   @media (min-width: 768px) {
     display: flex;
@@ -60,6 +61,7 @@ export const CardContact = styled(Card)`
     font-weight: 400;
     margin: 0;
     width: 100%;
+    text-align: center;
   }
 `;
 
