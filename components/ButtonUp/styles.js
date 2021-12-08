@@ -1,9 +1,15 @@
 import styled from "styled-components";
 import { Icon } from "../Card/styles";
 
-export const Container = styled.div`
+export const Container = styled.section`
   display: flex;
-  padding: 1.5rem;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  margin: 1rem;
+  padding: 1rem;
+  `
+export const ScrollTop= styled.div`
+  display: flex;
   transition: all .3s ease;
   width: 50px;
 
@@ -19,10 +25,10 @@ export const Container = styled.div`
 export const ButtonArrow = styled.button`
   background-color: #1a3968;
   border: 1px solid #1a3968;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
 
 `
 export const IconArrow = styled(Icon)`
-  font-size: 20px;
+  font-size: 15px;
   color: #ffff;
 `
