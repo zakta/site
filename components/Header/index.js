@@ -8,7 +8,9 @@ export default function Header() {
     <Container className="sticky">
       <Center>
         <Link href="#">
-          <LogoContainer>
+          <LogoContainer onClick={()=> {
+            window.scrollTo({top:0, behavior: 'smooth'})
+          }}>
             <LogoWhite height={35} />
           </LogoContainer>
         </Link>

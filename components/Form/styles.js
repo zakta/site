@@ -18,23 +18,6 @@ export const Form = styled.form`
     justify-content: center;
   }
 
-  textarea {
-    background: #f8f8f8;
-    border: none;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    height: 200px;
-    padding: 1rem;
-    width: 100%;
-    margin: 1rem 0;
-
-    :focus{
-    background: white;
-  }
-  }
-
   button {
     background: #1a3968;
     border: none;
@@ -60,10 +43,12 @@ export const Form = styled.form`
 
 export const InputForm = styled.input`
   background: #f8f8f8;
-  box-sizing: border-box;
-  border: none;
-  display: block;
+  border-color: ${({error}) => (error ? 'red' : '#f8f8f8')};
+  border-style: solid;
   border-radius: none;
+  box-sizing: border-box;
+  border-width: 2px;
+  display: block;
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -73,10 +58,37 @@ export const InputForm = styled.input`
 
   :focus{
     background: white;
+    outline: none;
+    border: 2px solid #33afad;
+  }
+`;
+
+export const Textarea = styled.textarea`
+  background: #f8f8f8;
+  border-color: ${({error}) => (error ? 'red' : '#f8f8f8')};
+  border-width: 2px;
+  border-style: solid;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 200px;
+  padding: 1rem;
+  width: 100%;
+  margin: 1rem 0;
+
+  :focus{
+    background: white;
+    outline: none;
+    border: 2px solid #33afad;
   }
 `;
 
 export const Erro= styled.div`
   color: red;
   font-size: 15px;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 1rem;
+  font-weight: 700;
 `;

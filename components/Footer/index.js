@@ -7,7 +7,9 @@ export function Footer() {
     <Container>
       <Box>
         <Link href="#">
-          <PositionLogo>
+          <PositionLogo onClick={()=> {
+            window.scrollTo({top:0, behavior: 'smooth'})
+          }}>
             <LogoWhite height={25} />
           </PositionLogo>
         </Link>
