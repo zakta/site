@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { LogoWhite } from "../LogoWhite";
-import { Contact, Box, Container, Info, PositionLogo, Copyright} from "./styles";
+import { Contact, Box, Container, Info, PositionLogo, Copyright } from "./styles";
 
 export function Footer() {
   return (
@@ -17,8 +17,8 @@ export function Footer() {
           <Info href="mailto:contato@zakta.com.br" target="_blank">contato@zakta.com.br</Info>
           <Info href="tel:+5511933020321">+55 11 93302-0321</Info>
         </Contact>
-        <Copyright>© 2021 ZAKTA Tecnologia todos direitos reservados.</Copyright>
       </Box>
+      <Copyright>© 2021 ZAKTA Tecnologia todos direitos reservados.</Copyright>
     </Container>
   );
-}
+};
