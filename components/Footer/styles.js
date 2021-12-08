@@ -33,7 +33,8 @@ export const PositionLogo = styled.div`
 
 export const Contact = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  box-sizing: border-box;
 
   @media (min-width: 640px) {
     display: flex;
@@ -55,6 +56,7 @@ export const Info = styled.a`
   font-size: 15px;
   text-decoration: underline;
   flex-wrap: wrap;
+  padding: 0 .5rem;
 
   @media (min-width: 640px) {
     display: flex;
