@@ -7,12 +7,14 @@ import { Footer } from "../components/Footer";
 import Header from "../components/Header";
 import Home from "../components/Home";
 import Loader from "../components/Loader";
+import Modal from "../components/Modal";
 import Services from "../components/Services";
 
 export default function Index() {
   return (
     <div>
       <Loader />
+      <Modal />
       <Head>
         <title>Home | Zakta - Tecnologia</title>
       </Head>

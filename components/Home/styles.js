@@ -76,7 +76,7 @@ export const PageTitle = styled.div`
       max-width: 600px;
     }
   }
-  @media (min-width: 1580px){
+  @media (min-width: 1700px){
     color: white;
     position: relative;
     margin: 12% auto 8%;

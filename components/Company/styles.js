@@ -19,6 +19,9 @@ export const Center = styled.div`
 
 export const Flex = styled.div`
   @media (min-width: 1280px) {
+    box-shadow: 4px 2px 20px 4px rgb(6 6 6 / 12%);
+    padding: 1rem;
+    margin-right: .1rem;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -47,6 +50,7 @@ export const Picture = styled.img`
 
   @media (min-width: 1280px) {
     width: 50%;
+    box-shadow: 0 5px 83px 0 rgb(6 6 6 / 12%);
   }
 `;
 export const Box = styled.div`
