@@ -1,22 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding: 1rem;
+  padding: 1.5rem;
   background: white;
 
-  h2 {
-    font-size: 40px;
-    color: #1a3968;
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-    padding-bottom: 1rem;
-  }
   h3 {
     font-size: 30px;
-    font-weight: 800;
-    text-align: left;
+    font-weight: 700;
+    text-align: justify;
     margin: 0;
   }
 `;

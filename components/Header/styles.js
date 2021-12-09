@@ -20,6 +20,14 @@ export const Center = styled.div`
   margin: auto;
   max-width: 1700px;
   padding: 2.5rem;
+
+  @media (min-width: 768px){
+    padding: 1rem;
+  }
+
+  @media (min-width: 940px){
+    padding: 2.5rem;
+  }
 `;
 
 export const LogoContainer = styled.div`

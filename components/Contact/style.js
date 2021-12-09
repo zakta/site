@@ -24,18 +24,6 @@ export const Container = styled.section`
       justify-content: center;
     }
   }
-
-  h2 {
-    color: #1a3968;
-    font-size: 40px;
-    font-weight: 700;
-    margin: 0;
-    line-height: 50px;
-    padding: 1.5rem 0;
-    text-transform: uppercase;
-    text-align: center;
-    width: 100%;
-  }
 `;
 
 export const CardContact = styled(Card)`

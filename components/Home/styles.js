@@ -25,24 +25,76 @@ export const CoverMask = styled.div`
 export const PageTitle = styled.div`
   color: white;
   position: relative;
-  margin: 12% auto 8%;
-  width: 1580px;
+  margin: 2.5rem;
+  padding-top: 8rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:last-child{
+    align-items: flex-start;
+  }
+
 
   h1 {
-    font-size: 76px;
+    font-size: 40px;
     font-weight: 700;
-    line-height: 93px;
+    line-height: 60px;
     margin: 0;
     text-shadow: 0 0 4px rgba(0,0,0,0.5);
   }
 
   p {
-    font-size: 19px;
-    line-height: 34px;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 300;
     margin: 0;
-    max-width: 750px;
-    padding-top: 3.158rem;
+    max-width: 350px;
+    padding-top: 1rem;
     text-shadow: 0 0 4px rgba(0,0,0,0.5);
+  }
+  @media (min-width: 768px){
+
+    h1{
+      font-size: 45px;
+    }
+    p{
+      font-size: 16px;
+      max-width: 400px;
+    }
+  }
+  @media (min-width: 940px){
+    margin: 3.5rem;
+
+    h1{
+      font-size: 60px;
+    }
+    p{
+      font-size: 18px;
+      max-width: 600px;
+    }
+  }
+  @media (min-width: 1580px){
+    color: white;
+    position: relative;
+    margin: 12% auto 8%;
+    width: 1580px;
+
+    h1 {
+      font-size: 76px;
+      line-height: 93px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 19px;
+      line-height: 34px;
+      margin: 0;
+      max-width: 750px;
+      padding-top: 3.158rem;
+    }
   }
 `;
 

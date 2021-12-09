@@ -36,7 +36,20 @@ export const ListItem = styled.li`
   text-transform: uppercase;
   padding: 2.5rem;
 
+
   @media (min-width: 768px){
+    padding: 0;
+    display: flex;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  @media (min-width: 800px){
+    padding: 0;
+    display: flex;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  @media (min-width: 940px){
     padding: 0;
     display: flex;
     font-size: 20px;

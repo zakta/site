@@ -12,10 +12,11 @@ export const Card = styled.div`
   padding: 2rem;
   flex-direction: column;
   justify-content: center;
-  margin: 1rem;
+  margin: 1.5rem;
   text-align: center;
   transition: .3s all ease-in-out;
-  max-width: 400px;
+  //max-width: 370px;
+  width: 80%;
 
   :after{
     content: "";
@@ -78,12 +79,17 @@ export const Card = styled.div`
 
   @media (min-width: 768px){
     justify-content: center;
-    width: 29%;
+    width: 26%;
     height: 450px;
   }
-  @media (min-width: 803px){
+  @media (min-width: 980px){
     justify-content: center;
-    width: 29%;
+    width: 28%;
+  }
+  }
+  @media (min-width: 1457px){
+    justify-content: center;
+    width: 30%;
   }
 `
 export const Icon = styled(FontAwesomeIcon)`
