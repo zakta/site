@@ -3,6 +3,11 @@ import * as Yup from "yup";
 import { Erro, Form, InputForm, Textarea } from "./styles";
 
 export default function ContactForm() {
+  function showPopUp(){
+    const popUp= document.getElementById('popUp');
+    const display= popUp.classList.remove('showPopUp');
+    return display;
+  }
 
   function mtel(o) {
     o = o.replace(/\D/g,"");
@@ -108,7 +113,9 @@ export default function ContactForm() {
       {formik.touched.message && formik.errors.message ? (
         <Erro>{formik.errors.message}</Erro>
       ) : null}
-      <button type="submit">Enviar Mensagem</button>
+      <button type="submit" onSubmit={()=> {
+        showPopUp();
+      }}>Enviar Mensagem</button>
     </Form>
   );
 }

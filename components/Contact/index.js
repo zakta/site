@@ -1,6 +1,7 @@
 import { faPhone, faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { CardContact, Container, IconContact, ContactInfo } from "./style";
 import ContactForm from "../Form/index.js";
+import Notification from "../Notification";
 
 export default function Contact() {
   return (
@@ -25,6 +26,7 @@ export default function Contact() {
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. When an unknown printer took a galley.</p>
       </ContactInfo>
       <ContactForm />
+      <Notification />
     </Container>
   );
 }
