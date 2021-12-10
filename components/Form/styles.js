@@ -25,7 +25,7 @@ export const Form = styled.form`
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    padding: .75rem;
+    padding: 1rem;
     margin: 1rem 0;
     width: 200px;
     text-transform: uppercase;
@@ -50,8 +50,8 @@ export const InputForm = styled.input`
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  padding: 1rem;
-  margin: 1rem 0;
+  padding: 1.5rem;
+  margin: 1.2rem 0 1.7rem;
   width: 100%;
 
   :focus{
@@ -70,10 +70,10 @@ export const Textarea = styled.textarea`
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 500;
-  height: 200px;
-  padding: 1rem;
+  height: 280px;
+  padding: 1.5rem;
   width: 100%;
-  margin: 1rem 0;
+  margin: 1.2rem 0 1.7rem;
 
   :focus{
     background: white;
@@ -87,9 +87,7 @@ export const Position=styled.div`
 export const Erro= styled.div`
   color: red;
   font-size: 15px;
-  width: 100%;
-  text-align: left;
   font-weight: 700;
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
 `;

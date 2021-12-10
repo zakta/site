@@ -62,7 +62,6 @@ export const ListItem = styled.li`
     a {
       color: inherit;
       text-decoration: none;
-      text-shadow: 0 0 4px rgba(0,0,0,0.5);
       transition: all .15s ease;
       text-shadow: none;
 
