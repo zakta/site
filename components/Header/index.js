@@ -1,4 +1,4 @@
-import { LogoWhite } from "../LogoWhite";
+import { Logo } from "../Logo";
 import Menu from "../Menu";
 import Link from "next/link";
 import { Center, Container, LogoContainer } from "./styles";
@@ -18,9 +18,10 @@ export default function Header() {
           <LogoContainer onClick={()=> {
             window.scrollTo({top:0, behavior: 'smooth'})
           }}>
-            <LogoWhite height={35} />
+            <Logo theme="white" height={35} />
           </LogoContainer>
         </Link>
+
         <Menu />
       </Center>
     </Container>

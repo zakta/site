@@ -6,6 +6,7 @@ export default function ContactForm() {
   function showPopUp(){
     const popUp= document.getElementById('popUp');
     const display= popUp.classList.remove('showPopUp');
+
     return display;
   }
 
@@ -13,6 +14,7 @@ export default function ContactForm() {
     o = o.replace(/\D/g,"");
     o = o.replace(/^(\d{2})(\d)/g, "($1) $2");
     o = o.replace(/(\d)(\d{4})$/, "$1-$2");
+
     return o;
   }
 
@@ -41,7 +43,9 @@ export default function ContactForm() {
         .min(20, "A mensagem deve ter no mínimo 20 caracteres.")
         .required("É preciso preencher a mensagem."),
     }),
-    onSubmit: (values) => {},
+    onSubmit: () => {
+      showPopUp();
+    },
   });
 
   return (
@@ -111,9 +115,7 @@ export default function ContactForm() {
       {formik.touched.message && formik.errors.message ? (
         <Erro>{formik.errors.message}</Erro>
       ) : null}
-      <button type="submit" onClick={()=> {
-        showPopUp();
-      }}>Enviar Mensagem</button>
+      <button type="submit">Enviar Mensagem</button>
     </Form>
   );
 }

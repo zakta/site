@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   height: 80px;
   min-width: 320px;
+  position: relative;
+  z-index: 13;
 
   &.sticky {
     position: absolute;

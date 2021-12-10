@@ -16,7 +16,7 @@ export const Container = styled.div`
 export const CookieNotice = styled.div`
   background:#1a3968;
   opacity: .97;
-  border: 2px solid white;
+  border: 1px solid white;
   display: flex;
   flex-direction: column;
   align-items: center;
