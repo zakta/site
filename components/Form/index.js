@@ -1,17 +1,17 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { Erro, Form, InputForm, Textarea } from "./styles";
+import { Erro, Form, InputForm, Position, Textarea } from "./styles";
 
 export default function ContactForm() {
-  function showPopUp(){
-    const popUp= document.getElementById('popUp');
-    const display= popUp.classList.remove('showPopUp');
+  function showPopUp() {
+    const popUp = document.getElementById("popUp");
+    const display = popUp.classList.remove("showPopUp");
 
     return display;
   }
 
   function mtel(o) {
-    o = o.replace(/\D/g,"");
+    o = o.replace(/\D/g, "");
     o = o.replace(/^(\d{2})(\d)/g, "($1) $2");
     o = o.replace(/(\d)(\d{4})$/, "$1-$2");
 
@@ -60,24 +60,28 @@ export default function ContactForm() {
         error={formik.touched.name && formik.errors.name}
       />
       {formik.touched.name && formik.errors.name ? (
-        <Erro>{formik.errors.name}</Erro>
+        <Position>
+          <Erro>{formik.errors.name}</Erro>
+        </Position>
       ) : null}
       <InputForm
         name="tel"
         type="text"
         maxLength={15}
         placeholder="Telefone"
-        onChange={e => {
-          const value= e.target.value;
+        onChange={(e) => {
+          const value = e.target.value;
 
-          formik.setFieldValue('tel', mtel(value))
+          formik.setFieldValue("tel", mtel(value));
         }}
         onBlur={formik.handleBlur}
         value={formik.values.tel}
         error={formik.touched.tel && formik.errors.tel}
       />
       {formik.touched.tel && formik.errors.tel ? (
-        <Erro>{formik.errors.tel}</Erro>
+        <Position>
+          <Erro>{formik.errors.tel}</Erro>
+        </Position>
       ) : null}
       <InputForm
         name="email"
@@ -89,7 +93,9 @@ export default function ContactForm() {
         error={formik.touched.email && formik.errors.email}
       />
       {formik.touched.email && formik.errors.email ? (
-        <Erro>{formik.errors.email}</Erro>
+        <Position>
+          <Erro>{formik.errors.email}</Erro>
+        </Position>
       ) : null}
       <InputForm
         name="subject"
@@ -101,7 +107,9 @@ export default function ContactForm() {
         error={formik.touched.subject && formik.errors.subject}
       />
       {formik.touched.subject && formik.errors.subject ? (
-        <Erro>{formik.errors.subject}</Erro>
+        <Position>
+          <Erro>{formik.errors.subject}</Erro>
+        </Position>
       ) : null}
       <Textarea
         name="message"
@@ -113,7 +121,9 @@ export default function ContactForm() {
         error={formik.touched.message && formik.errors.message}
       />
       {formik.touched.message && formik.errors.message ? (
-        <Erro>{formik.errors.message}</Erro>
+        <Position>
+          <Erro>{formik.errors.message}</Erro>
+        </Position>
       ) : null}
       <button type="submit">Enviar Mensagem</button>
     </Form>

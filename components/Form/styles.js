@@ -34,11 +34,7 @@ export const Form = styled.form`
 
 
     :hover {
-      background: linear-gradient(
-        270deg,
-        rgba(26, 57, 104, 1) 0%,
-        rgba(51, 175, 173, 1) 100%
-      )
+      background: #33afad;
     }
   }
 `;
@@ -85,12 +81,15 @@ export const Textarea = styled.textarea`
     border: 2px solid #33afad;
   }
 `;
-
+export const Position=styled.div`
+  position: relative;
+`
 export const Erro= styled.div`
   color: red;
   font-size: 15px;
   width: 100%;
   text-align: left;
-  padding-bottom: 1rem;
   font-weight: 700;
+  position: absolute;
+  bottom: -10px;
 `;

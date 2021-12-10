@@ -18,7 +18,7 @@ export const Container= styled.div`
 export const PopUp= styled.div`
   display: flex;
   flex-direction: column;
-  background: #1a3968;
+  background: #33afad;
   padding: 2rem;
   opacity: 0.98;
 
@@ -41,16 +41,16 @@ export const BtnPopUp= styled.button`
   align-self: flex-end;
   background-color: #ffff;
   border: none;
-  border: 1px solid #1a3968;
-  color: #1a3968;
-  font-size: 15px;
+  border: 1px solid #33afad;
+  color: #33afad;
+  font-size: 18px;
   font-weight: 700;
   padding: 1px;
-  width: 20px;
+  width: 24.8px;
   cursor: pointer;
 
   :hover{
-    background: #1a3968;
+    background: #33afad;
     border: 1px solid white;
     color: white;
   }

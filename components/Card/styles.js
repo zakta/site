@@ -22,7 +22,7 @@ export const Card = styled.div`
     content: "";
     background: ${({ animate }) =>
       animate
-        ? "linear-gradient(278deg, rgba(12,25,29,1) 0%, rgba(26,57,104,1) 37%, rgba(13,28,35,1) 97%);"
+        ? "#1a3968"
         : "white"};
     transform: scale(0);
     transition: .3s all ease-in-out;
