@@ -35,9 +35,12 @@ export const ListItem = styled.li`
   font-size: 30px;
   text-transform: uppercase;
   padding: 2.5rem;
+  color: white;
+
 
 
   @media (min-width: 768px){
+    color: ${({ isSticky }) => (isSticky ? "#1a3968" : "white")};
     padding: 0;
     display: flex;
     font-size: 16px;
@@ -57,10 +60,11 @@ export const ListItem = styled.li`
   }
 
     a {
-      color: white;
+      color: inherit;
       text-decoration: none;
       text-shadow: 0 0 4px rgba(0,0,0,0.5);
       transition: all .15s ease;
+      text-shadow: none;
 
       :active{
         color: #33afad;
@@ -68,14 +72,14 @@ export const ListItem = styled.li`
 
       @media (min-width: 768px){
         padding: 1rem;
+        :hover{
+          color: #33afad;
+        }
       }
 
       @media (min-width: 880px){
         padding: 1.5rem;
 
-        :hover{
-          color: #33afad;
-        }
       }
     }
 `;

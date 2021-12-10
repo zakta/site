@@ -11,16 +11,16 @@ export default function Menu({isSticky}) {
   }
 
   return (
-    <Container>
-      <List open={open} onClick={ ()=> {
+    <Container >
+      <List isSticky={isSticky} open={open} onClick={ ()=> {
         setOpen(!open)
         if(open){
           setOverflow("remove")
         }}} >
-        <ListItem><Link href="#">Home</Link></ListItem>
-        <ListItem><Link href="#servicos">Serviços</Link></ListItem>
-        <ListItem><Link href="#empresa">Empresa</Link></ListItem>
-        <ListItem><Link href="#contato">Contato</Link></ListItem>
+        <ListItem isSticky={isSticky}><Link  href="#">Home</Link></ListItem>
+        <ListItem isSticky={isSticky}><Link  href="#servicos">Serviços</Link></ListItem>
+        <ListItem isSticky={isSticky}><Link  href="#empresa">Empresa</Link></ListItem>
+        <ListItem isSticky={isSticky}><Link  href="#contato">Contato</Link></ListItem>
       </List>
       <MenuToggle onClick={() => {
         setOpen(!open)
