@@ -59,7 +59,6 @@ export const ListItem = styled.li`
     a {
       color: white;
       text-decoration: none;
-      text-shadow: 0 0 4px rgba(0,0,0,0.5);
       transition: all .15s ease;
 
       :active{

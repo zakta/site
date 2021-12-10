@@ -50,20 +50,21 @@ export default function ContactForm() {
 
   return (
     <Form onSubmit={formik.handleSubmit}>
-      <InputForm
-        name="name"
-        type="text"
-        placeholder="Nome"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.name}
-        error={formik.touched.name && formik.errors.name}
-      />
-      {formik.touched.name && formik.errors.name ? (
-        <Position>
+      <div style={{ position: 'relative' }}>
+        <InputForm
+          name="name"
+          type="text"
+          placeholder="Nome"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.name}
+          error={formik.touched.name && formik.errors.name}
+        />
+        {formik.touched.name && formik.errors.name ? (
           <Erro>{formik.errors.name}</Erro>
-        </Position>
-      ) : null}
+        ) : null}
+      </div>
+
       <InputForm
         name="tel"
         type="text"

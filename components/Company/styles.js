@@ -7,7 +7,6 @@ export const Container = styled.section`
   h3 {
     font-size: 30px;
     font-weight: 700;
-    text-align: justify;
     margin: 0;
   }
 `;
@@ -34,7 +33,6 @@ export const Division = styled.div`
   }
 `;
 export const Text = styled.p`
-  text-align: justify;
   font-size: 20px;
   font-weight: 600;
 

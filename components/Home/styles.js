@@ -49,7 +49,6 @@ export const PageTitle = styled.div`
     font-weight: 900;
     line-height: 60px;
     margin: 0;
-    text-shadow: 0 0 4px rgba(0,0,0,0.5);
   }
 
   p {

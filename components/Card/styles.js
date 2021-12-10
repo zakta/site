@@ -70,7 +70,7 @@ export const Card = styled.div`
     font-size: 18px;
     font-weight: 500;
     position: relative;
-    text-align: justify;
+    text-align: left;
 
     @media (min-width: 768px){
       font-size: 16px;
