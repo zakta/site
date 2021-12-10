@@ -47,6 +47,7 @@ export const BtnPopUp= styled.button`
   font-weight: 700;
   padding: 1px;
   width: 20px;
+  cursor: pointer;
 
   :hover{
     background: #1a3968;
@@ -59,3 +60,5 @@ export const MailIcon = styled(FontAwesomeIcon)`
   font-size: 100px;
   align-self: center;
 `
+
+

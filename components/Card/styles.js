@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Card = styled.div`
   align-items: center;
@@ -20,7 +20,10 @@ export const Card = styled.div`
 
   :after{
     content: "";
-    background: ${({animate}) => ( animate ? "linear-gradient(278deg, rgba(12,25,29,1) 0%, rgba(26,57,104,1) 37%, rgba(13,28,35,1) 97%);" : "white") };
+    background: ${({ animate }) =>
+      animate
+        ? "linear-gradient(278deg, rgba(12,25,29,1) 0%, rgba(26,57,104,1) 37%, rgba(13,28,35,1) 97%);"
+        : "white"};
     transform: scale(0);
     transition: .3s all ease-in-out;
     z-index:0;
@@ -34,19 +37,19 @@ export const Card = styled.div`
 
   :hover {
     svg {
-      color: ${({animate}) => (animate ? "white" : "rgba(51,175,173,1)")};
+      color: ${({ animate }) => (animate ? "white" : "rgba(51,175,173,1)")};
     }
     h3{
-      color:${({animate})=>(animate? "white" : "black")}
+      color:${({ animate }) => (animate ? "white" : "black")}
     }
     p{
-      color: ${({animate}) => (animate ? "white" : "black")}
+      color: ${({ animate }) => (animate ? "white" : "black")}
     }
   }
 
   :hover::after{
     transform: scale(1);
-    opacity: ${({animate}) => (animate ? 1 : 0)};
+    opacity: ${({ animate }) => (animate ? 1 : 0)};
   }
 
   h3{
@@ -86,12 +89,10 @@ export const Card = styled.div`
     justify-content: center;
     width: 28%;
   }
-  }
   @media (min-width: 1457px){
-    justify-content: center;
     width: 30%;
   }
-`
+`;
 export const Icon = styled(FontAwesomeIcon)`
   z-index: 10;
   //height: 50px;
@@ -99,7 +100,7 @@ export const Icon = styled(FontAwesomeIcon)`
   font-size: 4rem;
   position: relative;
 
-  :hover{
-    color:white;
+  :hover {
+    color: white;
   }
-`
+`;

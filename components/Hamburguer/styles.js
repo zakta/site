@@ -17,6 +17,7 @@ export const Burguer= styled.div`
   transform-origin: 0px;
   transition: all 0.5s linear;
   z-index: 11;
+  cursor: pointer;
 
   &:nth-child(1){
     transform: ${({open}) => open ? 'rotate(45deg)' : 'rotate(0)'};

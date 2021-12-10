@@ -41,9 +41,7 @@ export default function ContactForm() {
         .min(20, "A mensagem deve ter no mínimo 20 caracteres.")
         .required("É preciso preencher a mensagem."),
     }),
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    },
+    onSubmit: (values) => {},
   });
 
   return (
@@ -113,7 +111,7 @@ export default function ContactForm() {
       {formik.touched.message && formik.errors.message ? (
         <Erro>{formik.errors.message}</Erro>
       ) : null}
-      <button type="submit" onSubmit={()=> {
+      <button type="submit" onClick={()=> {
         showPopUp();
       }}>Enviar Mensagem</button>
     </Form>

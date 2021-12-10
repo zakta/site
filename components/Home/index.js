@@ -1,8 +1,10 @@
-import { Container, Cover, CoverMask, PageTitle, ButtonLink } from "./styles";
+import { faArrowDown, faLongArrowAltDown } from "@fortawesome/free-solid-svg-icons";
+import { Container, HomeMain, Cover, CoverMask, PageTitle, ButtonLink, ArrowAnimation, ArrowLink, ArrowIcon } from "./styles";
 
 export default function Home(){
   return(
-    <Container>
+  <Container>
+    <HomeMain>
       <Cover />
 
       <CoverMask />
@@ -17,6 +19,10 @@ export default function Home(){
 
         <ButtonLink href="#servicos">Saiba mais</ButtonLink>
       </PageTitle>
-    </Container>
+    </HomeMain>
+    <ArrowAnimation>
+      <ArrowLink href="#servicos"><ArrowIcon icon={faLongArrowAltDown} /></ArrowLink>
+    </ArrowAnimation>
+  </Container>
   );
 };

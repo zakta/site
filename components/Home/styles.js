@@ -1,12 +1,18 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Container = styled.section`
-  min-width: 300px;
+  display: flex;
+  flex-direction: column;
 `;
+export const HomeMain = styled.div`
+  min-width: 300px;
+
+`
 
 export const Cover = styled.div`
   width: 100%;
-  height: 100%;
+  height: 115%;
   background: url('../workspace.jpg') center -100px no-repeat;
   background-size: cover;
   position: absolute;
@@ -25,9 +31,9 @@ export const CoverMask = styled.div`
 export const PageTitle = styled.div`
   color: white;
   position: relative;
-  margin: 2.5rem;
+  margin: 3.5rem;
   padding-top: 8rem;
-  width: 100%;
+  width: 85%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -39,15 +45,15 @@ export const PageTitle = styled.div`
 
 
   h1 {
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 35px;
+    font-weight: 900;
     line-height: 60px;
     margin: 0;
     text-shadow: 0 0 4px rgba(0,0,0,0.5);
   }
 
   p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 28px;
     font-weight: 300;
     margin: 0;
@@ -55,13 +61,23 @@ export const PageTitle = styled.div`
     padding-top: 1rem;
     text-shadow: 0 0 4px rgba(0,0,0,0.5);
   }
+  @media (min-width: 500px){
+
+    h1{
+      font-size: 40px;
+    }
+    p{
+      font-size: 18px;
+      max-width: 400px;
+    }
+  }
   @media (min-width: 768px){
 
     h1{
       font-size: 45px;
     }
     p{
-      font-size: 16px;
+      font-size: 20px;
       max-width: 400px;
     }
   }
@@ -70,9 +86,10 @@ export const PageTitle = styled.div`
 
     h1{
       font-size: 60px;
+      font-weight: 700;
     }
     p{
-      font-size: 18px;
+      font-size: 20px;
       max-width: 600px;
     }
   }
@@ -117,3 +134,38 @@ export const ButtonLink = styled.a`
     color: #1a3968;
   }
 `;
+
+export const ArrowAnimation= styled.div`
+  display: flex;
+  box-sizing: border-box;
+  width: 30px;
+  margin: .5rem;
+  z-index: 12;
+`
+
+export const ArrowLink= styled.a`
+  align-self: flex-start;
+`
+const bounce = keyframes`
+  0%{
+    top:0;
+  }
+  50%{
+    top: -30px;
+  }
+  70%{
+    top: -15px;
+  }
+  100%{
+    top: 0;
+  }
+`
+
+export const ArrowIcon = styled(FontAwesomeIcon)`
+  color: white;
+  font-size: 50px;
+  align-self: flex-start;
+  position: relative;
+  animation: ${bounce} 1s linear infinite;
+`
+

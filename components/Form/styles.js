@@ -29,6 +29,8 @@ export const Form = styled.form`
     margin: 1rem 0;
     width: 200px;
     text-transform: uppercase;
+    cursor: pointer;
+    align-self: flex-end;
 
 
     :hover {

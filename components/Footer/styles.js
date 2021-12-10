@@ -23,6 +23,7 @@ export const PositionLogo = styled.div`
   justify-content: center;
   margin-bottom: 1.5rem;
   padding-top: 1rem;
+  cursor: pointer;
 
   @media (min-width: 640px) {
     display: flex;
@@ -56,7 +57,7 @@ export const Info = styled.a`
   font-size: 15px;
   text-decoration: underline;
   flex-wrap: wrap;
-  padding: 0 .5rem;
+  padding: .5rem;
 
   @media (min-width: 640px) {
     display: flex;
