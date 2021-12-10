@@ -1,108 +1,90 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  z-index: 13;
-  position: fixed;
+  background: #f7f7f7;
+  border-top: 1px solid #efefef;
   bottom: 0;
+  box-sizing: border-box;
+  color: #4d4d4d;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  padding: 1.5rem;
+  position: fixed;
   width: 100%;
+  z-index: 13;
 
-  &.toggle{
+  &.toggle {
     display: none;
   }
-`
+`;
+
 export const CookieNotice = styled.div`
-  background:#1a3968;
-  opacity: .97;
-  border: 1px solid white;
+  align-items: center;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-bottom: 1rem;
-  box-sizing: border-box;
+  margin: auto;
+  max-width: 1600px;
 
-  div{
-   padding: 1rem 2rem;
+  a {
+    color: #1a3968;
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
 
-   a{
-      color: white;
-      text-decoration: none;
-      font-weight: 700;
+    &::before {
+      content: "";
+      bottom: 0px;
+      background-color: #1a3968;
+      height: 1px;
+      left: 0px;
+      position: absolute;
+      transition: width 0.2s ease-in-out 0s;
+      width: 0px;
+    }
 
-      :hover{
-        text-decoration: underline;
+    :hover {
+      &::before {
+        width: 100%;
       }
     }
   }
-  p{
+
+  p {
+    line-height: 20px;
     margin: 0;
-    text-align: center;
-    font-size: 16px;
-    color: white;
-
-
   }
-  button{
-    width: 200px;
-    padding: .4rem;
-    font-size: 17px;
-    background: #33afad;
-    color: white;
-    font-weight: 600;
-    border: 1px solid #33afad;
 
-    :hover{
-      background: white;
-      color: #33afad;
+  button {
+    align-self: end;
+    background: #1a3968;
+    border: 1px solid #1a3968;
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 1.5rem;
+    max-width: 257px;
+    padding: 10px 45px;
+    transition: all .3s ease;
+    width: 100%;
+
+    :hover {
+      opacity: .75;
     }
 
   }
-  @media (min-width:768px){
-    width: 96%;
+
+  @media (min-width: 920px) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem;
-    padding-right: 2rem;
 
-    div{
-      padding: 1rem;
-    }
-    p{
-       font-size: 17px;
-       text-align: center;
-     }
-    button{
-      font-size: 19px;
-      width: 350px;
+    button {
+      margin-left: 1.5rem;
+      margin-top: 0;
     }
   }
-  @media (min-width:790px){
-    div{
-      padding: 1rem;
-    }
-    p{
-       font-size: 17px;
-     }
-    button{
-      font-size: 20px;
-      width: 300px;
-      padding: .5rem;
-    }
-  }
-  @media (min-width:1200px){
-    div{
-      padding: 1rem;
-    }
-    p{
-       font-size: 19px;
-     }
-    button{
-      font-size: 20px;
-      width: 300px;
-      padding: 1rem;
-    }
-  }
-
-`
+`;

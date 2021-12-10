@@ -1,23 +1,26 @@
-import { Container, CookieNotice } from './styles';
 import Link from 'next/link';
+import { Container, CookieNotice } from './styles';
 
 export default function Modal(){
-  function sendCookies(){
+  const sendCookies = () => {
     const modal = document.getElementById('modal');
     const acceptModal= modal.classList.add('toggle');
 
     return acceptModal;
-  }
+  };
 
- return(
+ return (
    <Container id="modal">
      <CookieNotice>
-      <div>
-        <p>Este site usa cookies para personalizar conteúdo e analisar o tráfego do site.
-        Conheça a nossa <Link href={"#"}>Política de Cookies.</Link></p>
-      </div>
-       <button onClick={()=> {sendCookies()}}>Aceitar os Termos</button>
+      <p>
+        Usamos cookies e métodos semelhantes para reconhecer os visitantes e
+        lembrar suas preferências, medir a eficácia da campanha publicitária,
+        direcionar anúncios e analisar o tráfego do site. Saiba mais acessando
+        nossa <Link href="/politica-de-cookies">Política de Cookies</Link> e <Link href="/politica-de-privacidade">Política de Privacidade</Link>.
+      </p>
+
+       <button onClick={sendCookies}>Aceitar</button>
      </CookieNotice>
    </Container>
- )
-}
+ );
+};
