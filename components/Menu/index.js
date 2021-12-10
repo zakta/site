@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Hamburguer from "../Hamburguer";
 import { Container, List, ListItem, MenuToggle } from "./styles";
 
-export default function Menu() {
+export default function Menu({isSticky}) {
   const [open, setOpen] = useState(false);
 
   function setOverflow(event){
@@ -26,7 +26,7 @@ export default function Menu() {
         setOpen(!open)
         setOverflow(!open ? "add" : "remove")
       }}>
-        <Hamburguer open={open} />
+        <Hamburguer open={open} isSticky={isSticky} />
       </MenuToggle>
     </Container>
   );

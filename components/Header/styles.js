@@ -5,13 +5,21 @@ export const Container = styled.div`
   min-width: 320px;
   position: relative;
   z-index: 13;
+  transition: 1s linear ease-in-out;
 
   &.sticky {
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 13;
-    position: fixed;
+    position: sticky;
+  }
+
+  &.notSticky {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 13;
   }
   `;
 
@@ -22,7 +30,8 @@ export const Center = styled.div`
   justify-content: space-between;
   margin: auto;
   max-width: 1700px;
-  padding: 2.5rem;
+  padding: ${({isSticky}) => isSticky ? '0' : '2.5rem'};
+  background: ${({isSticky}) => (isSticky ? 'white' : 'none' )};
 
   @media (min-width: 768px){
     padding: 1rem;
