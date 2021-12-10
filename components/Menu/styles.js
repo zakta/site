@@ -12,7 +12,7 @@ export const List = styled.ul`
   @media (max-width: 768px) {
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     flex-flow: column nowrap;
-    background: linear-gradient(270deg, rgba(26,57,104,1) 0%, rgba(51,175,173,1) 100%);
+    background: #1a3968;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -61,6 +61,10 @@ export const ListItem = styled.li`
       text-decoration: none;
       text-shadow: 0 0 4px rgba(0,0,0,0.5);
       transition: all .15s ease;
+
+      :active{
+        color: #33afad;
+      }
 
       @media (min-width: 768px){
         padding: 1rem;
