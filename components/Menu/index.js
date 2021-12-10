@@ -14,7 +14,9 @@ export default function Menu() {
     <Container>
       <List open={open} onClick={ ()=> {
         setOpen(!open)
-        setOverflow(!open ? "add" : "remove")}} >
+        if(open){
+          setOverflow("remove")
+        }}} >
         <ListItem><Link href="#">Home</Link></ListItem>
         <ListItem><Link href="#servicos">Serviços</Link></ListItem>
         <ListItem><Link href="#empresa">Empresa</Link></ListItem>

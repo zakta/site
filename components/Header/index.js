@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Logo } from "../Logo";
 import Menu from "../Menu";
 import Link from "next/link";
@@ -5,6 +6,7 @@ import { Center, Container, LogoContainer } from "./styles";
 
 export default function Header() {
   function handleScroll(){
+    const [scroll, setScroll]  = useState(false);
     const header = document.getElementById('header');
 
     if(window.scrollY > 50){
