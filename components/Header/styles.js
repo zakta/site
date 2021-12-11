@@ -12,7 +12,7 @@ export const Container = styled.div`
     top: 0;
     width: 100%;
     z-index: 13;
-    position: sticky;
+    position: fixed;
   }
 
   &.notSticky {

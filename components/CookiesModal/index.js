@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Container, CookieNotice } from './styles';
 
-export default function Modal(){
+export default function CookiesModal(){
   const sendCookies = () => {
     const modal = document.getElementById('modal');
     const acceptModal= modal.classList.add('toggle');

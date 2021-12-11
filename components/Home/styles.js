@@ -1,18 +1,20 @@
-import styled, { keyframes } from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
+  max-height: 100%;
 `;
+
 export const HomeMain = styled.div`
   min-width: 300px;
-
-`
+  max-height: 100%;
+`;
 
 export const Cover = styled.div`
   width: 100%;
-  height: 115%;
+  height: 100%;
   background: url('../workspace.jpg') center -100px no-repeat;
   background-size: cover;
   position: absolute;
@@ -60,6 +62,7 @@ export const PageTitle = styled.div`
     padding-top: 1rem;
     text-shadow: 0 0 4px rgba(0,0,0,0.5);
   }
+
   @media (min-width: 500px){
 
     h1{
@@ -70,6 +73,7 @@ export const PageTitle = styled.div`
       max-width: 400px;
     }
   }
+
   @media (min-width: 768px){
 
     h1{
@@ -80,6 +84,7 @@ export const PageTitle = styled.div`
       max-width: 400px;
     }
   }
+
   @media (min-width: 940px){
     margin: 3.5rem;
 
@@ -92,6 +97,7 @@ export const PageTitle = styled.div`
       max-width: 600px;
     }
   }
+
   @media (min-width: 1700px){
     color: white;
     position: relative;
@@ -136,15 +142,17 @@ export const ButtonLink = styled.a`
 
 export const ArrowAnimation= styled.div`
   display: flex;
+  display: none;
   box-sizing: border-box;
   width: 30px;
   margin: .5rem;
   z-index: 12;
-`
+`;
 
 export const ArrowLink= styled.a`
   align-self: flex-start;
-`
+`;
+
 const bounce = keyframes`
   0%{
     top:0;
@@ -158,7 +166,7 @@ const bounce = keyframes`
   100%{
     top: 0;
   }
-`
+`;
 
 export const ArrowIcon = styled(FontAwesomeIcon)`
   color: white;
@@ -166,5 +174,4 @@ export const ArrowIcon = styled(FontAwesomeIcon)`
   align-self: flex-start;
   position: relative;
   animation: ${bounce} 1s linear infinite;
-`
-
+`;
