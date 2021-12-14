@@ -16,22 +16,6 @@ export const Center = styled.div`
   max-width: 1700px;
 `;
 
-export const Flex = styled.div`
-  @media (min-width: 1280px) {
-
-    padding: 1rem;
-    margin-right: .1rem;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-  }
-`;
-export const Division = styled.div`
-  @media (min-width: 1280px) {
-    display: flex;
-    flex-direction: row;
-  }
-`;
 export const Text = styled.p`
   font-size: 20px;
   font-weight: 600;
