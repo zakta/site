@@ -12,7 +12,7 @@ export const Container = styled.div`
     top: 0;
     width: 100%;
     z-index: 13;
-    position: sticky;
+    position: fixed;
   }
 
   &.notSticky {
@@ -29,17 +29,8 @@ export const Center = styled.div`
   display: flex;
   justify-content: space-between;
   margin: auto;
-  max-width: 1700px;
   padding: ${({isSticky}) => isSticky ? '0' : '2.5rem'};
   background: ${({isSticky}) => (isSticky ? 'white' : 'none' )};
-
-  @media (min-width: 768px){
-    padding: 1rem;
-  }
-
-  @media (min-width: 940px){
-    padding: 2.5rem;
-  }
 `;
 
 export const LogoContainer = styled.div`

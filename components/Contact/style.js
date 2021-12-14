@@ -32,6 +32,7 @@ export const CardContact = styled(Card)`
   box-sizing: border-box;
   width: 100%;
   box-shadow: none;
+  align-items: center;
 
   @media (min-width: 768px) {
     display: flex;

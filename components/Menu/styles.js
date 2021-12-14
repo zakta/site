@@ -37,10 +37,7 @@ export const ListItem = styled.li`
   padding: 2.5rem;
   color: white;
 
-
-
   @media (min-width: 768px){
-    color: ${({ isSticky }) => (isSticky ? "#1a3968" : "white")};
     padding: 0;
     display: flex;
     font-size: 16px;
@@ -58,30 +55,52 @@ export const ListItem = styled.li`
     font-size: 20px;
     font-weight: 800;
   }
+`;
 
-    a {
-      color: inherit;
-      text-decoration: none;
-      transition: all .15s ease;
-      text-shadow: none;
+export const LinkMenu= styled.p`
+    color: ${({ isSticky }) => (isSticky ? "#1a3968" : "white")};
+    position: relative;
+    text-decoration: none;
+    transition: all .2s ease;
 
-      :active{
-        color: #33afad;
+    :active{
+      color: #33afad;
+    }
+
+    @media (min-width: 768px){
+      opacity: ${({isSticky}) => (isSticky ? '1' : '.75')};
+      padding: 1rem 0;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    @media (min-width: 880px){
+      padding: 1.5rem 0;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+
+      &::before {
+        content: "";
+        background-color: #33afad;
+        height: 7px;
+        left: 0px;
+        position: absolute;
+        transition: width .2s ease-in-out 0s;
+        top: 10px;
+        width: 0;
       }
 
-      @media (min-width: 768px){
-        padding: 1rem;
-        :hover{
-          color: #33afad;
+      :hover {
+        &::before {
+          width: 100%;
         }
       }
 
-      @media (min-width: 880px){
-        padding: 1.5rem;
-
+      :hover{
+        opacity: 1;
       }
     }
-`;
+`
 
 export const MenuToggle = styled.div`
   padding-right: .6rem;

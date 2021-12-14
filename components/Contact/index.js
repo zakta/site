@@ -1,7 +1,8 @@
-import { faPhone, faMailBulk } from "@fortawesome/free-solid-svg-icons";
+
 import { CardContact, Container, IconContact, ContactInfo } from "./style";
 import ContactForm from "../Form/index.js";
 import Notification from "../Notification";
+import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 
 export default function Contact() {
   return (
@@ -9,13 +10,13 @@ export default function Contact() {
       <h2>Contato</h2>
         <article>
           <CardContact animate={false}>
-            <IconContact icon={faPhone} />
+           <IconContact><AiOutlinePhone /></IconContact>
             <h3>Telefone</h3>
             <p>+55 11 93302 0321</p>
             <p>+55 11 93302 0321</p>
           </CardContact>
           <CardContact animate={false}>
-            <IconContact icon={faMailBulk} />
+          <IconContact><AiOutlineMail /></IconContact>
             <h3>E-mail</h3>
             <p>contato@zakta.com.br</p>
             <p>contato@zakta.com.br</p>

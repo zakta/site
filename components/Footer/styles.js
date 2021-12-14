@@ -81,7 +81,7 @@ export const Copyright = styled.p`
   font-size: 0.8rem;
   font-weight: 400;
   margin: 0;
-  padding: 1rem 0;
+  padding: .82rem 0;
 
   @media (min-width: 640px) {
     display: flex;

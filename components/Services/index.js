@@ -1,56 +1,105 @@
-import { faLaptop, faShoppingCart, faWindowMaximize, faMobile, faSearch, faEdit, faSyncAlt, faUsersCog } from '@fortawesome/free-solid-svg-icons'
 import { Center, Container } from "./styles";
-import { Card, Icon} from "../Card/styles";
+import { Card, Icon } from "../Card/styles";
+import { BsGlobe, BsCart3 } from "react-icons/bs";
+import { BiWrench } from "react-icons/bi";
+import { AiOutlineCloudSync, AiOutlineAppstoreAdd } from "react-icons/ai";
+import { BsMegaphone, BsDiagram3 } from "react-icons/bs";
+import { SiGoogleads } from "react-icons/si";
+import { MdOutlineManageSearch } from "react-icons/md";
 
-
-export default function Services(){
-  return(
+export default function Services() {
+  return (
     <Container id="servicos">
       <Center>
         <Card animate={true}>
-          <Icon icon={faLaptop} />
+          <Icon>
+            <BsGlobe/>
+          </Icon>
           <h3>Criação de Sites</h3>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium.
+          </p>
         </Card>
         <Card animate={true}>
-          <Icon icon={faEdit} />
+          <Icon>
+            <MdOutlineManageSearch />
+          </Icon>
           <h3>Otimização de Sites - SEO</h3>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium.
+          </p>
         </Card>
         <Card animate={true}>
-          <Icon icon={faShoppingCart} />
+          <Icon>
+            <AiOutlineCloudSync />
+          </Icon>
           <h3>Sistemas em Nuvem</h3>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium.
+          </p>
         </Card>
         <Card animate={true}>
-          <Icon icon={faWindowMaximize} />
+          <Icon>
+            <BsMegaphone />
+          </Icon>
           <h3>Marketing de Conteúdo - SEM</h3>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium.
+          </p>
         </Card>
         <Card animate={true}>
-          <Icon icon={faSearch} />
+          <Icon>
+            <SiGoogleads />
+          </Icon>
           <h3>Campanha Google Adwords</h3>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium.
+          </p>
         </Card>
         <Card animate={true}>
-          <Icon icon={faMobile} />
+          <Icon>
+            <AiOutlineAppstoreAdd />
+          </Icon>
           <h3>Criação de Aplicativos</h3>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium.
+          </p>
         </Card>
         <Card animate={true}>
-          <Icon icon={faSyncAlt} />
+          <Icon>
+            <BsCart3 />
+          </Icon>
           <h3>Lojas Virtuais</h3>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium.
+          </p>
         </Card>
         <Card animate={true}>
-          <Icon icon={faUsersCog} />
+          <Icon>
+            <BsDiagram3 />
+          </Icon>
           <h3>Intranet e Extranet</h3>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium.
+          </p>
         </Card>
         <Card animate={true}>
-          <Icon icon={faUsersCog} />
+          <Icon>
+            <BiWrench />
+          </Icon>
           <h3>Manutenção de Sites</h3>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium.
+          </p>
         </Card>
       </Center>
     </Container>

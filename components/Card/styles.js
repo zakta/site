@@ -1,21 +1,16 @@
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Card = styled.div`
-  align-items: center;
   background: white;
   box-sizing: border-box;
   box-shadow: 0 5px 83px 0 rgb(6 6 6 / 12%);
   display: flex;
-  height: 100%;
   position: relative;
-  padding: 2rem;
+  padding: 2.632rem;
   flex-direction: column;
   justify-content: center;
   margin: 1.5rem;
-  text-align: center;
   transition: .3s all ease-in-out;
-  //max-width: 370px;
   width: 80%;
 
   :after{
@@ -35,7 +30,7 @@ export const Card = styled.div`
     height: 100%;
   }
 
-  :hover {
+  /* :hover {
     svg {
       color: ${({ animate }) => (animate ? "white" : "rgba(51,175,173,1)")};
     }
@@ -45,18 +40,22 @@ export const Card = styled.div`
     p{
       color: ${({ animate }) => (animate ? "white" : "black")}
     }
-  }
+  } */
 
-  :hover::after{
+  /* :hover::after{
     transform: scale(1);
     opacity: ${({ animate }) => (animate ? 1 : 0)};
-  }
+  } */
 
   h3{
+    color: #060606;
     z-index: 1;
-    font-size: 20px;
+    font-size: 27px;
+    line-height: 40px;
     font-weight: 700;
     position: relative;
+    margin-bottom: 1.06rem;
+    margin-top: 1.579rem;
 
     @media (min-width: 768px){
       font-size: 18px;
@@ -66,15 +65,18 @@ export const Card = styled.div`
     }
   }
   p{
-    z-index: 1;
-    font-size: 18px;
-    font-weight: 500;
+    color: #6c6c6c;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 34px;
+    margin: 0;
     position: relative;
-    text-align: left;
+    z-index: 1;
 
     @media (min-width: 768px){
       font-size: 16px;
     }
+
     @media (min-width: 800px){
       font-size: 18px;
     }
@@ -83,7 +85,6 @@ export const Card = styled.div`
   @media (min-width: 768px){
     justify-content: center;
     width: 26%;
-    height: 450px;
   }
   @media (min-width: 980px){
     justify-content: center;
@@ -93,14 +94,13 @@ export const Card = styled.div`
     width: 30%;
   }
 `;
-export const Icon = styled(FontAwesomeIcon)`
+export const Icon = styled.div`
   z-index: 10;
-  //height: 50px;
   color: #1a3968;
   font-size: 4rem;
   position: relative;
 
-  :hover {
+  /* :hover {
     color: white;
-  }
+  } */
 `;

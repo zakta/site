@@ -1,5 +1,5 @@
-import { faArrowDown, faLongArrowAltDown } from "@fortawesome/free-solid-svg-icons";
 import { Container, HomeMain, Cover, CoverMask, PageTitle, ButtonLink, ArrowAnimation, ArrowLink, ArrowIcon } from "./styles";
+
 
 export default function Home(){
   return(
@@ -21,7 +21,7 @@ export default function Home(){
       </PageTitle>
     </HomeMain>
     <ArrowAnimation>
-      <ArrowLink href="#servicos"><ArrowIcon icon={faLongArrowAltDown} /></ArrowLink>
+      <ArrowLink href="#servicos"><ArrowIcon /></ArrowLink>
     </ArrowAnimation>
   </Container>
   );
