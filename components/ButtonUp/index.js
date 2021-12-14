@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ButtonArrow, Container, IconArrow, ScrollTop } from "./styles";
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { FaArrowUp } from "react-icons/fa";
+
 
 export default function ButtonUp() {
 
@@ -10,7 +11,7 @@ export default function ButtonUp() {
       <Link href="#">
         <ButtonArrow className="buttonUp" onClick={()=>{
            window.scrollTo({top: 0 , behavior: 'smooth'})}}>
-          <IconArrow icon={faArrowUp} className="arrowUp" / >
+          <IconArrow className="arrowUp"><FaArrowUp /></IconArrow>
         </ButtonArrow>
       </Link>
     </ScrollTop>

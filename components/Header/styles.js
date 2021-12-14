@@ -31,6 +31,7 @@ export const Center = styled.div`
   margin: auto;
   padding: ${({isSticky}) => isSticky ? '0' : '2.5rem'};
   background: ${({isSticky}) => (isSticky ? 'white' : 'none' )};
+  height: ${({isSticky}) => (isSticky ? '80px' : 'none')};
 `;
 
 export const LogoContainer = styled.div`

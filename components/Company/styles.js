@@ -18,7 +18,7 @@ export const Center = styled.div`
 
 export const Flex = styled.div`
   @media (min-width: 1280px) {
-    box-shadow: 4px 2px 20px 4px rgb(6 6 6 / 12%);
+
     padding: 1rem;
     margin-right: .1rem;
     display: flex;
@@ -35,21 +35,12 @@ export const Division = styled.div`
 export const Text = styled.p`
   font-size: 20px;
   font-weight: 600;
-
-  @media (min-width: 1280px) {
-    padding-right: 1rem;
-  }
 `;
 
 export const Picture = styled.img`
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-
-  @media (min-width: 1280px) {
-    width: 50%;
-    box-shadow: 0 5px 83px 0 rgb(6 6 6 / 12%);
-  }
 `;
 export const Box = styled.div`
   display: flex;
