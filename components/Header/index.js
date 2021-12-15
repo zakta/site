@@ -9,18 +9,19 @@ export default function Header() {
 
   const handleScroll= ()=> {
     const offset= window.scrollY;
-    if(offset > 600){
+
+    if (offset > 600){
       setSticky(true);
     }else{
       setSticky(false);
     }
   }
 
-  useEffect(()=> {
-    window.addEventListener('scroll', handleScroll);
-    return ()=> window.removeEventListener('scroll', handleScroll);
-  }, []);
+  // useEffect(()=> {
+  //   window.addEventListener('scroll', handleScroll);
 
+  //   return ()=> window.removeEventListener('scroll', handleScroll);
+  // }, []);
 
   return (
     <Container id="header" className={isSticky ? "sticky" : "notSticky"}>

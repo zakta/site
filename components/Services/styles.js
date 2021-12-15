@@ -5,7 +5,7 @@ export const Container = styled.section`
   max-width: 100%;
   min-width: 370px;
   margin: 0;
-  margin-top: -80px;
+  margin-top: 100vh;
   padding: 1.5rem 0;
 
   @media (min-width: 768px){

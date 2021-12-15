@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 80px;
   min-width: 320px;
   position: relative;
   z-index: 13;
-  transition: 1s linear ease-in-out;
 
   &.sticky {
     position: absolute;
@@ -16,7 +14,6 @@ export const Container = styled.div`
   }
 
   &.notSticky {
-    position: absolute;
     top: 0;
     width: 100%;
     z-index: 13;
@@ -25,30 +22,39 @@ export const Container = styled.div`
 
 export const Center = styled.div`
   align-items: center;
+  background: ${({isSticky}) => (isSticky ? 'white' : 'none' )};
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   margin: auto;
-  max-width: 1700px;
-  padding: ${({isSticky}) => isSticky ? '0' : '2.5rem'};
-  background: ${({isSticky}) => (isSticky ? 'white' : 'none' )};
+  max-width: 1400px;
+  padding: 1.25rem;
+  transition: all .15s ease;
 
-  @media (min-width: 768px){
-    padding: 1rem;
+  @media (min-width: 480px) {
+    padding: 1.5rem;
   }
 
-  @media (min-width: 940px){
-    padding: 2.5rem;
+  @media (min-width: 640px) {
+    padding: 1.75rem;
   }
+
+  @media (min-width: 870px) {
+    padding: 2rem;
+  }
+  //padding: ${({isSticky}) => isSticky ? '0' : '2.5rem'};
 `;
 
 export const LogoContainer = styled.div`
   cursor: pointer;
   height: 35px;
-  padding: 1rem 1.5rem;
+  padding: 0;
   transition: all .3s ease;
+  z-index: 12;
 
-  :hover{
-    transform: perspective(1px) scale(1.1) translateZ(0);
+  @media (min-width: 870px) {
+    &:hover{
+      transform: perspective(1px) scale(1.1) translateZ(0);
+    }
   }
 `;

@@ -1,55 +1,60 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-  padding-right: 1.5rem;
-`
 export const List = styled.ul`
+  background: #1a3968;
+  box-sizing: border-box;
+  flex-flow: column nowrap;
   display: flex;
-  flex-wrap: wrap;
-  margin:0;
-  padding: 0;
+  height: 100vh;
+  justify-content: space-around;
+  margin: 0;
+  min-height: 577px;
+  padding-left: 0;
+  padding-top: 91px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+  transition: transform .3s ease;
+  top: 0;
+  width: 100%;
+  z-index: ${({open}) => (open ? '11' : '0' )};
 
-  @media (max-width: 768px) {
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
-    flex-flow: column nowrap;
-    background: #1a3968;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    text-align: center;
+  &:nth-child(1){
+    justify-content: flex-end;
+  }
+
+  @media (min-width: 870px) {
+    background: none;
+    flex-flow: initial;
+    flex-wrap: nowrap;
+    height: initial;
     margin: 0;
-    z-index: ${({open}) => (open ? '11' : '0' )};
+    min-height: initial;
+    padding: 0;
+    position: initial;
+    right: initial;
+    text-align: initial;
+    transform: initial;
+    transition: none;
+    top: initial;
+    width: initial;
+    z-index: initial;
 
     &:nth-child(1){
-     justify-content: flex-end;
+      justify-content: flex-start;
     }
   }
 `;
+
 export const ListItem = styled.li`
   list-style-type: none;
-  padding-right: 10px;
   background-color: inherit;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
-  padding: 2.5rem;
-
 
   @media (min-width: 768px){
-    padding: 0;
-    display: flex;
-    font-size: 16px;
-    font-weight: 800;
-  }
-  @media (min-width: 800px){
-    padding: 0;
-    display: flex;
-    font-size: 18px;
-    font-weight: 800;
-  }
-  @media (min-width: 940px){
     padding: 0;
     display: flex;
     font-size: 20px;
@@ -58,22 +63,18 @@ export const ListItem = styled.li`
 
   a {
     color: white;
+    display: block;
+    padding: 1.5rem;
     position: relative;
     text-decoration: none;
     transition: all .2s ease;
 
-    :active{
-      color: #33afad;
+    :active {
+      background: #33afad;
     }
 
     @media (min-width: 768px){
       opacity: .75;
-      padding: 1rem 0;
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-
-    @media (min-width: 880px){
       padding: 1.5rem 0;
       margin-left: 1.5rem;
       margin-right: 1.5rem;
@@ -85,7 +86,7 @@ export const ListItem = styled.li`
         left: 0px;
         position: absolute;
         transition: width .2s ease-in-out 0s;
-        top: 10px;
+        top: 15px;
         width: 0;
       }
 
@@ -99,14 +100,45 @@ export const ListItem = styled.li`
         opacity: 1;
       }
     }
+
+    @media (min-width: 880px){
+      padding: 1.5rem 0;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
   }
 `;
 
 export const MenuToggle = styled.div`
-  padding-right: .6rem;
-  margin-right: 0;
+  @media (min-width: 870px) {
+    display: none;
+  }
+`;
 
-  @media (min-width: 768px) {
+export const ItemInfo = styled.li`
+  list-style-type: none;
+  padding: 1.5rem;
+
+  a {
+    color: #fff;
+    display: inline-block;
+    margin: .5rem 0;
+    opacity: .75;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &::before {
+      content: "";
+      background-color: #33afad;
+      height: 1px;
+      left: 0px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+  @media (min-width: 870px) {
     display: none;
   }
 `;

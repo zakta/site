@@ -1,7 +1,18 @@
-import { faLaptop, faShoppingCart, faWindowMaximize, faMobile, faSearch, faEdit, faSyncAlt, faUsersCog } from '@fortawesome/free-solid-svg-icons'
+// 3rd parties
+import {
+  faLaptop,
+  faShoppingCart,
+  faWindowMaximize,
+  faMobile,
+  faSearch,
+  faEdit,
+  faSyncAlt,
+  faUsersCog
+} from '@fortawesome/free-solid-svg-icons';
+
+// Styles
 import { Center, Container } from "./styles";
 import { Card, Icon} from "../Card/styles";
-
 
 export default function Services(){
   return(
