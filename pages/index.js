@@ -21,15 +21,15 @@ export default function Index() {
 
       <Services />
 
-      {/* <Company /> */}
+      {/* <Company />
 
-      {/* <Contact /> */}
+      <Contact />
 
-      {/* <ButtonUp /> */}
+      <ButtonUp />
 
-      {/* <Footer /> */}
+      <Footer />
 
-      {/* <CookiesModal /> */}
+      <CookiesModal /> */}
     </>
   );
 }

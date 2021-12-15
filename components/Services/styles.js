@@ -7,6 +7,7 @@ export const Container = styled.section`
   margin: 0;
   margin-top: 100vh;
   padding: 1.5rem 0;
+  position: relative;
 
   @media (min-width: 768px){
     display: flex;
@@ -15,15 +16,17 @@ export const Container = styled.section`
 `;
 
 export const Center = styled.div`
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: -20%;
   max-width: 1700px;
-  box-sizing: border-box;
 
   @media (min-width: 768px){
     justify-content: center;
     padding: 0;
     margin: 0;
+    margin-top: -100px;
   }
 `;

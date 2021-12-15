@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
   }
 
-  body{
+  body {
     background: white;
     font-family: 'Poppins', sans-serif;
     margin: 0;
