@@ -4,24 +4,25 @@ import Menu from "../Menu";
 import Link from "next/link";
 import { Center, Container, LogoContainer } from "./styles";
 
-export default function Header() {
+export default function Header () {
   const [isSticky, setSticky]  = useState(false);
+  const [open, setOpen] = useState(false);
 
-  const handleScroll= ()=> {
+  const handleScroll = ()=> {
     const offset= window.scrollY;
 
-    if (offset > 600){
+    if (offset > 600) {
       setSticky(true);
-    }else{
+    } else {
       setSticky(false);
     }
   }
 
-  // useEffect(()=> {
-  //   window.addEventListener('scroll', handleScroll);
+  useEffect(()=> {
+    window.addEventListener('scroll', handleScroll);
 
-  //   return ()=> window.removeEventListener('scroll', handleScroll);
-  // }, []);
+   return ()=> window.removeEventListener('scroll', handleScroll);
+   }, []);
 
   return (
     <Container id="header" className={isSticky ? "sticky" : "notSticky"}>
@@ -30,11 +31,13 @@ export default function Header() {
           <LogoContainer onClick={()=> {
             window.scrollTo({top:0, behavior: 'smooth'})
           }}>
-            <Logo theme={isSticky ? "primary" : "white"} height={35} />
+            <Logo
+              theme={isSticky ? open ? "white" : "primary" : "white" }
+              height={35} />
           </LogoContainer>
         </Link>
 
-        <Menu isSticky={isSticky}/>
+        <Menu isSticky={isSticky} open={open} setOpen={setOpen} />
       </Center>
     </Container>
   );

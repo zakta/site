@@ -25,10 +25,12 @@ export const Center = styled.div`
   background: ${({isSticky}) => (isSticky ? 'white' : 'none' )};
   box-sizing: border-box;
   display: flex;
+  height: ${({isSticky}) => (isSticky ? '80px' : 'none')};
   justify-content: space-between;
   margin: auto;
-  max-width: 1400px;
-  padding: 1.25rem;
+  max-width: ${({isSticky}) => (isSticky ? 'none' : '1400px')};
+  //padding: 1.25rem;
+  padding: ${({isSticky}) => isSticky ? '0' : '1.25rem'};
   transition: all .15s ease;
 
   @media (min-width: 480px) {
@@ -43,9 +45,7 @@ export const Center = styled.div`
     padding: 2rem;
   }
 
-  padding: ${({isSticky}) => isSticky ? '0' : '2.5rem'};
-  background: ${({isSticky}) => (isSticky ? 'white' : 'none' )};
-  height: ${({isSticky}) => (isSticky ? '80px' : 'none')};
+ 
 `;
 
 export const LogoContainer = styled.div`

@@ -3,16 +3,17 @@ import Link from "next/link";
 import Hamburguer from "../Hamburguer";
 import { List, ListItem, MenuToggle, ItemInfo } from "./styles";
 
-export default function Menu({ isSticky }) {
-  const [open, setOpen] = useState(false);
-
+export default function Menu({ isSticky, open, setOpen }) {
   function setOverflow(event) {
     document.body.classList[event]("hideOverflow");
   }
 
   return (
     <>
-      <List open={open}>
+      <List isSticky={isSticky} open={open} className={isSticky ? "sticky" : "notSticky"} 
+      onClick={()=> {
+        setOpen(!open);
+        if(open)setOverflow("remove");}}>
         <ListItem><Link href="#">Home</Link></ListItem>
         <ListItem><Link href="#servicos">Serviços</Link></ListItem>
         <ListItem><Link href="#empresa">Empresa</Link></ListItem>
