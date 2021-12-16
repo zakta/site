@@ -2,13 +2,15 @@ import styled from "styled-components";
 import { Card, Icon} from "../Card/styles";
 
 export const Container = styled.section`
+  align-items: center;
+  background-color: white;
   background-image: url("18_img.6703f879.png");
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 320px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-width: 320px;
+  position: relative;
 
   article {
     display: flex;

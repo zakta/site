@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.section`
-  background: pink;
   display: flex;
   flex-direction: column;
   left: 0;
@@ -15,7 +14,7 @@ export const Container = styled.section`
 `;
 
 export const Cover = styled.div`
-  background: url('../workspace.jpg') center no-repeat;
+  background: url('../workspace1.jpg') center no-repeat;
   background-size: cover;
   height: 100%;
   min-height: 493px;
@@ -53,12 +52,16 @@ export const PageTitle = styled.div`
     align-items: flex-start;
   }
 
+  @media (min-width: 870px) {
+    padding: 2rem;
+  }
 
   h1 {
     font-size: 30px;
     font-weight: 800;
     line-height: 45px;
     margin: 0;
+    max-width: 940px;
     opacity: .9;
     transition: all .15s ease;
 

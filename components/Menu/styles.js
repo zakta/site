@@ -15,7 +15,6 @@ export const List = styled.ul`
   right: 0;
   text-align: center;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
-  transition: transform .3s ease;
   top: 0;
   width: 100%;
   z-index: ${({open}) => (open ? '11' : '0' )};
@@ -54,7 +53,7 @@ export const ListItem = styled.li`
   font-size: 30px;
   text-transform: uppercase;
 
-  @media (min-width: 768px){
+  @media (min-width: 870px){
     padding: 0;
     display: flex;
     font-size: 20px;

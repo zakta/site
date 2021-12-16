@@ -6,13 +6,13 @@ export const Card = styled.div`
   box-sizing: border-box;
   box-shadow: 0 5px 83px 0 rgb(6 6 6 / 12%);
   display: flex;
+  margin-top: 1.4rem;
   position: relative;
   padding: 2.632rem;
   flex-direction: column;
   justify-content: center;
-  margin: 1.5rem;
   transition: .3s all ease-in-out;
-  width: 80%;
+  width: 90%;
 
   :after{
     content: "";
@@ -30,23 +30,6 @@ export const Card = styled.div`
     width: 100%;
     height: 100%;
   }
-
-  /* :hover {
-    svg {
-      color: ${({ animate }) => (animate ? "white" : "rgba(51,175,173,1)")};
-    }
-    h3{
-      color:${({ animate }) => (animate ? "white" : "black")}
-    }
-    p{
-      color: ${({ animate }) => (animate ? "white" : "black")}
-    }
-  } */
-
-  /* :hover::after{
-    transform: scale(1);
-    opacity: ${({ animate }) => (animate ? 1 : 0)};
-  } */
 
   h3{
     color: #060606;
@@ -85,7 +68,7 @@ export const Card = styled.div`
 
   @media (min-width: 768px){
     justify-content: center;
-    width: 26%;
+    width: 45%;
   }
   @media (min-width: 980px){
     justify-content: center;

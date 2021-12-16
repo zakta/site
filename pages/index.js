@@ -15,13 +15,13 @@ export default function Index() {
         <title>Home | Zakta - Tecnologia</title>
       </Head>
 
-      {/* <Loader /> */}
+      <Loader />
 
       <Home />
 
       <Services />
 
-      {/* <Company />
+      <Company />
 
       <Contact />
 
@@ -29,7 +29,7 @@ export default function Index() {
 
       <Footer />
 
-      <CookiesModal /> */}
+      <CookiesModal />
     </>
   );
 }

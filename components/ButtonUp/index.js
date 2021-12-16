@@ -3,7 +3,6 @@ import { ButtonArrow, Container, IconArrow, ScrollTop } from "./styles";
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 export default function ButtonUp() {
-
   return (
     <Container>
       <ScrollTop>

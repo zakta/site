@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.footer`
   background: #203c66;
   min-width: 320px;
+  position: relative;
 `;
 
 export const Box = styled.div`

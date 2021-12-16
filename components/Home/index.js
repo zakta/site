@@ -26,9 +26,9 @@ export default function Home(){
       <Header />
 
       <PageTitle>
-        <h1>Tecnologia Aplicada<br />em Soluções Digitais</h1>
+        <h1>Tecnologia Aplicada em Soluções Digitais</h1>
 
-        <p>Somos experts no desenvolvimento de sites e aplicativos para internet. Entendemos as necessidades do negócio e trabalhamos para construir soluções digitais com agilidade, flexibilidade e precisão.</p>
+        <p><span>Somos experts no desenvolvimento de sites e aplicativos para internet. Entendemos as necessidades do negócio e trabalhamos para construir soluções digitais com agilidade, flexibilidade e precisão.</span></p>
 
         <ButtonLink href="#servicos">Serviços</ButtonLink>
 

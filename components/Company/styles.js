@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   padding: 1.5rem;
   background: white;
+  position: relative;
 
   h3 {
     font-size: 30px;

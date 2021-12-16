@@ -3,10 +3,12 @@ import styled from 'styled-components';
 import { Icon } from '../Card/styles';
 
 export const Container = styled.section`
+  background: white;
+  box-sizing: border-box;
   display: flex;
   justify-content: flex-end;
-  box-sizing: border-box;
   height: 80px;
+  position: relative;
 `;
 
 export const ScrollTop= styled.div`

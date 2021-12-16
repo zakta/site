@@ -25,7 +25,7 @@ export const CookieNotice = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
-  max-width: 1600px;
+  max-width: 1400px;
 
   a {
     color: #1a3968;
@@ -78,7 +78,8 @@ export const CookieNotice = styled.div`
 
   }
 
-  @media (min-width: 920px) {
+  @media (min-width: 870px) {
+    padding: 0 2rem;
     flex-direction: row;
     justify-content: space-between;
 
