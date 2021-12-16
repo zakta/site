@@ -13,7 +13,7 @@ import {
   ArrowIcon
 } from "./styles";
 
-export default function Home(){
+export default function Home () {
   return(
     <Container>
       <Cover />

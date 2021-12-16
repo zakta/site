@@ -53,7 +53,8 @@ export const ButtonWhats= styled.a`
 export const IWhatsapp= styled(BsWhatsapp)`
   color: white;
   font-size: 40px;
-   padding-right: 1rem;
+  padding-right: 1rem;
+  
 
 
 
