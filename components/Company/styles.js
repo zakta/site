@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  background: #f6f6f6;
+  background: #f8f8f8;
   padding: 1.5rem;
   position: relative;
 

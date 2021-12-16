@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Card = styled.div`
   background: white;
   box-sizing: border-box;
-  box-shadow: 0 5px 83px 0 rgb(6 6 6 / 12%);
+  box-shadow: 0 5px 40px 0 rgb(6 6 6 / 8%);
   display: flex;
   margin-top: 1.4rem;
   position: relative;
@@ -77,6 +77,7 @@ export const Card = styled.div`
     width: 30%;
   }
 `;
+
 export const Icon = styled.div`
   z-index: 10;
   color: #1a3968;

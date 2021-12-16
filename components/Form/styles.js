@@ -5,33 +5,29 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
 
-  &:last-child{
-    align-items: flex-end;
-  }
-
   @media (min-width: 768px){
-    width: 60%;
     margin: 0;
     justify-content: center;
   }
 
   button {
-    background: #1a3968;
-    border: none;
-    color: white;
+    align-self: flex-end;
+    background: transparent;
+    border: 1px solid #1a3968;
+    color: #1a3968;
+    cursor: pointer;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     padding: 1rem;
     margin: 1rem 0;
-    width: 200px;
     text-transform: uppercase;
-    cursor: pointer;
-    align-self: flex-end;
-
+    transition: all .15s ease;
+    width: 200px;
 
     :hover {
-      background: #33afad;
+      background: #1a3968;
+      color: white;
     }
   }
 `;

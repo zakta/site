@@ -8,7 +8,7 @@ export const Container = styled.footer`
 
 export const Box = styled.div`
   margin: auto;
-  max-width: 1700px;
+  max-width: 1400px;
   width: 100%;
 
   @media (min-width: 640px) {
