@@ -1,10 +1,11 @@
-import { Container, Picture, Text, Box, Notes, Center } from "./styles";
+import About from "../About";
+import { Container, Picture, Text, Box, Notes, Center, Numbers } from "./styles";
 
 export default function Company() {
   return (
     <Container id="empresa">
       <Center>
-        <h2>Empresa</h2>
+        {/* <h2>Empresa</h2>
         <h3>
           A Zakta existe para facilitar a vida das pessoas e reinventar as
           empresas através de novos produtos e da tecnologia.
@@ -30,7 +31,8 @@ export default function Company() {
           ajuda a tomar decisões melhores, construir produtos mais relevantes,
           antecipar tendências e acelerar as empresas.
         </Text>
-        <Text>Estamos juntos para reinventar!</Text>
+        <Text>Estamos juntos para reinventar!</Text>  */}
+        <About />
         <Picture
           src="/united-image.jpg"
           alt="Grupo de trabalhadores com mãos unidas"
@@ -48,6 +50,7 @@ export default function Company() {
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium.
             </p>
+            <Numbers>01</Numbers>
           </Notes>
           <Notes>
             <h4 className="text-grey">Planejamento de empresas</h4>
@@ -55,6 +58,7 @@ export default function Company() {
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium
             </p>
+            <Numbers>02</Numbers>
           </Notes>
           <Notes>
             <h4>Crescimento de empresas</h4>
@@ -62,7 +66,9 @@ export default function Company() {
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium.
             </p>
+            <Numbers>03</Numbers>
           </Notes>
+
         </Box>
       </Center>
     </Container>

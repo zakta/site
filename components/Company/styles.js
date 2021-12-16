@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   padding: 1.5rem;
-  background: white;
+  background: #f6f6f6;
 
   h3 {
     font-size: 30px;
@@ -27,6 +27,7 @@ export const Picture = styled.img`
   background-size: cover;
 `;
 export const Box = styled.div`
+  background: #fff;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -44,15 +45,16 @@ export const Box = styled.div`
 
 export const Notes = styled.div`
   padding-left: 1rem;
+  position: relative;
 
   :nth-child(2) {
     background: #1a3968;
   }
   :nth-child(3) {
-    background: #f6f6f6;
+    background: #f8f8f8;
   }
   :nth-child(4) {
-    background: black;
+    background: #060606;
   }
 
   @media (max-width: 720px) {
@@ -127,18 +129,31 @@ export const Notes = styled.div`
   }
 `;
 
-/* export const Numbers = styled.div`
-  display: none;
-  font-size: 167px;
+ export const Numbers = styled.div`
+  font-size: 15.789rem;
   margin: 0;
-  opacity: 0.05;
-  color: #fcfcfc;
+  opacity: 0.04;
+  color: #fbfbfb;
   z-index: 1;
-  transform: translate(51%, -125%);
-  font-weight: 900;
+  position: absolute;
+  position: absolute;
+  top: -2.632rem;
+  right: -1.632rem;
+  font-weight: 700;
 
-  @media (min-width: 768px) {
-    transform: translate(24px, -238px);
+  @media (min-width: 627px) {
+    top: -5.632rem;
+    right: -1.632rem;
   }
-`;
-*/
+  @media (min-width: 720px) {
+    right: -1.632rem;
+  }
+  @media (min-width: 768px) {
+    top: -2.632rem;
+    right: -1.105rem;
+  }
+  @media (min-width: 1000px) {
+    top: -4.632rem;
+    font-size: 215px
+  }
+`
