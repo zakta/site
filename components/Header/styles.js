@@ -11,6 +11,8 @@ export const Container = styled.div`
     width: 100%;
     z-index: 13;
     position: fixed;
+    background: white;
+    transition: all ease .2s;
   }
 
   &.notSticky {
@@ -28,9 +30,9 @@ export const Center = styled.div`
   height: ${({isSticky}) => (isSticky ? '80px' : 'none')};
   justify-content: space-between;
   margin: auto;
-  max-width: ${({isSticky}) => (isSticky ? 'none' : '1400px')};
-  //padding: 1.25rem;
-  padding: ${({isSticky}) => isSticky ? '0' : '1.25rem'};
+  max-width: 1400px;
+  padding: 1.25rem;
+  //padding: ${({isSticky}) => isSticky ? '0' : '1.25rem'};
   transition: all .15s ease;
 
   @media (min-width: 480px) {
