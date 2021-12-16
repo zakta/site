@@ -11,7 +11,6 @@ export const Form = styled.form`
   }
 
   button {
-    align-self: flex-end;
     background: transparent;
     border: 1px solid #1a3968;
     color: #1a3968;
