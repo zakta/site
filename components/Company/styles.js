@@ -14,6 +14,9 @@ export const Container = styled.section`
 export const Center = styled.div`
   margin: auto;
   max-width: 1700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const Text = styled.p`

@@ -8,6 +8,7 @@ import Home from "../components/Home";
 import Loader from "../components/Loader";
 import CookiesModal from "../components/CookiesModal";
 import Services from "../components/Services";
+import ModalWhatsapp from "../components/ModalWhatsapp";
 
 export default function Index() {
   return (
@@ -23,6 +24,7 @@ export default function Index() {
       <Company  />
       <Contact  />
       <ButtonUp />
+      <ModalWhatsapp />
       <Footer />
     </div>
   );

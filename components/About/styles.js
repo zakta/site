@@ -3,6 +3,34 @@ import styled from 'styled-components';
 export const Container= styled.div`
   padding: 0;
   width: 100%;
+ /*
+    @media (min-width: 768px){
+      width: 97%;
+  }
+    @media (min-width: 900px){
+      width: 95%;
+  }
+    @media (min-width: 980px){
+      width: 99%;
+  }
+    @media (min-width: 1060px){
+      width: 97%;
+  }
+    @media (min-width: 1250px){
+      width: 95%;
+  }
+    @media (min-width: 1463px){
+      width: 100%;
+  }
+    @media (min-width: 1600px){
+      width: 99%;
+  }
+    @media (min-width: 1700px){
+      width: 97%;
+  }
+    @media (min-width: 1900px){
+      width: 96%;
+  }*/
 `
 export const AboutDivision= styled.div`
     display: flex;
