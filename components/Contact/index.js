@@ -8,6 +8,7 @@ export default function Contact() {
   return (
     <Container id="contato">
       <h2>Contato</h2>
+
       <ContactInfo>
         <article>
           <CardContact animate={false}>
@@ -23,12 +24,15 @@ export default function Contact() {
             <p>contato@zakta.com.br</p>
           </CardContact>
         </article>
+
         <ContactUs>
           <h4>Você pode nos escrever</h4>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. When an unknown printer took a galley.</p>
         </ContactUs>
       </ContactInfo>
+
       <ContactForm />
+
       <Notification />
     </Container>
   );

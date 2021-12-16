@@ -13,7 +13,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Home | Zakta - Tecnologia</title>
+        <title>Tecnologia Aplicada em Soluções Digitais | Zakta</title>
       </Head>
 
       <Loader />
