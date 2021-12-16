@@ -1,29 +1,32 @@
-import { faPhone, faMailBulk } from "@fortawesome/free-solid-svg-icons";
-import { CardContact, Container, IconContact, ContactInfo } from "./style";
+
+import { CardContact, Container, IconContact, ContactInfo,ContactUs } from "./style";
 import ContactForm from "../Form/index.js";
 import Notification from "../Notification";
+import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 
 export default function Contact() {
   return (
     <Container id="contato">
       <h2>Contato</h2>
+      <ContactInfo>
         <article>
           <CardContact animate={false}>
-            <IconContact icon={faPhone} />
+           <IconContact><AiOutlinePhone /></IconContact>
             <h3>Telefone</h3>
             <p>+55 11 93302 0321</p>
             <p>+55 11 93302 0321</p>
           </CardContact>
           <CardContact animate={false}>
-            <IconContact icon={faMailBulk} />
+          <IconContact><AiOutlineMail /></IconContact>
             <h3>E-mail</h3>
             <p>contato@zakta.com.br</p>
             <p>contato@zakta.com.br</p>
           </CardContact>
         </article>
-      <ContactInfo>
-        <h4>Você pode nos escrever</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. When an unknown printer took a galley.</p>
+        <ContactUs>
+          <h4>Você pode nos escrever</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. When an unknown printer took a galley.</p>
+        </ContactUs>
       </ContactInfo>
       <ContactForm />
       <Notification />

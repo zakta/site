@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled, { keyframes } from 'styled-components';
+import { BsArrowDownRight } from "react-icons/bs";
 
 export const Container = styled.section`
   display: flex;
@@ -123,9 +123,10 @@ export const ButtonLink = styled.a`
 
 export const ArrowAnimation= styled.div`
   display: flex;
+  //display: none;
   box-sizing: border-box;
   width: 30px;
-  margin: 2.8rem 0 0;
+  margin: 0;
   z-index: 12;
 `;
 
@@ -135,23 +136,31 @@ export const ArrowLink= styled.a`
 
 const bounce = keyframes`
   0%{
-    top:0;
-  }
-  50%{
     top: -30px;
   }
+  50%{
+    top: -75px;
+  }
   70%{
-    top: -15px;
+    top: -40px;
   }
   100%{
-    top: 0;
+    top: -30px;
   }
 `;
 
-export const ArrowIcon = styled(FontAwesomeIcon)`
+export const ArrowIcon = styled(BsArrowDownRight)`
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   align-self: flex-start;
   position: relative;
   animation: ${bounce} 1s linear infinite;
+  transform: rotate(45deg);
+
+  @media(min-width: 450px){
+    font-size: 45px;
+  }
+  @media(min-width: 768px){
+    font-size: 50px;
+  }
 `;

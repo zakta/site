@@ -7,39 +7,43 @@ export const Container = styled.section`
   background-image: url("18_img.6703f879.png");
   background-repeat: no-repeat;
   background-size: cover;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   min-width: 320px;
+  padding: 1.5rem;
   position: relative;
+  width: 100%;
 
   article {
+    align-items: center;
     display: flex;
     box-sizing: border-box;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
     width: 100%;
-    padding: 1.5rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1100px) {
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
     }
   }
 `;
 
 export const CardContact = styled(Card)`
   border: 1px solid #efefef;
-  padding: 2rem;
-  box-sizing: border-box;
   width: 100%;
   box-shadow: none;
+  align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1100px) {
     display: flex;
     padding: 0;
-    margin: .5rem;
-    width: 28%;
+    min-width: 250px;
+    margin: 0;
+    width: 49%;
   }
   h3 {
     margin: 0;
@@ -48,7 +52,7 @@ export const CardContact = styled(Card)`
 
   p {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     margin: 0;
     width: 100%;
     text-align: center;
@@ -57,26 +61,38 @@ export const CardContact = styled(Card)`
 
 export const IconContact = styled(Icon)`
   font-size: 3rem;
+
+  @media(min-width: 1100px){
+    padding-top: 2rem;
+  }
 `;
 
 export const ContactInfo = styled.div`
   box-sizing: border-box;
   margin: 0;
   text-align: left;
-  padding: 1.5rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: 768px){
     width: 60%;
     margin: 0;
   }
 
-  h4{
-    margin: 1rem 0;
-    font-size: 25px;
-  }
-  p{
-    font-weight: 600;
-    font-size: 20px;
-  }
+`
+export const ContactUs= styled.div`
+
+  margin: 2rem 0;
+
+    h4{
+        margin: 0;
+        margin-bottom: 2rem;
+        font-size: 25px;
+      }
+    p{
+      margin: 0;
+      font-weight: 600;
+      font-size: 20px;
+    }
 `

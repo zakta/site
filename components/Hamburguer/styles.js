@@ -36,4 +36,5 @@ export const Burguer= styled.div`
     transform: ${({open})=> open ? 'rotate(-45deg)' : 'rotate(0)'};
     transition: all .4s linear;
   }
+
 `;

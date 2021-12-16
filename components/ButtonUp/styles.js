@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import { Icon } from '../Card/styles';
-
 export const Container = styled.section`
   background: white;
   box-sizing: border-box;
@@ -36,7 +34,7 @@ export const ButtonArrow = styled.button`
   transition: all .15s ease;
 `;
 
-export const IconArrow = styled(Icon)`
+export const IconArrow = styled.div`
   font-size: 20px;
   color: #ffff;
   transition: all .15s ease;

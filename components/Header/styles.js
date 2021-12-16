@@ -42,7 +42,10 @@ export const Center = styled.div`
   @media (min-width: 870px) {
     padding: 2rem;
   }
-  //padding: ${({isSticky}) => isSticky ? '0' : '2.5rem'};
+
+  padding: ${({isSticky}) => isSticky ? '0' : '2.5rem'};
+  background: ${({isSticky}) => (isSticky ? 'white' : 'none' )};
+  height: ${({isSticky}) => (isSticky ? '80px' : 'none')};
 `;
 
 export const LogoContainer = styled.div`

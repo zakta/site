@@ -1,6 +1,3 @@
-// 3rd parties
-import { faLongArrowAltDown } from '@fortawesome/free-solid-svg-icons';
-
 // Components
 import Header from '../Header';
 
@@ -33,9 +30,9 @@ export default function Home(){
         <ButtonLink href="#servicos">Serviços</ButtonLink>
 
         {/* <ArrowAnimation>
-          <ArrowLink href="#servicos"><ArrowIcon icon={faLongArrowAltDown} /></ArrowLink>
+          <ArrowLink href="#servicos"><ArrowIcon /></ArrowLink>
         </ArrowAnimation> */}
       </PageTitle>
-    </Container>
+  </Container>
   );
 };

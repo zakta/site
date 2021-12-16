@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Card = styled.div`
   background: white;
@@ -78,7 +77,7 @@ export const Card = styled.div`
     width: 30%;
   }
 `;
-export const Icon = styled(FontAwesomeIcon)`
+export const Icon = styled.div`
   z-index: 10;
   color: #1a3968;
   font-size: 4rem;
