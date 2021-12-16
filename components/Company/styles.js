@@ -13,11 +13,16 @@ export const Container = styled.section`
 `;
 
 export const Center = styled.div`
-  margin: auto;
-  max-width: 1700px;
+  align-items: center;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: auto;
+  max-width: 1400px;
+
+  @media (min-width: 870px) {
+    padding: 0 2rem;
+  }
 `;
 
 export const Text = styled.p`
