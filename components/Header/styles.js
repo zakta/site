@@ -10,7 +10,7 @@ export const Container = styled.div`
     border-bottom: 1px solid #efefef;
     position: fixed;
     top: 0;
-    transition: all ease .2s;
+    transition: all .15s ease;
     width: 100%;
     z-index: 13;
   }
@@ -20,7 +20,7 @@ export const Container = styled.div`
     width: 100%;
     z-index: 13;
   }
-  `;
+`;
 
 export const Center = styled.div`
   align-items: center;
