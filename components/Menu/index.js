@@ -1,19 +1,28 @@
-import { useState } from "react";
+// 3rd parties
 import Link from "next/link";
+
+// Components
 import Hamburguer from "../Hamburguer";
+
+// Styles
 import { List, ListItem, MenuToggle, ItemInfo } from "./styles";
 
-export default function Menu({ isSticky, open, setOpen }) {
-  function setOverflow(event) {
+export default function Menu ({ isSticky, open, setOpen }) {
+  function setOverflow (event) {
     document.body.classList[event]("hideOverflow");
   }
 
   return (
     <>
-      <List isSticky={isSticky} open={open} className={isSticky ? "sticky" : "notSticky"} 
-      onClick={()=> {
-        setOpen(!open);
-        if(open)setOverflow("remove");}}>
+      <List
+        isSticky={isSticky}
+        open={open}
+        className={isSticky ? "sticky" : "notSticky"}
+        onClick={() => {
+          setOpen(false);
+
+          if (open) setOverflow("remove");
+        }}>
         <ListItem><Link href="#">Home</Link></ListItem>
         <ListItem><Link href="#servicos">Serviços</Link></ListItem>
         <ListItem><Link href="#empresa">Empresa</Link></ListItem>
@@ -31,9 +40,9 @@ export default function Menu({ isSticky, open, setOpen }) {
       </List>
 
       <MenuToggle onClick={() => {
-        setOpen(!open)
+        setOpen(!open);
 
-        setOverflow(!open ? "add" : "remove")
+        setOverflow(!open ? "add" : "remove");
       }}>
         <Hamburguer open={open} isSticky={isSticky} />
       </MenuToggle>

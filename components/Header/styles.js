@@ -6,13 +6,13 @@ export const Container = styled.div`
   z-index: 13;
 
   &.sticky {
-    position: absolute;
+    background: white;
+    border-bottom: 1px solid #efefef;
+    position: fixed;
     top: 0;
+    transition: all ease .2s;
     width: 100%;
     z-index: 13;
-    position: fixed;
-    background: white;
-    transition: all ease .2s;
   }
 
   &.notSticky {
@@ -47,7 +47,7 @@ export const Center = styled.div`
     padding: 2rem;
   }
 
- 
+
 `;
 
 export const LogoContainer = styled.div`
