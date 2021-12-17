@@ -41,12 +41,53 @@ export const Center = styled.div`
   @media (min-width: 870px) {
     padding: 0 2rem;
   }
+ 
 `;
 
+export const ContactInfo = styled.div`
+    position: relative;
+    height: 210px;
+    z-index:1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 3rem;
+  
+  h1{
+    position: absolute;
+    z-index: -1;
+    font-size: 320px;
+    font-weight: 800;
+    opacity: .5;
+    color: #f3f3f3;
+    top: -340px;
+    right: -189px;
+  }
+
+
+  h3{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41.3885px;
+    margin: 0;
+    max-width: 39.842rem;
+    padding: 0;
+    text-transform: capitalize;
+    width: 100%;
+  }
+
+`
+export const TitleContact = styled.h2`
+    margin-top: 2rem;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #1a3968;
+`
 export const Card = styled(CardComp)`
   width: 90%;
 
-  h3 {
+  h4 {
     margin: 0;
     padding: 0.5rem;
   }
