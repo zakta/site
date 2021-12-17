@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.section`
   background: white;
@@ -16,17 +16,28 @@ export const Center = styled.div`
   padding: 0 2.1rem;
 `;
 
-export const ScrollTop= styled.div`
+export const ScrollTop = styled.div`
   display: flex;
-  transition: all .3s ease;
-  transition: all .15s ease;
+  transition: all 0.3s ease;
+  transition: all 0.15s ease;
 
-  &:hover {
-    .buttonUp{
+  &:active {
+    .buttonUp {
       background: white;
     }
-    .arrowUp{
+    .arrowUp {
       color: #1a3968;
+    }
+  }
+
+  @media (min-width: 870px) {
+    &:hover {
+      .buttonUp {
+        background: white;
+      }
+      .arrowUp {
+        color: #1a3968;
+      }
     }
   }
 `;
@@ -39,13 +50,13 @@ export const ButtonArrow = styled.button`
   display: flex;
   height: 60px;
   justify-content: center;
-  transition: all .15s ease;
+  transition: all 0.15s ease;
   width: 60px;
 `;
 
 export const IconArrow = styled.div`
   color: #ffff;
   font-size: 25px;
-  line-height: .1;
-  transition: all .15s ease;
+  line-height: 0.1;
+  transition: all 0.15s ease;
 `;
