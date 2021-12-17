@@ -12,9 +12,10 @@ export const Container = styled.section`
   flex-direction: column;
   margin: 0 auto;
   min-width: 320px;
-  padding: 1.5rem;
+  padding: 1.5rem ;
   position: relative;
   width: 100%;
+  padding-top: 4rem;
 
   article {
     align-items: center;

@@ -37,7 +37,7 @@ export const ModalWhats= styled.div`
 
   @media (min-width: 768px){
     :hover{
-      animation:${slide} 1s linear forwards;
+      animation:${slide} 1s linear .5s forwards ;
     }
   }
 `
