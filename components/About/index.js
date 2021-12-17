@@ -7,7 +7,7 @@ export default function About() {
       <AboutDivision>
         <AboutInfo>
           <h2>Sobre Nós</h2>
-          <h3>Transormamos ideias em realidade.</h3>
+          <h3>Transformamos ideias em realidade.</h3>
           <Owners>
             <h4>Fernanda F. Silva</h4>
             <p>CEO da Empresa</p>
@@ -54,7 +54,7 @@ export default function About() {
           <Check>
             <GoCheck />
           </Check>
-          <p>Garantia 30 dias ou Devolvemos seu Dinheiro</p>
+          <p>Suporte e sustentação contínuos</p>
         </li>
       </List>
     </Container>
