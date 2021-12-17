@@ -18,8 +18,7 @@ export const Center = styled.div`
 
 export const ScrollTop = styled.div`
   display: flex;
-  transition: all 0.3s ease;
-  transition: all 0.15s ease;
+  transition: all .15s ease;
 
   &:active {
     .buttonUp {
