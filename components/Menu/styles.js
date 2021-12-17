@@ -107,6 +107,10 @@ export const ListItem = styled.li`
       :hover{
         opacity: 1;
       }
+
+      :active {
+        background: initial;
+      }
     }
 
     @media (min-width: 880px){

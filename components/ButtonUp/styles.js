@@ -3,16 +3,22 @@ import styled from 'styled-components';
 export const Container = styled.section`
   background: white;
   box-sizing: border-box;
-  display: flex;
-  justify-content: flex-end;
   height: 80px;
   position: relative;
+  `;
+
+export const Center = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+  max-width: 1400px;
+  padding: 0 2rem;
 `;
 
 export const ScrollTop= styled.div`
   display: flex;
   transition: all .3s ease;
-  margin-right: 1.5rem;
   transition: all .15s ease;
 
   &:hover {

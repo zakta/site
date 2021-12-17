@@ -12,24 +12,26 @@ export default function Header () {
     const offset= window.scrollY;
 
     if (offset > 600) {
-      setSticky(true);
-    } else {
-      setSticky(false);
+      return setSticky(true);
     }
+
+    setSticky(false);
   }
 
   useEffect(()=> {
     window.addEventListener('scroll', handleScroll);
 
-   return ()=> window.removeEventListener('scroll', handleScroll);
-   }, []);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  console.log('open', open);
 
   return (
     <Container id="header" className={isSticky ? "sticky" : "notSticky"}>
       <Center isSticky={isSticky}>
         <Link href="#">
-          <LogoContainer onClick={()=> {
-            window.scrollTo({top:0, behavior: 'smooth'})
+          <LogoContainer onClick={() => {
+            window.scrollTo({ top:0, behavior: 'smooth' });
           }}>
             <Logo
               theme={isSticky ? open ? "white" : "primary" : "white" }
