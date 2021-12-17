@@ -6,13 +6,13 @@ export const Container = styled.section`
   min-width: 370px;
   margin: 0;
   margin-top: 100vh;
-  padding-bottom: 1.4rem;
   position: relative;
+  padding-top: 5rem;
 
   @media (min-width: 768px){
     display: flex;
     justify-content: center;
-    padding-bottom: 3rem;
+    padding-top: 8rem;
   }
 `;
 
@@ -22,6 +22,7 @@ export const Center = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   max-width: 1400px;
+  padding-top: 3rem;  
 
   @media (min-width: 768px){
     padding: 0;

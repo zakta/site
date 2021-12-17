@@ -29,9 +29,9 @@ export default function Home () {
 
         <ButtonLink href="#servicos">Serviços</ButtonLink>
 
-        {/* <ArrowAnimation>
+        <ArrowAnimation>
           <ArrowLink href="#servicos"><ArrowIcon /></ArrowLink>
-        </ArrowAnimation> */}
+        </ArrowAnimation>
       </PageTitle>
   </Container>
   );

@@ -123,7 +123,6 @@ export const ButtonLink = styled.a`
 
 export const ArrowAnimation= styled.div`
   display: flex;
-  //display: none;
   box-sizing: border-box;
   width: 30px;
   margin: 0;
@@ -136,16 +135,16 @@ export const ArrowLink= styled.a`
 
 const bounce = keyframes`
   0%{
-    top: -30px;
+    top: -10px;
   }
   50%{
-    top: -75px;
+    top: -50px;
   }
   70%{
-    top: -40px;
+    top: -30px;
   }
   100%{
-    top: -30px;
+    top: -10px;
   }
 `;
 
@@ -156,6 +155,7 @@ export const ArrowIcon = styled(BsArrowDownRight)`
   position: relative;
   animation: ${bounce} 1s linear infinite;
   transform: rotate(45deg);
+  left: -22px;
 
   @media(min-width: 450px){
     font-size: 45px;
