@@ -142,8 +142,8 @@ export const Notes = styled.div`
  export const Numbers = styled.div`
   font-size: 15.789rem;
   margin: 0;
-  opacity: 0.04;
-  color: #fbfbfb;
+  opacity: 0.07;
+  color: #b1b1b1;
   z-index: 1;
   position: absolute;
   position: absolute;
