@@ -61,7 +61,7 @@ export const Notes = styled.div`
     background: #1a3968;
   }
   :nth-child(3) {
-    background: #f8f8f8;
+    background: #302b2b11;
   }
   :nth-child(4) {
     background: #060606;

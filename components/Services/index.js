@@ -20,8 +20,8 @@ export default function Services() {
           </Icon>
           <h3>Criação de Sites</h3>
           <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium.
+            Sites responsivos, com navegação intuitiva e design profissional.
+            Sites com fomo em geração de resultados. 
           </p>
         </Card>
         <Card animate={true}>
@@ -30,8 +30,8 @@ export default function Services() {
           </Icon>
           <h3>Otimização de Sites - SEO</h3>
           <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium.
+            Otimização de sites para destaque no Google. Palavras-chave
+            que alavancam seus acessos orgânicos.
           </p>
         </Card>
         <Card animate={true}>
@@ -40,8 +40,8 @@ export default function Services() {
           </Icon>
           <h3>Sistemas em Nuvem</h3>
           <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium.
+            Programas e serviços de armazenamento online. Acesso 24 
+            horas por dia de qualquer lugar.
           </p>
         </Card>
         <Card animate={true}>
@@ -50,8 +50,8 @@ export default function Services() {
           </Icon>
           <h3>Marketing de Conteúdo - SEM</h3>
           <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium.
+            Produção de conteúdo para Blogs, com foco em atração a de visitantes 
+            através do Google.
           </p>
         </Card>
         <Card animate={true}>
@@ -60,8 +60,8 @@ export default function Services() {
           </Icon>
           <h3>Campanha Google Adwords</h3>
           <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium.
+          Planejamento estratégico organizando por categorias seus produtos e
+          serviços.    
           </p>
         </Card>
         <Card animate={true}>
@@ -70,8 +70,8 @@ export default function Services() {
           </Icon>
           <h3>Criação de Aplicativos</h3>
           <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium.
+            Criação de aplicativos para Iphone e Android. Desenvolvimento de 
+            aplicativos sob medida.
           </p>
         </Card>
         <Card animate={true}>
@@ -80,8 +80,8 @@ export default function Services() {
           </Icon>
           <h3>Lojas Virtuais</h3>
           <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium.
+            Criação de lojas virtuais com alta performance. Gestão de pedidos, 
+            e integração com pagamento online.
           </p>
         </Card>
         <Card animate={true}>
@@ -90,8 +90,8 @@ export default function Services() {
           </Icon>
           <h3>Intranet e Extranet</h3>
           <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium.
+            Sistemas de redes para distribuição de informações garantindo 
+            a segurança e privacidade.
           </p>
         </Card>
         <Card animate={true}>
@@ -100,8 +100,8 @@ export default function Services() {
           </Icon>
           <h3>Manutenção de Sites</h3>
           <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium.
+            Atendimento técnico especializado ágil e eficaz. Mantenha seu site
+            moderno e atualizado.
           </p>
         </Card>
       </Center>

@@ -51,7 +51,8 @@ export default function Contact() {
         <FormTitle>Você pode nos escrever</FormTitle>
 
         <FormDescription>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. When an unknown printer took a galley.
+          Por favor preencha este formulário, seus dados serão privadas e utilizados
+          apenas para entendermos melhor suas necessidades. Em até um dia útil responderemos a sua consulta.
         </FormDescription>
 
         <ContactForm />

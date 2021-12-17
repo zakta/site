@@ -29,19 +29,19 @@ export default function ContactForm() {
     validationSchema: Yup.object({
       name: Yup.string()
         .min(3, "O nome precisa ter no mínimo 3 caracteres.")
-        .required("É preciso preencher o nome."),
+        .required("Preencha o nome."),
       tel: Yup.string()
         .min(15, "O telefone precisa ter no mínimo 11 números.")
-        .required("É preciso preencher o número."),
+        .required("Preencha o número."),
       email: Yup.string()
         .email("E-mail inválido.")
-        .required("É preciso preencher o e-mail."),
+        .required("Preencha o e-mail."),
       subject: Yup.string()
         .min(10, "O assunto precisa ter no máximo 10 caracteres")
-        .required("É preciso preencher o assunto."),
+        .required("Preencha o assunto."),
       message: Yup.string()
         .min(20, "A mensagem deve ter no mínimo 20 caracteres.")
-        .required("É preciso preencher a mensagem."),
+        .required("Preencha a mensagem."),
     }),
     onSubmit: () => {
       showPopUp();
