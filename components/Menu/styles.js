@@ -132,7 +132,7 @@ export const ItemInfo = styled.li`
   padding: 1.5rem;
 
   a {
-    color: #fff;
+    color: white;
     display: inline-block;
     margin: .5rem 0;
     opacity: .75;

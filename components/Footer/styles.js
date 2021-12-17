@@ -7,8 +7,10 @@ export const Container = styled.footer`
 `;
 
 export const Box = styled.div`
+  box-sizing: border-box;
   margin: auto;
   max-width: 1400px;
+  padding: 0 2rem;
   width: 100%;
 
   @media (min-width: 640px) {
@@ -22,56 +24,67 @@ export const PositionLogo = styled.div`
   height: 25px;
   display: flex;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   padding-top: 1rem;
   cursor: pointer;
 
   @media (min-width: 640px) {
     display: flex;
-    padding: 1rem;
     margin: 0;
   }
 `;
 
 export const Contact = styled.div`
   display: flex;
-  justify-content: center;
   box-sizing: border-box;
+  justify-content: center;
+  margin: .5rem 0;
 
   @media (min-width: 640px) {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-right: 1rem;
-  }
-
-  @media (min-width: 992px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding-right: 1rem;
   }
 `;
 
 export const Info = styled.a`
   color: white;
+  display: inline-block;
   font-size: 15px;
-  text-decoration: underline;
-  flex-wrap: wrap;
-  padding: .5rem;
+  opacity: .75;
+  margin: .5rem;
+  position: relative;
+  text-decoration: none;
+  transition: opacity .15s ease;
+  white-space: nowrap;
 
-  @media (min-width: 640px) {
-    display: flex;
-    height: 20px;
-    padding-left: 1rem;
-    padding-top: 1rem;
+  &::before {
+    content: "";
+    background-color: #33afad;
+    bottom: 0;
+    height: 1px;
+    left: 0px;
+    position: absolute;
+    transition: width .2s ease;
+    width: 0;
   }
 
-  @media (min-width: 992px) {
-    display: flex;
-    height: 20px;
-    padding-left: 1rem;
-    padding-top: 1rem;
+  &:active {
+    opacity: 1;
+
+    &::before {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 870px) {
+    &:hover {
+      opacity: 1;
+
+      &::before {
+        width: 100%;
+      }
+    }
   }
 `;
 

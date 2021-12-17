@@ -20,7 +20,6 @@ export const Form = styled.form`
     font-weight: 700;
     padding: 1rem;
     margin: 1rem 0;
-    text-transform: uppercase;
     transition: all .15s ease;
     width: 200px;
 

@@ -7,7 +7,7 @@ export default function About() {
       <AboutDivision>
         <AboutInfo>
           <h2>Sobre Nós</h2>
-          <h3>Mantenha seu negócio seguro e garanta alta disponibilidade</h3>
+          <h3>Transormamos ideias em realidade.</h3>
           <Owners>
             <h4>Fernanda F. Silva</h4>
             <p>CEO da Empresa</p>

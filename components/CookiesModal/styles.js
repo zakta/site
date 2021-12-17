@@ -40,7 +40,7 @@ export const CookieNotice = styled.div`
       height: 1px;
       left: 0px;
       position: absolute;
-      transition: width 0.2s ease-in-out 0s;
+      transition: width .2s ease-in-out 0s;
       width: 0px;
     }
 

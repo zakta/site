@@ -24,12 +24,10 @@ export default function Header () {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  console.log('open', open);
-
   return (
     <Container id="header" className={isSticky ? "sticky" : "notSticky"}>
       <Center isSticky={isSticky}>
-        <Link href="#">
+        <Link href="#" passHref>
           <LogoContainer onClick={() => {
             window.scrollTo({ top:0, behavior: 'smooth' });
           }}>
