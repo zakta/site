@@ -39,33 +39,24 @@ export default function Company() {
         />
         <Box>
           <Notes>
-            <p>Como Funciona?</p>
+            <p>Como funciona?</p>
             <h4 className="title-notes">
-              Nós garantimos um processo de trabalho estável
+              Analisamos as necessidades do seu negócio
             </h4>
           </Notes>
           <Notes>
-            <h4>Análise de empresas</h4>
-            <p>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium.
-            </p>
+            <h4>Elaboração do plano e propostas</h4>
+            <p>Pensamos nas melhores soluções e apresentamos um ou mais planos e propostas.</p>
             <Numbers>01</Numbers>
           </Notes>
           <Notes>
-            <h4 className="text-grey">Planejamento de empresas</h4>
-            <p className="text-grey">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium
-            </p>
+            <h4 className="text-grey">Desenvolvimento e testes de qualidade</h4>
+            <p className="text-grey">Oferecemos um acompanhamento de perto da execução do plano de negócio.</p>
             <Numbers>02</Numbers>
           </Notes>
           <Notes>
-            <h4>Crescimento de empresas</h4>
-            <p>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium.
-            </p>
+            <h4>Pré/pós lançamento e suporte</h4>
+            <p>Fazemos a campanha de lançamento, medição do pós e suporte à atualizações</p>
             <Numbers>03</Numbers>
           </Notes>
 

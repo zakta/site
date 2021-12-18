@@ -88,7 +88,6 @@ export const Notes = styled.div`
     font-size: 25px;
     padding: 2rem 2rem 0 2rem;
     margin: 0;
-    text-transform: capitalize;
 
     @media (min-width: 1000px) {
       text-align: center;
@@ -99,7 +98,6 @@ export const Notes = styled.div`
     font-size: 23px;
     margin: 0;
     font-weight: 800;
-    text-transform: capitalize;
 
     @media (min-width: 472px) {
       font-size: 25px;

@@ -18,17 +18,9 @@ export default function About() {
           </Owners>
         </AboutInfo>
         <AboutCompany>
-          <p>
-            Uma empresa de consultoria de negócios está envolvida no
-            planejamento, implementação e educação de negócios. Trabalhamos
-            diretamente com os proprietários no desenvolvimento de um plano de
-            negócios, identificando as necessidades de marketing e desenvolvendo
-            as habilidades necessárias para a propriedade do negócio.
-          </p>
-          <p>
-            Consultor de marketing é um consultor que trabalha com empresas para
-            criar e implementar estratégias de marketing.
-          </p>
+          <p>Uma empresa de tecnologia da informação que está envolvida no planejamento, desenvolvimento e implementação de aplicações web e mobile.</p>
+          <p>Trabalhamos diretamente com os proprietários na elaboração de um plano de negócios, identificando as necessidades de marketing e desenvolvendo as habilidades necessárias para a propriedade do negócio.</p>
+          <p>Nosso objetivo é entregar o máximo de excelência, a fins de atingir e ou superar o resultado esperado.</p>
         </AboutCompany>
       </AboutDivision>
       <List>
@@ -36,25 +28,25 @@ export default function About() {
           <Check>
             <GoCheck />
           </Check>
-          <p>Melhoria Constante</p>
+          <p>Equipe humana e altamente qualificada</p>
         </li>
         <li>
           <Check>
             <GoCheck />
           </Check>
-          <p>Compromisso com Clientes</p>
+          <p>Melhores práticas de desenvolvimento web</p>
         </li>
         <li>
           <Check>
             <GoCheck />
           </Check>
-          <p>Melhor Qualidade Possível</p>
+          <p>Aplicação das mais recentes técnicas de qualidade</p>
         </li>
         <li>
           <Check>
             <GoCheck />
           </Check>
-          <p>Suporte e sustentação contínuos</p>
+          <p>Novas feats, suporte e sustentação contínuos</p>
         </li>
       </List>
     </Container>

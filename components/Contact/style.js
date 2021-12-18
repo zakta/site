@@ -73,7 +73,6 @@ export const ContactInfo = styled.div`
     margin: 0;
     max-width: 39.842rem;
     padding: 0;
-    text-transform: capitalize;
     width: 100%;
   }
 
@@ -90,7 +89,6 @@ export const Card = styled(CardComp)`
 
   h4 {
     margin: 0;
-    padding: 0.5rem;
   }
 
   p {
@@ -99,7 +97,7 @@ export const Card = styled(CardComp)`
     margin: 0;
   }
 
-  @media(min-width: 768px){
+  @media (min-width: 768px){
     width: 48%;
   }
 `;

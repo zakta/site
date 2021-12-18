@@ -61,12 +61,8 @@ export const AboutInfo= styled.article`
     font-size: 32px;
     width: 100%;
     margin-bottom: 1rem;
-    text-transform: capitalize;
-
-    @media (min-width: 768px){
-
-    }
   }
+
   div{
     display: flex;
     flex-direction: column;
@@ -96,8 +92,10 @@ export const AboutCompany= styled.article`
   box-sizing: border-box;
   font-size: 15px;
   text-align: left;
+
   p{
     font-weight: 300;
+    line-height: 26px;
   }
 
   @media (min-width: 768px){

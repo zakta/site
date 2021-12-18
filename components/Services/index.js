@@ -21,7 +21,7 @@ export default function Services() {
           <h3>Criação de Sites</h3>
           <p>
             Sites responsivos, com navegação intuitiva e design profissional.
-            Sites com fomo em geração de resultados. 
+            Foco em geração de resultados.
           </p>
         </Card>
         <Card animate={true}>
@@ -40,7 +40,7 @@ export default function Services() {
           </Icon>
           <h3>Sistemas em Nuvem</h3>
           <p>
-            Programas e serviços de armazenamento online. Acesso 24 
+            Programas e serviços de armazenamento online. Acesso 24
             horas por dia de qualquer lugar.
           </p>
         </Card>
@@ -50,7 +50,7 @@ export default function Services() {
           </Icon>
           <h3>Marketing de Conteúdo - SEM</h3>
           <p>
-            Produção de conteúdo para Blogs, com foco em atração a de visitantes 
+            Produção de conteúdo para Blogs, com foco em atração de visitantes
             através do Google.
           </p>
         </Card>
@@ -60,8 +60,8 @@ export default function Services() {
           </Icon>
           <h3>Campanha Google Adwords</h3>
           <p>
-          Planejamento estratégico organizando por categorias seus produtos e
-          serviços.    
+          Planejamento estratégico organizando por categorias, seus produtos e
+          serviços.
           </p>
         </Card>
         <Card animate={true}>
@@ -70,7 +70,7 @@ export default function Services() {
           </Icon>
           <h3>Criação de Aplicativos</h3>
           <p>
-            Criação de aplicativos para Iphone e Android. Desenvolvimento de 
+            Criação de aplicativos para Iphone e Android. Desenvolvimento de
             aplicativos sob medida.
           </p>
         </Card>
@@ -80,7 +80,7 @@ export default function Services() {
           </Icon>
           <h3>Lojas Virtuais</h3>
           <p>
-            Criação de lojas virtuais com alta performance. Gestão de pedidos, 
+            Criação de lojas virtuais com alta performance, gestão de pedidos
             e integração com pagamento online.
           </p>
         </Card>
@@ -90,7 +90,7 @@ export default function Services() {
           </Icon>
           <h3>Intranet e Extranet</h3>
           <p>
-            Sistemas de redes para distribuição de informações garantindo 
+            Sistemas de redes para distribuição de informações garantindo
             a segurança e privacidade.
           </p>
         </Card>
