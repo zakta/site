@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 import { BsArrowDownRight } from "react-icons/bs";
 
 export const Container = styled.section`
@@ -16,7 +16,7 @@ export const Container = styled.section`
 `;
 
 export const Cover = styled.div`
-  background: url('../workspace1.jpg') center no-repeat;
+  background: url("../workspace1.jpg") center no-repeat;
   background-size: cover;
   height: 100%;
   min-height: 493px;
@@ -30,7 +30,7 @@ export const CoverMask = styled.div`
   height: 100%;
   min-height: 493px;
   position: fixed;
-  opacity: .6;
+  opacity: 0.6;
   top: 0;
   width: 100%;
 `;
@@ -50,7 +50,7 @@ export const PageTitle = styled.div`
   position: relative;
   width: 100%;
 
-  &:last-child{
+  &:last-child {
     align-items: flex-start;
   }
 
@@ -64,8 +64,8 @@ export const PageTitle = styled.div`
     line-height: 45px;
     margin: 0;
     max-width: 940px;
-    opacity: .9;
-    transition: all .15s ease;
+    opacity: 0.9;
+    transition: all 0.15s ease;
 
     @media (min-width: 360px) {
       font-size: 32px;
@@ -115,15 +115,25 @@ export const ButtonLink = styled.a`
   padding: 1.132rem;
   text-align: center;
   text-decoration: none;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,opacity .15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    opacity 0.15s ease-in-out;
 
-  &:hover {
+  &:active {
     background: white;
     color: #1a3968;
   }
+
+  @media (min-width: 870px) {
+    &:hover {
+      background: white;
+      color: #1a3968;
+    }
+  }
 `;
 
-export const ArrowAnimation= styled.div`
+export const ArrowAnimation = styled.div`
+  display: flex;
   box-sizing: border-box;
   display: flex;
   margin: 0;
@@ -131,7 +141,7 @@ export const ArrowAnimation= styled.div`
   z-index: 12;
 `;
 
-export const ArrowLink= styled.a`
+export const ArrowLink = styled.a`
   align-self: flex-start;
 `;
 
@@ -159,10 +169,10 @@ export const ArrowIcon = styled(BsArrowDownRight)`
   position: relative;
   transform: rotate(45deg);
 
-  @media(min-width: 450px){
+  @media (min-width: 450px) {
     font-size: 45px;
   }
-  @media(min-width: 768px){
+  @media (min-width: 768px) {
     font-size: 50px;
   }
 `;

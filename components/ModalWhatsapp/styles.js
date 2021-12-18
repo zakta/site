@@ -35,9 +35,9 @@ export const ModalWhats= styled.div`
   top: auto!important;
   bottom: 5%;
 
-  @media (min-width: 768px){
+  @media (min-width: 870px){
     :hover{
-      animation:${slide} 1s linear .5s forwards ;
+      animation:${slide} 1s linear .5s forwards;
     }
   }
 `
@@ -48,6 +48,7 @@ export const ButtonWhats= styled.a`
    p{
      text-transform: uppercase;
      width: 300px;
+     font-weight: 700;
    }
 `
 export const IWhatsapp= styled(BsWhatsapp)`

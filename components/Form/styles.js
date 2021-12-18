@@ -23,9 +23,16 @@ export const Form = styled.form`
     transition: all .15s ease;
     width: 200px;
 
-    :hover {
+    &:active{
       background: #1a3968;
       color: white;
+    }
+
+    @media (min-width: 870px){
+      :hover {
+        background: #1a3968;
+        color: white;
+      }
     }
   }
 `;

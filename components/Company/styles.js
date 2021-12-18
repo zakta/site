@@ -61,7 +61,7 @@ export const Notes = styled.div`
     background: #1a3968;
   }
   :nth-child(3) {
-    background: #f8f8f8;
+    background: #302b2b11;
   }
   :nth-child(4) {
     background: #060606;
@@ -142,8 +142,8 @@ export const Notes = styled.div`
  export const Numbers = styled.div`
   font-size: 15.789rem;
   margin: 0;
-  opacity: 0.04;
-  color: #fbfbfb;
+  opacity: 0.07;
+  color: #b1b1b1;
   z-index: 1;
   position: absolute;
   position: absolute;
