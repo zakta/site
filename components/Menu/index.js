@@ -17,7 +17,7 @@ export default function Menu ({ isSticky, open, setOpen }) {
       <List
         isSticky={isSticky}
         open={open}
-        className={isSticky ? "sticky" : "notSticky"}
+        className={isSticky ? "sticky" : ""}
         onClick={() => {
           setOpen(false);
 
@@ -49,43 +49,3 @@ export default function Menu ({ isSticky, open, setOpen }) {
     </>
   );
 }
-
-
-{/* <Container>
-  <List
-    isSticky={isSticky}
-    open={open}
-    onClick={() => {
-      setOpen(!open);
-      if (open) {
-        setOverflow("remove");
-      }
-    }}
-  >
-    <ListItem>
-      <Link href="#">
-        <LinkMenu isSticky={isSticky}>Home</LinkMenu>
-      </Link>
-    </ListItem>
-    <ListItem>
-      <Link href="#servicos">
-        <LinkMenu isSticky={isSticky}>Serviços</LinkMenu>
-      </Link>
-    </ListItem>
-    <ListItem>
-      <Link href="#empresa">
-        <LinkMenu isSticky={isSticky}>Empresa</LinkMenu>
-      </Link>
-    </ListItem>
-    <ListItem>
-      <Link href="#contato">
-        <LinkMenu isSticky={isSticky}>Contato</LinkMenu>
-      </Link>
-    </ListItem>
-  </List>
-  <MenuToggle
-    onClick={() => {
-      setOpen(!open);
-      setOverflow(!open ? "add" : "remove");
-    }}
-  > */}

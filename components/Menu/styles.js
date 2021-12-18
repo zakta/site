@@ -23,15 +23,6 @@ export const List = styled.ul`
     justify-content: flex-end;
   }
 
-  &.sticky {
-    @media (min-width: 870px){
-      a {
-        color: #1a3968;
-        opacity: 1;
-      }
-    }
-  }
-
   @media (min-width: 870px) {
     background: none;
     flex-flow: initial;
@@ -150,6 +141,7 @@ export const ItemInfo = styled.li`
       width: 100%;
     }
   }
+
   @media (min-width: 870px) {
     display: none;
   }

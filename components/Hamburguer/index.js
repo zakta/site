@@ -1,6 +1,6 @@
 import { Container, Burguer } from "./styles";
 
-export default function Hamburguer({open, isSticky}){
+export default function Hamburguer({ open, isSticky }){
     return(
         <Container >
            <Burguer open={open} isSticky={isSticky} />

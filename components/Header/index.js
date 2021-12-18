@@ -8,29 +8,28 @@ export default function Header () {
   const [isSticky, setSticky]  = useState(false);
   const [open, setOpen] = useState(false);
 
+  const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
   const handleScroll = ()=> {
-    const offset= window.scrollY;
+    const header = document.querySelector('#header');
 
-    if (offset > 600) {
-      return setSticky(true);
-    }
+    header.classList.toggle('sticky', window.scrollY > 0);
 
-    setSticky(false);
+    setSticky(window.scrollY > 0);
   }
 
-  useEffect(()=> {
+
+  useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <Container id="header" className={isSticky ? "sticky" : "notSticky"}>
+    <Container id="header">
       <Center isSticky={isSticky}>
         <Link href="#" passHref>
-          <LogoContainer onClick={() => {
-            window.scrollTo({ top:0, behavior: 'smooth' });
-          }}>
+          <LogoContainer onClick={scrollTop}>
             <Logo
               theme={isSticky ? open ? "white" : "primary" : "white" }
               height={35} />

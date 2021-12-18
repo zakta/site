@@ -2,12 +2,14 @@ import styled, { keyframes } from 'styled-components';
 import { BsArrowDownRight } from "react-icons/bs";
 
 export const Container = styled.section`
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   left: 0;
   height: 100%;
   min-width: 320px;
   min-height: 493px;
+  padding-top: 142px;
   position: absolute;
   top: 0;
   width: 100%;
@@ -40,7 +42,7 @@ export const PageTitle = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: auto;
   max-width: 1400px;
   min-height: 493px;
@@ -122,10 +124,10 @@ export const ButtonLink = styled.a`
 `;
 
 export const ArrowAnimation= styled.div`
-  display: flex;
   box-sizing: border-box;
-  width: 30px;
+  display: flex;
   margin: 0;
+  width: 30px;
   z-index: 12;
 `;
 
@@ -149,13 +151,13 @@ const bounce = keyframes`
 `;
 
 export const ArrowIcon = styled(BsArrowDownRight)`
+  align-self: flex-start;
+  animation: ${bounce} 1s linear infinite;
   color: white;
   font-size: 40px;
-  align-self: flex-start;
-  position: relative;
-  animation: ${bounce} 1s linear infinite;
-  transform: rotate(45deg);
   left: -22px;
+  position: relative;
+  transform: rotate(45deg);
 
   @media(min-width: 450px){
     font-size: 45px;
