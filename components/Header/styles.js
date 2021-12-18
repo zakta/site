@@ -31,10 +31,17 @@ export const Container = styled.div`
   &.sticky {
     background: white;
     border-bottom: 1px solid #efefef;
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
 
     @media (min-width: 480px) {
-      padding-bottom: 1.25rem;
-      padding-top: 1.25rem;
+      padding-bottom: 1.5rem;
+      padding-top: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      padding-bottom: 1.75rem;
+      padding-top: 1.75rem;
     }
 
     @media (min-width: 870px){
