@@ -9,7 +9,7 @@ export const Container = styled.div`
   display: flex;
   font-size: 15px;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   position: fixed;
   width: 100%;
   z-index: 13;

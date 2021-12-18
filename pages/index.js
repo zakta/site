@@ -28,7 +28,7 @@ export default function Index() {
 
       <ButtonUp />
 
-      <ModalWhatsapp />
+      {/* <ModalWhatsapp /> */}
 
       <Footer />
 
