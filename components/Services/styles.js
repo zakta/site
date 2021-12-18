@@ -7,12 +7,10 @@ export const Container = styled.section`
   margin: 0;
   margin-top: 100vh;
   position: relative;
-  padding-top: 5rem;
 
   @media (min-width: 768px){
     display: flex;
     justify-content: center;
-    padding-top: 8rem;
   }
 `;
 
@@ -22,7 +20,8 @@ export const Center = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   max-width: 1400px;
-  padding-top: 3rem;  
+  position: relative;
+  top: -30px;
 
   @media (min-width: 768px){
     padding: 0;

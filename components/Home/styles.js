@@ -42,7 +42,7 @@ export const PageTitle = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: auto;
   max-width: 1400px;
   min-height: 493px;
@@ -131,8 +131,8 @@ export const ButtonLink = styled.a`
   text-align: center;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
-    opacity 0.15s ease-in-out;
+  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+  opacity 0.15s ease-in-out;
 
   &:active {
     background: white;
@@ -148,10 +148,10 @@ export const ButtonLink = styled.a`
 `;
 
 export const ArrowAnimation = styled.div`
-  display: flex;
   box-sizing: border-box;
   display: flex;
   margin: 0;
+  margin-left: .8rem;
   width: 30px;
   z-index: 12;
 `;
