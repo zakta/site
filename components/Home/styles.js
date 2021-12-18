@@ -67,19 +67,19 @@ export const PageTitle = styled.div`
     opacity: 0.9;
     transition: all 0.15s ease;
 
-    @media (min-width: 360px) {
-      font-size: 32px;
-      line-height: 47px;
+    @media (min-width: 480px) {
+      font-size: 38px;
+      line-height: 53px;
     }
 
-    @media (min-width: 380px) {
-      font-size: 34px;
-      line-height: 49px;
+    @media (min-width: 640px) {
+      font-size: 45px;
+      line-height: 60px;
     }
 
-    @media (min-width: 380px) {
-      font-size: 36px;
-      line-height: 51px;
+    @media (min-width: 870px) {
+      font-size: 60px;
+      line-height: 75px;
     }
 
     @media (min-width: 1400px) {
@@ -96,6 +96,21 @@ export const PageTitle = styled.div`
     margin: 0;
     max-width: 756px;
     position: relative;
+
+    @media (min-width: 480px) {
+      font-size: 16px;
+      line-height: 32px;
+    }
+
+    @media (min-width: 640px) {
+      font-size: 18px;
+      line-height: 33px;
+    }
+
+    @media (min-width: 870px) {
+      font-size: 19px;
+      line-height: 34px;
+    }
 
     @media (min-width: 1400px) {
       font-size: 19px;
