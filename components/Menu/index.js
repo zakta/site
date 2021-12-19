@@ -1,5 +1,6 @@
 // 3rd parties
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 // Components
 import Hamburguer from "../Hamburguer";
@@ -9,9 +10,17 @@ import { ContactLink } from '../ContactLink/styles';
 import { List, ListItem, MenuToggle, ItemInfo } from "./styles";
 
 export default function Menu ({ isSticky, open, setOpen }) {
-  function setOverflow (event) {
-    document.body.classList[event]("hideOverflow");
-  }
+  const [activeMenuItem, setActiveMenuItem] = useState('');
+
+  const setOverflow = event => {
+    document.body.classList[event]('hideOverflow');
+  };
+
+  const handleActive = sectionPage => setActiveMenuItem(sectionPage);
+
+  useEffect(() => {
+    setActiveMenuItem(location.hash)
+  }, []);
 
   return (
     <>
@@ -24,10 +33,45 @@ export default function Menu ({ isSticky, open, setOpen }) {
 
           if (open) setOverflow("remove");
         }}>
-        <ListItem><Link href="#">Home</Link></ListItem>
-        <ListItem><Link href="#servicos">Serviços</Link></ListItem>
-        <ListItem><Link href="#empresa">Empresa</Link></ListItem>
-        <ListItem><Link href="#contato">Contato</Link></ListItem>
+        <ListItem>
+          <Link href="#">
+            <a
+              className={activeMenuItem === '#' || activeMenuItem === '' ? 'menu-item-active' : ''}
+              onClick={() => handleActive('#')}>
+              Home
+            </a>
+          </Link>
+        </ListItem>
+
+        <ListItem>
+          <Link href="#servicos">
+            <a
+              className={activeMenuItem === '#servicos' ? 'menu-item-active' : ''}
+              onClick={() => handleActive('#servicos')}>
+              Serviços
+            </a>
+          </Link>
+        </ListItem>
+
+        <ListItem>
+          <Link href="#empresa">
+            <a
+              className={activeMenuItem === '#empresa' ? 'menu-item-active' : ''}
+              onClick={() => handleActive('#empresa')}>
+              Empresa
+            </a>
+          </Link>
+        </ListItem>
+
+        <ListItem>
+          <Link href="#contato">
+            <a
+              className={activeMenuItem === '#contato' ? 'menu-item-active' : ''}
+              onClick={() => handleActive('#empresa')}>
+              Contato
+            </a>
+          </Link>
+        </ListItem>
 
         <ItemInfo>
           <ContactLink href="mailto:contato@zakta.com.br" target="_blank">

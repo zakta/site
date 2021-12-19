@@ -104,10 +104,25 @@ export const ListItem = styled.li`
       }
     }
 
-    @media (min-width: 880px){
+    @media (min-width: 870px){
       padding: 1.5rem 0;
       margin-left: 1.5rem;
       margin-right: 1.5rem;
+
+      &.menu-item-active {
+        opacity: 1;
+
+        &::before {
+          content: "";
+          background-color: #33afad;
+          height: 7px;
+          left: 0px;
+          position: absolute;
+          transition: width .2s ease-in-out 0s;
+          top: 15px;
+          width: 100%;
+        }
+      }
     }
   }
 `;
