@@ -3,6 +3,7 @@ import Link from "next/link";
 
 // Components
 import Hamburguer from "../Hamburguer";
+import { ContactLink } from '../ContactLink/styles';
 
 // Styles
 import { List, ListItem, MenuToggle, ItemInfo } from "./styles";
@@ -29,13 +30,11 @@ export default function Menu ({ isSticky, open, setOpen }) {
         <ListItem><Link href="#contato">Contato</Link></ListItem>
 
         <ItemInfo>
-          <a
-            href="mailto:contato@zakta.com.br"
-            rel="noreferrer"
-            target="_blank">
+          <ContactLink href="mailto:contato@zakta.com.br" target="_blank">
             contato@zakta.com.br
-          </a><br />
-          <a href="tel:+5511933020321">+55 11 93302-0321</a>
+          </ContactLink>
+          <br />
+          <ContactLink href="tel:+5511933020321">+55 11 93302-0321</ContactLink>
         </ItemInfo>
       </List>
 

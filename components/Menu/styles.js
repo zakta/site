@@ -122,26 +122,6 @@ export const ItemInfo = styled.li`
   list-style-type: none;
   padding: 1.5rem;
 
-  a {
-    color: white;
-    display: inline-block;
-    margin: .5rem 0;
-    opacity: .75;
-    position: relative;
-    text-decoration: none;
-    white-space: nowrap;
-
-    &::before {
-      content: "";
-      background-color: #33afad;
-      height: 1px;
-      left: 0px;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-    }
-  }
-
   @media (min-width: 870px) {
     display: none;
   }

@@ -88,10 +88,6 @@ export const Notes = styled.div`
     font-size: 25px;
     padding: 2rem 2rem 0 2rem;
     margin: 0;
-
-    @media (min-width: 1000px) {
-      text-align: center;
-    }
   }
   .title-notes {
     color: black;
@@ -129,10 +125,6 @@ export const Notes = styled.div`
       padding-bottom: 0;
       text-transform: uppercase;
       color: #1a3968;
-    }
-
-    @media (min-width: 1000px) {
-      text-align: center;
     }
   }
 `;

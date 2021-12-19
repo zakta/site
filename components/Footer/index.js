@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 // Components
 import { Logo } from "../Logo";
+import { ContactLink } from '../ContactLink/styles';
 
 // Styles
 import {
@@ -27,11 +28,11 @@ export const Footer = () => (
       </Link>
 
       <Contact>
-        <Info href="mailto:contato@zakta.com.br" target="_blank">
+        <ContactLink href="mailto:contato@zakta.com.br" target="_blank">
           contato@zakta.com.br
-        </Info>
+        </ContactLink>
 
-        <Info href="tel:+5511933020321">+55 11 93302-0321</Info>
+        <ContactLink href="tel:+5511933020321">+55 11 93302-0321</ContactLink>
       </Contact>
     </Box>
     <Copyright>© 2021 ZAKTA Tecnologia todos direitos reservados.</Copyright>
