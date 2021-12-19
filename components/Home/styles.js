@@ -42,7 +42,7 @@ export const PageTitle = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: auto;
   max-width: 1400px;
   min-height: 493px;
