@@ -67,7 +67,7 @@ export default function Menu ({ isSticky, open, setOpen }) {
           <Link href="#contato">
             <a
               className={activeMenuItem === '#contato' ? 'menu-item-active' : ''}
-              onClick={() => handleActive('#empresa')}>
+              onClick={() => handleActive('#contato')}>
               Contato
             </a>
           </Link>
