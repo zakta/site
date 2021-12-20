@@ -1,7 +1,12 @@
+// 3rd parties
+import Link from "next/link";
 import { useEffect, useState } from "react";
+
+// Components
 import { Logo } from "../Logo";
 import Menu from "../Menu";
-import Link from "next/link";
+
+// Styles
 import { Center, Container, LogoContainer } from "./styles";
 
 export default function Header () {
@@ -18,20 +23,20 @@ export default function Header () {
 
     setSticky(window.scrollY > 0);
 
-    changeURL();
+    //changeURL();
   }
-  
+
   const changeURL= () => {
     const servicos= document.querySelector('#servicos').offsetTop;
     const empresa= document.querySelector('#empresa').offsetTop;
     const contato= document.querySelector('#contato').offsetTop;
 
     const scroll = window.scrollY;
-    
-    /*if(scroll >= 0 && scroll < servicos){
+
+    if(scroll >= 0 && scroll < servicos){
       return location.hash = "#";
-    }*/
-  
+    }
+
     if(scroll > servicos && scroll < empresa){
       return location.hash = "#servicos";
     }
@@ -42,7 +47,6 @@ export default function Header () {
       return location.hash = "#contato";
     }
   }
-
 
   useEffect(() => {
     setActiveMenuItem(location.hash);
@@ -63,8 +67,13 @@ export default function Header () {
           </LogoContainer>
         </Link>
 
-        <Menu isSticky={isSticky} open={open} setOpen={setOpen} 
-        activeMenuItem={activeMenuItem} setActiveMenuItem={setActiveMenuItem}/>
+        <Menu
+          isSticky={isSticky}
+          open={open}
+          setOpen={setOpen}
+          activeMenuItem={activeMenuItem}
+          setActiveMenuItem={setActiveMenuItem}
+        />
       </Center>
     </Container>
   );

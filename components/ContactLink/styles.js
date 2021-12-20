@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ContactLink = styled.a`
   color: white;
   display: inline-block;
-  font-size: 15px;
+  font-size: 14px;
   opacity: .75;
   margin: .5rem;
   position: relative;
