@@ -12,3 +12,5 @@
 - Animar os ícones do contato
 - Resize proporcional das fontes
 - Escolher novas fotos
+- Otimização SEO
+- Refactor do código
