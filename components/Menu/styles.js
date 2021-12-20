@@ -5,7 +5,7 @@ export const List = styled.ul`
   box-sizing: border-box;
   flex-flow: column nowrap;
   display: flex;
-  height: 100vh;
+  height: 100%;
   justify-content: space-around;
   margin: 0;
   min-height: 577px;

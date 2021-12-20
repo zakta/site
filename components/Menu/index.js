@@ -34,7 +34,7 @@ export default function Menu ({ isSticky, open, setOpen }) {
           if (open) setOverflow("remove");
         }}>
         <ListItem>
-          <Link href="#">
+          <Link href="/#" as={process.env.BACKEND_URL + '/#'}>
             <a
               className={activeMenuItem === '#' || activeMenuItem === '' ? 'menu-item-active' : ''}
               onClick={() => handleActive('#')}>
@@ -44,7 +44,7 @@ export default function Menu ({ isSticky, open, setOpen }) {
         </ListItem>
 
         <ListItem>
-          <Link href="#servicos">
+          <Link href="/#servicos" as={process.env.BACKEND_URL + '/#servicos'}>
             <a
               className={activeMenuItem === '#servicos' ? 'menu-item-active' : ''}
               onClick={() => handleActive('#servicos')}>
@@ -54,7 +54,7 @@ export default function Menu ({ isSticky, open, setOpen }) {
         </ListItem>
 
         <ListItem>
-          <Link href="#empresa">
+          <Link href="/#empresa" as={process.env.BACKEND_URL + '/#empresa'}>
             <a
               className={activeMenuItem === '#empresa' ? 'menu-item-active' : ''}
               onClick={() => handleActive('#empresa')}>
@@ -64,7 +64,7 @@ export default function Menu ({ isSticky, open, setOpen }) {
         </ListItem>
 
         <ListItem>
-          <Link href="#contato">
+          <Link href="/#contato" as={process.env.BACKEND_URL + '/#contato'}>
             <a
               className={activeMenuItem === '#contato' ? 'menu-item-active' : ''}
               onClick={() => handleActive('#contato')}>

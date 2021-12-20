@@ -12,10 +12,11 @@ export const Container = styled.section`
   flex-direction: column;
   margin: 0 auto;
   min-width: 320px;
+  overflow: hidden;
   padding: 1.5rem ;
+  padding-top: 4rem;
   position: relative;
   width: 100%;
-  padding-top: 4rem;
 
   article {
     align-items: center;
@@ -78,11 +79,11 @@ export const ContactInfo = styled.div`
 
 `
 export const TitleContact = styled.h2`
-    margin-top: 2rem;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    color: #1a3968;
+  margin-top: 2rem;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #1a3968;
 `
 export const Card = styled(CardComp)`
   width: 90%;

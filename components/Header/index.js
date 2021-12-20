@@ -28,7 +28,7 @@ export default function Header () {
   return (
     <Container id="header">
       <Center isSticky={isSticky}>
-        <Link href="#" passHref>
+        <Link href="/#" passHref as={process.env.BACKEND_URL + '/#'}>
           <LogoContainer onClick={scrollTop}>
             <Logo
               theme={isSticky ? open ? "white" : "primary" : "white" }

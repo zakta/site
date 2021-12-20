@@ -11,7 +11,7 @@ export default function ButtonUp() {
     <Container>
       <Center>
         <ScrollTop>
-          <Link href="#">
+          <Link href="/#" passHref as={process.env.BACKEND_URL + '/#'}>
             <ButtonArrow className="buttonUp" onClick={()=>{
               window.scrollTo({top: 0 , behavior: 'smooth'})}}>
               <IconArrow className="arrowUp"><FaArrowUp /></IconArrow>

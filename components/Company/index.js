@@ -10,7 +10,7 @@ export default function Company() {
       <Center>
         <About />
         <Picture
-          src="/united-image.jpg"
+          src="united-image.jpg"
           alt="Grupo de trabalhadores com mãos unidas"
         />
         <Box>
