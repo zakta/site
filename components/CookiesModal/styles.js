@@ -67,10 +67,14 @@ export const CookieNotice = styled.div`
     font-weight: 600;
     line-height: 30px;
     margin-top: 1.5rem;
-    max-width: 257px;
+    max-width: 100%;
     padding: 10px 45px;
     transition: all .3s ease;
     width: 100%;
+
+    @media (min-width: 480px) {
+      max-width: 257px;
+    }
 
     :hover {
       opacity: .75;
