@@ -13,23 +13,6 @@ export const Card = styled.div`
   transition: .3s all ease-in-out;
   width: 90%;
 
-  :after{
-    content: "";
-    background: ${({ animate }) =>
-      animate
-        ? "#1a3968"
-        : "white"};
-    transform: scale(0);
-    transition: .3s all ease-in-out;
-    z-index:0;
-    opacity:0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
   h3{
     color: #060606;
     z-index: 1;

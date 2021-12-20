@@ -34,7 +34,7 @@ export default function About() {
           <Check>
             <GoCheck />
           </Check>
-          <p>Melhores práticas de desenvolvimento web</p>
+          <p>Melhores práticas do mercado</p>
         </li>
         <li>
           <Check>

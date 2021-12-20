@@ -5,6 +5,7 @@ export const Container = styled.section`
   box-sizing: border-box;
   padding-bottom: 2rem;
   position: relative;
+  margin-top: -1px;
 `;
 
 export const Center = styled.div`

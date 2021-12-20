@@ -47,13 +47,13 @@ export const Center = styled.div`
 `;
 
 export const ContactInfo = styled.div`
+    min-height: 210px;
     position: relative;
-    height: 210px;
-    z-index:1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 3rem;
+    z-index:1;
 
   h1{
     position: absolute;
@@ -72,6 +72,7 @@ export const ContactInfo = styled.div`
     font-weight: 700;
     line-height: 41.3885px;
     margin: 0;
+    margin-bottom: 2rem;
     max-width: 39.842rem;
     padding: 0;
     width: 100%;
