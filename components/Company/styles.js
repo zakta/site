@@ -1,3 +1,4 @@
+// 3rd parties
 import styled from "styled-components";
 
 export const Container = styled.section`
@@ -36,10 +37,12 @@ export const Picture = styled.img`
   background-repeat: no-repeat;
   background-size: cover;
 `;
+
 export const Box = styled.div`
   background: #fff;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   width: 100%;
 
   @media (min-width: 720px) {
@@ -78,17 +81,20 @@ export const Notes = styled.div`
     margin: 0;
     width: 50%;
   }
+
   @media (min-width: 1000px) {
     padding: 0;
     margin: 0;
     width: 25%;
   }
+
   h4 {
     color: white;
     font-size: 25px;
     padding: 2rem 2rem 0 2rem;
     margin: 0;
   }
+
   .title-notes {
     color: black;
     font-size: 23px;
@@ -145,15 +151,18 @@ export const Notes = styled.div`
     top: -5.632rem;
     right: -1.632rem;
   }
+
   @media (min-width: 720px) {
     right: -1.632rem;
   }
+
   @media (min-width: 768px) {
     top: -2.632rem;
     right: -1.105rem;
   }
+
   @media (min-width: 1000px) {
     top: -4.632rem;
     font-size: 215px
   }
-`
+`;
