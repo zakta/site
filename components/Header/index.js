@@ -7,6 +7,7 @@ import { Center, Container, LogoContainer } from "./styles";
 export default function Header () {
   const [isSticky, setSticky]  = useState(false);
   const [open, setOpen] = useState(false);
+  const [activeMenuItem, setActiveMenuItem] = useState('');
 
   const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -16,10 +17,36 @@ export default function Header () {
     header.classList.toggle('sticky', window.scrollY > 0);
 
     setSticky(window.scrollY > 0);
+
+    changeURL();
+  }
+  
+  const changeURL= () => {
+    const servicos= document.querySelector('#servicos').offsetTop;
+    const empresa= document.querySelector('#empresa').offsetTop;
+    const contato= document.querySelector('#contato').offsetTop;
+
+    const scroll = window.scrollY;
+    
+    /*if(scroll >= 0 && scroll < servicos){
+      return location.hash = "#";
+    }*/
+  
+    if(scroll > servicos && scroll < empresa){
+      return location.hash = "#servicos";
+    }
+    if(scroll > empresa && scroll < contato){
+      return location.hash = "#empresa";
+    }
+    if(scroll >= contato ){
+      return location.hash = "#contato";
+    }
   }
 
 
   useEffect(() => {
+    setActiveMenuItem(location.hash);
+
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
@@ -36,7 +63,8 @@ export default function Header () {
           </LogoContainer>
         </Link>
 
-        <Menu isSticky={isSticky} open={open} setOpen={setOpen} />
+        <Menu isSticky={isSticky} open={open} setOpen={setOpen} 
+        activeMenuItem={activeMenuItem} setActiveMenuItem={setActiveMenuItem}/>
       </Center>
     </Container>
   );
