@@ -1,6 +1,5 @@
 // 3rd parties
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 // Components
 import Hamburguer from "../Hamburguer";
@@ -9,18 +8,12 @@ import { ContactLink } from '../ContactLink/styles';
 // Styles
 import { List, ListItem, MenuToggle, ItemInfo } from "./styles";
 
-export default function Menu ({ isSticky, open, setOpen }) {
-  const [activeMenuItem, setActiveMenuItem] = useState('');
-
+export default function Menu ({ isSticky, open, setOpen, activeMenuItem, setActiveMenuItem }) {
   const setOverflow = event => {
     document.body.classList[event]('hideOverflow');
   };
 
   const handleActive = sectionPage => setActiveMenuItem(sectionPage);
-
-  useEffect(() => {
-    setActiveMenuItem(location.hash)
-  }, []);
 
   return (
     <>
