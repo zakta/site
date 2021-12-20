@@ -57,7 +57,7 @@ export const CookieNotice = styled.div`
   }
 
   button {
-    align-self: end;
+    align-self: center;
     background: #1a3968;
     border: 1px solid #1a3968;
     color: white;

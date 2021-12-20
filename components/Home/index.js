@@ -27,7 +27,7 @@ export default function Home () {
 
         <p><span>Somos experts no desenvolvimento de sites e aplicativos para internet. Entendemos as necessidades do negócio e trabalhamos para construir soluções digitais com agilidade, flexibilidade e precisão.</span></p>
 
-        <ButtonLink href="#servicos">Serviços</ButtonLink>
+        <ButtonLink href="#empresa">Saiba mais</ButtonLink>
 
         <ArrowAnimation>
           <ArrowLink href="#servicos"><ArrowIcon /></ArrowLink>
