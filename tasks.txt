@@ -1,0 +1,14 @@
+- Zerar ajustes cross browser
+- Zerar ajustes cross mobile
+- Zerar ajustes responsivos
+- Trocar as hashs no scroll da página
+- Altura mínima da página home, para a setinha não ficar sobre o botão
+- Scroll para serviços não cortar os cards
+- Criar cookie ao aceitar os termos
+- Fazer integração do formulário de contato com api
+- Animar ícones da sessão serviços
+- Efeito slide down na imagem de fundo da home
+- Animações de entrada no scroll da página
+- Animar os ícones do contato
+- Resize proporcional das fontes
+- Escolher novas fotos
