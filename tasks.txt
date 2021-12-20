@@ -14,3 +14,4 @@
 - Escolher novas fotos
 - Otimização SEO
 - Refactor do código
+- Implementar Google Analytics
