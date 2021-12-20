@@ -9,10 +9,22 @@ export const Container = styled.section`
   height: 100%;
   min-width: 320px;
   min-height: 493px;
-  padding-top: 142px;
+  padding-top: 75px;
   position: absolute;
   top: 0;
   width: 100%;
+
+  @media (min-width: 480px) {
+    padding-top: 83px;
+  }
+
+  @media (min-width: 640px) {
+    padding-top: 91px;
+  }
+
+  @media (min-width: 870px) {
+    padding-top: 142px;
+  }
 `;
 
 export const Cover = styled.div`
