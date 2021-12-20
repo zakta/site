@@ -27,7 +27,7 @@ export default function Contact() {
           <TitleContact> Contato</TitleContact>
           <h3>Alguma dúvida? Entre em contato e responderemos em breve.</h3>
         </ContactInfo>
-        
+
         <article>
           <Card>
             <Icon>
@@ -51,7 +51,7 @@ export default function Contact() {
         <FormTitle>Você pode nos escrever</FormTitle>
 
         <FormDescription>
-          Por favor preencha este formulário, seus dados serão privadas e utilizados
+          Por favor preencha este formulário, seus dados serão privados e utilizados
           apenas para entendermos melhor suas necessidades. Em até um dia útil responderemos a sua consulta.
         </FormDescription>
 
