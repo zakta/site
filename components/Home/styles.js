@@ -54,7 +54,7 @@ export const PageTitle = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: auto;
   max-width: 1400px;
   min-height: 493px;
@@ -73,7 +73,7 @@ export const PageTitle = styled.div`
   h1 {
     font-size: 30px;
     font-weight: 800;
-    line-height: 45px;
+    line-height: 40px;
     margin: 0;
     max-width: 940px;
     opacity: 0.9;
@@ -85,13 +85,13 @@ export const PageTitle = styled.div`
     }
 
     @media (min-width: 640px) {
-      font-size: 45px;
-      line-height: 60px;
+      font-size: 50px;
+      line-height: 65px;
     }
 
     @media (min-width: 870px) {
-      font-size: 60px;
-      line-height: 75px;
+      font-size: 65px;
+      line-height: 80px;
     }
 
     @media (min-width: 1400px) {
@@ -104,9 +104,10 @@ export const PageTitle = styled.div`
     color: #f7f7f7;
     font-size: 15px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 25px;
     margin: 0;
     max-width: 756px;
+    padding-bottom: 1rem;
     position: relative;
 
     @media (min-width: 480px) {
@@ -134,12 +135,12 @@ export const PageTitle = styled.div`
 export const ButtonLink = styled.a`
   color: rgba(255, 255, 255, 1);
   display: inline-block;
-  border: 1px solid white;
-  font-size: 17px;
+  border: 1px solid rgba(255, 255, 255, .75);
+  font-size: 15px;
   font-weight: 700;
   line-height: 21px;
   min-width: 11.053rem;
-  padding: 1.132rem;
+  padding: .75rem .5rem;
   text-align: center;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
@@ -151,7 +152,10 @@ export const ButtonLink = styled.a`
     color: #1a3968;
   }
 
-  @media (min-width: 870px) {
+  @media (min-width: 480px) {
+    font-size: 17px;
+    padding: 1.132rem;
+
     &:hover {
       background: white;
       color: #1a3968;
@@ -163,7 +167,6 @@ export const ArrowAnimation = styled.div`
   box-sizing: border-box;
   display: flex;
   margin: 0;
-  margin-left: .8rem;
   width: 30px;
   z-index: 12;
 `;
@@ -174,16 +177,16 @@ export const ArrowLink = styled.a`
 
 const bounce = keyframes`
   0%{
-    top: -10px;
+    top: 0;
   }
   50%{
-    top: -50px;
+    top: -20px;
   }
   70%{
-    top: -30px;
+    top: -10px;
   }
   100%{
-    top: -10px;
+    top: 0;
   }
 `;
 
@@ -192,8 +195,10 @@ export const ArrowIcon = styled(BsArrowDownRight)`
   animation: ${bounce} 1s linear infinite;
   color: white;
   font-size: 40px;
-  left: -22px;
+  margin-bottom: 10px;
+  margin-top: 30px;
   position: relative;
+  right: .6rem;
   transform: rotate(45deg);
 
   @media (min-width: 450px) {

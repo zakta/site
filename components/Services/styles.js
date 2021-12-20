@@ -21,7 +21,7 @@ export const Center = styled.div`
   justify-content: space-evenly;
   max-width: 1400px;
   position: relative;
-  top: -30px;
+  top: -20px;
 
   @media (min-width: 768px){
     padding: 0;
