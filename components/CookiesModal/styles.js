@@ -6,7 +6,7 @@ export const Container = styled.div`
   bottom: 0;
   box-sizing: border-box;
   color: #4d4d4d;
-  display: flex;
+  display: ${({ hide }) => hide ? 'none' : 'flex'};
   font-size: 15px;
   justify-content: center;
   padding: 1rem 1.5rem;

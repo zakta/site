@@ -1,4 +1,6 @@
+//3rd parties
 import Head from "next/head";
+//components
 import ButtonUp from "../components/ButtonUp";
 import Company from "../components/Company";
 import Contact from "../components/Contact";
@@ -10,6 +12,7 @@ import Services from "../components/Services";
 import ModalWhatsapp from "../components/ModalWhatsapp";
 import Terms from "../components/Terms";
 import PrivacyTerms from "../components/PrivacyTerms";
+import GoogleAnalytics from "../components/GoogleAnalytics";
 
 export default function Index() {
   return (
@@ -37,6 +40,7 @@ export default function Index() {
       <Terms />  
       <PrivacyTerms />
       <CookiesModal />
+      <GoogleAnalytics />
     </>
   );
 }

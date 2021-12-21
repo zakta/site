@@ -1,16 +1,35 @@
 import Link from 'next/link';
 import { Container, CookieNotice } from './styles';
+import cookie from 'js-cookie';
+import { useState, useEffect } from 'react';
 
 export default function CookiesModal(){
-  const sendCookies = () => {
+  const [isAcceptedCookie, setAcceptedCookie] = useState(false);
+
+  /*const sendCookies = () => {
     const modal = document.getElementById('modal');
     const acceptModal= modal.classList.add('toggle');
-
+    createCookies();
     return acceptModal;
-  };
+  };*/
+
+  useEffect(() => {
+    if(cookie.get('allow-cookies')){
+      setAcceptedCookie(true);
+    }
+  }, []);
+
+  const createCookies = () => {
+    if(cookie.get('allow-cookies') === undefined){
+     cookie.set("allow-cookies", "true", { expires: 1/192 })
+     setAcceptedCookie(true);
+    }
+     //sendCookies();
+    }
+  
 
  return (
-   <Container id="modal">
+   <Container id="modal" hide={isAcceptedCookie}>
      <CookieNotice>
       <p>
         Usamos cookies e métodos semelhantes para reconhecer os visitantes e
@@ -27,7 +46,7 @@ export default function CookiesModal(){
         Política de Privacidade</Link></span>.
       </p>
 
-       <button onClick={sendCookies}>Aceitar</button>
+       <button onClick={createCookies}>Aceitar</button>
      </CookieNotice>
    </Container>
  );

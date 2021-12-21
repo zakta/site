@@ -14,6 +14,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
     "formik": "^2.2.9",
+    "js-cookie": "^3.0.1",
     "next": "12.0.4",
     "react": "17.0.2",
     "react-cookienotice": "^4.0.0",
