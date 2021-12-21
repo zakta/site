@@ -11,6 +11,7 @@ export const Form = styled.form`
   }
 
   button {
+    align-self: end;
     background: transparent;
     border: 1px solid #1a3968;
     color: #1a3968;
@@ -21,14 +22,18 @@ export const Form = styled.form`
     padding: 1rem;
     margin: 1rem 0;
     transition: all .15s ease;
-    width: 200px;
+    width: 100%;
 
     &:active{
       background: #1a3968;
       color: white;
     }
 
-    @media (min-width: 870px){
+    @media (min-width: 480px) {
+      width: 200px;
+    }
+
+    @media (min-width: 870px) {
       :hover {
         background: #1a3968;
         color: white;

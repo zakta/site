@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  background: #f8f8f8;
   max-width: 100%;
   min-width: 320px;
   margin: 0;
@@ -19,12 +18,21 @@ export const Center = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-top: 110px;
   max-width: 1400px;
   position: relative;
-  top: -30px;
 
   @media (min-width: 768px){
-    padding: 0;
+    padding: 110px 0 0;
     margin: 0;
   }
+`;
+
+export const Mask = styled.div`
+  background: #f8f8f8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 140px;
 `;

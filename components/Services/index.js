@@ -7,12 +7,13 @@ import { SiGoogleads } from "react-icons/si";
 import { MdOutlineManageSearch } from "react-icons/md";
 
 // Styles
-import { Center, Container } from "./styles";
+import { Mask, Center, Container } from "./styles";
 import { Card, Icon } from "../Card/styles";
 
 export default function Services() {
   return (
     <Container id="servicos">
+      <Mask />
       <Center>
         <Card animate={true}>
           <Icon>
