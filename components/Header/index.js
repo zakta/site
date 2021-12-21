@@ -18,7 +18,7 @@ export default function Header () {
 
     setSticky(window.scrollY > 0);
 
-    changeURL();
+    //changeURL();
   }
   
   const changeURL= () => {
@@ -28,9 +28,9 @@ export default function Header () {
 
     const scroll = window.scrollY;
     
-    /*if(scroll >= 0 && scroll < servicos){
+    if(scroll >= 0 && scroll < servicos){
       return location.hash = "#";
-    }*/
+    }
   
     if(scroll > servicos && scroll < empresa){
       return location.hash = "#servicos";

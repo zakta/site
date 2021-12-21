@@ -8,6 +8,8 @@ import Loader from "../components/Loader";
 import CookiesModal from "../components/CookiesModal";
 import Services from "../components/Services";
 import ModalWhatsapp from "../components/ModalWhatsapp";
+import Terms from "../components/Terms";
+import PrivacyTerms from "../components/PrivacyTerms";
 
 export default function Index() {
   return (
@@ -32,6 +34,8 @@ export default function Index() {
 
       <Footer />
 
+      <Terms />  
+      <PrivacyTerms />
       <CookiesModal />
     </>
   );

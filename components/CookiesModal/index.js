@@ -16,7 +16,15 @@ export default function CookiesModal(){
         Usamos cookies e métodos semelhantes para reconhecer os visitantes e
         lembrar suas preferências, medir a eficácia da campanha publicitária,
         direcionar anúncios e analisar o tráfego do site. Saiba mais acessando
-        nossa <Link href="/politica-de-cookies">Política de Cookies</Link> e <Link href="/politica-de-privacidade">Política de Privacidade</Link>.
+        nossa <span onClick={() => {
+          document.querySelector("#termos").classList.remove('close');
+          document.body.style.overflow="hidden"}}><Link href="/#termos" 
+        >
+        Política de Cookies</Link></span> e <span onClick={()=>{
+          document.querySelector("#privacy").classList.remove('close');
+          document.body.style.overflow= "hidden";
+        }}><Link href="/#privacy">
+        Política de Privacidade</Link></span>.
       </p>
 
        <button onClick={sendCookies}>Aceitar</button>
