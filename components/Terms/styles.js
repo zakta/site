@@ -1,5 +1,16 @@
 import styled from "styled-components";
 import { IoClose } from 'react-icons/io5';
+import { keyframes } from "styled-components";
+
+const slide= keyframes`
+ from{
+   transform: translate3d(0,100%,0);
+ }
+ to{
+   transform: translate3d(0,0,0);
+ }
+`
+
 
 export const Container = styled.section`
   background: #f1f1f1;
@@ -10,6 +21,7 @@ export const Container = styled.section`
   z-index: 14;
   display: flex;
   flex-direction: column;
+  animation: ${slide} .5s ease-in-out both;
 
   &.close {
     display: none;
