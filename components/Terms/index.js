@@ -14,7 +14,7 @@ export default function Terms() {
       <div>
         <h1>Termos de Serviço</h1>
         <p>
-          <span>Termos</span> Zakta possui e opera o site em zakta.com.br (o
+          <span>Termos</span> {`Zakta possui e opera o site em zakta.com.br (o
           “Site”), onde você pode encontrar informações sobre nossos produtos e
           serviços. Estes Termos e Condições do site (o “Termos do site”)
           descrevem os direitos e obrigações de um usuário ou visitante não
@@ -27,17 +27,17 @@ export default function Terms() {
           não registrado do site. De vez em quando, podemos fazer modificações,
           exclusões ou acréscimos ao Site ou a estes Termos do site. Seu uso
           continuado do Site após a postagem de quaisquer alterações aos Termos
-          do site constitui aceitação daqueles alterar.
+          do site constitui aceitação daqueles alterar.`}
         </p>
         <p>
-          <span>Elegibilidade.</span> O site e os serviços que ele descreve são
+          <span>Elegibilidade.</span> {`O site e os serviços que ele descreve são
           disponível apenas para indivíduos com pelo menos 16 anos de idade, a
           menos que especificamos o contrário. Ninguém abaixo dessa idade pode
           acessar ou usar o Site ou fornecer qualquer informação pessoal através
-          do Site.
+          do Site.`}
         </p>
         <p>
-          <span>Conteúdo.</span> O texto, imagens, vídeos, clipes de áudio,
+          <span>Conteúdo.</span> {`O texto, imagens, vídeos, clipes de áudio,
           software e outro conteúdo gerado, fornecido ou feito de outra forma
           acessíveis no ou através do Site (coletivamente, "Conteúdo") são
           contribuído por nós e nossos licenciados. O conteúdo e o site são
@@ -53,18 +53,18 @@ export default function Terms() {
           informativos gerais. Nós reservam-se o direito, mas não têm nenhuma
           obrigação de monitorar, remover, editar, modificar ou remover qualquer
           Conteúdo, a nosso exclusivo critério, a qualquer momento, por qualquer
-          motivo ou sem motivo algum.
+          motivo ou sem motivo algum.`}
         </p>
         <p>
           <span>Reclamações de violação de direitos autorais.</span>{" "}
-          Reivindicações de direitos autorais a violação devem ser enviadas ao
-          agente designado da Zakta.
+          {`Reivindicações de direitos autorais a violação devem ser enviadas ao
+          agente designado da Zakta.`}
         </p>
         <p>
           <span>
             Isenção de responsabilidade; Limitação de responsabilidade.
           </span>{" "}
-          Na medida permitida por lei, nós e nossos afiliados, pais e sucessores
+          {`Na medida permitida por lei, nós e nossos afiliados, pais e sucessores
           e cada um de nossos e seus funcionários, cessionários, executivos,
           agentes e diretores (coletivamente, as "Partes Zakta") renunciam a
           todos garantias e termos, expressos ou implícitos, com relação ao
@@ -78,10 +78,10 @@ export default function Terms() {
           equitativa com com relação ao Site para (a) qualquer especial,
           indireto, incidental, danos punitivos, compensatórios ou emergentes de
           qualquer tipo de qualquer natureza (independentemente de como
-          surgirem).
+          surgirem).`}
         </p>
         <p>
-          <span>Diversos.</span> Estes Termos do Site serão regidos por e
+          <span>Diversos.</span> {`Estes Termos do Site serão regidos por e
           interpretado de acordo com as leis do Brasil. Estes Termos do site
           constituem o acordo integral entre em relação ao Site e substitui e
           mescla quaisquer propostas anteriores, entendimentos e comunicações
@@ -93,7 +93,7 @@ export default function Terms() {
           vinculativa, devemos fornecer você com notificação por escrito de tal
           renúncia. O fracasso de qualquer uma das partes para fazer valer seus
           direitos sob estes Termos do site a qualquer momento para qualquer
-          período não será interpretado como uma renúncia de tais direitos.
+          período não será interpretado como uma renúncia de tais direitos.`}
         </p>
       </div>
     </Container>
