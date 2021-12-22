@@ -14,7 +14,7 @@ const slide= keyframes`
 
 export const Container = styled.section`
   background: #f1f1f1;
-  padding: 1.5rem;
+  padding: 2rem;
   top: 0;
   position: fixed;
   height: 804px;
@@ -26,18 +26,25 @@ export const Container = styled.section`
   &.close {
     display: none;
   }
-
+  .button-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 20%;
+  }
   div {
     display: flex;
     overflow-y: auto;
     flex-direction: column;
-    padding: 2rem;
   }
   h1{
     color: #1a3968;
     font-size: 35px;
     font-weight: 800;
-    margin: 0;    
+    margin: 0;  
+    padding: 0;  
   }
   p {
     font-size: 20px;
@@ -50,9 +57,8 @@ export const Container = styled.section`
 `;
 
 export const BtnClose = styled.button`
-  align-self: flex-end;
   border: none;
-  //margin-right: 2rem;
+  padding: 0;
   `;
 
 export const IcClose=styled(IoClose)`

@@ -3,16 +3,18 @@ import { BtnClose, Container, IcClose } from "./styles";
 
 export default function Terms() {
   return (
-    <Container id="termos" className="close">
-      <BtnClose
-        onClick={() => {
-          document.querySelector("#termos").classList.add("close");
-          document.body.style.overflow = "visible";
-        }}
-      ><IcClose /></BtnClose> 
-      
-      <div>
-        <h1>Termos de Serviço</h1>
+    <Container id="terms" className="close">
+      <div className="button-title">
+        <h1>Termos de Serviço</h1>  
+        <BtnClose
+          onClick={() => {
+            document.querySelector("#terms").classList.add("close");
+            document.body.style.overflow = "visible";
+          }}
+          ><IcClose />
+          </BtnClose>
+      </div>   
+      <div id="modalTerms">
         <p>
           <span>Termos</span> Zakta possui e opera o site em zakta.com.br (o
           “Site”), onde você pode encontrar informações sobre nossos produtos e

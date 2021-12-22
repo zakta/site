@@ -2,18 +2,22 @@ import { BtnClose, Container, IcClose } from "../Terms/styles";
 import { SpanTitle } from "./styles";
 
 export default function PrivacyTerms() {
+  
+  const closeModal = () => {
+    const modal= document.querySelector("#privacy");
+    modal.classList.add("close");
+    document.body.style.overflow = "visible";
+  }
   return (
     <Container id="privacy" className="close">
-      <BtnClose
-        onClick={() => {
-          document.querySelector("#privacy").classList.add("close");
-          document.body.style.overflow = "visible";
-        }}
-      >
-        <IcClose />
-      </BtnClose>
-      <div>
+      <div className="button-title">
         <h1>Política de Privacidade</h1>
+        <BtnClose
+          onClick={closeModal}>
+          <IcClose />
+        </BtnClose>
+      </div>  
+      <div id="modalPrivacy">
         <p>
           <SpanTitle>INTRODUÇÃO</SpanTitle> Informações pessoais. “Informações Pessoais”
           são dados relacionados a você e podem –– isoladamente ou em combinação
