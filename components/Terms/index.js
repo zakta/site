@@ -3,7 +3,6 @@ import { BtnClose, Container, IcClose } from "./styles";
 
 export default function Terms() {
   return (
-<<<<<<< HEAD
     <Container id="terms" className="close">
       <div className="button-title">
         <h1>Termos de Serviço</h1>  
@@ -15,19 +14,7 @@ export default function Terms() {
           ><IcClose />
           </BtnClose>
       </div>   
-      <div id="modalTerms">
-=======
-    <Container id="termos" className="close">
-      <BtnClose
-        onClick={() => {
-          document.querySelector("#termos").classList.add("close");
-          document.body.style.overflow = "visible";
-        }}
-      ><IcClose /></BtnClose> 
-      
-      <div className="terms-content">
-        <h1>Termos de Serviço</h1>
->>>>>>> 39d541880cb7b4b5839843e389bf1f8b1009819a
+      <div className="modalTerms" id="modalTerms">
         <p>
           <span>Termos</span> {`Zakta possui e opera o site em zakta.com.br (o
           “Site”), onde você pode encontrar informações sobre nossos produtos e

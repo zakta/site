@@ -13,32 +13,41 @@ const slide= keyframes`
 
 
 export const Container = styled.section`
+  animation: ${slide} .5s ease-in-out both;
   background: #f1f1f1;
   box-sizing: border-box;
-  padding: 2rem;
-  top: 0;
-  position: fixed;
-  height: 100%;
-  z-index: 14;
   display: flex;
   flex-direction: column;
-  animation: ${slide} .5s ease-in-out both;
+  height: 100%;
+  padding: 1.25rem;
+  position: fixed;
+  min-width: 320px;
+  top: 0;
+  z-index: 14;
 
+  @media (min-width: 480px) {
+    padding: 1.50rem;
+  }
+  @media (min-width: 640px) {
+    padding: 1.75rem;
+  }
   @media (min-width: 870px) {
-    padding: 1.5rem 2.5rem;
+    padding: 2rem;
   }
 
   &.close {
     display: none;
   }
+
   .button-title{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
-    height: 20%;
+    justify-content: space-between;
+    
   }
+
   .modalTerms {
     display: flex;
     flex-direction: column;
@@ -49,14 +58,41 @@ export const Container = styled.section`
  
   h1{
     color: #1a3968;
-    font-size: 35px;
+    font-size: 24px;
     font-weight: 800;
     margin: 0;  
     padding: 0;  
+    line-height: 24px;
+    white-space: nowrap;
+
+    @media (min-width: 480px) {
+      font-size: 27px;
+      line-height: 27px;
+    }
+    @media (min-width: 640px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+    @media (min-width: 870px) {
+      font-size: 35px;
+      line-height: 35px;
+    }
   }
 
   p {
-    font-size: 20px;
+
+    font-size: 15px;
+
+    @media (min-width: 480px) {
+      font-size: 17px;
+    }
+    @media (min-width: 640px) {
+      font-size: 20px;
+    }
+    @media (min-width: 870px) {
+      font-size: 22px;
+    }
+    
   }
 
   span {

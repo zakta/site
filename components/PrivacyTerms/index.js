@@ -17,7 +17,7 @@ export default function PrivacyTerms() {
           <IcClose />
         </BtnClose>
       </div>  
-      <div id="modalPrivacy">
+      <div className="modalTerms" id="modalPrivacy">
         <p>
           <SpanTitle>INTRODUÇÃO</SpanTitle> Informações pessoais. “Informações Pessoais”
           são dados relacionados a você e podem –– isoladamente ou em combinação
