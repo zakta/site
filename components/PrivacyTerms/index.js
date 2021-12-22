@@ -7,6 +7,7 @@ export default function PrivacyTerms() {
     const modal= document.querySelector("#privacy");
     modal.classList.add("close");
     document.body.style.overflow = "visible";
+    location.hash = "";
   }
   return (
     <Container id="privacy" className="close">

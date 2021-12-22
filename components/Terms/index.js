@@ -10,6 +10,7 @@ export default function Terms() {
           onClick={() => {
             document.querySelector("#terms").classList.add("close");
             document.body.style.overflow = "visible";
+            location.hash="";
           }}
           ><IcClose />
           </BtnClose>
