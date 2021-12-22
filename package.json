@@ -22,6 +22,7 @@
     "react-cookienotice": "^4.0.0",
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
+    "react-spring": "^9.3.3",
     "styled-components": "^5.3.3",
     "yup": "^0.32.11"
   },

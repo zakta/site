@@ -1,3 +1,5 @@
+//3rd
+import { useSpring, animated } from 'react-spring'
 // Components
 import Header from '../Header';
 
@@ -14,6 +16,12 @@ import {
 } from "./styles";
 
 export default function Home () {
+  const props = useSpring({
+    to: {opacity: 1},
+    from: { opacity: 0},
+    delay: 2000, 
+  })
+
   return(
     <Container>
       <Cover />
@@ -21,12 +29,12 @@ export default function Home () {
       <CoverMask />
 
       <Header />
-
       <PageTitle>
-        <h1>Tecnologia Aplicada em Soluções Digitais</h1>
+        <animated.div style={props}>
+          <h1>Tecnologia Aplicada em Soluções Digitais</h1>
 
-        <p><span>Somos experts no desenvolvimento de sites e aplicativos para internet. Entendemos as necessidades do negócio e trabalhamos para construir soluções digitais com agilidade, flexibilidade e precisão.</span></p>
-
+          <p><span>Somos experts no desenvolvimento de sites e aplicativos para internet. Entendemos as necessidades do negócio e trabalhamos para construir soluções digitais com agilidade, flexibilidade e precisão.</span></p>
+        </animated.div>
         <ButtonLink href="#empresa">Saiba mais</ButtonLink>
 
         <ArrowAnimation>

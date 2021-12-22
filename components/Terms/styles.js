@@ -113,6 +113,7 @@ export const IcClose=styled(IoClose)`
     color: white;
     cursor: pointer;
     font-size: 30px;
+    transition: all .2s ease-in-out;
 
 
     :active {
