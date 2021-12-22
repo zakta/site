@@ -17,8 +17,8 @@ import {
 
 export default function Home () {
   const props = useSpring({
-    to: {opacity: 1},
-    from: { opacity: 0},
+    to: {opacity: 1, x: `${0}px`}, 
+    from: { opacity: 0, x:`${-100}px`},
     delay: 2000, 
   })
 
