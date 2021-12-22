@@ -14,14 +14,19 @@ const slide= keyframes`
 
 export const Container = styled.section`
   background: #f1f1f1;
+  box-sizing: border-box;
   padding: 2rem;
   top: 0;
   position: fixed;
-  height: 804px;
+  height: 100%;
   z-index: 14;
   display: flex;
   flex-direction: column;
   animation: ${slide} .5s ease-in-out both;
+
+  @media (min-width: 870px) {
+    padding: 1.5rem 2.5rem;
+  }
 
   &.close {
     display: none;
@@ -34,11 +39,14 @@ export const Container = styled.section`
     padding: 0;
     height: 20%;
   }
-  div {
+  .modalTerms {
     display: flex;
-    overflow-y: auto;
     flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 1rem;
   }
+ 
   h1{
     color: #1a3968;
     font-size: 35px;
@@ -46,9 +54,11 @@ export const Container = styled.section`
     margin: 0;  
     padding: 0;  
   }
+
   p {
     font-size: 20px;
   }
+
   span {
     color: #1a3968;
     font-weight: 600;
