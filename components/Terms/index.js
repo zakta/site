@@ -11,7 +11,7 @@ export default function Terms() {
         }}
       ><IcClose /></BtnClose> 
       
-      <div>
+      <div className="terms-content">
         <h1>Termos de Serviço</h1>
         <p>
           <span>Termos</span> {`Zakta possui e opera o site em zakta.com.br (o

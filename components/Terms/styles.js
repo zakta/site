@@ -14,34 +14,43 @@ const slide= keyframes`
 
 export const Container = styled.section`
   background: #f1f1f1;
+  box-sizing: border-box;
   padding: 1.5rem;
   top: 0;
   position: fixed;
-  height: 804px;
+  height: 100%;
   z-index: 14;
   display: flex;
   flex-direction: column;
   animation: ${slide} .5s ease-in-out both;
 
+  @media (min-width: 870px) {
+    padding: 1.5rem 2.5rem;
+  }
+
   &.close {
     display: none;
   }
 
-  div {
+  .terms-content {
     display: flex;
-    overflow-y: auto;
     flex-direction: column;
-    padding: 2rem;
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 1rem;
   }
+ 
   h1{
     color: #1a3968;
     font-size: 35px;
     font-weight: 800;
     margin: 0;    
   }
+
   p {
     font-size: 20px;
   }
+
   span {
     color: #1a3968;
     font-weight: 600;

@@ -37,9 +37,11 @@ export default function CookiesModal(){
         direcionar anúncios e analisar o tráfego do site. Saiba mais acessando
         nossa <span onClick={() => {
           document.querySelector("#termos").classList.remove('close');
-          document.body.style.overflow="hidden"}}><Link href="/#termos" 
-        >
-        Política de Cookies</Link></span> e <span onClick={()=>{
+          document.body.style.overflow="hidden"}}>
+            <Link href="/#termos" as={process.env.BACKEND_URL + '/#termos'}>
+              Política de Cookies
+            </Link>
+          </span> e <span onClick={()=>{
           document.querySelector("#privacy").classList.remove('close');
           document.body.style.overflow= "hidden";
         }}><Link href="/#privacy">
