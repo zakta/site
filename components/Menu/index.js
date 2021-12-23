@@ -33,7 +33,6 @@ export default function Menu ({ isSticky, open, setOpen, activeMenuItem, setActi
 
           if (open) setOverflow("remove");
         }}
-        style={menuAnim}
         >
         <ListItem>
           <Link href="/#" as={process.env.BACKEND_URL + '/#'}>

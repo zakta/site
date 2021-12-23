@@ -1,7 +1,7 @@
-import { animated } from 'react-spring';
+
 import styled from 'styled-components'
 
-export const List = styled(animated.ul)`
+export const List = styled.ul`
   background: #1a3968;
   box-sizing: border-box;
   flex-flow: column nowrap;
