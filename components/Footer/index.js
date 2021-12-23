@@ -15,7 +15,7 @@ import {
   PositionLogo
 } from "./styles";
 
-export const Footer = () => (
+export const Footer = ({alterModal}) => (
   <Container>
     <Box>
       <Link href="#" passHref>
@@ -28,6 +28,14 @@ export const Footer = () => (
       </Link>
 
       <Contact>
+        <ContactLink href="/#termos" 
+        passHref as={process.env.BACKEND_URL + '/#termos'}
+        onClick={()=> alterModal("#terms","#modalTerms")}>
+          Política de Cookies</ContactLink>
+        <ContactLink href="/#privacidade" 
+        passHref as={process.env.BACKEND_URL + '/#privacidade'} 
+        onClick={()=> alterModal("#privacy", "#modalPrivacy")}>
+          Política de Privacidade</ContactLink>
         <ContactLink href="mailto:contato@zakta.com.br" target="_blank">
           contato@zakta.com.br
         </ContactLink>
