@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ContactLink = styled.a`
   color: white;
@@ -39,5 +39,4 @@ export const ContactLink = styled.a`
       }
     }
   }
-}
 `;

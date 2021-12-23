@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { BsArrowDownRight } from "react-icons/bs";
+import { animated } from "react-spring";
 
 export const Container = styled.section`
   box-sizing: border-box;
@@ -47,7 +48,7 @@ export const CoverMask = styled.div`
   width: 100%;
 `;
 
-export const PageTitle = styled.div`
+export const PageTitle = styled(animated.div)`
   align-items: center;
   box-sizing: border-box;
   color: white;

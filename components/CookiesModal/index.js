@@ -21,11 +21,11 @@ export default function CookiesModal({isAcceptedCookie, setAcceptedCookie, alter
           direcionar anúncios e analisar o tráfego do site. Saiba mais acessando
           nossa
           <span onClick={() => {alterModal("#terms", "#modalTerms");}}>
-            <Link href="/#termos" passHref as={process.env.BACKEND_URL + '/#termos'}> Política de Cookies </Link>
+            <Link href="/#termos" as={process.env.BACKEND_URL + '/#termos'}> Política de Cookies </Link>
           </span>
            e
           <span onClick={() => { alterModal("#privacy", "#modalPrivacy");}}>
-            <Link href="/#privacidade" passHref as={process.env.BACKEND_URL + '/#privacidade'}> Política de Privacidade </Link>
+            <Link href="/#privacidade" as={process.env.BACKEND_URL + '/#privacidade'}> Política de Privacidade </Link>
           </span>
           .
         </p>

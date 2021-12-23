@@ -28,14 +28,18 @@ export const Footer = ({alterModal}) => (
       </Link>
 
       <Contact>
-        <ContactLink href="/#termos" 
-        passHref as={process.env.BACKEND_URL + '/#termos'}
-        onClick={()=> alterModal("#terms","#modalTerms")}>
-          Política de Cookies</ContactLink>
-        <ContactLink href="/#privacidade" 
-        passHref as={process.env.BACKEND_URL + '/#privacidade'} 
-        onClick={()=> alterModal("#privacy", "#modalPrivacy")}>
-          Política de Privacidade</ContactLink>
+        <Link href="/#termos" 
+          passHref as={process.env.BACKEND_URL + '/#termos'}>
+          <ContactLink 
+          onClick={()=> alterModal("#terms","#modalTerms")}>
+            Política de Cookies</ContactLink>
+        </Link>
+        <Link href="/#privacidade" 
+          passHref as={process.env.BACKEND_URL + '/#privacidade'} >
+          <ContactLink 
+          onClick={()=> alterModal("#privacy", "#modalPrivacy")}>
+            Política de Privacidade</ContactLink>
+        </Link>    
         <ContactLink href="mailto:contato@zakta.com.br" target="_blank">
           contato@zakta.com.br
         </ContactLink>

@@ -1,4 +1,5 @@
 // 3rd parties
+import { useSpring, animated } from 'react-spring';
 import { BiWrench } from "react-icons/bi";
 import { AiOutlineCloudSync, AiOutlineAppstoreAdd } from "react-icons/ai";
 import { BsMegaphone, BsDiagram3 } from "react-icons/bs";
@@ -11,14 +12,24 @@ import { Mask, Center, Container } from "./styles";
 import { Card, Icon } from "../Card/styles";
 
 export default function Services() {
+    const styles = useSpring({
+      loop: true,
+      from: { rotateZ: 0 },
+      to: { rotateZ: 180 },
+      config : {duration: 800}
+    })
+  
   return (
     <Container id="servicos">
       <Mask />
       <Center>
         <Card animate={true}>
-          <Icon>
-            <BsGlobe/>
-          </Icon>
+            <Icon>
+          <animated.div style={{width: 80,
+        height: 80,...styles}}>
+              <BsGlobe/>
+          </animated.div>
+            </Icon>
           <h3>Criação de Sites</h3>
           <p>
             Sites responsivos, com navegação intuitiva e design profissional.
