@@ -1,6 +1,7 @@
 // 3rd parties
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useSpring } from "react-spring";
 
 // Components
 import { Logo } from "../Logo";
@@ -13,6 +14,12 @@ export default function Header () {
   const [isSticky, setSticky]  = useState(false);
   const [open, setOpen] = useState(false);
   const [activeMenuItem, setActiveMenuItem] = useState('');
+
+  const logoAnim = useSpring({
+    to: {opacity: 1, x: `${0}px`}, 
+    from: { opacity: 0, x:`${-100}px`},
+    delay: 2000, 
+  });
 
   const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -59,7 +66,7 @@ export default function Header () {
     <Container id="header">
       <Center isSticky={isSticky}>
         <Link href="/#" passHref as={process.env.BACKEND_URL + '/#'}>
-          <LogoContainer onClick={scrollTop}>
+          <LogoContainer onClick={scrollTop} style={logoAnim}>
             <Logo
               theme={isSticky ? open ? "white" : "primary" : "white" }
               height={35} />

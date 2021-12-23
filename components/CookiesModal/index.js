@@ -1,24 +1,9 @@
 import Link from "next/link";
 import { Container, CookieNotice } from "./styles";
 import cookie from "js-cookie";
-import { useState, useEffect } from "react";
 
-export default function CookiesModal() {
-  const [isAcceptedCookie, setAcceptedCookie] = useState(false);
 
-  useEffect(() => {
-    if (cookie.get("allow-cookies")) {
-      setAcceptedCookie(true);
-    }
-
-    if (location.hash === "#termos") {
-      alterModal("#terms", "#modalTerms");   
-    }
-
-    if(location.hash === "#privacidade"){
-      alterModal("#privacy", "#modalPrivacy")
-    }
-  }, []);
+export default function CookiesModal({isAcceptedCookie, setAcceptedCookie, alterModal}) {
 
   const createCookies = () => {
     if (cookie.get("allow-cookies") === undefined) {
@@ -27,13 +12,6 @@ export default function CookiesModal() {
     }
   };
 
-  const alterModal = (id1, id2) => {
-    const idModal = document.querySelector(id1);
-    idModal.classList.remove("close");
-    document.body.style.overflow = "hidden";    
-    const modalPrivacy = document.querySelector(id2);
-    modalPrivacy.scrollTo({ top: 0 });
-  };
   return (
     <Container id="modal" hide={isAcceptedCookie}>
       <CookieNotice>
@@ -43,11 +21,11 @@ export default function CookiesModal() {
           direcionar anúncios e analisar o tráfego do site. Saiba mais acessando
           nossa
           <span onClick={() => {alterModal("#terms", "#modalTerms");}}>
-            <Link href="/#termos"> Política de Cookies </Link>
+            <Link href="/#termos" as={process.env.BACKEND_URL + '/#termos'}> Política de Cookies </Link>
           </span>
            e
           <span onClick={() => { alterModal("#privacy", "#modalPrivacy");}}>
-            <Link href="/#privacidade"> Política de Privacidade </Link>
+            <Link href="/#privacidade" as={process.env.BACKEND_URL + '/#privacidade'}> Política de Privacidade </Link>
           </span>
           .
         </p>

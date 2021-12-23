@@ -1,5 +1,8 @@
-//3rd parties
+//3rd
+import cookie from "js-cookie";
+//next
 import Head from "next/head";
+import { useEffect, useState } from "react";
 //components
 import ButtonUp from "../components/ButtonUp";
 import Company from "../components/Company";
@@ -15,6 +18,28 @@ import PrivacyTerms from "../components/PrivacyTerms";
 import GoogleAnalytics from "../components/GoogleAnalytics";
 
 export default function Index() {
+  const [isAcceptedCookie, setAcceptedCookie] = useState(false);
+
+  const alterModal = (id1, id2) => {
+    const idModal= document.querySelector(id1);
+    idModal.classList.remove("close");
+    document.body.style.overflow= "hidden";
+    const modalPrivacy= document.querySelector(id2);
+    modalPrivacy.scrollTo({top:0});
+  }
+
+  useEffect(()=> {
+    if(cookie.get("allow-cookies")){
+      setAcceptedCookie(true);
+    }
+    if (location.hash === "#termos") {
+      alterModal("#terms", "#modalTerms");
+    }
+    if (location.hash === "#privacidade"){
+      alterModal("#privacy", "#modalPrivacy")
+    }
+  },[]);
+
   return (
     <>
       <Head>
@@ -35,11 +60,15 @@ export default function Index() {
 
       {/* <ModalWhatsapp /> */}
 
-      <Footer />
+      <Footer alterModal={alterModal} />
 
       <Terms />  
       <PrivacyTerms />
-      <CookiesModal />
+      <CookiesModal 
+      isAcceptedCookie={isAcceptedCookie} 
+      setAcceptedCookie={setAcceptedCookie} 
+      alterModal={alterModal}
+      />
       <GoogleAnalytics />
     </>
   );

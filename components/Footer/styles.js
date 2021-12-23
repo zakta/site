@@ -39,11 +39,13 @@ export const Contact = styled.div`
   box-sizing: border-box;
   justify-content: center;
   margin: .5rem 0;
+  flex-wrap: wrap;
 
   @media (min-width: 640px) {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    flex-wrap: nowrap;
   }
 `;
 

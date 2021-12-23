@@ -1,5 +1,6 @@
 // 3rd parties
 import Link from "next/link";
+import { useSpring } from "react-spring";
 
 // Components
 import Hamburguer from "../Hamburguer";
@@ -15,6 +16,12 @@ export default function Menu ({ isSticky, open, setOpen, activeMenuItem, setActi
 
   const handleActive = sectionPage => setActiveMenuItem(sectionPage);
 
+  const menuAnim = useSpring({
+    to: {opacity: 1, y: `${0}px`}, 
+    from: { opacity: 0, y:`${-100}px`},
+    delay: 2000, 
+  });
+
   return (
     <>
       <List
@@ -25,7 +32,9 @@ export default function Menu ({ isSticky, open, setOpen, activeMenuItem, setActi
           setOpen(false);
 
           if (open) setOverflow("remove");
-        }}>
+        }}
+        style={menuAnim}
+        >
         <ListItem>
           <Link href="/#" as={process.env.BACKEND_URL + '/#'}>
             <a
