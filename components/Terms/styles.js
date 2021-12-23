@@ -1,9 +1,9 @@
 // 3rd parties
-import styled from "styled-components";
+import styled from 'styled-components';
 import { IoClose } from 'react-icons/io5';
-import { keyframes } from "styled-components";
+import { keyframes } from 'styled-components';
 
-const slide= keyframes`
+const slide = keyframes`
   from{
     transform: translate3d(0,100%,0);
   }
@@ -136,7 +136,7 @@ export const BtnClose = styled.button`
   transition: all .15s ease;
 `;
 
-export const IcClose=styled(IoClose)`
+export const IcClose = styled(IoClose)`
   border: 1px solid #1a3968;
   color: #1a3968;
   cursor: pointer;

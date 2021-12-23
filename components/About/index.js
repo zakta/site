@@ -1,5 +1,7 @@
-import { AboutInfo, AboutDivision, Container, Owners, AboutCompany, List, Check } from "./styles";
-import { GoCheck } from "react-icons/go";
+import { GoCheck } from 'react-icons/go';
+import {
+  AboutInfo, AboutDivision, Container, Owners, AboutCompany, List, Check,
+} from './styles';
 
 export default function About() {
   return (

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container= styled.div`
+export const Container = styled.div`
   padding: 0;
   width: 100%;
  /*
@@ -31,8 +31,8 @@ export const Container= styled.div`
     @media (min-width: 1900px){
       width: 96%;
   }*/
-`
-export const AboutDivision= styled.div`
+`;
+export const AboutDivision = styled.div`
     display: flex;
   flex-direction: column;
   border-bottom: 1px solid #dbd0d0;
@@ -41,8 +41,8 @@ export const AboutDivision= styled.div`
     flex-direction: row;
     flex-wrap: wrap;
   }
-`
-export const AboutInfo= styled.article`
+`;
+export const AboutInfo = styled.article`
   display: flex;
   flex-wrap: wrap;
 
@@ -76,8 +76,8 @@ export const AboutInfo= styled.article`
       margin: 0;
     }
   }
-`
-export const Owners= styled.div`
+`;
+export const Owners = styled.div`
     width: 50%;
     padding: .5rem 0;
     height: 100px;
@@ -87,8 +87,8 @@ export const Owners= styled.div`
     @media (min-width: 768px){
       align-items: flex-start;
     }
-`
-export const AboutCompany= styled.article`
+`;
+export const AboutCompany = styled.article`
   box-sizing: border-box;
   font-size: 15px;
   text-align: left;
@@ -103,8 +103,8 @@ export const AboutCompany= styled.article`
       text-align: left;
       padding: 1rem;
     }
-`
-export const List= styled.ul`
+`;
+export const List = styled.ul`
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -136,12 +136,12 @@ export const List= styled.ul`
 
 
   }
-`
-export const Check= styled.span`
+`;
+export const Check = styled.span`
   font-size: 20px;
   font-weight: 800;
   color: #1a3968;
   padding: 1rem 0;
   position: relative;
   top: 15px;
-`
+`;

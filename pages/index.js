@@ -1,44 +1,44 @@
-//3rd
-import cookie from "js-cookie";
-//next
-import Head from "next/head";
-import { useEffect, useState } from "react";
-//components
-import ButtonUp from "../components/ButtonUp";
-import Company from "../components/Company";
-import Contact from "../components/Contact";
-import { Footer } from "../components/Footer";
-import Home from "../components/Home";
-import Loader from "../components/Loader";
-import CookiesModal from "../components/CookiesModal";
-import Services from "../components/Services";
-import ModalWhatsapp from "../components/ModalWhatsapp";
-import Terms from "../components/Terms";
-import PrivacyTerms from "../components/PrivacyTerms";
-import GoogleAnalytics from "../components/GoogleAnalytics";
+// 3rd
+import cookie from 'js-cookie';
+// next
+import Head from 'next/head';
+import { useEffect, useState } from 'react';
+// components
+import ButtonUp from '../components/ButtonUp';
+import Company from '../components/Company';
+import Contact from '../components/Contact';
+import { Footer } from '../components/Footer';
+import Home from '../components/Home';
+import Loader from '../components/Loader';
+import CookiesModal from '../components/CookiesModal';
+import Services from '../components/Services';
+import ModalWhatsapp from '../components/ModalWhatsapp';
+import Terms from '../components/Terms';
+import PrivacyTerms from '../components/PrivacyTerms';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 
 export default function Index() {
   const [isAcceptedCookie, setAcceptedCookie] = useState(false);
 
   const alterModal = (id1, id2) => {
-    const idModal= document.querySelector(id1);
-    idModal.classList.remove("close");
-    document.body.style.overflow= "hidden";
-    const modalPrivacy= document.querySelector(id2);
-    modalPrivacy.scrollTo({top:0});
-  }
+    const idModal = document.querySelector(id1);
+    idModal.classList.remove('close');
+    document.body.style.overflow = 'hidden';
+    const modalPrivacy = document.querySelector(id2);
+    modalPrivacy.scrollTo({ top: 0 });
+  };
 
-  useEffect(()=> {
-    if(cookie.get("allow-cookies")){
+  useEffect(() => {
+    if (cookie.get('allow-cookies')) {
       setAcceptedCookie(true);
     }
-    if (location.hash === "#termos") {
-      alterModal("#terms", "#modalTerms");
+    if (location.hash === '#termos') {
+      alterModal('#terms', '#modalTerms');
     }
-    if (location.hash === "#privacidade"){
-      alterModal("#privacy", "#modalPrivacy")
+    if (location.hash === '#privacidade') {
+      alterModal('#privacy', '#modalPrivacy');
     }
-  },[]);
+  }, []);
 
   return (
     <>
@@ -62,12 +62,12 @@ export default function Index() {
 
       <Footer alterModal={alterModal} />
 
-      <Terms />  
+      <Terms />
       <PrivacyTerms />
-      <CookiesModal 
-      isAcceptedCookie={isAcceptedCookie} 
-      setAcceptedCookie={setAcceptedCookie} 
-      alterModal={alterModal}
+      <CookiesModal
+        isAcceptedCookie={isAcceptedCookie}
+        setAcceptedCookie={setAcceptedCookie}
+        alterModal={alterModal}
       />
       <GoogleAnalytics />
     </>

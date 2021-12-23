@@ -1,5 +1,7 @@
 // Styles
-import { BtnClose, Center, Container, IcClose } from "./styles";
+import {
+  BtnClose, Center, Container, IcClose,
+} from './styles';
 
 export default function Terms() {
   return (
@@ -7,9 +9,9 @@ export default function Terms() {
       <Center>
         <BtnClose
           onClick={() => {
-            document.querySelector("#terms").classList.add("close");
-            document.body.style.overflow = "visible";
-            location.hash="";
+            document.querySelector('#terms').classList.add('close');
+            document.body.style.overflow = 'visible';
+            location.hash = '';
           }}
         >
           <IcClose />
@@ -19,7 +21,9 @@ export default function Terms() {
 
         <div className="modalTerms" id="modalTerms">
           <p>
-            <span>Termos</span> {`Zakta possui e opera o site em zakta.com.br (o
+            <span>Termos</span>
+            {' '}
+            {`Zakta possui e opera o site em zakta.com.br (o
             “Site”), onde você pode encontrar informações sobre nossos produtos e
             serviços. Estes Termos e Condições do site (o “Termos do site”)
             descrevem os direitos e obrigações de um usuário ou visitante não
@@ -35,14 +39,18 @@ export default function Terms() {
             do site constitui aceitação daqueles alterar.`}
           </p>
           <p>
-            <span>Elegibilidade.</span> {`O site e os serviços que ele descreve são
+            <span>Elegibilidade.</span>
+            {' '}
+            {`O site e os serviços que ele descreve são
             disponível apenas para indivíduos com pelo menos 16 anos de idade, a
             menos que especificamos o contrário. Ninguém abaixo dessa idade pode
             acessar ou usar o Site ou fornecer qualquer informação pessoal através
             do Site.`}
           </p>
           <p>
-            <span>Conteúdo.</span> {`O texto, imagens, vídeos, clipes de áudio,
+            <span>Conteúdo.</span>
+            {' '}
+            {`O texto, imagens, vídeos, clipes de áudio,
             software e outro conteúdo gerado, fornecido ou feito de outra forma
             acessíveis no ou através do Site (coletivamente, "Conteúdo") são
             contribuído por nós e nossos licenciados. O conteúdo e o site são
@@ -61,14 +69,16 @@ export default function Terms() {
             motivo ou sem motivo algum.`}
           </p>
           <p>
-            <span>Reclamações de violação de direitos autorais.</span>{" "}
+            <span>Reclamações de violação de direitos autorais.</span>
+            {' '}
             {`Reivindicações de direitos autorais a violação devem ser enviadas ao
             agente designado da Zakta.`}
           </p>
           <p>
             <span>
               Isenção de responsabilidade; Limitação de responsabilidade.
-            </span>{" "}
+            </span>
+            {' '}
             {`Na medida permitida por lei, nós e nossos afiliados, pais e sucessores
             e cada um de nossos e seus funcionários, cessionários, executivos,
             agentes e diretores (coletivamente, as "Partes Zakta") renunciam a
@@ -86,7 +96,9 @@ export default function Terms() {
             surgirem).`}
           </p>
           <p>
-            <span>Diversos.</span> {`Estes Termos do Site serão regidos por e
+            <span>Diversos.</span>
+            {' '}
+            {`Estes Termos do Site serão regidos por e
             interpretado de acordo com as leis do Brasil. Estes Termos do site
             constituem o acordo integral entre em relação ao Site e substitui e
             mescla quaisquer propostas anteriores, entendimentos e comunicações

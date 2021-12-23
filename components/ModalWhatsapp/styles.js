@@ -1,12 +1,12 @@
-import styled, { keyframes } from "styled-components";
-import { BsWhatsapp } from "react-icons/bs";
+import styled, { keyframes } from 'styled-components';
+import { BsWhatsapp } from 'react-icons/bs';
 
-export const Container=styled.div`
+export const Container = styled.div`
   display: flex;
   position: relative;
   z-index: 12;
-`
-const slide= keyframes`
+`;
+const slide = keyframes`
   0%{
     right: -236px;
   }
@@ -22,9 +22,9 @@ const slide= keyframes`
   100%{
     right: -52px;
   }
-`
+`;
 
-export const ModalWhats= styled.div`
+export const ModalWhats = styled.div`
   background:  #27b32c;
   display: flex;
   align-items: center;
@@ -40,9 +40,9 @@ export const ModalWhats= styled.div`
       animation:${slide} 1s linear .5s forwards;
     }
   }
-`
+`;
 
-export const ButtonWhats= styled.a`
+export const ButtonWhats = styled.a`
   color: white;
   text-decoration: none;
    p{
@@ -50,8 +50,8 @@ export const ButtonWhats= styled.a`
      width: 300px;
      font-weight: 700;
    }
-`
-export const IWhatsapp= styled(BsWhatsapp)`
+`;
+export const IWhatsapp = styled(BsWhatsapp)`
   color: white;
   font-size: 40px;
   padding-right: 1rem;
@@ -59,4 +59,4 @@ export const IWhatsapp= styled(BsWhatsapp)`
 
 
 
-`
+`;

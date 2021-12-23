@@ -1,5 +1,5 @@
-//3rd
-import { useSpring } from 'react-spring'
+// 3rd
+import { useSpring } from 'react-spring';
 // Components
 import Header from '../Header';
 
@@ -12,17 +12,17 @@ import {
   ButtonLink,
   ArrowAnimation,
   ArrowLink,
-  ArrowIcon
-} from "./styles";
+  ArrowIcon,
+} from './styles';
 
-export default function Home () {
+export default function Home() {
   const props = useSpring({
-    to: {opacity: 1, x: `${0}px`},
-    from: { opacity: 0, x:`${-100}px`},
+    to: { opacity: 1, x: `${0}px` },
+    from: { opacity: 0, x: `${-100}px` },
     delay: 2000,
-  })
+  });
 
-  return(
+  return (
     <Container>
       <Cover />
 
@@ -31,9 +31,9 @@ export default function Home () {
       <Header />
 
       <PageTitle style={props}>
-          <h1>Tecnologia Aplicada em Soluções Digitais</h1>
+        <h1>Tecnologia Aplicada em Soluções Digitais</h1>
 
-          <p><span>Somos experts no desenvolvimento de sites e aplicativos para internet. Entendemos as necessidades do negócio e trabalhamos para construir soluções digitais com agilidade, flexibilidade e precisão.</span></p>
+        <p><span>Somos experts no desenvolvimento de sites e aplicativos para internet. Entendemos as necessidades do negócio e trabalhamos para construir soluções digitais com agilidade, flexibilidade e precisão.</span></p>
 
         <ButtonLink href="#empresa">Saiba mais</ButtonLink>
 
@@ -41,6 +41,6 @@ export default function Home () {
           <ArrowLink href="#servicos"><ArrowIcon /></ArrowLink>
         </ArrowAnimation>
       </PageTitle>
-  </Container>
+    </Container>
   );
-};
+}

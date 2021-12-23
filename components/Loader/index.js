@@ -1,5 +1,5 @@
-import { Screen, Load } from "./styles";
-import { Logo } from "../Logo";
+import { Screen, Load } from './styles';
+import { Logo } from '../Logo';
 
 export default function Loader() {
   return (
@@ -9,4 +9,4 @@ export default function Loader() {
       </Load>
     </Screen>
   );
-};
+}

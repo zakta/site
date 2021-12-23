@@ -1,9 +1,9 @@
 // 3rd parties
-import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
+import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
 
 // Components
-import ContactForm from "../Form";
-import Notification from "../Notification";
+import ContactForm from '../Form';
+import Notification from '../Notification';
 
 // Styles
 import {
@@ -14,8 +14,8 @@ import {
   FormDescription,
   FormTitle,
   Icon,
-  TitleContact
-} from "./style";
+  TitleContact,
+} from './style';
 
 export default function Contact() {
   return (

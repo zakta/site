@@ -1,13 +1,11 @@
-import Link from "next/link";
-import { Container, CookieNotice } from "./styles";
-import cookie from "js-cookie";
+import Link from 'next/link';
+import cookie from 'js-cookie';
+import { Container, CookieNotice } from './styles';
 
-
-export default function CookiesModal({isAcceptedCookie, setAcceptedCookie, alterModal}) {
-
+export default function CookiesModal({ isAcceptedCookie, setAcceptedCookie, alterModal }) {
   const createCookies = () => {
-    if (cookie.get("allow-cookies") === undefined) {
-      cookie.set("allow-cookies", "true", { expires: 1 / 192 });
+    if (cookie.get('allow-cookies') === undefined) {
+      cookie.set('allow-cookies', 'true', { expires: 1 / 192 });
       setAcceptedCookie(true);
     }
   };
@@ -20,12 +18,12 @@ export default function CookiesModal({isAcceptedCookie, setAcceptedCookie, alter
           lembrar suas preferências, medir a eficácia da campanha publicitária,
           direcionar anúncios e analisar o tráfego do site. Saiba mais acessando
           nossa
-          <span onClick={() => {alterModal("#terms", "#modalTerms");}}>
-            <Link href="/#termos" as={process.env.BACKEND_URL + '/#termos'}> Política de Cookies </Link>
+          <span onClick={() => { alterModal('#terms', '#modalTerms'); }}>
+            <Link href="/#termos" as={`${process.env.BACKEND_URL}/#termos`}> Política de Cookies </Link>
           </span>
-           e
-          <span onClick={() => { alterModal("#privacy", "#modalPrivacy");}}>
-            <Link href="/#privacidade" as={process.env.BACKEND_URL + '/#privacidade'}> Política de Privacidade </Link>
+          e
+          <span onClick={() => { alterModal('#privacy', '#modalPrivacy'); }}>
+            <Link href="/#privacidade" as={`${process.env.BACKEND_URL}/#privacidade`}> Política de Privacidade </Link>
           </span>
           .
         </p>

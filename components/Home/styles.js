@@ -1,6 +1,6 @@
-import styled, { keyframes } from "styled-components";
-import { BsArrowDownRight } from "react-icons/bs";
-import { animated } from "react-spring";
+import styled, { keyframes } from 'styled-components';
+import { BsArrowDownRight } from 'react-icons/bs';
+import { animated } from 'react-spring';
 
 export const Container = styled.section`
   box-sizing: border-box;

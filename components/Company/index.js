@@ -1,8 +1,10 @@
 // Components
-import About from "../About";
+import About from '../About';
 
 // Styles
-import { Container, Picture, Box, Notes, Center, Numbers } from "./styles";
+import {
+  Container, Picture, Box, Notes, Center, Numbers,
+} from './styles';
 
 export default function Company() {
   return (

@@ -1,42 +1,47 @@
 // 3rd parties
 import { useSpring, animated } from 'react-spring';
-import { BiWrench } from "react-icons/bi";
-import { AiOutlineCloudSync, AiOutlineAppstoreAdd } from "react-icons/ai";
-import { BsMegaphone, BsDiagram3 } from "react-icons/bs";
-import { BsGlobe, BsCart3 } from "react-icons/bs";
-import { SiGoogleads } from "react-icons/si";
-import { MdOutlineManageSearch } from "react-icons/md";
+import { BiWrench } from 'react-icons/bi';
+import { AiOutlineCloudSync, AiOutlineAppstoreAdd } from 'react-icons/ai';
+import {
+  BsMegaphone, BsDiagram3, BsGlobe, BsCart3,
+} from 'react-icons/bs';
+import { SiGoogleads } from 'react-icons/si';
+import { MdOutlineManageSearch } from 'react-icons/md';
 
 // Styles
-import { Mask, Center, Container } from "./styles";
-import { Card, Icon } from "../Card/styles";
+import { Mask, Center, Container } from './styles';
+import { Card, Icon } from '../Card/styles';
 
 export default function Services() {
-    const styles = useSpring({
-      loop: true,
-      from: { rotateZ: 0 },
-      to: { rotateZ: 180 },
-      config : {duration: 800}
-    })
-  
+  const styles = useSpring({
+    loop: true,
+    from: { rotateZ: 0 },
+    to: { rotateZ: 180 },
+    config: { duration: 800 },
+  });
+
   return (
     <Container id="servicos">
       <Mask />
       <Center>
-        <Card animate={true}>
-            <Icon>
-          <animated.div style={{width: 80,
-        height: 80,...styles}}>
-              <BsGlobe/>
-          </animated.div>
-            </Icon>
+        <Card animate>
+          <Icon>
+            <animated.div style={{
+              width: 80,
+              height: 80,
+              ...styles,
+            }}
+            >
+              <BsGlobe />
+            </animated.div>
+          </Icon>
           <h3>Criação de Sites</h3>
           <p>
             Sites responsivos, com navegação intuitiva e design profissional.
             Foco em geração de resultados.
           </p>
         </Card>
-        <Card animate={true}>
+        <Card animate>
           <Icon>
             <MdOutlineManageSearch />
           </Icon>
@@ -46,7 +51,7 @@ export default function Services() {
             que alavancam seus acessos orgânicos.
           </p>
         </Card>
-        <Card animate={true}>
+        <Card animate>
           <Icon>
             <AiOutlineCloudSync />
           </Icon>
@@ -56,7 +61,7 @@ export default function Services() {
             horas por dia de qualquer lugar.
           </p>
         </Card>
-        <Card animate={true}>
+        <Card animate>
           <Icon>
             <BsMegaphone />
           </Icon>
@@ -66,17 +71,17 @@ export default function Services() {
             através do Google.
           </p>
         </Card>
-        <Card animate={true}>
+        <Card animate>
           <Icon>
             <SiGoogleads />
           </Icon>
           <h3>Campanha Google Adwords</h3>
           <p>
-          Planejamento estratégico organizando por categorias, seus produtos e
-          serviços.
+            Planejamento estratégico organizando por categorias, seus produtos e
+            serviços.
           </p>
         </Card>
-        <Card animate={true}>
+        <Card animate>
           <Icon>
             <AiOutlineAppstoreAdd />
           </Icon>
@@ -86,7 +91,7 @@ export default function Services() {
             aplicativos sob medida.
           </p>
         </Card>
-        <Card animate={true}>
+        <Card animate>
           <Icon>
             <BsCart3 />
           </Icon>
@@ -96,7 +101,7 @@ export default function Services() {
             e integração com pagamento online.
           </p>
         </Card>
-        <Card animate={true}>
+        <Card animate>
           <Icon>
             <BsDiagram3 />
           </Icon>
@@ -106,7 +111,7 @@ export default function Services() {
             a segurança e privacidade.
           </p>
         </Card>
-        <Card animate={true}>
+        <Card animate>
           <Icon>
             <BiWrench />
           </Icon>

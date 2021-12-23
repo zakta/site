@@ -1,5 +1,5 @@
 // 3rd parties
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.section`
   background: #f8f8f8;
@@ -135,7 +135,7 @@ export const Notes = styled.div`
   }
 `;
 
- export const Numbers = styled.div`
+export const Numbers = styled.div`
   font-size: 15.789rem;
   margin: 0;
   opacity: 0.07;

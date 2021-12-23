@@ -1,47 +1,49 @@
-import { useFormik } from "formik";
-import * as Yup from "yup";
-import { Erro, Form, InputForm, Position, Textarea } from "./styles";
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
+import {
+  Erro, Form, InputForm, Position, Textarea,
+} from './styles';
 
 export default function ContactForm() {
   function showPopUp() {
-    const popUp = document.getElementById("popUp");
-    const display = popUp.classList.remove("showPopUp");
+    const popUp = document.getElementById('popUp');
+    const display = popUp.classList.remove('showPopUp');
 
     return display;
   }
 
   function mtel(o) {
-    o = o.replace(/\D/g, "");
-    o = o.replace(/^(\d{2})(\d)/g, "($1) $2");
-    o = o.replace(/(\d)(\d{4})$/, "$1-$2");
+    o = o.replace(/\D/g, '');
+    o = o.replace(/^(\d{2})(\d)/g, '($1) $2');
+    o = o.replace(/(\d)(\d{4})$/, '$1-$2');
 
     return o;
   }
 
   const formik = useFormik({
     initialValues: {
-      name: "",
-      tel: "",
-      email: "",
-      subject: "",
-      message: "",
+      name: '',
+      tel: '',
+      email: '',
+      subject: '',
+      message: '',
     },
     validationSchema: Yup.object({
       name: Yup.string()
-        .min(3, "O nome precisa ter no mínimo 3 caracteres.")
-        .required("Preencha o nome."),
+        .min(3, 'O nome precisa ter no mínimo 3 caracteres.')
+        .required('Preencha o nome.'),
       tel: Yup.string()
-        .min(15, "O telefone precisa ter no mínimo 11 números.")
-        .required("Preencha o número."),
+        .min(15, 'O telefone precisa ter no mínimo 11 números.')
+        .required('Preencha o número.'),
       email: Yup.string()
-        .email("E-mail inválido.")
-        .required("Preencha o e-mail."),
+        .email('E-mail inválido.')
+        .required('Preencha o e-mail.'),
       subject: Yup.string()
-        .min(10, "O assunto precisa ter no máximo 10 caracteres")
-        .required("Preencha o assunto."),
+        .min(10, 'O assunto precisa ter no máximo 10 caracteres')
+        .required('Preencha o assunto.'),
       message: Yup.string()
-        .min(20, "A mensagem deve ter no mínimo 20 caracteres.")
-        .required("Preencha a mensagem."),
+        .min(20, 'A mensagem deve ter no mínimo 20 caracteres.')
+        .required('Preencha a mensagem.'),
     }),
     onSubmit: () => {
       showPopUp();
@@ -71,9 +73,9 @@ export default function ContactForm() {
         maxLength={15}
         placeholder="Telefone"
         onChange={(e) => {
-          const value = e.target.value;
+          const { value } = e.target;
 
-          formik.setFieldValue("tel", mtel(value));
+          formik.setFieldValue('tel', mtel(value));
         }}
         onBlur={formik.handleBlur}
         value={formik.values.tel}

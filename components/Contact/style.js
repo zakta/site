@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Card as CardComp, Icon as CardIcon} from "../Card/styles";
+import styled from 'styled-components';
+import { Card as CardComp, Icon as CardIcon } from '../Card/styles';
 
 export const Container = styled.section`
   align-items: center;
@@ -78,14 +78,14 @@ export const ContactInfo = styled.div`
     width: 100%;
   }
 
-`
+`;
 export const TitleContact = styled.h2`
   margin-top: 2rem;
   margin: 0;
   padding: 0;
   font-size: 20px;
   color: #1a3968;
-`
+`;
 export const Card = styled(CardComp)`
   width: 90%;
 
@@ -107,7 +107,6 @@ export const Card = styled(CardComp)`
 export const Icon = styled(CardIcon)`
   font-size: 4rem;
 `;
-
 
 export const FormTitle = styled.div`
   font-size: 33px;

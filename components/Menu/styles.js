@@ -1,5 +1,4 @@
-
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const List = styled.ul`
   background: #1a3968;
@@ -15,10 +14,10 @@ export const List = styled.ul`
   position: fixed;
   right: 0;
   text-align: center;
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+  transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
   top: 0;
   width: 100%;
-  z-index: ${({open}) => (open ? '11' : '0' )};
+  z-index: ${({ open }) => (open ? '11' : '0')};
 
   &:nth-child(1){
     justify-content: flex-end;

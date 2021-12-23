@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 const zoomInOut = keyframes`
 from{
@@ -8,7 +8,7 @@ from{
 50%{
   opacity: 1;
 }
-`
+`;
 const loader = keyframes`
 from{
   transform: translate3d(0,0,0);
@@ -18,9 +18,9 @@ to{
   transform: translate3d(100%,0,0)
 }
 }
-`
+`;
 
-export const Screen=styled.div`
+export const Screen = styled.div`
   width: 100%;
   height: 100%;
   position: fixed;
@@ -33,7 +33,7 @@ export const Screen=styled.div`
   align-items: center;
   animation: ${loader} 1s ease-in-out both 1s;
 
-`
+`;
 
 export const Load = styled.span`
   position: relative;
@@ -41,4 +41,4 @@ export const Load = styled.span`
   height: 200px;
   animation: ${zoomInOut} 1s both;
 
-`
+`;

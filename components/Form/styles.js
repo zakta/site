@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Form = styled.form`
   width: 100%;
@@ -44,7 +44,7 @@ export const Form = styled.form`
 
 export const InputForm = styled.input`
   background: #f8f8f8;
-  border-color: ${({error}) => (error ? 'red' : '#f8f8f8')};
+  border-color: ${({ error }) => (error ? 'red' : '#f8f8f8')};
   border-style: solid;
   border-radius: none;
   box-sizing: border-box;
@@ -66,7 +66,7 @@ export const InputForm = styled.input`
 
 export const Textarea = styled.textarea`
   background: #f8f8f8;
-  border-color: ${({error}) => (error ? 'red' : '#f8f8f8')};
+  border-color: ${({ error }) => (error ? 'red' : '#f8f8f8')};
   border-width: 2px;
   border-style: solid;
   box-sizing: border-box;
@@ -84,10 +84,10 @@ export const Textarea = styled.textarea`
     border: 2px solid #33afad;
   }
 `;
-export const Position=styled.div`
+export const Position = styled.div`
   position: relative;
-`
-export const Erro= styled.div`
+`;
+export const Erro = styled.div`
   color: red;
   font-size: 15px;
   font-weight: 700;

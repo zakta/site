@@ -1,25 +1,29 @@
 // 3rd parties
-import Link from "next/link";
-import { useSpring } from "react-spring";
+import Link from 'next/link';
+import { useSpring } from 'react-spring';
 
 // Components
-import Hamburguer from "../Hamburguer";
+import Hamburguer from '../Hamburguer';
 import { ContactLink } from '../ContactLink/styles';
 
 // Styles
-import { List, ListItem, MenuToggle, ItemInfo } from "./styles";
+import {
+  List, ListItem, MenuToggle, ItemInfo,
+} from './styles';
 
-export default function Menu ({ isSticky, open, setOpen, activeMenuItem, setActiveMenuItem }) {
-  const setOverflow = event => {
+export default function Menu({
+  isSticky, open, setOpen, activeMenuItem, setActiveMenuItem,
+}) {
+  const setOverflow = (event) => {
     document.body.classList[event]('hideOverflow');
   };
 
-  const handleActive = sectionPage => setActiveMenuItem(sectionPage);
+  const handleActive = (sectionPage) => setActiveMenuItem(sectionPage);
 
   const menuAnim = useSpring({
-    to: {opacity: 1, y: `${0}px`}, 
-    from: { opacity: 0, y:`${-100}px`},
-    delay: 2000, 
+    to: { opacity: 1, y: `${0}px` },
+    from: { opacity: 0, y: `${-100}px` },
+    delay: 2000,
   });
 
   return (
@@ -27,48 +31,52 @@ export default function Menu ({ isSticky, open, setOpen, activeMenuItem, setActi
       <List
         isSticky={isSticky}
         open={open}
-        className={isSticky ? "sticky" : ""}
+        className={isSticky ? 'sticky' : ''}
         onClick={() => {
           setOpen(false);
 
-          if (open) setOverflow("remove");
+          if (open) setOverflow('remove');
         }}
-        >
+      >
         <ListItem>
-          <Link href="/#" as={process.env.BACKEND_URL + '/#'}>
+          <Link href="/#" as={`${process.env.BACKEND_URL}/#`}>
             <a
               className={activeMenuItem === '#' || activeMenuItem === '' ? 'menu-item-active' : ''}
-              onClick={() => handleActive('#')}>
+              onClick={() => handleActive('#')}
+            >
               Home
             </a>
           </Link>
         </ListItem>
 
         <ListItem>
-          <Link href="/#servicos" as={process.env.BACKEND_URL + '/#servicos'}>
+          <Link href="/#servicos" as={`${process.env.BACKEND_URL}/#servicos`}>
             <a
               className={activeMenuItem === '#servicos' ? 'menu-item-active' : ''}
-              onClick={() => handleActive('#servicos')}>
+              onClick={() => handleActive('#servicos')}
+            >
               Serviços
             </a>
           </Link>
         </ListItem>
 
         <ListItem>
-          <Link href="/#empresa" as={process.env.BACKEND_URL + '/#empresa'}>
+          <Link href="/#empresa" as={`${process.env.BACKEND_URL}/#empresa`}>
             <a
               className={activeMenuItem === '#empresa' ? 'menu-item-active' : ''}
-              onClick={() => handleActive('#empresa')}>
+              onClick={() => handleActive('#empresa')}
+            >
               Empresa
             </a>
           </Link>
         </ListItem>
 
         <ListItem>
-          <Link href="/#contato" as={process.env.BACKEND_URL + '/#contato'}>
+          <Link href="/#contato" as={`${process.env.BACKEND_URL}/#contato`}>
             <a
               className={activeMenuItem === '#contato' ? 'menu-item-active' : ''}
-              onClick={() => handleActive('#contato')}>
+              onClick={() => handleActive('#contato')}
+            >
               Contato
             </a>
           </Link>
@@ -86,8 +94,9 @@ export default function Menu ({ isSticky, open, setOpen, activeMenuItem, setActi
       <MenuToggle onClick={() => {
         setOpen(!open);
 
-        setOverflow(!open ? "add" : "remove");
-      }}>
+        setOverflow(!open ? 'add' : 'remove');
+      }}
+      >
         <Hamburguer open={open} isSticky={isSticky} />
       </MenuToggle>
     </>

@@ -1,14 +1,15 @@
-import { BtnClose, Center, Container, IcClose } from "../Terms/styles";
-import { SpanTitle } from "./styles";
+import {
+  BtnClose, Center, Container, IcClose,
+} from '../Terms/styles';
+import { SpanTitle } from './styles';
 
 export default function PrivacyTerms() {
-
   const closeModal = () => {
-    const modal= document.querySelector("#privacy");
-    modal.classList.add("close");
-    document.body.style.overflow = "visible";
-    location.hash = "";
-  }
+    const modal = document.querySelector('#privacy');
+    modal.classList.add('close');
+    document.body.style.overflow = 'visible';
+    location.hash = '';
+  };
 
   return (
     <Container id="privacy" className="close">
@@ -21,7 +22,9 @@ export default function PrivacyTerms() {
 
         <div className="modalTerms" id="modalPrivacy">
           <p>
-            <SpanTitle>INTRODUÇÃO</SpanTitle> Informações pessoais. “Informações Pessoais”
+            <SpanTitle>INTRODUÇÃO</SpanTitle>
+            {' '}
+            Informações pessoais. “Informações Pessoais”
             são dados relacionados a você e podem –– isoladamente ou em combinação
             com outras informações –– identificar você como um indivíduo. As
             Informações Pessoais não incluem dados que foram agregados ou tornados
@@ -51,7 +54,9 @@ export default function PrivacyTerms() {
             quando proibido pela lei aplicável.
           </p>
           <p>
-            <SpanTitle>INFORMAÇÕES QUE COLETAMOS</SpanTitle> As Informações Pessoais que
+            <SpanTitle>INFORMAÇÕES QUE COLETAMOS</SpanTitle>
+            {' '}
+            As Informações Pessoais que
             coletamos e nosso uso dessas informações dependem do seu
             relacionamento conosco e dos requisitos da lei aplicável, conforme
             descrito abaixo
@@ -69,7 +74,9 @@ export default function PrivacyTerms() {
             informações sobre seus contatos; e que obtemos de outras fontes.
           </p>
           <p>
-            <SpanTitle>INFORMAÇÕES COLETADAS DE VOCÊ</SpanTitle> A Zakta solicita
+            <SpanTitle>INFORMAÇÕES COLETADAS DE VOCÊ</SpanTitle>
+            {' '}
+            A Zakta solicita
             diferentes tipos de Informações Pessoais de sua parte e sua empresa ou
             outros, dependendo dos serviços que você usa e do seu relacionamento
             conosco. Podemos coletar as seguintes categorias de informações,

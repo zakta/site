@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export const Container= styled.div`
+export const Container = styled.div`
   width: 92%;
   z-index: 14;
   position: fixed;
@@ -14,8 +14,8 @@ export const Container= styled.div`
     display: none;
   }
 
-`
-export const PopUp= styled.div`
+`;
+export const PopUp = styled.div`
   display: flex;
   flex-direction: column;
   background: #33afad;
@@ -36,8 +36,8 @@ export const PopUp= styled.div`
     color: #ffff;
     text-align: center;
   }
-`
-export const BtnPopUp= styled.button`
+`;
+export const BtnPopUp = styled.button`
   align-self: flex-end;
   background-color: #ffff;
   border: none;
@@ -54,11 +54,9 @@ export const BtnPopUp= styled.button`
     border: 1px solid white;
     color: white;
   }
-`
+`;
 export const MailIcon = styled(FontAwesomeIcon)`
   color: white;
   font-size: 100px;
   align-self: center;
-`
-
-
+`;
