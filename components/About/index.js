@@ -10,11 +10,11 @@ export default function About() {
           <h3>Transformamos ideias em realidade.</h3>
           <Owners>
             <h4>Fernanda F. Silva</h4>
-            <p>CEO da Empresa</p>
+            <p>CEO</p>
           </Owners>
           <Owners>
             <h4>Nelson Francisco</h4>
-            <p>CTO da Empresa</p>
+            <p>CTO</p>
           </Owners>
         </AboutInfo>
         <AboutCompany>
