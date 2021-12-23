@@ -1,8 +1,5 @@
-- Zerar ajustes cross browser
-- Zerar ajustes cross mobile
 - Zerar ajustes responsivos
 - Trocar as hashs no scroll da página
-- Criar cookie ao aceitar os termos ok
 - Fazer integração do formulário de contato com api
 - Animar ícones da sessão serviços
 - Efeito slide down na imagem de fundo da home
@@ -12,4 +9,3 @@
 - Escolher novas fotos
 - Otimização SEO
 - Refactor do código
-- Implementar Google Analytics ok

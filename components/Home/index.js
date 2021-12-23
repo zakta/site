@@ -17,9 +17,9 @@ import {
 
 export default function Home () {
   const props = useSpring({
-    to: {opacity: 1, x: `${0}px`}, 
+    to: {opacity: 1, x: `${0}px`},
     from: { opacity: 0, x:`${-100}px`},
-    delay: 2000, 
+    delay: 2000,
   })
 
   return(
@@ -29,12 +29,12 @@ export default function Home () {
       <CoverMask />
 
       <Header />
+
       <PageTitle style={props}>
-        
           <h1>Tecnologia Aplicada em Soluções Digitais</h1>
 
           <p><span>Somos experts no desenvolvimento de sites e aplicativos para internet. Entendemos as necessidades do negócio e trabalhamos para construir soluções digitais com agilidade, flexibilidade e precisão.</span></p>
-       
+
         <ButtonLink href="#empresa">Saiba mais</ButtonLink>
 
         <ArrowAnimation>

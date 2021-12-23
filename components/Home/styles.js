@@ -198,14 +198,25 @@ export const ArrowIcon = styled(BsArrowDownRight)`
   font-size: 40px;
   margin-bottom: 10px;
   margin-top: 30px;
+  opacity: .75;
   position: relative;
   right: .6rem;
   transform: rotate(45deg);
+  transition: all .15s ease;
+
+  &:active {
+    opacity: 1;
+  }
 
   @media (min-width: 450px) {
     font-size: 45px;
   }
+
   @media (min-width: 768px) {
     font-size: 50px;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 `;
