@@ -1,5 +1,4 @@
 // 3rd parties
-import { animated } from "react-spring";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -68,7 +67,7 @@ export const Center = styled.div`
   }
 `;
 
-export const LogoContainer = styled(animated.div)`
+export const LogoContainer = styled.div`
   cursor: pointer;
   height: 35px;
   padding: 0;
