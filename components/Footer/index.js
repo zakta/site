@@ -1,9 +1,10 @@
 // 3rd parties
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 
 // Components
 import { Logo } from '../Logo';
-import { ContactLink } from '../ContactLink/styles';
+import ContactLink from '../ContactLink/styles';
 
 // Styles
 import {
@@ -11,16 +12,16 @@ import {
   Contact,
   Container,
   Copyright,
-  Info,
   PositionLogo,
 } from './styles';
 
-export var Footer = function ({ alterModal }) {
+const Footer = function FooterPage({ alterModal }) {
   return (
     <Container>
       <Box>
         <Link href="#" passHref>
           <PositionLogo
+            role="button"
             onClick={() => {
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
@@ -63,3 +64,9 @@ export var Footer = function ({ alterModal }) {
     </Container>
   );
 };
+
+Footer.propTypes = {
+  alterModal: PropTypes.string.isRequired,
+};
+
+export default Footer;

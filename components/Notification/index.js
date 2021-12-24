@@ -6,7 +6,7 @@ import {
   PopUp, BtnPopUp, Container, MailIcon,
 } from './styles';
 
-export default function Notification() {
+const Notification = function NotificationPage() {
   function closePopUp() {
     const popUp = document.getElementById('popUp');
     const display = popUp.classList.add('showPopUp');
@@ -27,4 +27,6 @@ export default function Notification() {
       </PopUp>
     </Container>
   );
-}
+};
+
+export default Notification;

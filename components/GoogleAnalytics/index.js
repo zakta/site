@@ -1,7 +1,7 @@
 // 3rd parties
 import Script from 'next/script';
 
-export default function GoogleAnalytics() {
+const GoogleAnalytics = function GoogleAnalyticsPage() {
   return (
     <Script id="google-analytics" strategy="afterInteractive">
       {`
@@ -15,4 +15,5 @@ export default function GoogleAnalytics() {
         `}
     </Script>
   );
-}
+};
+export default GoogleAnalytics;

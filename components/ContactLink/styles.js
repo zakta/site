@@ -1,7 +1,7 @@
 // 3rd parties
 import styled from 'styled-components';
 
-export const ContactLink = styled.a`
+const ContactLink = styled.a`
   color: white;
   display: inline-block;
   font-size: 14px;
@@ -42,3 +42,5 @@ export const ContactLink = styled.a`
     }
   }
 `;
+
+export default ContactLink;

@@ -5,7 +5,7 @@ import {
   Erro, Form, InputForm, Position, Textarea,
 } from './styles';
 
-export default function ContactForm() {
+const ContactForm = function ContactFormPage() {
   function showPopUp() {
     const popUp = document.getElementById('popUp');
     const display = popUp.classList.remove('showPopUp');
@@ -13,12 +13,14 @@ export default function ContactForm() {
     return display;
   }
 
-  function mtel(o) {
-    o = o.replace(/\D/g, '');
-    o = o.replace(/^(\d{2})(\d)/g, '($1) $2');
-    o = o.replace(/(\d)(\d{4})$/, '$1-$2');
+  function mtel(phoneRaw) {
+    let phoneMasked = phoneRaw;
 
-    return o;
+    phoneMasked = phoneMasked.replace(/\D/g, '');
+    phoneMasked = phoneMasked.replace(/^(\d{2})(\d)/g, '($1) $2');
+    phoneMasked = phoneMasked.replace(/(\d)(\d{4})$/, '$1-$2');
+
+    return phoneMasked;
   }
 
   const formik = useFormik({
@@ -132,4 +134,6 @@ export default function ContactForm() {
       <button type="submit">Enviar Mensagem</button>
     </Form>
   );
-}
+};
+
+export default ContactForm;

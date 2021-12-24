@@ -17,11 +17,10 @@ import {
   TitleContact,
 } from './style';
 
-export default function Contact() {
+const Contact = function ContactPage() {
   return (
     <Container id="contato">
       <Center>
-
         <ContactInfo>
           <h1>Contatos</h1>
           <TitleContact> Contato</TitleContact>
@@ -51,8 +50,9 @@ export default function Contact() {
         <FormTitle>Você pode nos escrever</FormTitle>
 
         <FormDescription>
-          Por favor preencha este formulário. Seus dados serão privados e utilizados
-          apenas para entendermos melhor suas necessidades. Em até um dia útil, responderemos a sua consulta.
+          Por favor preencha este formulário. Seus dados serão privados e
+          utilizados apenas para entendermos melhor suas necessidades. Em até um
+          dia útil, responderemos a sua consulta.
         </FormDescription>
 
         <ContactForm />
@@ -60,4 +60,5 @@ export default function Contact() {
       <Notification />
     </Container>
   );
-}
+};
+export default Contact;

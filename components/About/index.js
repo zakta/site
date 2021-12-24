@@ -1,10 +1,15 @@
 import { GoCheck } from 'react-icons/go';
 import {
   AboutInfo,
-  AboutDivision, Container, Owners, AboutCompany, List, Check,
+  AboutDivision,
+  Container,
+  Owners,
+  AboutCompany,
+  List,
+  Check,
 } from './styles';
 
-export default function About() {
+const About = function AboutPage() {
   return (
     <Container>
       <AboutDivision>
@@ -21,9 +26,21 @@ export default function About() {
           </Owners>
         </AboutInfo>
         <AboutCompany>
-          <p>Uma empresa de tecnologia da informação que está envolvida no planejamento, desenvolvimento e implementação de aplicações web e mobile.</p>
-          <p>Trabalhamos diretamente com os proprietários na elaboração de um plano de negócios, identificando as necessidades de marketing e desenvolvendo as habilidades necessárias para a propriedade do negócio.</p>
-          <p>Nosso objetivo é entregar o máximo de excelência, a fins de atingir e ou superar o resultado esperado.</p>
+          <p>
+            Uma empresa de tecnologia da informação que está envolvida no
+            planejamento, desenvolvimento e implementação de aplicações web e
+            mobile.
+          </p>
+          <p>
+            Trabalhamos diretamente com os proprietários na elaboração de um
+            plano de negócios, identificando as necessidades de marketing e
+            desenvolvendo as habilidades necessárias para a propriedade do
+            negócio.
+          </p>
+          <p>
+            Nosso objetivo é entregar o máximo de excelência, a fins de atingir
+            e ou superar o resultado esperado.
+          </p>
         </AboutCompany>
       </AboutDivision>
       <List>
@@ -54,4 +71,5 @@ export default function About() {
       </List>
     </Container>
   );
-}
+};
+export default About;

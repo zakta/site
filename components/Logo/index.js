@@ -3,7 +3,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { memo } from 'react';
 
-const SvgComponent = function (props) {
+const SvgComponent = function SvgComponentThemes(props) {
   const themes = {
     primary: () => (
       <>

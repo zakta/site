@@ -4,7 +4,7 @@ import { Logo } from '../Logo';
 // Styles
 import { Screen, Load } from './styles';
 
-export default function Loader() {
+const Loader = function LoaderPage() {
   return (
     <Screen>
       <Load>
@@ -12,4 +12,6 @@ export default function Loader() {
       </Load>
     </Screen>
   );
-}
+};
+
+export default Loader;

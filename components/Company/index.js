@@ -6,7 +6,7 @@ import {
   Container, Picture, Box, Notes, Center, Numbers,
 } from './styles';
 
-export default function Company() {
+const Company = function CompanyPage() {
   return (
     <Container id="empresa">
       <Center>
@@ -42,4 +42,5 @@ export default function Company() {
       </Center>
     </Container>
   );
-}
+};
+export default Company;

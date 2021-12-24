@@ -19,6 +19,7 @@
     "lord-icon-element": "^3.3.3",
     "lottie-web": "^5.8.1",
     "next": "12.0.4",
+    "prop-types": "^15.8.0",
     "react": "17.0.2",
     "react-cookienotice": "^4.0.0",
     "react-dom": "17.0.2",

@@ -1,7 +1,7 @@
 // 3rd parties
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { useSpring } from 'react-spring';
+// import { useSpring } from 'react-spring';
 
 // Components
 import { Logo } from '../Logo';
@@ -10,7 +10,7 @@ import Menu from '../Menu';
 // Styles
 import { Center, Container, LogoContainer } from './styles';
 
-export default function Header() {
+const Header = function HeaderPage() {
   const [isSticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
   const [activeMenuItem, setActiveMenuItem] = useState('');
@@ -27,7 +27,7 @@ export default function Header() {
     // changeURL();
   };
 
-  const changeURL = () => {
+  /* const changeURL = () => {
     const servicos = document.querySelector('#servicos').offsetTop;
     const empresa = document.querySelector('#empresa').offsetTop;
     const contato = document.querySelector('#contato').offsetTop;
@@ -46,10 +46,21 @@ export default function Header() {
     if (scroll >= contato) {
       return location.hash = '#contato';
     }
+  }; */
+  // isSticky ? open ? 'white' : 'primary' : 'white'
+
+  const ChangeTheme = () => {
+    if (isSticky) {
+      if (open) {
+        return 'white';
+      }
+      return 'primary';
+    }
+    return 'white';
   };
 
   useEffect(() => {
-    setActiveMenuItem(location.hash);
+    setActiveMenuItem(document.location.hash);
 
     window.addEventListener('scroll', handleScroll);
 
@@ -62,7 +73,7 @@ export default function Header() {
         <Link href="/#" passHref as={`${process.env.BACKEND_URL}/#`}>
           <LogoContainer onClick={scrollTop}>
             <Logo
-              theme={isSticky ? open ? 'white' : 'primary' : 'white'}
+              theme={ChangeTheme()}
               height={35}
             />
           </LogoContainer>
@@ -78,4 +89,6 @@ export default function Header() {
       </Center>
     </Container>
   );
-}
+};
+
+export default Header;

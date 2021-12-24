@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import ButtonUp from '../components/ButtonUp';
 import Company from '../components/Company';
 import Contact from '../components/Contact';
-import { Footer } from '../components/Footer';
+import Footer from '../components/Footer';
 import Home from '../components/Home';
 import Loader from '../components/Loader';
 import CookiesModal from '../components/CookiesModal';

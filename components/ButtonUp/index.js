@@ -7,7 +7,7 @@ import {
   ButtonArrow, Center, Container, IconArrow, ScrollTop,
 } from './styles';
 
-export default function ButtonUp() {
+const ButtonUp = function ButtonUpBtn() {
   return (
     <Container>
       <Center>
@@ -26,4 +26,5 @@ export default function ButtonUp() {
       </Center>
     </Container>
   );
-}
+};
+export default ButtonUp;

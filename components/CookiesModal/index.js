@@ -1,10 +1,12 @@
 // 3rd parties
 import Link from 'next/link';
 import cookie from 'js-cookie';
-
+import PropTypes from 'prop-types';
+// styles
 import { Container, CookieNotice } from './styles';
 
-export default function CookiesModal({ isAcceptedCookie, setAcceptedCookie, alterModal }) {
+const CookiesModal = function
+CookiesModalPage({ isAcceptedCookie, setAcceptedCookie, alterModal }) {
   const createCookies = () => {
     if (cookie.get('allow-cookies') === undefined) {
       cookie.set('allow-cookies', 'true', { expires: 1 / 192 });
@@ -33,4 +35,11 @@ export default function CookiesModal({ isAcceptedCookie, setAcceptedCookie, alte
       </CookieNotice>
     </Container>
   );
-}
+};
+CookiesModal.propTypes = {
+  isAcceptedCookie: PropTypes.bool.isRequired,
+  setAcceptedCookie: PropTypes.bool.isRequired,
+  alterModal: PropTypes.string.isRequired,
+};
+
+export default CookiesModal;

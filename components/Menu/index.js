@@ -1,6 +1,7 @@
 // 3rd parties
 import Link from 'next/link';
-import { useSpring } from 'react-spring';
+import PropTypes from 'prop-types';
+// import { useSpring } from 'react-spring';
 
 // Components
 import Hamburguer from '../Hamburguer';
@@ -11,7 +12,7 @@ import {
   List, ListItem, MenuToggle, ItemInfo,
 } from './styles';
 
-export default function Menu({
+const Menu = function MenuPage({
   isSticky, open, setOpen, activeMenuItem, setActiveMenuItem,
 }) {
   const setOverflow = (event) => {
@@ -20,11 +21,11 @@ export default function Menu({
 
   const handleActive = (sectionPage) => setActiveMenuItem(sectionPage);
 
-  const menuAnim = useSpring({
+  /*  const menuAnim = useSpring({
     to: { opacity: 1, y: `${0}px` },
     from: { opacity: 0, y: `${-100}px` },
     delay: 2000,
-  });
+  }); */
 
   return (
     <>
@@ -41,6 +42,7 @@ export default function Menu({
         <ListItem>
           <Link href="/#" as={`${process.env.BACKEND_URL}/#`}>
             <a
+
               className={activeMenuItem === '#' || activeMenuItem === '' ? 'menu-item-active' : ''}
               onClick={() => handleActive('#')}
             >
@@ -76,6 +78,7 @@ export default function Menu({
             <a
               className={activeMenuItem === '#contato' ? 'menu-item-active' : ''}
               onClick={() => handleActive('#contato')}
+              role="button"
             >
               Contato
             </a>
@@ -101,4 +104,14 @@ export default function Menu({
       </MenuToggle>
     </>
   );
-}
+};
+
+Menu.propTypes = {
+  isSticky: PropTypes.bool.isRequired,
+  open: PropTypes.bool.isRequired,
+  setOpen: PropTypes.bool.isRequired,
+  activeMenuItem: PropTypes.bool.isRequired,
+  setActiveMenuItem: PropTypes.bool.isRequired,
+};
+
+export default Menu;
