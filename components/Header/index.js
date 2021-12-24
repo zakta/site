@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useSpring } from 'react-spring';
 
+
 // Components
 import { Logo } from '../Logo';
 import Menu from '../Menu';

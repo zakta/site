@@ -1,7 +1,8 @@
 // 3rd parties
 import { useSpring, animated } from 'react-spring';
 import { BiWrench } from 'react-icons/bi';
-import { AiOutlineCloudSync, AiOutlineAppstoreAdd } from 'react-icons/ai';
+import { AiOutlineCloudSync,
+  AiOutlineAppstoreAdd } from 'react-icons/ai';
 import {
   BsMegaphone, BsDiagram3, BsGlobe, BsCart3,
 } from 'react-icons/bs';

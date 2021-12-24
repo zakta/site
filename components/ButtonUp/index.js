@@ -3,8 +3,7 @@ import Link from 'next/link';
 import { FaArrowUp } from 'react-icons/fa';
 
 // Styles
-import {
-  ButtonArrow, Center, Container, IconArrow, ScrollTop,
+import { ButtonArrow, Center, Container, IconArrow, ScrollTop,
 } from './styles';
 
 export default function ButtonUp() {

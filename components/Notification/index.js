@@ -1,4 +1,7 @@
+// 3rd parties
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
+// Styles
 import {
   PopUp, BtnPopUp, Container, MailIcon,
 } from './styles';

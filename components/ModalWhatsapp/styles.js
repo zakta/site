@@ -1,3 +1,4 @@
+// 3rd parties
 import styled, { keyframes } from 'styled-components';
 import { BsWhatsapp } from 'react-icons/bs';
 
@@ -55,7 +56,7 @@ export const IWhatsapp = styled(BsWhatsapp)`
   color: white;
   font-size: 40px;
   padding-right: 1rem;
-  
+
 
 
 

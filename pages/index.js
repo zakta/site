@@ -1,9 +1,9 @@
-// 3rd
+// 3rd parties
 import cookie from 'js-cookie';
-// next
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
-// components
+
+// Components
 import ButtonUp from '../components/ButtonUp';
 import Company from '../components/Company';
 import Contact from '../components/Contact';

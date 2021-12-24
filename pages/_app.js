@@ -1,3 +1,4 @@
+// Local
 import GlobalStyle from './GlobalStyle';
 
 const App = function ({ Component, pageProps }) {

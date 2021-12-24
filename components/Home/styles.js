@@ -1,3 +1,4 @@
+// 3rd parties
 import styled, { keyframes } from 'styled-components';
 import { BsArrowDownRight } from 'react-icons/bs';
 import { animated } from 'react-spring';

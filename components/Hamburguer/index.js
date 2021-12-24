@@ -1,3 +1,4 @@
+// Styles
 import { Container, Burguer } from './styles';
 
 export default function Hamburguer({ open, isSticky }) {

@@ -1,3 +1,4 @@
+// 3rd parties
 import styled from 'styled-components';
 
 export const ContactLink = styled.a`
@@ -10,6 +11,7 @@ export const ContactLink = styled.a`
   text-decoration: none;
   transition: opacity .15s ease;
   white-space: nowrap;
+
 
   &::before {
     content: "";

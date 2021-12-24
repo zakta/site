@@ -1,3 +1,4 @@
+// 3rd parties
 import Document, {
   Html, Head, Main, NextScript,
 } from 'next/document';

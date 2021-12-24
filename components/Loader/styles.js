@@ -1,3 +1,4 @@
+// 3rd parties
 import styled, { keyframes } from 'styled-components';
 
 const zoomInOut = keyframes`

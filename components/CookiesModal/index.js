@@ -1,5 +1,7 @@
+// 3rd parties
 import Link from 'next/link';
 import cookie from 'js-cookie';
+
 import { Container, CookieNotice } from './styles';
 
 export default function CookiesModal({ isAcceptedCookie, setAcceptedCookie, alterModal }) {

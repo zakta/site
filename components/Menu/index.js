@@ -7,8 +7,7 @@ import Hamburguer from '../Hamburguer';
 import { ContactLink } from '../ContactLink/styles';
 
 // Styles
-import {
-  List, ListItem, MenuToggle, ItemInfo,
+import { List, ListItem, MenuToggle, ItemInfo,
 } from './styles';
 
 export default function Menu({

@@ -3,7 +3,7 @@ import About from '../About';
 
 // Styles
 import {
-  Container, Picture, Box, Notes, Center, Numbers,
+  Container, Picture, Box, Notes, Center, Numbers
 } from './styles';
 
 export default function Company() {

@@ -14,7 +14,7 @@ import {
   FormDescription,
   FormTitle,
   Icon,
-  TitleContact,
+  TitleContact
 } from './style';
 
 export default function Contact() {

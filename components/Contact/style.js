@@ -1,4 +1,6 @@
+// 3rd parties
 import styled from 'styled-components';
+
 import { Card as CardComp, Icon as CardIcon } from '../Card/styles';
 
 export const Container = styled.section`

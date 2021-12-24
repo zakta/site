@@ -1,3 +1,4 @@
+// 3rd parties
 import styled from 'styled-components';
 
 export const Container = styled.section`

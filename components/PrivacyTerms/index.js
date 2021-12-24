@@ -1,3 +1,4 @@
+// Styles
 import {
   BtnClose, Center, Container, IcClose,
 } from '../Terms/styles';

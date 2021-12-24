@@ -1,6 +1,7 @@
 // Styles
 import {
-  BtnClose, Center, Container, IcClose,
+  BtnClose,
+  Center, Container, IcClose,
 } from './styles';
 
 export default function Terms() {
