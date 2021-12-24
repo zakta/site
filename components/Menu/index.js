@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 // Components
 import Hamburguer from '../Hamburguer';
-import { ContactLink } from '../ContactLink/styles';
+import ContactLink from '../ContactLink/styles';
 
 // Styles
 import {
