@@ -12,7 +12,7 @@ import {
   Container,
   Copyright,
   Info,
-  PositionLogo
+  PositionLogo,
 } from './styles';
 
 export var Footer = function ({ alterModal }) {

@@ -1,8 +1,7 @@
 // 3rd parties
 import styled from 'styled-components';
 import { IoClose } from 'react-icons/io5';
-import {
-  keyframes } from 'styled-components';
+import { keyframes } from 'styled-components';
 
 const slide = keyframes`
   from{
