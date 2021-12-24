@@ -15,7 +15,7 @@ import { MdOutlineManageSearch } from 'react-icons/md';
 import { Mask, Center, Container } from './styles';
 import { Card, Icon } from '../Card/styles';
 
-export default function Services() {
+const Services = function ServicesPage() {
   const styles = useSpring({
     loop: true,
     from: { rotateZ: 0 },
@@ -127,4 +127,5 @@ export default function Services() {
       </Center>
     </Container>
   );
-}
+};
+export default Services;

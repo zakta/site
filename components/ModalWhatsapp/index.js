@@ -3,7 +3,7 @@ import {
   ButtonWhats, Container, IWhatsapp, ModalWhats,
 } from './styles';
 
-export default function ModalWhatsapp() {
+const ModalWhatsapp = function ModalWhatsappPage() {
   return (
     <Container>
       <ModalWhats>
@@ -17,4 +17,6 @@ export default function ModalWhatsapp() {
       </ModalWhats>
     </Container>
   );
-}
+};
+
+export default ModalWhatsapp;

@@ -2,14 +2,14 @@
 import {
   BtnClose, Center, Container, IcClose,
 } from '../Terms/styles';
-import { SpanTitle } from './styles';
+import SpanTitle from './styles';
 
-export default function PrivacyTerms() {
+const PrivacyTerms = function PrivacyTermsPage() {
   const closeModal = () => {
     const modal = document.querySelector('#privacy');
     modal.classList.add('close');
     document.body.style.overflow = 'visible';
-    location.hash = '';
+    document.location.hash = '';
   };
 
   return (
@@ -117,4 +117,6 @@ export default function PrivacyTerms() {
       </Center>
     </Container>
   );
-}
+};
+
+export default PrivacyTerms;

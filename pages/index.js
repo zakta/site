@@ -17,7 +17,7 @@ import Terms from '../components/Terms';
 import PrivacyTerms from '../components/PrivacyTerms';
 import GoogleAnalytics from '../components/GoogleAnalytics';
 
-export default function Index() {
+const Index = function IndexPage() {
   const [isAcceptedCookie, setAcceptedCookie] = useState(false);
 
   const alterModal = (id1, id2) => {
@@ -32,10 +32,10 @@ export default function Index() {
     if (cookie.get('allow-cookies')) {
       setAcceptedCookie(true);
     }
-    if (location.hash === '#termos') {
+    if (window.location.hash === '#termos') {
       alterModal('#terms', '#modalTerms');
     }
-    if (location.hash === '#privacidade') {
+    if (window.location.hash === '#privacidade') {
       alterModal('#privacy', '#modalPrivacy');
     }
   }, []);
@@ -58,7 +58,7 @@ export default function Index() {
 
       <ButtonUp />
 
-      {/* <ModalWhatsapp /> */}
+      <ModalWhatsapp />
 
       <Footer alterModal={alterModal} />
 
@@ -72,4 +72,6 @@ export default function Index() {
       <GoogleAnalytics />
     </>
   );
-}
+};
+
+export default Index;

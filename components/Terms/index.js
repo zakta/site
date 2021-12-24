@@ -4,7 +4,7 @@ import {
   Center, Container, IcClose,
 } from './styles';
 
-export default function Terms() {
+const Terms = function TermsPage() {
   return (
     <Container id="terms" className="close">
       <Center>
@@ -12,7 +12,7 @@ export default function Terms() {
           onClick={() => {
             document.querySelector('#terms').classList.add('close');
             document.body.style.overflow = 'visible';
-            location.hash = '';
+            document.location.hash = '';
           }}
         >
           <IcClose />
@@ -117,4 +117,6 @@ export default function Terms() {
       </Center>
     </Container>
   );
-}
+};
+
+export default Terms;
