@@ -3,7 +3,7 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 
 // Components
-import { Logo } from '../Logo';
+import Logo from '../Logo';
 import ContactLink from '../ContactLink/styles';
 
 // Styles

@@ -1,5 +1,5 @@
 // Components
-import { Logo } from '../Logo';
+import Logo from '../Logo';
 
 // Styles
 import { Screen, Load } from './styles';

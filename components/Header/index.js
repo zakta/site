@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 // import { useSpring } from 'react-spring';
 
 // Components
-import { Logo } from '../Logo';
+import Logo from '../Logo';
 import Menu from '../Menu';
 
 // Styles
