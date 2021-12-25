@@ -40,7 +40,7 @@ export const Container = styled.div`
       padding-bottom: 0;
       padding-top: 0;
 
-      a {
+      button {
         color: #1a3968;
         opacity: 1;
         transition: all .2s ease;

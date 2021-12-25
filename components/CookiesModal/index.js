@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import cookie from 'js-cookie';
 import PropTypes from 'prop-types';
+
 // styles
 import { Container, CookieNotice } from './styles';
 
@@ -36,6 +37,7 @@ CookiesModalPage({ isAcceptedCookie, setAcceptedCookie, alterModal }) {
     </Container>
   );
 };
+
 CookiesModal.propTypes = {
   isAcceptedCookie: PropTypes.bool.isRequired,
   setAcceptedCookie: PropTypes.bool.isRequired,

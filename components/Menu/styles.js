@@ -49,25 +49,26 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   list-style-type: none;
-  background-color: inherit;
-  font-weight: 700;
-  font-size: 30px;
-  text-transform: uppercase;
 
   @media (min-width: 870px){
     padding: 0;
     display: flex;
-    font-size: 20px;
-    font-weight: 800;
   }
 
-  a {
+  button {
+    background-color: transparent;
+    border: none;
     color: white;
-    display: block;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
     padding: 1.5rem;
     position: relative;
     text-decoration: none;
+    text-transform: uppercase;
     transition: all .2s ease;
+    width: 100%;
 
     :active {
       background: #33afad;
@@ -78,6 +79,8 @@ export const ListItem = styled.li`
       padding: 1.5rem 0;
       margin-left: 1.5rem;
       margin-right: 1.5rem;
+      font-size: 20px;
+      font-weight: 800;
 
       &::before {
         content: "";

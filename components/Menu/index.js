@@ -40,48 +40,50 @@ const Menu = function MenuPage({
         }}
       >
         <ListItem>
-          <Link href="/#" as={`${process.env.BACKEND_URL}/#`}>
-            <a
-
+          <Link passHref href="/#" as={`${process.env.BACKEND_URL}/#`}>
+            <button
+              type="button"
               className={activeMenuItem === '#' || activeMenuItem === '' ? 'menu-item-active' : ''}
               onClick={() => handleActive('#')}
             >
               Home
-            </a>
+            </button>
           </Link>
         </ListItem>
 
         <ListItem>
-          <Link href="/#servicos" as={`${process.env.BACKEND_URL}/#servicos`}>
-            <a
+          <Link passHref href="/#servicos" as={`${process.env.BACKEND_URL}/#servicos`}>
+            <button
+              type="button"
               className={activeMenuItem === '#servicos' ? 'menu-item-active' : ''}
               onClick={() => handleActive('#servicos')}
             >
               Serviços
-            </a>
+            </button>
           </Link>
         </ListItem>
 
         <ListItem>
-          <Link href="/#empresa" as={`${process.env.BACKEND_URL}/#empresa`}>
-            <a
+          <Link passHref href="/#empresa" as={`${process.env.BACKEND_URL}/#empresa`}>
+            <button
+              type="button"
               className={activeMenuItem === '#empresa' ? 'menu-item-active' : ''}
               onClick={() => handleActive('#empresa')}
             >
               Empresa
-            </a>
+            </button>
           </Link>
         </ListItem>
 
         <ListItem>
-          <Link href="/#contato" as={`${process.env.BACKEND_URL}/#contato`}>
-            <a
+          <Link passHref href="/#contato" as={`${process.env.BACKEND_URL}/#contato`}>
+            <button
+              type="button"
               className={activeMenuItem === '#contato' ? 'menu-item-active' : ''}
               onClick={() => handleActive('#contato')}
-              role="button"
             >
               Contato
-            </a>
+            </button>
           </Link>
         </ListItem>
 
