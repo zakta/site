@@ -19,7 +19,7 @@ const Footer = function FooterPage({ alterModal }) {
   return (
     <Container>
       <Box>
-        <Link href="#" passHref>
+        <Link passHref href="/#" as={`${process.env.BACKEND_URL}/#`}>
           <PositionLogo
             role="button"
             onClick={() => {
