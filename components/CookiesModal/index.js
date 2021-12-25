@@ -45,9 +45,9 @@ CookiesModalPage({ isAcceptedCookie, setAcceptedCookie, alterModal }) {
 };
 
 CookiesModal.propTypes = {
+  alterModal: PropTypes.func.isRequired,
   isAcceptedCookie: PropTypes.bool.isRequired,
-  setAcceptedCookie: PropTypes.bool.isRequired,
-  alterModal: PropTypes.string.isRequired,
+  setAcceptedCookie: PropTypes.func.isRequired,
 };
 
 export default CookiesModal;

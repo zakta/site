@@ -1,8 +1,8 @@
 // 3rd parties
 import PropTypes from 'prop-types';
 
-// Local
-import GlobalStyle from './GlobalStyle';
+// Styles
+import GlobalStyle from '../components/GlobalStyle/styles';
 
 const App = function App({ Component, pageProps }) {
   return (

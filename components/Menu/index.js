@@ -111,9 +111,9 @@ const Menu = function MenuPage({
 Menu.propTypes = {
   isSticky: PropTypes.bool.isRequired,
   open: PropTypes.bool.isRequired,
-  setOpen: PropTypes.bool.isRequired,
-  activeMenuItem: PropTypes.bool.isRequired,
-  setActiveMenuItem: PropTypes.bool.isRequired,
+  setOpen: PropTypes.func.isRequired,
+  activeMenuItem: PropTypes.string.isRequired,
+  setActiveMenuItem: PropTypes.func.isRequired,
 };
 
 export default Menu;

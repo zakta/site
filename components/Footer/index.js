@@ -66,7 +66,7 @@ const Footer = function FooterPage({ alterModal }) {
 };
 
 Footer.propTypes = {
-  alterModal: PropTypes.string.isRequired,
+  alterModal: PropTypes.func.isRequired,
 };
 
 export default Footer;
