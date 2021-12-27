@@ -17,16 +17,11 @@ import Terms from '../components/Terms';
 import PrivacyTerms from '../components/PrivacyTerms';
 import GoogleAnalytics from '../components/GoogleAnalytics';
 
+// Functions
+import alterModal from '../functions/alterModal';
+
 const Index = function IndexPage() {
   const [isAcceptedCookie, setAcceptedCookie] = useState(false);
-
-  const alterModal = (id1, id2) => {
-    const idModal = document.querySelector(id1);
-    idModal.classList.remove('close');
-    document.body.style.overflow = 'hidden';
-    const modalPrivacy = document.querySelector(id2);
-    modalPrivacy.scrollTo({ top: 0 });
-  };
 
   useEffect(() => {
     if (cookie.get('allow-cookies')) {
@@ -60,7 +55,7 @@ const Index = function IndexPage() {
 
       <ModalWhatsapp />
 
-      <Footer alterModal={alterModal} />
+      <Footer />
 
       <Terms />
 
@@ -69,7 +64,6 @@ const Index = function IndexPage() {
       <CookiesModal
         isAcceptedCookie={isAcceptedCookie}
         setAcceptedCookie={setAcceptedCookie}
-        alterModal={alterModal}
       />
 
       <GoogleAnalytics />
