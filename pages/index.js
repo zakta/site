@@ -63,12 +63,15 @@ const Index = function IndexPage() {
       <Footer alterModal={alterModal} />
 
       <Terms />
+
       <PrivacyTerms />
+
       <CookiesModal
         isAcceptedCookie={isAcceptedCookie}
         setAcceptedCookie={setAcceptedCookie}
         alterModal={alterModal}
       />
+
       <GoogleAnalytics />
     </>
   );
