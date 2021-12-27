@@ -1,6 +1,8 @@
+- Fazer integração do formulário de contato com api (Ale)
+
 - Zerar ajustes responsivos
+
 - Trocar as hashs no scroll da página
-- Fazer integração do formulário de contato com api
 - Animar ícones da sessão serviços
 - Efeito slide down na imagem de fundo da home
 - Animações de entrada no scroll da página

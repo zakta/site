@@ -1,10 +1,12 @@
 // 3rd parties
 import Link from 'next/link';
-import PropTypes from 'prop-types';
 
 // Components
 import Logo from '../Logo';
 import ContactLink from '../ContactLink/styles';
+
+// Functions
+import alterModal from '../../functions/alterModal';
 
 // Styles
 import {
@@ -15,7 +17,7 @@ import {
   PositionLogo,
 } from './styles';
 
-const Footer = function FooterPage({ alterModal }) {
+const Footer = function FooterPage() {
   return (
     <Container>
       <Box>
@@ -63,10 +65,6 @@ const Footer = function FooterPage({ alterModal }) {
       <Copyright>© 2021 ZAKTA Tecnologia todos direitos reservados.</Copyright>
     </Container>
   );
-};
-
-Footer.propTypes = {
-  alterModal: PropTypes.func.isRequired,
 };
 
 export default Footer;

@@ -140,6 +140,7 @@ export const MenuToggle = styled.div`
 export const ItemInfo = styled.li`
   list-style-type: none;
   padding: 1.5rem;
+  display: block;
 
   @media (min-width: 870px) {
     display: none;

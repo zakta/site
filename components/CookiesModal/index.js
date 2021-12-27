@@ -3,11 +3,14 @@ import Link from 'next/link';
 import cookie from 'js-cookie';
 import PropTypes from 'prop-types';
 
+// Functions
+import alterModal from '../../functions/alterModal';
+
 // styles
 import { Container, CookieNotice } from './styles';
 
 const CookiesModal = function
-CookiesModalPage({ isAcceptedCookie, setAcceptedCookie, alterModal }) {
+CookiesModalPage({ isAcceptedCookie, setAcceptedCookie }) {
   const createCookies = () => {
     if (cookie.get('allow-cookies') === undefined) {
       cookie.set('allow-cookies', 'true', { expires: 1 / 192 });
@@ -45,7 +48,6 @@ CookiesModalPage({ isAcceptedCookie, setAcceptedCookie, alterModal }) {
 };
 
 CookiesModal.propTypes = {
-  alterModal: PropTypes.func.isRequired,
   isAcceptedCookie: PropTypes.bool.isRequired,
   setAcceptedCookie: PropTypes.func.isRequired,
 };
