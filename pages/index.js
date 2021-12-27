@@ -12,7 +12,7 @@ import Home from '../components/Home';
 import Loader from '../components/Loader';
 import CookiesModal from '../components/CookiesModal';
 import Services from '../components/Services';
-// import ModalWhatsapp from '../components/ModalWhatsapp';
+import ModalWhatsapp from '../components/ModalWhatsapp';
 import Terms from '../components/Terms';
 import PrivacyTerms from '../components/PrivacyTerms';
 import GoogleAnalytics from '../components/GoogleAnalytics';
@@ -53,7 +53,7 @@ const Index = function IndexPage() {
 
       <ButtonUp />
 
-      {/* <ModalWhatsapp /> */}
+      <ModalWhatsapp />
 
       <Footer />
 
