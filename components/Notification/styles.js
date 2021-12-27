@@ -7,19 +7,21 @@ export const Container = styled.div`
   z-index: 14;
   position: fixed;
   bottom: 30%;
+  width: 100%;
+  justify-content: center;
 
   @media (min-width: 768px){
     width: 60%;
   }
   &.showPopUp{
-    display: ${({showPopUp}) => (showPopUp ? 'flex' : 'none')};
+    display: ${({ showPopUp }) => (showPopUp ? 'flex' : 'none')};
   }
 
 `;
 export const PopUp = styled.div`
   display: flex;
   flex-direction: column;
-  background: ${({formStatus})=>(formStatus === 'success' ? '#33afad' : '#f6f6f6')};
+  background: ${({ formStatus }) => (formStatus === 'success' ? '#33afad' : '#f6f6f6')};
   padding: 2rem;
   opacity: 0.98;
 
@@ -33,13 +35,13 @@ export const PopUp = styled.div`
     letter-spacing: .5px;
     font-weight: 800;
     text-align: center;
-    color:  ${({formStatus})=>(formStatus === 'success' ? '#ffff' : '#b94f4f')};
+    color:  ${({ formStatus }) => (formStatus === 'success' ? '#ffff' : '#b94f4f')};
     margin: 0;
     padding: .5rem;
   }
   p{
     font-size: 16px;
-    color:  ${({formStatus})=>(formStatus === 'success' ? '#ffff' : '#b94f4f')};
+    color:  ${({ formStatus }) => (formStatus === 'success' ? '#ffff' : '#b94f4f')};
     text-align: center;
   }
 `;
@@ -47,8 +49,8 @@ export const BtnPopUp = styled.button`
   align-self: flex-end;
   background-color: #ffff;
   border: none;
-  border: 1px solid ${({formStatus})=>(formStatus === 'success' ? '#33afad' : '#b94f4f')};
-  color: ${({formStatus})=>(formStatus === 'success' ? '#33afad' : '#b94f4f')};
+  border: 1px solid ${({ formStatus }) => (formStatus === 'success' ? '#33afad' : '#b94f4f')};
+  color: ${({ formStatus }) => (formStatus === 'success' ? '#33afad' : '#b94f4f')};
   font-size: 18px;
   font-weight: 700;
   padding: 1px;
@@ -56,14 +58,14 @@ export const BtnPopUp = styled.button`
   cursor: pointer;
 
   :hover{
-    background: ${({formStatus})=>(formStatus === 'success' ? '#33afad' : '#b94f4f')};
+    background: ${({ formStatus }) => (formStatus === 'success' ? '#33afad' : '#b94f4f')};
     border: 1px solid white;
     color: white;
   }
 `;
 export const MailIcon = styled(FontAwesomeIcon)`
-  color:  ${({formStatus})=>(formStatus === 'success' ? '#fff' : '#b94f4f')};
-  font-size: ${({formStatus})=>(formStatus === 'success' ? '100px' : '65px')};
+  color:  ${({ formStatus }) => (formStatus === 'success' ? '#fff' : '#b94f4f')};
+  font-size: ${({ formStatus }) => (formStatus === 'success' ? '100px' : '65px')};
   align-self: center;
 
 `;

@@ -1,5 +1,5 @@
 // 3rd parties
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 export const Form = styled.form`
   width: 100%;
@@ -70,10 +70,10 @@ export const Erro = styled.div`
 export const BtnSubmit = styled.button`
     align-self: end;
     animation-duration: 20s;
-    background: ${({loader}) => (loader ? '#cccccc24' : 'transparent')};
+    background: ${({ loader }) => (loader ? '#cccccc24' : 'transparent')};
     border: 1px solid #1a3968;
-    color: ${({loader}) => (loader ? '#5d7497' : '#1a3968')};
-    cursor: ${({loader}) => (loader ? 'not-allowed' : 'pointer')};
+    color: ${({ loader }) => (loader ? '#5d7497' : '#1a3968')};
+    cursor: ${({ loader }) => (loader ? 'not-allowed' : 'pointer')};
 
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
@@ -85,8 +85,8 @@ export const BtnSubmit = styled.button`
     max-width: 25%;
 
     &:active{
-      background:  ${({loader}) => (loader ? 'inherit' : '#1a3968')};
-      color: ${({loader}) => (loader ? 'inherit' : 'white')};
+      background:  ${({ loader }) => (loader ? 'inherit' : '#1a3968')};
+      color: ${({ loader }) => (loader ? 'inherit' : 'white')};
     }
 
     @media (min-width: 480px) {
@@ -95,8 +95,8 @@ export const BtnSubmit = styled.button`
 
     @media (min-width: 870px) {
       :hover {
-        background:  ${({loader}) => (loader ? 'inherit' : '#1a3968')};
-        color: ${({loader}) => (loader ? 'inherit' : 'white')};
+        background:  ${({ loader }) => (loader ? 'inherit' : '#1a3968')};
+        color: ${({ loader }) => (loader ? 'inherit' : 'white')};
       }
     }
 `;

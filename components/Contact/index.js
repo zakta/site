@@ -19,8 +19,8 @@ import {
 } from './style';
 
 const Contact = function ContactPage() {
-  const [formStatus, setFormStatus] = useState("");
-  const [showPopUp, setShowPopUp]= useState(false);
+  const [formStatus, setFormStatus] = useState('');
+  const [showPopUp, setShowPopUp] = useState(false);
 
   return (
     <Container id="contato">
@@ -62,8 +62,11 @@ const Contact = function ContactPage() {
         <ContactForm setFormStatus={setFormStatus} setShowPopUp={setShowPopUp} />
       </Center>
 
-      <Notification formStatus={formStatus} showPopUp={showPopUp}
-        setShowPopUp={setShowPopUp} />
+      <Notification
+        formStatus={formStatus}
+        showPopUp={showPopUp}
+        setShowPopUp={setShowPopUp}
+      />
     </Container>
   );
 };

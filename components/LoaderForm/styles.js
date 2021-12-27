@@ -1,12 +1,12 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 const progressAnimation = keyframes`
   0%{width: 5%;}
   100%{width: 100%;}
-`
+`;
 
 export const Container = styled.div`
-  display: ${({loader}) => (loader ? 'unset' : 'none')};
+  display: ${({ loader }) => (loader ? 'unset' : 'none')};
   position: absolute;
   bottom: 0;
   left: 0;
@@ -21,4 +21,6 @@ export const Container = styled.div`
       background-color: #33afad;
       animation: ${progressAnimation} 2s infinite;
     }
-`
+`;
+
+export default Container;

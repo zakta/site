@@ -1,12 +1,14 @@
 // 3rd parties
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import PropTypes from 'prop-types';
+// styles
 import LoaderForm from '../LoaderForm';
 import {
-  Erro, Form, InputForm, Position, Textarea, BtnSubmit
+  Erro, Form, InputForm, Position, Textarea, BtnSubmit,
 } from './styles';
 
-const ContactForm = function ContactFormPage({setFormStatus, setShowPopUp}) {
+const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
   function mtel(phoneRaw) {
     let phoneMasked = phoneRaw;
 
@@ -23,17 +25,17 @@ const ContactForm = function ContactFormPage({setFormStatus, setShowPopUp}) {
       template_id: 'template_w8vin3g',
       user_id: 'user_rizvggYkHJhDIQF4MJsbR',
       template_params: dataForm,
-    }
+    };
 
     const config = {
       method: 'POST',
       body: JSON.stringify(data),
-      headers: new Headers ({
+      headers: new Headers({
         'Content-type': 'application/json',
       }),
     };
 
-    return fetch('https://api.emailjs.com/api/v1.0/email/sendddd', config)
+    return fetch('https://api.emailjs.com/api/v1.0/email/sendddd', config);
   }
 
   const formik = useFormik({
@@ -62,24 +64,13 @@ const ContactForm = function ContactFormPage({setFormStatus, setShowPopUp}) {
         .required('Preencha a mensagem.'),
     }),
     onSubmit: async (values) => {
-      const delay = ms => new Promise(res => setTimeout(res, ms));
-      await delay(10000);
       setShowPopUp(true);
 
       const response = await submitFormData(values);
 
-      if(response.ok){
-        setFormStatus('success');
-        console.log("enviado com sucesso.");
-      }
-      else{
-        setFormStatus('error')
-        console.log('erro');
-      }
+      setFormStatus(response.ok ? 'success' : 'error');
     },
   });
-
-  const loader= false;
 
   return (
     <Form onSubmit={formik.handleSubmit}>
@@ -168,12 +159,16 @@ const ContactForm = function ContactFormPage({setFormStatus, setShowPopUp}) {
         disabled={formik.isSubmitting}
         type="submit"
         loader={formik.isSubmitting}
-        className='loader'>
+        className="loader"
+      >
         Enviar Mensagem
         <LoaderForm loader={formik.isSubmitting} />
       </BtnSubmit>
     </Form>
   );
 };
-
+ContactForm.propTypes = {
+  setFormStatus: PropTypes.func.isRequired,
+  setShowPopUp: PropTypes.func.isRequired,
+};
 export default ContactForm;
