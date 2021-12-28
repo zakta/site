@@ -1,6 +1,5 @@
 // 3rd parties
 import Link from 'next/link';
-import { useSpring, animated } from 'react-spring';
 import { BiWrench } from 'react-icons/bi';
 import {
   AiOutlineCloudSync,
@@ -17,13 +16,6 @@ import { Mask, Center, Container } from './styles';
 import { ArrowRight, Card, Icon } from '../Card/styles';
 
 const Services = function ServicesPage() {
-  const styles = useSpring({
-    loop: true,
-    from: { rotateZ: 0 },
-    to: { rotateZ: 180 },
-    config: { duration: 800 },
-  });
-
   return (
     <Container id="servicos">
       <Mask />
@@ -31,14 +23,7 @@ const Services = function ServicesPage() {
 
         <Card animate>
           <Icon>
-            <animated.div style={{
-              width: 80,
-              height: 80,
-              ...styles,
-            }}
-            >
-              <BsGlobe />
-            </animated.div>
+            <BsGlobe />
           </Icon>
           <h3>Criação de Sites</h3>
           <p>
