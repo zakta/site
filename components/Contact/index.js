@@ -27,7 +27,6 @@ const Contact = function ContactPage() {
     <Container id="contato">
       <Center>
         <ContactInfo>
-          <h1>Contatos</h1>
           <TitleContact> Contato</TitleContact>
           <h3>Alguma dúvida? Entre em contato e responderemos em breve.</h3>
         </ContactInfo>

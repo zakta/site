@@ -54,25 +54,13 @@ export const Center = styled.div`
 `;
 
 export const ContactInfo = styled.div`
-    min-height: 210px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 3rem;
-    z-index:1;
-
-  h1{
-    position: absolute;
-    z-index: -1;
-    font-size: 320px;
-    font-weight: 800;
-    opacity: .5;
-    color: #f3f3f3;
-    top: -370px;
-    right: -189px;
-  }
-
+  min-height: 210px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 3rem;
+  z-index:1;
 
   h3{
     font-size: 32px;
@@ -99,6 +87,7 @@ export const Icon = styled(CardIcon)`
 `;
 
 export const Card = styled(CardComp)`
+  border: none;
   cursor: pointer;
   width: 90%;
 

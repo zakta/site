@@ -13,8 +13,7 @@ export const Form = styled.form`
 `;
 
 export const InputForm = styled.input`
-  background: #f8f8f8;
-  border-color: ${({ error }) => (error ? '#b94f4f' : '#f8f8f8')};
+  border-color: ${({ error }) => (error ? '#b94f4f' : '#1a3968')};
   border-style: solid;
   border-radius: none;
   box-sizing: border-box;
@@ -35,8 +34,7 @@ export const InputForm = styled.input`
 `;
 
 export const Textarea = styled.textarea`
-  background: #f8f8f8;
-  border-color: ${({ error }) => (error ? '#b94f4f' : '#f8f8f8')};
+  border-color: ${({ error }) => (error ? '#b94f4f' : '#1a3968')};
   border-width: 2px;
   border-style: solid;
   box-sizing: border-box;

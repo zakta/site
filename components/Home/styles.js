@@ -30,7 +30,7 @@ export const Container = styled.section`
 `;
 
 export const Cover = styled.div`
-  background: url("workspace1.jpg") center no-repeat;
+  background: url("210888.webp") center no-repeat;
   background-size: cover;
   height: 100%;
   min-height: 493px;

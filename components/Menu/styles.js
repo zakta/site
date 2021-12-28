@@ -75,7 +75,6 @@ export const ListItem = styled.li`
     }
 
     @media (min-width: 870px){
-      opacity: .75;
       padding: 1.5rem 0;
       margin-left: 1.5rem;
       margin-right: 1.5rem;
@@ -97,10 +96,6 @@ export const ListItem = styled.li`
         &::before {
           width: 100%;
         }
-      }
-
-      :hover{
-        opacity: 1;
       }
 
       :active {
