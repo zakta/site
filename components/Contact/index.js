@@ -1,5 +1,6 @@
 // 3rd parties
 import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
+import { BsWhatsapp } from 'react-icons/bs';
 import { useState } from 'react';
 
 // Components
@@ -32,22 +33,37 @@ const Contact = function ContactPage() {
         </ContactInfo>
 
         <article>
-          <Card>
-            <Icon>
-              <AiOutlinePhone />
-            </Icon>
+          <Card className="contact-card-email">
+            <a href="mailto:contato@zakta.com.br">
+              <Icon>
+                <AiOutlineMail />
+              </Icon>
 
-            <h4>Telefone</h4>
-            <p>+55 11 93302 0321</p>
+              <h4>E-mail</h4>
+              <p>contato@zakta.com.br</p>
+            </a>
           </Card>
 
-          <Card>
-            <Icon>
-              <AiOutlineMail />
-            </Icon>
+          <Card className="contact-card-telephone">
+            <a href="tel:+5511933020321">
+              <Icon style={{ color: 'white' }}>
+                <AiOutlinePhone />
+              </Icon>
 
-            <h4>E-mail</h4>
-            <p>contato@zakta.com.br</p>
+              <h4 style={{ color: 'white' }}>Telefone</h4>
+              <p style={{ color: 'white' }}>+55 11 93302 0321</p>
+            </a>
+          </Card>
+
+          <Card className="contact-card-whatsapp">
+            <a href=" https://wa.me/5511933020321?text=Olá%20gostaria%20de%20um%20orçamento%20dos%20seus%20serviços." target="_blank">
+              <Icon>
+                <BsWhatsapp />
+              </Icon>
+
+              <h4>WhatsApp</h4>
+              <p>+55 11 93302 0321</p>
+            </a>
           </Card>
         </article>
 

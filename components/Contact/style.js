@@ -28,8 +28,13 @@ export const Container = styled.section`
     justify-content: center;
     width: 100%;
 
-    @media (min-width: 1100px) {
+    @media (min-width: 768px) {
       flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    @media (min-width: 1060px) {
       justify-content: space-between;
     }
   }
@@ -88,8 +93,18 @@ export const TitleContact = styled.h2`
   font-size: 20px;
   color: #1a3968;
 `;
+
+export const Icon = styled(CardIcon)`
+  font-size: 4rem;
+`;
+
 export const Card = styled(CardComp)`
+  cursor: pointer;
   width: 90%;
+
+  a {
+    text-decoration: none;
+  }
 
   h4 {
     margin: 0;
@@ -101,13 +116,41 @@ export const Card = styled(CardComp)`
     margin: 0;
   }
 
-  @media (min-width: 768px){
-    width: 48%;
+  ${Icon}, h4, p {
+    color: white;
   }
-`;
 
-export const Icon = styled(CardIcon)`
-  font-size: 4rem;
+  @media (min-width: 768px) {
+    width: 45%;
+  }
+
+  @media (min-width: 1060px) {
+    width: 31.5%;
+  }
+
+  &.contact-card-email {
+    background: #1a3968;
+
+    &:hover {
+      background: #122746;
+    }
+  }
+
+  &.contact-card-telephone {
+    background: #33afad;
+
+    &:hover {
+      background: #278987;
+    }
+  }
+
+  &.contact-card-whatsapp {
+    background: #52BF55;
+
+    &:hover {
+      background: #2e7d31;
+    }
+  }
 `;
 
 export const FormTitle = styled.div`
