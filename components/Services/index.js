@@ -10,15 +10,15 @@ import {
 } from 'react-icons/bs';
 import { SiGoogleads } from 'react-icons/si';
 import { MdOutlineManageSearch } from 'react-icons/md';
-import { useSpring } from 'react-spring';
-import { useEffect, useState } from 'react';
+// import { useSpring } from 'react-spring';
+// import { useEffect, useState } from 'react';
 
 // Styles
 import { Mask, Center, Container } from './styles';
 import { ArrowRight, Card, Icon } from '../Card/styles';
 
 const Services = function ServicesPage() {
-  const [hover, setHover] = useState(
+  /* const [hover, setHover] = useState(
     {
       globe: false,
       search: false,
@@ -57,7 +57,7 @@ const Services = function ServicesPage() {
     config: { duration: 800 },
   });
 
-  const animateOnScroll = () => {
+   const animateOnScroll = () => {
     const globe = document.querySelector('#globe').offsetTop;
     const search = document.querySelector('#search').offsetTop;
     const cloud = document.querySelector('#cloud').offsetTop;
@@ -67,7 +67,7 @@ const Services = function ServicesPage() {
     const cart = document.querySelector('#cart').offsetTop;
     const net = document.querySelector('#net').offsetTop;
     const wrench = document.querySelector('#wrench').offsetTop;
-    const services = document.querySelector('#servicos').offsetTop;
+    const about = document.querySelector('#empresa').offsetTop;
     const scroll = window.scrollY;
 
     if (scroll > globe) {
@@ -101,28 +101,26 @@ const Services = function ServicesPage() {
     if (scroll > wrench) {
       setHover((prevState) => ({ ...prevState, wrench: true }));
     }
-    if (scroll > services) {
+    if (scroll > about) {
       setHover((prevState) => ({
         ...prevState, cart: false, net: false, wrench: false,
       }));
     }
   };
 
-  useEffect(() => {
+   useEffect(() => {
     window.addEventListener('scroll', animateOnScroll);
 
     return () => window.removeEventListener('scroll', animateOnScroll);
-  }, []);
-
+  }, []); */
+  /* style={{ ...(hover.globe ? props : null) }} */
   return (
     <Container id="servicos">
       <Mask />
       <Center>
 
         <Card animate id="globe">
-          <Icon
-            style={{ ...(hover.globe ? props : null) }}
-          >
+          <Icon>
             <BsGlobe />
           </Icon>
           <h3>Criação de Sites</h3>
@@ -145,9 +143,7 @@ const Services = function ServicesPage() {
         </Card>
 
         <Card animate id="search">
-          <Icon
-            style={{ ...(hover.search ? props : null) }}
-          >
+          <Icon>
             <MdOutlineManageSearch />
           </Icon>
           <h3>Otimização de Sites - SEO</h3>
@@ -170,9 +166,7 @@ const Services = function ServicesPage() {
         </Card>
 
         <Card animate id="cloud">
-          <Icon
-            style={{ ...(hover.cloud ? props : null) }}
-          >
+          <Icon>
             <AiOutlineCloudSync />
           </Icon>
           <h3>Sistemas em Nuvem</h3>
@@ -195,9 +189,7 @@ const Services = function ServicesPage() {
         </Card>
 
         <Card animate id="mkt">
-          <Icon
-            style={{ ...(hover.mkt ? props : null) }}
-          >
+          <Icon>
             <BsMegaphone />
           </Icon>
           <h3>Marketing de Conteúdo - SEM</h3>
@@ -220,9 +212,7 @@ const Services = function ServicesPage() {
         </Card>
 
         <Card animate id="gad">
-          <Icon
-            style={{ ...(hover.gad ? props : null) }}
-          >
+          <Icon>
             <SiGoogleads />
           </Icon>
           <h3>Campanha Google Adwords</h3>
@@ -245,9 +235,7 @@ const Services = function ServicesPage() {
         </Card>
 
         <Card animate id="app">
-          <Icon
-            style={{ ...(hover.app ? props : null) }}
-          >
+          <Icon>
             <AiOutlineAppstoreAdd />
           </Icon>
           <h3>Criação de Aplicativos</h3>
@@ -270,9 +258,7 @@ const Services = function ServicesPage() {
         </Card>
 
         <Card animate id="cart">
-          <Icon
-            style={{ ...(hover.cart ? props : null) }}
-          >
+          <Icon>
             <BsCart3 />
           </Icon>
           <h3>Lojas Virtuais</h3>
@@ -295,9 +281,7 @@ const Services = function ServicesPage() {
         </Card>
 
         <Card animate id="net">
-          <Icon
-            style={{ ...(hover.net ? props : null) }}
-          >
+          <Icon>
             <BsDiagram3 />
           </Icon>
           <h3>Intranet e Extranet</h3>
@@ -320,9 +304,7 @@ const Services = function ServicesPage() {
         </Card>
 
         <Card animate id="wrench">
-          <Icon
-            style={{ ...(hover.wrench ? props : null) }}
-          >
+          <Icon>
             <BiWrench />
           </Icon>
           <h3>Manutenção de Sites</h3>

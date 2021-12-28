@@ -67,8 +67,6 @@ export const Card = styled.div`
 export const Icon = styled(animated.div)`
   z-index: 10;
   color: #1a3968;
-  width: 65px;
-  height: 65px;
   font-size: 4rem;
   position: relative;
 `;
