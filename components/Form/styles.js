@@ -82,7 +82,6 @@ export const BtnSubmit = styled.button`
     position: relative;
     margin: 1rem 0;
     transition: all .15s ease;
-    max-width: 25%;
 
     &:active{
       background:  ${({ loader }) => (loader ? 'inherit' : '#1a3968')};
