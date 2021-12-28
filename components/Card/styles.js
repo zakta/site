@@ -90,21 +90,35 @@ export const ArrowRight = styled.div`
     text-decoration: none;
 
 
-    :hover{
-      color: #1a3968;
-      span {
+    :active{
         color: #1a3968;
-        cursor: pointer;
-        opacity: 1;
-        transform: translate(80%, 0);
-        z-index: 1;
-      }
+        span {
+          color: #1a3968;
+          cursor: pointer;
+          opacity: 1;
+          transform: translate(120%, 0);
+          z-index: 1;
+        }
     }
+    @media (min-width: 768px){
+      :hover{
+        color: #1a3968;
+          span {
+            color: #1a3968;
+            cursor: pointer;
+            opacity: 1;
+            transform: translate(120%, 0);
+            z-index: 1;
+          }
+        }
+      }
+
   }
 
   span{
     font-size: 15px;
     font-weight: 800;
+    width: 100%;
     text-transform: uppercase;
     text-align: center;
     position: absolute;
