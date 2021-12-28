@@ -1,18 +1,14 @@
 // 3rd parties
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import PropTypes from 'prop-types';
+// styles
+import LoaderForm from '../LoaderForm';
 import {
-  Erro, Form, InputForm, Position, Textarea,
+  Erro, Form, InputForm, Position, Textarea, BtnSubmit,
 } from './styles';
 
-const ContactForm = function ContactFormPage() {
-  function showPopUp() {
-    const popUp = document.getElementById('popUp');
-    const display = popUp.classList.remove('showPopUp');
-
-    return display;
-  }
-
+const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
   function mtel(phoneRaw) {
     let phoneMasked = phoneRaw;
 
@@ -21,6 +17,25 @@ const ContactForm = function ContactFormPage() {
     phoneMasked = phoneMasked.replace(/(\d)(\d{4})$/, '$1-$2');
 
     return phoneMasked;
+  }
+
+  function submitFormData(dataForm) {
+    const data = {
+      service_id: 'service_mpjyx3g',
+      template_id: 'template_w8vin3g',
+      user_id: 'user_rizvggYkHJhDIQF4MJsbR',
+      template_params: dataForm,
+    };
+
+    const config = {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: new Headers({
+        'Content-type': 'application/json',
+      }),
+    };
+
+    return fetch('https://api.emailjs.com/api/v1.0/email/sendddd', config);
   }
 
   const formik = useFormik({
@@ -48,8 +63,12 @@ const ContactForm = function ContactFormPage() {
         .min(20, 'A mensagem deve ter no mínimo 20 caracteres.')
         .required('Preencha a mensagem.'),
     }),
-    onSubmit: () => {
-      showPopUp();
+    onSubmit: async (values) => {
+      setShowPopUp(true);
+
+      const response = await submitFormData(values);
+
+      setFormStatus(response.ok ? 'success' : 'error');
     },
   });
 
@@ -64,6 +83,7 @@ const ContactForm = function ContactFormPage() {
           onBlur={formik.handleBlur}
           value={formik.values.name}
           error={formik.touched.name && formik.errors.name}
+          readOnly={formik.isSubmitting}
         />
         {formik.touched.name && formik.errors.name ? (
           <Erro>{formik.errors.name}</Erro>
@@ -83,6 +103,7 @@ const ContactForm = function ContactFormPage() {
         onBlur={formik.handleBlur}
         value={formik.values.tel}
         error={formik.touched.tel && formik.errors.tel}
+        readOnly={formik.isSubmitting}
       />
       {formik.touched.tel && formik.errors.tel ? (
         <Position>
@@ -97,6 +118,7 @@ const ContactForm = function ContactFormPage() {
         onBlur={formik.handleBlur}
         value={formik.values.email}
         error={formik.touched.email && formik.errors.email}
+        readOnly={formik.isSubmitting}
       />
       {formik.touched.email && formik.errors.email ? (
         <Position>
@@ -111,6 +133,7 @@ const ContactForm = function ContactFormPage() {
         onBlur={formik.handleBlur}
         value={formik.values.subject}
         error={formik.touched.subject && formik.errors.subject}
+        readOnly={formik.isSubmitting}
       />
       {formik.touched.subject && formik.errors.subject ? (
         <Position>
@@ -125,15 +148,27 @@ const ContactForm = function ContactFormPage() {
         onBlur={formik.handleBlur}
         value={formik.values.message}
         error={formik.touched.message && formik.errors.message}
+        readOnly={formik.isSubmitting}
       />
       {formik.touched.message && formik.errors.message ? (
         <Position>
           <Erro>{formik.errors.message}</Erro>
         </Position>
       ) : null}
-      <button type="submit">Enviar Mensagem</button>
+      <BtnSubmit
+        disabled={formik.isSubmitting}
+        type="submit"
+        loader={formik.isSubmitting}
+        className="loader"
+      >
+        Enviar Mensagem
+        <LoaderForm loader={formik.isSubmitting} />
+      </BtnSubmit>
     </Form>
   );
 };
-
+ContactForm.propTypes = {
+  setFormStatus: PropTypes.func.isRequired,
+  setShowPopUp: PropTypes.func.isRequired,
+};
 export default ContactForm;

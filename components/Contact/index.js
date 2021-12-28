@@ -1,5 +1,6 @@
 // 3rd parties
 import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
+import { useState } from 'react';
 
 // Components
 import ContactForm from '../Form';
@@ -18,6 +19,9 @@ import {
 } from './style';
 
 const Contact = function ContactPage() {
+  const [formStatus, setFormStatus] = useState('');
+  const [showPopUp, setShowPopUp] = useState(false);
+
   return (
     <Container id="contato">
       <Center>
@@ -55,9 +59,14 @@ const Contact = function ContactPage() {
           dia útil, responderemos a sua consulta.
         </FormDescription>
 
-        <ContactForm />
+        <ContactForm setFormStatus={setFormStatus} setShowPopUp={setShowPopUp} />
       </Center>
-      <Notification />
+
+      <Notification
+        formStatus={formStatus}
+        showPopUp={showPopUp}
+        setShowPopUp={setShowPopUp}
+      />
     </Container>
   );
 };

@@ -10,42 +10,11 @@ export const Form = styled.form`
     margin: 0;
     justify-content: center;
   }
-
-  button {
-    align-self: end;
-    background: transparent;
-    border: 1px solid #1a3968;
-    color: #1a3968;
-    cursor: pointer;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    padding: 1rem;
-    margin: 1rem 0;
-    transition: all .15s ease;
-    width: 100%;
-
-    &:active{
-      background: #1a3968;
-      color: white;
-    }
-
-    @media (min-width: 480px) {
-      width: 200px;
-    }
-
-    @media (min-width: 870px) {
-      :hover {
-        background: #1a3968;
-        color: white;
-      }
-    }
-  }
 `;
 
 export const InputForm = styled.input`
   background: #f8f8f8;
-  border-color: ${({ error }) => (error ? 'red' : '#f8f8f8')};
+  border-color: ${({ error }) => (error ? '#b94f4f' : '#f8f8f8')};
   border-style: solid;
   border-radius: none;
   box-sizing: border-box;
@@ -67,7 +36,7 @@ export const InputForm = styled.input`
 
 export const Textarea = styled.textarea`
   background: #f8f8f8;
-  border-color: ${({ error }) => (error ? 'red' : '#f8f8f8')};
+  border-color: ${({ error }) => (error ? '#b94f4f' : '#f8f8f8')};
   border-width: 2px;
   border-style: solid;
   box-sizing: border-box;
@@ -85,13 +54,49 @@ export const Textarea = styled.textarea`
     border: 2px solid #33afad;
   }
 `;
+
 export const Position = styled.div`
   position: relative;
 `;
+
 export const Erro = styled.div`
-  color: red;
+  color: #b94f4f;
   font-size: 15px;
   font-weight: 700;
   position: absolute;
   bottom: 0;
+`;
+
+export const BtnSubmit = styled.button`
+    align-self: end;
+    animation-duration: 20s;
+    background: ${({ loader }) => (loader ? '#cccccc24' : 'transparent')};
+    border: 1px solid #1a3968;
+    color: ${({ loader }) => (loader ? '#5d7497' : '#1a3968')};
+    cursor: ${({ loader }) => (loader ? 'not-allowed' : 'pointer')};
+
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 1rem;
+    position: relative;
+    margin: 1rem 0;
+    transition: all .15s ease;
+    max-width: 25%;
+
+    &:active{
+      background:  ${({ loader }) => (loader ? 'inherit' : '#1a3968')};
+      color: ${({ loader }) => (loader ? 'inherit' : 'white')};
+    }
+
+    @media (min-width: 480px) {
+      width: 200px;
+    }
+
+    @media (min-width: 870px) {
+      :hover {
+        background:  ${({ loader }) => (loader ? 'inherit' : '#1a3968')};
+        color: ${({ loader }) => (loader ? 'inherit' : 'white')};
+      }
+    }
 `;
