@@ -30,7 +30,7 @@ export const Center = styled.div`
 `;
 
 export const Mask = styled.div`
-  background: #f8f8f8;
+  background: white;
   position: absolute;
   width: 100%;
   height: 100%;
