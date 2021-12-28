@@ -78,7 +78,8 @@ export const CookieNotice = styled.div`
     }
 
     :hover {
-      opacity: .75;
+      background: #122746;
+      border-color: #122746;
     }
 
   }
