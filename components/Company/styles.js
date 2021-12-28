@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  background: #f8f8f8;
+  background: #ffff;
   padding: 1.5rem;
   position: relative;
   padding-top: 7rem;
