@@ -1,5 +1,3 @@
-- Fazer integração do formulário de contato com api (Ale)
-
 - Zerar ajustes responsivos
 
 - Trocar as hashs no scroll da página

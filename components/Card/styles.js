@@ -73,3 +73,47 @@ export const Icon = styled.div`
     color: white;
   } */
 `;
+export const ArrowRight = styled.div`
+  color: black;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: left;
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+  white-space: nowrap;
+
+  a{
+    color: black;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+
+
+    :hover{
+      color: #1a3968;
+      span {
+        color: #1a3968;
+        cursor: pointer;
+        opacity: 1;
+        transform: translate(80%, 0);
+        z-index: 1;
+      }
+    }
+  }
+
+  span{
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    transform: translate(50%,0);
+    opacity: 0;
+    z-index: -1;
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out,
+    z-index .3s ease-in-out;
+    top: 25%;
+
+  }
+`;
