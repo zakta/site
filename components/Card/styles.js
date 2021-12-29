@@ -5,7 +5,7 @@ import { animated } from 'react-spring';
 export const Card = styled.div`
   background: white;
   border: 1px solid #efefef;
-  border-top: 7px solid #33afad;
+  border-top: 4px solid #33afad;
   box-sizing: border-box;
   display: flex;
   margin-bottom: 1.4rem;
