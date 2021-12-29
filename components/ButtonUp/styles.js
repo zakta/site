@@ -55,7 +55,7 @@ export const ButtonArrow = styled.button`
 `;
 
 export const IconArrow = styled.div`
-  color: #ffff;
+  color: white;
   font-size: 25px;
   line-height: 0.1;
   transition: all 0.15s ease;

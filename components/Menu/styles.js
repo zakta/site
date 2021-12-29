@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 export const List = styled.ul`
-  background: #1a3968;
+  background: #081220;
   box-sizing: border-box;
   flex-flow: column nowrap;
   display: flex;

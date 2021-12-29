@@ -17,7 +17,7 @@ export const InputForm = styled.input`
   border-style: solid;
   border-radius: none;
   box-sizing: border-box;
-  border-width: 2px;
+  border-width: 1px;
   display: block;
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
@@ -35,7 +35,7 @@ export const InputForm = styled.input`
 
 export const Textarea = styled.textarea`
   border-color: ${({ error }) => (error ? '#b94f4f' : '#1a3968')};
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;

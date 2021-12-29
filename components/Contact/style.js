@@ -6,7 +6,6 @@ import { Card as CardComp, Icon as CardIcon } from '../Card/styles';
 export const Container = styled.section`
   align-items: center;
   background-color: white;
-  background-image: url("18_img.6703f879.png");
   background-position: center bottom;
   background-repeat: no-repeat;
   box-sizing: border-box;

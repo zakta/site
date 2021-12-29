@@ -8,7 +8,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   left: 0;
-  height: 100%;
+  height: 100vh;
   min-width: 320px;
   min-height: 493px;
   padding-top: 75px;
@@ -30,9 +30,9 @@ export const Container = styled.section`
 `;
 
 export const Cover = styled.div`
-  background: url("210888.webp") center no-repeat;
+  background: url("210888.webp") top center no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
   min-height: 493px;
   position: fixed;
   top: 0;
@@ -41,7 +41,7 @@ export const Cover = styled.div`
 
 export const CoverMask = styled.div`
   background-color: #060606;
-  height: 100%;
+  height: 100vh;
   min-height: 493px;
   position: fixed;
   opacity: 0.6;

@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.footer`
-  background: #203c66;
+  background: #182e4e;
   min-width: 320px;
   position: relative;
 `;
@@ -51,7 +51,7 @@ export const Contact = styled.div`
 `;
 
 export const Copyright = styled.p`
-  background: #182e4e;
+  background: #11223a;
   color: white;
   text-align: center;
   font-size: 0.8rem;

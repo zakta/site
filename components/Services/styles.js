@@ -8,24 +8,37 @@ export const Container = styled.section`
   margin: 0;
   margin-top: 100vh;
   position: relative;
-
-  @media (min-width: 768px){
-    display: flex;
-    justify-content: center;
-  }
 `;
 
 export const Center = styled.div`
+  margin: auto;
+  max-width: 1400px;
+
+  h2 {
+    color: #1a3968;
+    font-size: 20px;
+    margin:0;
+    padding: 1.5rem 1.25rem;
+    transition: all .15s ease;
+
+    @media (min-width: 870px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+`;
+
+export const Cards = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-top: 110px;
+  justify-content: space-between;
   max-width: 1400px;
+  padding: 0 1.25rem;
   position: relative;
 
-  @media (min-width: 768px){
-    padding: 110px 0 0;
-    margin: 0;
+  @media (min-width: 768px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 `;

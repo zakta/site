@@ -4,9 +4,9 @@ import { animated } from 'react-spring';
 
 export const Card = styled.div`
   background: white;
+  border: 1px solid #efefef;
   border-top: 7px solid #33afad;
   box-sizing: border-box;
-  box-shadow: 0 5px 40px 0 rgb(6 6 6 / 8%);
   display: flex;
   margin-bottom: 1.4rem;
   position: relative;
@@ -14,7 +14,7 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   transition: .3s all ease-in-out;
-  width: 90%;
+  width: 100%;
 
   h3{
     color: #060606;
@@ -51,16 +51,13 @@ export const Card = styled.div`
     }
   }
 
-  @media (min-width: 768px){
+  @media (min-width: 870px){
     justify-content: center;
-    width: 45%;
+    width: 48.6%;
   }
-  @media (min-width: 980px){
-    justify-content: center;
-    width: 28%;
-  }
-  @media (min-width: 1457px){
-    width: 30%;
+
+  @media (min-width: 1400px){
+    width: 32%;
   }
 `;
 

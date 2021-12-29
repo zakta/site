@@ -7,7 +7,7 @@ export const Container = styled.div`
 export const AboutDivision = styled.div`
     display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #dbd0d0;
+  border-bottom: 1px solid #efefef;
 
   @media (min-width: 768px){
     flex-direction: row;
@@ -23,7 +23,6 @@ export const AboutInfo = styled.article`
   }
 
   h2{
-    text-align: left;
     margin:0;
     padding: 0;
     font-size: 20px;

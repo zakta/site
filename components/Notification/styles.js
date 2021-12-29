@@ -47,7 +47,7 @@ export const PopUp = styled.div`
 `;
 export const BtnPopUp = styled.button`
   align-self: flex-end;
-  background-color: #ffff;
+  background-color: white;
   border: none;
   border: 1px solid ${({ formStatus }) => (formStatus === 'success' ? '#33afad' : '#b94f4f')};
   color: ${({ formStatus }) => (formStatus === 'success' ? '#33afad' : '#b94f4f')};
