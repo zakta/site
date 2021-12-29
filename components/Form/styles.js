@@ -68,9 +68,9 @@ export const Erro = styled.div`
 export const BtnSubmit = styled.button`
     align-self: end;
     animation-duration: 20s;
-    background: ${({ loader }) => (loader ? '#cccccc24' : 'transparent')};
+    background: ${({ loader }) => (loader ? '#cccccc24' : '#1a3968')};
     border: 1px solid #1a3968;
-    color: ${({ loader }) => (loader ? '#5d7497' : '#1a3968')};
+    color: ${({ loader }) => (loader ? '#5d7497' : 'white')};
     cursor: ${({ loader }) => (loader ? 'not-allowed' : 'pointer')};
 
     font-size: 15px;
@@ -92,8 +92,8 @@ export const BtnSubmit = styled.button`
 
     @media (min-width: 870px) {
       :hover {
-        background:  ${({ loader }) => (loader ? 'inherit' : '#1a3968')};
-        color: ${({ loader }) => (loader ? 'inherit' : 'white')};
+        background:  ${({ loader }) => (loader ? 'inherit' : 'white')};
+        color: ${({ loader }) => (loader ? 'inherit' : '#1a3968')};
       }
     }
 `;
