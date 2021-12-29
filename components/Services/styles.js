@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
+  background-color: white;
   max-width: 100%;
   min-width: 320px;
   margin: 0;
@@ -27,13 +28,4 @@ export const Center = styled.div`
     padding: 110px 0 0;
     margin: 0;
   }
-`;
-
-export const Mask = styled.div`
-  background: white;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 140px;
 `;

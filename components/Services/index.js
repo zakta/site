@@ -14,7 +14,7 @@ import { MdOutlineManageSearch } from 'react-icons/md';
 // import { useEffect, useState } from 'react';
 
 // Styles
-import { Mask, Center, Container } from './styles';
+import { Center, Container } from './styles';
 import { ArrowRight, Card, Icon } from '../Card/styles';
 
 const Services = function ServicesPage() {
@@ -116,7 +116,6 @@ const Services = function ServicesPage() {
   /* style={{ ...(hover.globe ? props : null) }} */
   return (
     <Container id="servicos">
-      <Mask />
       <Center>
 
         <Card animate id="globe">
