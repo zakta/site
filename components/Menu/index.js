@@ -7,9 +7,6 @@ import PropTypes from 'prop-types';
 import Hamburguer from '../Hamburguer';
 import ContactLink from '../ContactLink/styles';
 
-// Functions
-import alterModal from '../../functions/alterModal';
-
 // Styles
 import {
   List, ListItem, MenuToggle, ItemInfo,
@@ -92,25 +89,21 @@ const Menu = function MenuPage({
 
         <ItemInfo>
           <Link
-            href="/#termos"
+            href="/termos-de-servico"
             passHref
-            as={`${process.env.BACKEND_URL}/#termos`}
+            as={`${process.env.BACKEND_URL}/termos-de-servico`}
           >
-            <ContactLink
-              onClick={() => alterModal('#terms', '#modalTerms')}
-            >
+            <ContactLink>
               Política de Cookies
             </ContactLink>
           </Link>
 
           <Link
-            href="/#privacidade"
+            href="/politica-de-privacidade"
             passHref
-            as={`${process.env.BACKEND_URL}/#privacidade`}
+            as={`${process.env.BACKEND_URL}/politica-de-privacidade`}
           >
-            <ContactLink
-              onClick={() => alterModal('#privacy', '#modalPrivacy')}
-            >
+            <ContactLink>
               Política de Privacidade
             </ContactLink>
           </Link>

@@ -1,6 +1,7 @@
 // 3rd parties
 import { IoClose } from 'react-icons/io5';
 import styled, { keyframes } from 'styled-components';
+import Link from 'next/link';
 
 const slide = keyframes`
   from{
@@ -37,7 +38,7 @@ export const Container = styled.section`
   }
 
   &.close {
-    display: none;
+    //display: none;
   }
 
   .modalTerms {
@@ -116,6 +117,7 @@ export const Container = styled.section`
 `;
 
 export const Center = styled.div`
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -126,7 +128,7 @@ export const Center = styled.div`
   min-width: 320px;
 `;
 
-export const BtnClose = styled.button`
+export const BtnClose = styled(Link)`
   border: none;
   padding: 0;
   position: absolute;
