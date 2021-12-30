@@ -112,7 +112,7 @@ export const ArrowRight = styled.div`
   span{
     font-size: 15px;
     font-weight: 800;
-    width: 100%;
+    width: 80%;
     text-transform: uppercase;
     text-align: center;
     position: absolute;
