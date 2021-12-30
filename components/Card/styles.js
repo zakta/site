@@ -72,7 +72,7 @@ export const ArrowRight = styled.div`
   color: black;
   text-align: left;
   display: flex;
-  padding: 1rem 0;
+  padding-top: 1rem;
   align-items: center;
   white-space: nowrap;
 
