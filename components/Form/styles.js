@@ -16,8 +16,12 @@ function isSuccess(touched) {
   return touched ? '#33afad' : '#ccc';
 }
 
+function validationInput({ touched, error }) {
+  return touched && error ? '#e92929' : isSuccess(touched);
+}
+
 export const InputForm = styled.input`
-  border-color: ${({ touched, error }) => (touched && error ? '#e92929' : isSuccess(touched))};
+  border-color: ${validationInput};
   border-radius: none;
   border-width: 0;
   border-bottom-width: 3px;
@@ -38,7 +42,7 @@ export const InputForm = styled.input`
 `;
 
 export const Textarea = styled.textarea`
-  border-color: ${({ touched, error }) => (touched && error ? '#e92929' : isSuccess(touched))};
+  border-color: ${validationInput};
   border-width: 0;
   border-bottom-width: 3px;
   box-sizing: border-box;
