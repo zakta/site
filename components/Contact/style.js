@@ -73,13 +73,6 @@ export const ContactInfo = styled.div`
   }
 
 `;
-export const TitleContact = styled.h2`
-  margin-top: 2rem;
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  color: #1a3968;
-`;
 
 export const Icon = styled(CardIcon)`
   font-size: 4rem;
@@ -88,7 +81,7 @@ export const Icon = styled(CardIcon)`
 export const Card = styled(CardComp)`
   border: none;
   cursor: pointer;
-  width: 90%;
+  width: 100%;
 
   a {
     text-decoration: none;
@@ -109,11 +102,13 @@ export const Card = styled(CardComp)`
   }
 
   @media (min-width: 768px) {
-    width: 45%;
+    width: 49%;
+    margin-right: 5px;
   }
 
   @media (min-width: 1060px) {
     width: 31.5%;
+    margin-right: 0;
   }
 
   &.contact-card-email {

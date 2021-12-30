@@ -1,6 +1,5 @@
 // 3rd parties
-import styled, { keyframes } from 'styled-components';
-import { BsArrowDownRight } from 'react-icons/bs';
+import styled from 'styled-components';
 import { animated } from 'react-spring';
 
 export const Container = styled.section`
@@ -63,10 +62,7 @@ export const PageTitle = styled(animated.div)`
   padding: 1.25rem;
   position: relative;
   width: 100%;
-
-  &:last-child {
-    align-items: flex-start;
-  }
+  align-items: flex-start;
 
   @media (min-width: 870px) {
     padding: 2rem;
@@ -175,49 +171,4 @@ export const ArrowAnimation = styled.div`
 
 export const ArrowLink = styled.a`
   align-self: flex-start;
-`;
-
-const bounce = keyframes`
-  0%{
-    top: 0;
-  }
-  50%{
-    top: -20px;
-  }
-  70%{
-    top: -10px;
-  }
-  100%{
-    top: 0;
-  }
-`;
-
-export const ArrowIcon = styled(BsArrowDownRight)`
-  align-self: flex-start;
-  animation: ${bounce} 1s linear infinite;
-  color: white;
-  font-size: 40px;
-  margin-bottom: 10px;
-  margin-top: 30px;
-  opacity: .75;
-  position: relative;
-  right: .6rem;
-  transform: rotate(45deg);
-  transition: all .15s ease;
-
-  &:active {
-    opacity: 1;
-  }
-
-  @media (min-width: 450px) {
-    font-size: 45px;
-  }
-
-  @media (min-width: 768px) {
-    font-size: 50px;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
 `;
