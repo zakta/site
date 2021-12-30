@@ -126,10 +126,18 @@ export const Center = styled.div`
   height: 100%;
   min-height: 320px;
   min-width: 320px;
+
+  div{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+  }
 `;
 
 export const BtnClose = styled(Link)`
   border: none;
+  cursor: pointer;
   padding: 0;
   position: absolute;
   right: 0;

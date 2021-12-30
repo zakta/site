@@ -8,11 +8,12 @@ const PrivacyTerms = function PrivacyTermsModal() {
   return (
     <Container id="privacy" className="close">
       <Center>
-        <BtnClose href="/">
-          <IcClose />
-        </BtnClose>
-        <h1>Política de Privacidade</h1>
-
+        <div>
+          <h1>Política de Privacidade</h1>
+          <BtnClose href="/">
+            <IcClose />
+          </BtnClose>
+        </div>
         <div className="modalTerms" id="modalPrivacy">
           <p>
             <SpanTitle>INTRODUÇÃO</SpanTitle>
