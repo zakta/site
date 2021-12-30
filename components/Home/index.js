@@ -1,5 +1,6 @@
 // 3rd
 import { useSpring } from 'react-spring';
+import ArrowIcon from '../ArrowRedirect/styles';
 
 // Components
 import Header from '../Header';
@@ -13,7 +14,6 @@ import {
   ButtonLink,
   ArrowAnimation,
   ArrowLink,
-  ArrowIcon,
 } from './styles';
 
 const Home = function HomePage() {

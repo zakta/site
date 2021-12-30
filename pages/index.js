@@ -12,12 +12,7 @@ import Home from '../components/Home';
 import Loader from '../components/Loader';
 import CookiesModal from '../components/CookiesModal';
 import Services from '../components/Services';
-import Terms from '../components/Terms';
-import PrivacyTerms from '../components/PrivacyTerms';
 import GoogleAnalytics from '../components/GoogleAnalytics';
-
-// Functions
-import alterModal from '../functions/alterModal';
 
 const Index = function IndexPage() {
   const [isAcceptedCookie, setAcceptedCookie] = useState(false);
@@ -25,12 +20,6 @@ const Index = function IndexPage() {
   useEffect(() => {
     if (cookie.get('allow-cookies')) {
       setAcceptedCookie(true);
-    }
-    if (window.location.hash === '#termos') {
-      alterModal('#terms', '#modalTerms');
-    }
-    if (window.location.hash === '#privacidade') {
-      alterModal('#privacy', '#modalPrivacy');
     }
   }, []);
 
@@ -53,10 +42,6 @@ const Index = function IndexPage() {
       <ButtonUp />
 
       <Footer />
-
-      <Terms />
-
-      <PrivacyTerms />
 
       <CookiesModal
         isAcceptedCookie={isAcceptedCookie}

@@ -1,6 +1,7 @@
 // 3rd parties
 import styled from 'styled-components';
 import { animated } from 'react-spring';
+import { BsArrowRight } from 'react-icons/bs';
 
 export const Card = styled.div`
   background: white;
@@ -69,8 +70,6 @@ export const Icon = styled(animated.div)`
 
 export const ArrowRight = styled.div`
   color: black;
-  font-size: 40px;
-  font-weight: 900;
   text-align: left;
   display: flex;
   padding: 1rem 0;
@@ -112,7 +111,7 @@ export const ArrowRight = styled.div`
   span{
     font-size: 15px;
     font-weight: 800;
-    width: 100%;
+    width: 80%;
     text-transform: uppercase;
     text-align: center;
     position: absolute;
@@ -124,4 +123,9 @@ export const ArrowRight = styled.div`
     top: 25%;
 
   }
+`;
+export const ArrowRightIcon = styled(BsArrowRight)`
+  font-size: 40px;
+  font-weight: 900;
+  padding-right: 23px;
 `;

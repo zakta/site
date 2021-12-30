@@ -20,7 +20,7 @@ const Header = function HeaderPage() {
   const handleScroll = () => {
     const header = document.querySelector('#header');
 
-    header.classList.toggle('sticky', window.scrollY > 0);
+    header?.classList.toggle('sticky', window.scrollY > 0);
 
     setSticky(window.scrollY > 0);
 

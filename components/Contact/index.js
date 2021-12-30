@@ -16,8 +16,8 @@ import {
   FormDescription,
   FormTitle,
   Icon,
-  TitleContact,
 } from './style';
+import TitleSection from '../SectionTitle/styles';
 
 const Contact = function ContactPage() {
   const [formStatus, setFormStatus] = useState('');
@@ -27,7 +27,7 @@ const Contact = function ContactPage() {
     <Container id="contato">
       <Center>
         <ContactInfo>
-          <TitleContact> Contato</TitleContact>
+          <TitleSection>Contato</TitleSection>
           <h3>Alguma dúvida? Entre em contato e responderemos em breve.</h3>
         </ContactInfo>
 

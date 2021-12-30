@@ -3,9 +3,6 @@ import Link from 'next/link';
 import cookie from 'js-cookie';
 import PropTypes from 'prop-types';
 
-// Functions
-import alterModal from '../../functions/alterModal';
-
 // styles
 import { Container, CookieNotice } from './styles';
 
@@ -29,14 +26,28 @@ CookiesModalPage({ isAcceptedCookie, setAcceptedCookie }) {
 
           {' '}
 
-          <span aria-hidden onClick={() => { alterModal('#terms', '#modalTerms'); }}>
-            <Link href="/#termos" as={`${process.env.BACKEND_URL}/#termos`}>Política de Cookies</Link>
+          <span
+            aria-hidden
+          >
+            <Link
+              href="/termos-de-servico"
+              as={`${process.env.BACKEND_URL}/termos-de-servico`}
+            >
+              Política de Cookies
+            </Link>
           </span>
 
           {' e '}
 
-          <span aria-hidden onClick={() => { alterModal('#privacy', '#modalPrivacy'); }}>
-            <Link href="/#privacidade" as={`${process.env.BACKEND_URL}/#privacidade`}>Política de Privacidade</Link>
+          <span
+            aria-hidden
+          >
+            <Link
+              href="/politica-de-privacidade"
+              as={`${process.env.BACKEND_URL}/politica-de-privacidade`}
+            >
+              Política de Privacidade
+            </Link>
           </span>
           .
         </p>

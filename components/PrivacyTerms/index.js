@@ -4,21 +4,13 @@ import {
 } from '../Terms/styles';
 import SpanTitle from './styles';
 
-const PrivacyTerms = function PrivacyTermsPage() {
-  const closeModal = () => {
-    const modal = document.querySelector('#privacy');
-    modal.classList.add('close');
-    document.body.style.overflow = 'visible';
-    document.location.hash = '';
-  };
-
+const PrivacyTerms = function PrivacyTermsModal() {
   return (
     <Container id="privacy" className="close">
       <Center>
-        <BtnClose onClick={closeModal}>
+        <BtnClose href="/">
           <IcClose />
         </BtnClose>
-
         <h1>Política de Privacidade</h1>
 
         <div className="modalTerms" id="modalPrivacy">

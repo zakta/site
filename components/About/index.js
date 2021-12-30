@@ -1,4 +1,5 @@
 import { GoCheck } from 'react-icons/go';
+import TitleSection from '../SectionTitle/styles';
 import {
   AboutInfo,
   AboutDivision,
@@ -14,7 +15,7 @@ const About = function AboutPage() {
     <Container>
       <AboutDivision>
         <AboutInfo>
-          <h2>Sobre Nós</h2>
+          <TitleSection>Sobre Nós</TitleSection>
           <h3>Transformamos ideias em realidade.</h3>
           <Owners>
             <h4>Fernanda F. Silva</h4>

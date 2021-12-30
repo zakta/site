@@ -6,7 +6,7 @@ import {
   AiOutlineAppstoreAdd,
 } from 'react-icons/ai';
 import {
-  BsMegaphone, BsDiagram3, BsGlobe, BsCart3, BsArrowRight,
+  BsMegaphone, BsDiagram3, BsGlobe, BsCart3,
 } from 'react-icons/bs';
 import { SiGoogleads } from 'react-icons/si';
 import { MdOutlineManageSearch } from 'react-icons/md';
@@ -14,8 +14,12 @@ import { MdOutlineManageSearch } from 'react-icons/md';
 // import { useEffect, useState } from 'react';
 
 // Styles
-import { Center, Container, Cards } from './styles';
-import { ArrowRight, Card, Icon } from '../Card/styles';
+import {
+  Center, Container, Cards, TitleServices,
+} from './styles';
+import {
+  ArrowRight, ArrowRightIcon, Card, Icon,
+} from '../Card/styles';
 
 const Services = function ServicesPage() {
   /* const [hover, setHover] = useState(
@@ -117,7 +121,7 @@ const Services = function ServicesPage() {
   return (
     <Container id="servicos">
       <Center>
-        <h2>Serviços</h2>
+        <TitleServices>Serviços</TitleServices>
         <Cards>
           <Card animate id="globe">
             <Icon>
@@ -135,7 +139,7 @@ const Services = function ServicesPage() {
                 as={`${process.env.BACKEND_URL}/criacao`}
               >
                 <a href="/criacao">
-                  <BsArrowRight />
+                  <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
               </Link>
@@ -158,7 +162,7 @@ const Services = function ServicesPage() {
                 as={`${process.env.BACKEND_URL}/seo`}
               >
                 <a href="/seo">
-                  <BsArrowRight />
+                  <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
               </Link>
@@ -181,7 +185,7 @@ const Services = function ServicesPage() {
                 as={`${process.env.BACKEND_URL}/sistemas`}
               >
                 <a href="/sistemas">
-                  <BsArrowRight />
+                  <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
               </Link>
@@ -204,7 +208,7 @@ const Services = function ServicesPage() {
                 as={`${process.env.BACKEND_URL}/marketing`}
               >
                 <a href="marketing">
-                  <BsArrowRight />
+                  <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
               </Link>
@@ -227,7 +231,7 @@ const Services = function ServicesPage() {
                 as={`${process.env.BACKEND_URL}/gad`}
               >
                 <a href="/gad">
-                  <BsArrowRight />
+                  <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
               </Link>
@@ -250,7 +254,7 @@ const Services = function ServicesPage() {
                 as={`${process.env.BACKEND_URL}/app`}
               >
                 <a href="/app">
-                  <BsArrowRight />
+                  <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
               </Link>
@@ -273,7 +277,7 @@ const Services = function ServicesPage() {
                 as={`${process.env.BACKEND_URL}/lojas`}
               >
                 <a href="/lojas">
-                  <BsArrowRight />
+                  <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
               </Link>
@@ -296,7 +300,7 @@ const Services = function ServicesPage() {
                 as={`${process.env.BACKEND_URL}/redes`}
               >
                 <a href="/redes">
-                  <BsArrowRight />
+                  <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
               </Link>
@@ -319,7 +323,7 @@ const Services = function ServicesPage() {
                 as={`${process.env.BACKEND_URL}/manutencao`}
               >
                 <a href="/manutencao">
-                  <BsArrowRight />
+                  <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
               </Link>

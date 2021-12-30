@@ -4,20 +4,13 @@ import {
   Center, Container, IcClose,
 } from './styles';
 
-const Terms = function TermsPage() {
+const Terms = function TermsModal() {
   return (
     <Container id="terms" className="close">
       <Center>
-        <BtnClose
-          onClick={() => {
-            document.querySelector('#terms').classList.add('close');
-            document.body.style.overflow = 'visible';
-            document.location.hash = '';
-          }}
-        >
+        <BtnClose href="/">
           <IcClose />
         </BtnClose>
-
         <h1>Termos de Serviço</h1>
 
         <div className="modalTerms" id="modalTerms">
