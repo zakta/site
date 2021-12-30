@@ -9,7 +9,7 @@ import Company from '../components/Company';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Home from '../components/Home';
-import Loader from '../components/Loader';
+// import Loader from '../components/Loader';
 import CookiesModal from '../components/CookiesModal';
 import Services from '../components/Services';
 import GoogleAnalytics from '../components/GoogleAnalytics';
@@ -29,7 +29,7 @@ const Index = function IndexPage() {
         <title>Tecnologia Aplicada em Soluções Digitais | Zakta</title>
       </Head>
 
-      <Loader />
+      { /* <Loader /> */ }
 
       <Home />
 

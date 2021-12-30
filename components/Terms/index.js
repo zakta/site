@@ -8,10 +8,12 @@ const Terms = function TermsModal() {
   return (
     <Container id="terms" className="close">
       <Center>
-        <BtnClose href="/">
-          <IcClose />
-        </BtnClose>
-        <h1>Termos de Serviço</h1>
+        <div>
+          <h1>Termos de Serviço</h1>
+          <BtnClose href="/">
+            <IcClose />
+          </BtnClose>
+        </div>
 
         <div className="modalTerms" id="modalTerms">
           <p>
