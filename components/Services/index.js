@@ -6,7 +6,7 @@ import {
   AiOutlineAppstoreAdd,
 } from 'react-icons/ai';
 import {
-  BsMegaphone, BsDiagram3, BsGlobe, BsCart3, BsArrowRight,
+  BsMegaphone, BsDiagram3, BsGlobe, BsCart3,
 } from 'react-icons/bs';
 import { SiGoogleads } from 'react-icons/si';
 import { MdOutlineManageSearch } from 'react-icons/md';
@@ -17,7 +17,9 @@ import { MdOutlineManageSearch } from 'react-icons/md';
 import {
   Center, Container, Cards, TitleServices,
 } from './styles';
-import { ArrowRight, ArrowRightIcon, Card, Icon } from '../Card/styles';
+import {
+  ArrowRight, ArrowRightIcon, Card, Icon,
+} from '../Card/styles';
 
 const Services = function ServicesPage() {
   /* const [hover, setHover] = useState(
