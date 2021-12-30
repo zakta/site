@@ -5,7 +5,7 @@ import { Card as CardComp, Icon as CardIcon } from '../Card/styles';
 
 export const Container = styled.section`
   align-items: center;
-  background-color: white;
+  background-color: #f7f7f7;
   background-position: center bottom;
   background-repeat: no-repeat;
   box-sizing: border-box;

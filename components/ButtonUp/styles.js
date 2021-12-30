@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  background: white;
+  background: #f7f7f7;
   box-sizing: border-box;
   padding-bottom: 2rem;
   position: relative;

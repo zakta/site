@@ -13,7 +13,7 @@ export const Form = styled.form`
 `;
 
 export const InputForm = styled.input`
-  border-color: ${({ error }) => (error ? '#b94f4f' : '#1a3968')};
+  border-color: ${({ error }) => (error ? '#e92929' : '#1a3968')};
   border-style: solid;
   border-radius: none;
   box-sizing: border-box;
@@ -29,12 +29,12 @@ export const InputForm = styled.input`
   :focus{
     background: white;
     outline: none;
-    border: 2px solid #33afad;
+    border: 1px solid #33afad;
   }
 `;
 
 export const Textarea = styled.textarea`
-  border-color: ${({ error }) => (error ? '#b94f4f' : '#1a3968')};
+  border-color: ${({ error }) => (error ? '#e92929' : '#1a3968')};
   border-width: 1px;
   border-style: solid;
   box-sizing: border-box;
@@ -49,7 +49,7 @@ export const Textarea = styled.textarea`
   :focus{
     background: white;
     outline: none;
-    border: 2px solid #33afad;
+    border: 1px solid #33afad;
   }
 `;
 
@@ -58,7 +58,7 @@ export const Position = styled.div`
 `;
 
 export const Erro = styled.div`
-  color: #b94f4f;
+  color: #e92929;
   font-size: 15px;
   font-weight: 700;
   position: absolute;
