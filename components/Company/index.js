@@ -3,7 +3,11 @@ import About from '../About';
 
 // Styles
 import {
-  Container, Picture, Box, Notes, Center, Numbers,
+  Container,
+  Picture,
+  Box,
+  Notes,
+  Center,
 } from './styles';
 
 const Company = function CompanyPage() {
@@ -25,19 +29,15 @@ const Company = function CompanyPage() {
           <Notes>
             <h4>Elaboração do plano e propostas</h4>
             <p>Pensamos nas melhores soluções e apresentamos um ou mais planos e propostas.</p>
-            <Numbers>01</Numbers>
           </Notes>
           <Notes>
             <h4 className="text-grey">Desenvolvimento e testes de qualidade</h4>
             <p className="text-grey">Oferecemos um acompanhamento de perto da execução do plano de negócio.</p>
-            <Numbers>02</Numbers>
           </Notes>
           <Notes>
             <h4>Pré/pós lançamento e suporte</h4>
             <p>Fazemos a campanha de lançamento, medição do pós e suporte à atualizações</p>
-            <Numbers>03</Numbers>
           </Notes>
-
         </Box>
       </Center>
     </Container>

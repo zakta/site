@@ -12,12 +12,16 @@ export const Form = styled.form`
   }
 `;
 
+function isSuccess(touched) {
+  return touched ? '#33afad' : '#ccc';
+}
+
 export const InputForm = styled.input`
-  border-color: ${({ error }) => (error ? '#e92929' : '#1a3968')};
-  border-style: solid;
+  border-color: ${({ touched, error }) => (touched && error ? '#e92929' : isSuccess(touched))};
   border-radius: none;
+  border-width: 0;
+  border-bottom-width: 3px;
   box-sizing: border-box;
-  border-width: 1px;
   display: block;
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
@@ -25,31 +29,33 @@ export const InputForm = styled.input`
   padding: 1.5rem;
   margin: 1.2rem 0 1.7rem;
   width: 100%;
+  outline: none;
 
   :focus{
     background: white;
-    outline: none;
-    border: 1px solid #33afad;
+    border-color: ${({ touched, error }) => (touched && error ? '#e92929' : '#1a3968')};
   }
 `;
 
 export const Textarea = styled.textarea`
-  border-color: ${({ error }) => (error ? '#e92929' : '#1a3968')};
-  border-width: 1px;
-  border-style: solid;
+  border-color: ${({ touched, error }) => (touched && error ? '#e92929' : isSuccess(touched))};
+  border-width: 0;
+  border-bottom-width: 3px;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 500;
-  height: 280px;
+  min-height: 280px;
   padding: 1.5rem;
+  min-width: 100%;
   width: 100%;
+  max-width: 100%;
   margin: 1.2rem 0 1.7rem;
+  outline: none;
 
   :focus{
     background: white;
-    outline: none;
-    border: 1px solid #33afad;
+    border-color: ${({ touched, error }) => (touched && error ? '#e92929' : '#1a3968')};
   }
 `;
 

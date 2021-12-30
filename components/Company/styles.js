@@ -127,42 +127,10 @@ export const Notes = styled.div`
 
     &:nth-child(1) {
       font-size: 18px;
-      font-weight: 700;
+      font-weight: 800;
       padding-bottom: 0;
       text-transform: uppercase;
       color: #1a3968;
     }
-  }
-`;
-
-export const Numbers = styled.div`
-  font-size: 15.789rem;
-  margin: 0;
-  opacity: 0.07;
-  color: #b1b1b1;
-  z-index: 1;
-  position: absolute;
-  position: absolute;
-  top: -2.632rem;
-  right: -1.632rem;
-  font-weight: 700;
-
-  @media (min-width: 627px) {
-    top: -5.632rem;
-    right: -1.632rem;
-  }
-
-  @media (min-width: 720px) {
-    right: -1.632rem;
-  }
-
-  @media (min-width: 768px) {
-    top: -2.632rem;
-    right: -1.105rem;
-  }
-
-  @media (min-width: 1000px) {
-    top: -4.632rem;
-    font-size: 215px
   }
 `;

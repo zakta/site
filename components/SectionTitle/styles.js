@@ -5,7 +5,7 @@ const TitleSection = styled.h2`
   font-size: 20px;
   margin:0;
   transition: all .15s ease;
-  font-weight: 900;
+  font-weight: 800;
 `;
 
 export default TitleSection;

@@ -2,6 +2,7 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import PropTypes from 'prop-types';
+
 // styles
 import LoaderForm from '../LoaderForm';
 import {
@@ -82,7 +83,8 @@ const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.name}
-          error={formik.touched.name && formik.errors.name}
+          error={formik.errors.name}
+          touched={formik.touched.name}
           readOnly={formik.isSubmitting}
         />
         {formik.touched.name && formik.errors.name ? (
@@ -102,7 +104,8 @@ const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
         }}
         onBlur={formik.handleBlur}
         value={formik.values.tel}
-        error={formik.touched.tel && formik.errors.tel}
+        error={formik.errors.tel}
+        touched={formik.touched.tel}
         readOnly={formik.isSubmitting}
       />
       {formik.touched.tel && formik.errors.tel ? (
@@ -117,7 +120,8 @@ const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
         onChange={formik.handleChange}
         onBlur={formik.handleBlur}
         value={formik.values.email}
-        error={formik.touched.email && formik.errors.email}
+        error={formik.errors.email}
+        touched={formik.touched.email}
         readOnly={formik.isSubmitting}
       />
       {formik.touched.email && formik.errors.email ? (
@@ -132,7 +136,8 @@ const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
         onChange={formik.handleChange}
         onBlur={formik.handleBlur}
         value={formik.values.subject}
-        error={formik.touched.subject && formik.errors.subject}
+        error={formik.errors.subject}
+        touched={formik.touched.subject}
         readOnly={formik.isSubmitting}
       />
       {formik.touched.subject && formik.errors.subject ? (
@@ -147,7 +152,8 @@ const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
         onChange={formik.handleChange}
         onBlur={formik.handleBlur}
         value={formik.values.message}
-        error={formik.touched.message && formik.errors.message}
+        error={formik.errors.message}
+        touched={formik.touched.message}
         readOnly={formik.isSubmitting}
       />
       {formik.touched.message && formik.errors.message ? (
