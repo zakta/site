@@ -29,7 +29,7 @@ export const Container = styled.section`
 `;
 
 export const Cover = styled.div`
-  background: url("210888.webp") top center no-repeat;
+  background: url("210888.webp") center no-repeat;
   background-size: cover;
   height: 100vh;
   min-height: 493px;
