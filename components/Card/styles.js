@@ -25,14 +25,13 @@ export const ArrowRight = styled.div`
     position: relative;
     text-decoration: none;
 
-
     :active{
         color: #1a3968;
         span {
           color: #1a3968;
           cursor: pointer;
           opacity: 1;
-          transform: translate(120%, 0);
+          transform: translate(60%, 0);
           z-index: 1;
         }
     }
@@ -43,7 +42,7 @@ export const ArrowRight = styled.div`
             color: #1a3968;
             cursor: pointer;
             opacity: 1;
-            transform: translate(120%, 0);
+            transform: translate(60%, 0);
             z-index: 1;
           }
         }
@@ -54,23 +53,26 @@ export const ArrowRight = styled.div`
   span{
     font-size: 15px;
     font-weight: 800;
-    width: 80%;
+    width: 80px;
     text-transform: uppercase;
     text-align: center;
     position: absolute;
-    transform: translate(50%,0);
+    transform: translate(0%,0);
     opacity: 0;
     z-index: -1;
     transition: transform .3s ease-in-out, opacity .3s ease-in-out,
     z-index .3s ease-in-out;
-    top: 25%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 22px;
   }
 `;
 
 export const ArrowRightIcon = styled(BsArrowRight)`
   font-size: 30px;
   font-weight: 900;
-  padding-right: 23px;
+  padding-right: 25px;
 `;
 
 export const Card = styled.div`
