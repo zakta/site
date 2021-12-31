@@ -36,13 +36,13 @@ const ContactForm = function ContactFormPage({ setFormStatus }) {
       }),
     };
 
-    return fetch('https://api.emailjs.com/api/v1.0/email/sendddd', config);
+    return fetch('https://api.emailjs.com/api/v1.0/email/send', config);
   }
 
   const formik = useFormik({
     initialValues: {
       name: '',
-      tel: '',
+      phone: '',
       email: '',
       subject: '',
       message: '',
@@ -51,7 +51,7 @@ const ContactForm = function ContactFormPage({ setFormStatus }) {
       name: Yup.string()
         .min(3, 'Mínimo 3 letras')
         .required('Preencha o nome'),
-      tel: Yup.string()
+      phone: Yup.string()
         .min(15, 'No mínimo 11 números')
         .required('Preencha o número'),
       email: Yup.string()
@@ -66,6 +66,10 @@ const ContactForm = function ContactFormPage({ setFormStatus }) {
       const response = await submitFormData(values);
 
       setFormStatus(response.ok ? 'success' : 'error');
+
+      if (response.ok) {
+        formik.resetForm();
+      }
     },
   });
 
@@ -94,21 +98,21 @@ const ContactForm = function ContactFormPage({ setFormStatus }) {
 
         <Column>
           <InputForm
-            name="tel"
+            name="phone"
             type="text"
             maxLength={15}
             placeholder="Telefone"
-            onChange={(e) => formik.setFieldValue('tel', mtel(e.target.value))}
+            onChange={(e) => formik.setFieldValue('phone', mtel(e.target.value))}
             onBlur={formik.handleBlur}
-            value={formik.values.tel}
-            error={formik.errors.tel}
-            touched={formik.touched.tel}
+            value={formik.values.phone}
+            error={formik.errors.phone}
+            touched={formik.touched.phone}
             readOnly={formik.isSubmitting}
           />
 
-          {formik.touched.tel && formik.errors.tel && (
+          {formik.touched.phone && formik.errors.phone && (
             <Position>
-              <Erro>{formik.errors.tel}</Erro>
+              <Erro>{formik.errors.phone}</Erro>
             </Position>
           )}
         </Column>
