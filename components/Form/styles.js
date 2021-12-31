@@ -90,13 +90,12 @@ export const Erro = styled.div`
 `;
 
 export const BtnSubmit = styled.button`
-  align-self: center;
+  align-self: end;
   animation-duration: 20s;
-  background: ${({ loader }) => (loader ? '#cccccc24' : '#1a3968')};
-  border: 1px solid #1a3968;
-  color: ${({ loader }) => (loader ? '#5d7497' : 'white')};
+  background: #1a3968;
+  border: none;
+  color: white;
   cursor: ${({ loader }) => (loader ? 'not-allowed' : 'pointer')};
-
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -106,9 +105,7 @@ export const BtnSubmit = styled.button`
   transition: all .15s ease;
 
   :active{
-    background:  ${({ loader }) => (loader ? 'inherit' : '#122746')};
-    color: ${({ loader }) => (loader ? 'inherit' : 'white')};
-    border-color: ${({ loader }) => (loader ? 'none' : '#122746')};
+    background: #122746;
   }
 
   @media (min-width: 640px) {
@@ -118,12 +115,8 @@ export const BtnSubmit = styled.button`
   }
 
   @media (min-width: 870px) {
-    align-self: end;
-
     :hover {
-      background:  ${({ loader }) => (loader ? 'inherit' : '#122746')};
-      color: ${({ loader }) => (loader ? 'inherit' : 'white')};
-      border-color: ${({ loader }) => (loader ? 'none' : '#122746')};
+      background:  #122746;
     }
   }
 `;

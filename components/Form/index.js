@@ -9,7 +9,7 @@ import {
   Erro, Form, InputForm, Position, Textarea, BtnSubmit, Row, Column,
 } from './styles';
 
-const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
+const ContactForm = function ContactFormPage({ setFormStatus }) {
   function mtel(phoneRaw) {
     let phoneMasked = phoneRaw;
 
@@ -49,24 +49,20 @@ const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
     },
     validationSchema: Yup.object({
       name: Yup.string()
-        .min(3, 'O nome precisa ter no mínimo 3 caracteres.')
-        .required('Preencha o nome.'),
+        .min(3, 'Mínimo 3 letras')
+        .required('Preencha o nome'),
       tel: Yup.string()
-        .min(15, 'O telefone precisa ter no mínimo 11 números.')
-        .required('Preencha o número.'),
+        .min(15, 'No mínimo 11 números')
+        .required('Preencha o número'),
       email: Yup.string()
-        .email('E-mail inválido.')
-        .required('Preencha o e-mail.'),
+        .email('E-mail inválido')
+        .required('Preencha o e-mail'),
       subject: Yup.string()
-        .min(10, 'O assunto precisa ter no máximo 10 caracteres')
-        .required('Preencha o assunto.'),
+        .required('Preencha o assunto'),
       message: Yup.string()
-        .min(20, 'A mensagem deve ter no mínimo 20 caracteres.')
-        .required('Preencha a mensagem.'),
+        .required('Preencha a mensagem'),
     }),
     onSubmit: async (values) => {
-      setShowPopUp(true);
-
       const response = await submitFormData(values);
 
       setFormStatus(response.ok ? 'success' : 'error');
@@ -88,11 +84,12 @@ const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
             touched={formik.touched.name}
             readOnly={formik.isSubmitting}
           />
-          {formik.touched.name && formik.errors.name ? (
+
+          {formik.touched.name && formik.errors.name && (
             <Position>
               <Erro>{formik.errors.name}</Erro>
             </Position>
-          ) : null}
+          )}
         </Column>
 
         <Column>
@@ -101,22 +98,19 @@ const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
             type="text"
             maxLength={15}
             placeholder="Telefone"
-            onChange={(e) => {
-              const { value } = e.target;
-
-              formik.setFieldValue('tel', mtel(value));
-            }}
+            onChange={(e) => formik.setFieldValue('tel', mtel(e.target.value))}
             onBlur={formik.handleBlur}
             value={formik.values.tel}
             error={formik.errors.tel}
             touched={formik.touched.tel}
             readOnly={formik.isSubmitting}
           />
-          {formik.touched.tel && formik.errors.tel ? (
+
+          {formik.touched.tel && formik.errors.tel && (
             <Position>
               <Erro>{formik.errors.tel}</Erro>
             </Position>
-          ) : null}
+          )}
         </Column>
       </Row>
 
@@ -124,7 +118,7 @@ const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
         <Column>
           <InputForm
             name="email"
-            type="email"
+            type="text"
             placeholder="E-mail"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -133,11 +127,12 @@ const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
             touched={formik.touched.email}
             readOnly={formik.isSubmitting}
           />
-          {formik.touched.email && formik.errors.email ? (
+
+          {formik.touched.email && formik.errors.email && (
             <Position>
               <Erro>{formik.errors.email}</Erro>
             </Position>
-          ) : null}
+          )}
         </Column>
 
         <Column>
@@ -152,11 +147,12 @@ const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
             touched={formik.touched.subject}
             readOnly={formik.isSubmitting}
           />
-          {formik.touched.subject && formik.errors.subject ? (
+
+          {formik.touched.subject && formik.errors.subject && (
             <Position>
               <Erro>{formik.errors.subject}</Erro>
             </Position>
-          ) : null}
+          )}
         </Column>
       </Row>
 
@@ -171,11 +167,13 @@ const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
         touched={formik.touched.message}
         readOnly={formik.isSubmitting}
       />
-      {formik.touched.message && formik.errors.message ? (
+
+      {formik.touched.message && formik.errors.message && (
         <Position>
           <Erro>{formik.errors.message}</Erro>
         </Position>
-      ) : null}
+      )}
+
       <BtnSubmit
         disabled={formik.isSubmitting}
         type="submit"
@@ -190,6 +188,5 @@ const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
 };
 ContactForm.propTypes = {
   setFormStatus: PropTypes.func.isRequired,
-  setShowPopUp: PropTypes.func.isRequired,
 };
 export default ContactForm;

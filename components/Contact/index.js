@@ -21,7 +21,6 @@ import TitleSection from '../SectionTitle/styles';
 
 const Contact = function ContactPage() {
   const [formStatus, setFormStatus] = useState('');
-  const [showPopUp, setShowPopUp] = useState(false);
 
   return (
     <Container id="contato">
@@ -74,14 +73,10 @@ const Contact = function ContactPage() {
           dia útil, responderemos a sua consulta.
         </FormDescription>
 
-        <ContactForm setFormStatus={setFormStatus} setShowPopUp={setShowPopUp} />
+        <ContactForm setFormStatus={setFormStatus} />
       </Center>
 
-      <Notification
-        formStatus={formStatus}
-        showPopUp={showPopUp}
-        setShowPopUp={setShowPopUp}
-      />
+      {formStatus && <Notification formStatus={formStatus} setFormStatus={setFormStatus} />}
     </Container>
   );
 };

@@ -12,11 +12,10 @@ export const Icon = styled(animated.div)`
 `;
 
 export const ArrowRight = styled.div`
+  align-items: center;
   color: black;
-  text-align: left;
   display: flex;
   padding-top: .5rem;
-  align-items: center;
   white-space: nowrap;
 
   a {
@@ -50,7 +49,7 @@ export const ArrowRight = styled.div`
 
   }
 
-  span{
+  span {
     font-size: 15px;
     font-weight: 800;
     width: 80px;
@@ -80,6 +79,7 @@ export const Card = styled.div`
   border-top: 4px solid #33afad;
   box-sizing: border-box;
   display: flex;
+  margin: auto;
   margin-bottom: 1.4rem;
   position: relative;
   padding: 1.25rem;

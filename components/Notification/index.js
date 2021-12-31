@@ -1,44 +1,40 @@
 // 3rd parties
-import { faEnvelope, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
 
 // Styles
 import {
-  PopUp, BtnPopUp, Container, MailIcon,
+  PopUp, BtnPopUp, Container, Center,
 } from './styles';
 
-const Notification = function NotificationPage({ formStatus, showPopUp, setShowPopUp }) {
+const Notification = function NotificationPage({ formStatus, setFormStatus }) {
   return (
-    <Container showPopUp={showPopUp} id="popUp" className="showPopUp">
+    <Container>
       <PopUp formStatus={formStatus}>
-        <BtnPopUp
-          onClick={() => setShowPopUp(false)}
-          showPopUp={showPopUp}
-        >
-          x
-        </BtnPopUp>
+        <Center>
+          {formStatus === 'success' && (
+            <>
+              <h3>Obrigado pelo seu contato!</h3>
+              <p>
+                Suas informações foram enviadas com sucesso.
+                Em breve entraremos em contato!
+              </p>
+            </>
+          )}
 
-        {formStatus === 'success' && (
-          <div>
-            <MailIcon icon={faEnvelope} />
-            <h3>Obrigado pelo seu contato! </h3>
-            <p>
-              Suas informações foram enviadas com sucesso.
-              Em breve entraremos em contato!
-            </p>
-          </div>
-        )}
+          {formStatus === 'error' && (
+            <>
+              <h3>Erro ao enviar a mensagem!</h3>
+              <p>
+                Não foi possível enviar sua mensagem. Tente novamente mais
+                tarde, obrigado.
+              </p>
+            </>
+          )}
 
-        {formStatus === 'error' && (
-          <div>
-            <MailIcon icon={faExclamationTriangle} />
-            <h3>Ops...</h3>
-            <p>
-              Não foi possível enviar sua mensagem. Tente novamente mais
-              tarde, obrigado!
-            </p>
-          </div>
-        )}
+          <BtnPopUp onClick={() => setFormStatus('')}>
+            {formStatus === 'success' ? 'Entendido' : 'Tentar mais tarde'}
+          </BtnPopUp>
+        </Center>
       </PopUp>
     </Container>
   );
@@ -46,8 +42,7 @@ const Notification = function NotificationPage({ formStatus, showPopUp, setShowP
 
 Notification.propTypes = {
   formStatus: PropTypes.string.isRequired,
-  showPopUp: PropTypes.bool.isRequired,
-  setShowPopUp: PropTypes.func.isRequired,
+  setFormStatus: PropTypes.func.isRequired,
 };
 
 export default Notification;

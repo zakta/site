@@ -1,71 +1,115 @@
 // 3rd parties
-import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styled, { keyframes } from 'styled-components';
+
+const fadeInd = keyframes`
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.div`
-  width: 92%;
+  background-color: rgba(18, 39, 70, .9);
   z-index: 14;
   position: fixed;
-  bottom: 30%;
   width: 100%;
-  justify-content: center;
-
-  @media (min-width: 768px){
-    width: 60%;
-  }
-  &.showPopUp{
-    display: ${({ showPopUp }) => (showPopUp ? 'flex' : 'none')};
-  }
-
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: ${fadeInd} .15s ease-in-out;
+  transition: all .15s ease;
+  min-width: 320px;
 `;
+
+const slideUp = keyframes`
+  0%{
+    bottom: -200px;
+  }
+  100%{
+    bottom: 0;
+  }
+`;
+
 export const PopUp = styled.div`
-  display: flex;
-  flex-direction: column;
-  background: ${({ formStatus }) => (formStatus === 'success' ? '#33afad' : '#f6f6f6')};
-  padding: 2rem;
-  opacity: 0.98;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 1.25rem;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  animation: ${slideUp} .15s ease-in-out both;
+  transition: all .15s ease;
 
   div{
     display: flex;
     flex-direction: column;
   }
 
-  h3{
-    font-size: 20px;
-    letter-spacing: .5px;
+  h3 {
+    font-size: 17px;
     font-weight: 800;
-    text-align: center;
-    color:  ${({ formStatus }) => (formStatus === 'success' ? '#ffff' : '#b94f4f')};
+    color: ${({ formStatus }) => (formStatus === 'success' ? '#33afad' : '#e92929')};
     margin: 0;
-    padding: .5rem;
   }
+
   p{
-    font-size: 16px;
-    color:  ${({ formStatus }) => (formStatus === 'success' ? '#ffff' : '#b94f4f')};
-    text-align: center;
+    font-size: 14px;
+    color: black;
+    margin: 1rem 0 0;
+  }
+
+  @media (min-width: 640px) {
+    padding: 2rem;
+
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+    }
   }
 `;
+
+export const Center = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin: auto;
+`;
+
 export const BtnPopUp = styled.button`
-  align-self: flex-end;
-  background-color: white;
+  align-self: end;
+  background: #1a3968;
   border: none;
-  border: 1px solid ${({ formStatus }) => (formStatus === 'success' ? '#33afad' : '#b94f4f')};
-  color: ${({ formStatus }) => (formStatus === 'success' ? '#33afad' : '#b94f4f')};
-  font-size: 18px;
+  border: 1px solid #1a3968;
+  box-sizing: border-box;
+  color: white;
   font-weight: 700;
-  padding: 1px;
-  width: 24.8px;
   cursor: pointer;
+  width: 100%;
+  animation-duration: 20s;
+  font-size: 14px;
+  font-family: 'Poppins',sans-serif;
+  padding: 1rem;
+  transition: all .15s ease;
+  margin-top: 1.5rem;
 
-  :hover{
-    background: ${({ formStatus }) => (formStatus === 'success' ? '#33afad' : '#b94f4f')};
-    border: 1px solid white;
-    color: white;
+  &:active {
+    background-color: #122746;
+    border-color: #122746;
   }
-`;
-export const MailIcon = styled(FontAwesomeIcon)`
-  color:  ${({ formStatus }) => (formStatus === 'success' ? '#fff' : '#b94f4f')};
-  font-size: ${({ formStatus }) => (formStatus === 'success' ? '100px' : '65px')};
-  align-self: center;
 
+  @media (min-width: 640px) {
+    padding: 1.25rem;
+    font-size: 16px;
+    margin-top: 2rem;
+
+    &:hover {
+      background-color: #122746;
+      border-color: #122746;
+    }
+  }
 `;
