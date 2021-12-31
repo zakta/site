@@ -117,24 +117,42 @@ export const Card = styled(CardComp)`
   &.contact-card-email {
     background: #1a3968;
 
-    &:hover {
+    &:active{
       background: #122746;
+    }
+
+    @media (min-width: 870px){
+      &:hover {
+        background: #122746;
+      }
     }
   }
 
   &.contact-card-telephone {
     background: #33afad;
 
-    &:hover {
+    &:active{
       background: #278987;
+    }
+
+    @media (min-width: 870px){
+      &:hover {
+        background: #278987;
+      }
     }
   }
 
   &.contact-card-whatsapp {
     background: #52BF55;
 
-    &:hover {
+    &:active{
       background: #2e7d31;
+    }
+
+    @media (min-width: 870px){
+      &:hover {
+        background: #2e7d31;
+      }
     }
   }
 `;
