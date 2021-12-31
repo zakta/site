@@ -8,9 +8,13 @@ export const Container = styled.section`
   padding-top: 2rem;
 
   h3 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 700;
     margin: 0;
+
+    @media (min-width: 640px) {
+      font-size: 30px;
+    }
   }
 `;
 

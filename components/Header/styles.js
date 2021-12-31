@@ -13,7 +13,7 @@ export const Center = styled.div`
   padding-right: 1.25rem;
   transition: all .15s ease;
 
-  @media (min-width: 870px){
+  @media (min-width: 980px){
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -26,7 +26,7 @@ export const LogoContainer = styled.div`
   transition: all .3s ease;
   z-index: 12;
 
-  @media (min-width: 870px) {
+  @media (min-width: 980px) {
     &:hover{
       transform: perspective(1px) scale(1.1) translateZ(0);
     }
@@ -54,7 +54,7 @@ export const Container = styled.div`
     padding-top: 1.75rem;
   }
 
-  @media (min-width: 870px) {
+  @media (min-width: 980px) {
     padding-bottom: 2rem;
     padding-top: 2rem;
   }
@@ -69,7 +69,7 @@ export const Container = styled.div`
       padding-top: 1.25rem;
     }
 
-    @media (min-width: 870px){
+    @media (min-width: 980px){
       padding-bottom: 0;
       padding-top: 0;
 

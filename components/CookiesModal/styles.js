@@ -2,11 +2,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #f7f7f7;
-  border-top: 1px solid #efefef;
+  background: #2a2a2a;
+  border-top: 1px solid #4a4a4a;
   bottom: 0;
   box-sizing: border-box;
-  color: #4d4d4d;
+  color: #c3c1c1;
   display: ${({ hide }) => (hide ? 'none' : 'flex')};
   font-size: 15px;
   justify-content: center;
@@ -29,7 +29,7 @@ export const CookieNotice = styled.div`
   max-width: 1400px;
 
   a {
-    color: #1a3968;
+    color: white;
     font-weight: 600;
     position: relative;
     text-decoration: none;
@@ -37,7 +37,7 @@ export const CookieNotice = styled.div`
     &::before {
       content: "";
       bottom: 0px;
-      background-color: #1a3968;
+      background-color: white;
       height: 1px;
       left: 0px;
       position: absolute;
@@ -59,8 +59,8 @@ export const CookieNotice = styled.div`
 
   button {
     align-self: center;
-    background: #1a3968;
-    border: 1px solid #1a3968;
+    background: #33afad;
+    border: 1px solid #33afad;
     color: white;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
@@ -74,8 +74,8 @@ export const CookieNotice = styled.div`
     width: 100%;
 
     :active {
-      background: #122746;
-      border-color: #122746;
+      background: #278987;
+      border-color: #278987;
     }
 
     @media (min-width: 480px) {
@@ -84,8 +84,8 @@ export const CookieNotice = styled.div`
 
     @media (min-width: 870px){
       :hover {
-        background: #122746;
-        border-color: #122746;
+        background: #278987;
+        border-color: #278987;
       }
     }
 

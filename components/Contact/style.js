@@ -57,14 +57,20 @@ export const ContactInfo = styled.div`
   z-index:1;
 
   h3 {
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 700;
-    line-height: 41.3885px;
+    line-height: 38px;
     margin: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     max-width: 39.842rem;
     padding: 0;
     width: 100%;
+
+    @media (min-width: 640px) {
+      font-size: 32px;
+      line-height: 44px;
+      margin-bottom: 2rem;
+    }
   }
 `;
 
@@ -152,16 +158,29 @@ export const Card = styled(CardComp)`
 `;
 
 export const FormTitle = styled.div`
-  font-size: 33px;
+  font-size: 26px;
   font-weight: 700;
-  line-height: 48px;
-  padding-top: 2rem;
+  line-height: 38px;
+  padding-top: 1.5rem;
+
+  @media (min-width: 640px) {
+    font-size: 32px;
+    line-height: 44px;
+    padding-top: 2rem;
+  }
 `;
 
 export const FormDescription = styled.div`
   color: #6c6c6c;
-  font-size: 19px;
-  line-height: 34px;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  font-size: 15px;
+  line-height: 28px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  @media (min-width: 640px) {
+    font-size: 19px;
+    line-height: 34px;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
 `;

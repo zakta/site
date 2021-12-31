@@ -24,7 +24,7 @@ export const List = styled.ul`
     justify-content: flex-end;
   }
 
-  @media (min-width: 870px) {
+  @media (min-width: 980px) {
     background: none;
     flex-flow: initial;
     flex-wrap: nowrap;
@@ -50,7 +50,7 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   list-style-type: none;
 
-  @media (min-width: 870px){
+  @media (min-width: 980px){
     padding: 0;
     display: flex;
   }
@@ -62,8 +62,8 @@ export const ListItem = styled.li`
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 30px;
-    padding: 1.5rem;
+    font-size: 22px;
+    padding: 1rem 1.5rem;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
@@ -74,7 +74,7 @@ export const ListItem = styled.li`
       background: #33afad;
     }
 
-    @media (min-width: 870px){
+    @media (min-width: 980px){
       padding: 1.5rem 0;
       margin-left: 1.5rem;
       margin-right: 1.5rem;
@@ -103,7 +103,7 @@ export const ListItem = styled.li`
       }
     }
 
-    @media (min-width: 870px){
+    @media (min-width: 980px){
       padding: 1.5rem 0;
       margin-left: 1.5rem;
       margin-right: 1.5rem;
@@ -127,7 +127,7 @@ export const ListItem = styled.li`
 `;
 
 export const MenuToggle = styled.div`
-  @media (min-width: 870px) {
+  @media (min-width: 980px) {
     display: none;
   }
 `;
@@ -137,7 +137,7 @@ export const ItemInfo = styled.li`
   padding: 1.5rem;
   display: block;
 
-  @media (min-width: 870px) {
+  @media (min-width: 980px) {
     display: none;
   }
 `;

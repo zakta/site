@@ -27,10 +27,10 @@ export const InputForm = styled.input`
   border-bottom-width: 3px;
   box-sizing: border-box;
   display: block;
-  font-size: 15px;
+  font-size: 14px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  padding: 1.5rem;
+  padding: .75rem;
   margin: 1.2rem 0 1.7rem;
   width: 100%;
   outline: none;
@@ -38,6 +38,11 @@ export const InputForm = styled.input`
   :focus{
     background: white;
     border-color: ${({ touched, error }) => (touched && error ? '#e92929' : '#1a3968')};
+  }
+
+  @media (min-width: 640px) {
+    padding: 1.5rem;
+    font-size: 15px;
   }
 `;
 
@@ -47,10 +52,10 @@ export const Textarea = styled.textarea`
   border-bottom-width: 3px;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   min-height: 280px;
-  padding: 1.5rem;
+  padding: .75rem;
   min-width: 100%;
   width: 100%;
   max-width: 100%;
@@ -61,6 +66,11 @@ export const Textarea = styled.textarea`
     background: white;
     border-color: ${({ touched, error }) => (touched && error ? '#e92929' : '#1a3968')};
   }
+
+  @media (min-width: 640px) {
+    padding: 1.5rem;
+    font-size: 15px;
+  }
 `;
 
 export const Position = styled.div`
@@ -69,45 +79,53 @@ export const Position = styled.div`
 
 export const Erro = styled.div`
   color: #e92929;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
   position: absolute;
   bottom: 0;
+
+  @media (min-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 export const BtnSubmit = styled.button`
+  align-self: center;
+  animation-duration: 20s;
+  background: ${({ loader }) => (loader ? '#cccccc24' : '#1a3968')};
+  border: 1px solid #1a3968;
+  color: ${({ loader }) => (loader ? '#5d7497' : 'white')};
+  cursor: ${({ loader }) => (loader ? 'not-allowed' : 'pointer')};
+
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  padding: 1rem;
+  position: relative;
+  margin: 1rem 0;
+  transition: all .15s ease;
+
+  :active{
+    background:  ${({ loader }) => (loader ? 'inherit' : '#122746')};
+    color: ${({ loader }) => (loader ? 'inherit' : 'white')};
+    border-color: ${({ loader }) => (loader ? 'none' : '#122746')};
+  }
+
+  @media (min-width: 640px) {
+    padding: 1.25rem;
+    font-size: 16px;
+    width: 257px;
+  }
+
+  @media (min-width: 870px) {
     align-self: end;
-    animation-duration: 20s;
-    background: ${({ loader }) => (loader ? '#cccccc24' : '#1a3968')};
-    border: 1px solid #1a3968;
-    color: ${({ loader }) => (loader ? '#5d7497' : 'white')};
-    cursor: ${({ loader }) => (loader ? 'not-allowed' : 'pointer')};
 
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    padding: 1rem;
-    position: relative;
-    margin: 1rem 0;
-    transition: all .15s ease;
-
-    :active{
+    :hover {
       background:  ${({ loader }) => (loader ? 'inherit' : '#122746')};
       color: ${({ loader }) => (loader ? 'inherit' : 'white')};
       border-color: ${({ loader }) => (loader ? 'none' : '#122746')};
     }
-
-    @media (min-width: 480px) {
-      width: 200px;
-    }
-
-    @media (min-width: 870px) {
-      :hover {
-        background:  ${({ loader }) => (loader ? 'inherit' : '#122746')};
-        color: ${({ loader }) => (loader ? 'inherit' : 'white')};
-        border-color: ${({ loader }) => (loader ? 'none' : '#122746')};
-      }
-    }
+  }
 `;
 
 export const Row = styled.div`
