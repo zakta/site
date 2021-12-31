@@ -4,7 +4,6 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 
 // Components
-import ButtonUp from '../components/ButtonUp';
 import Company from '../components/Company';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
@@ -38,8 +37,6 @@ const Index = function IndexPage() {
       <Company />
 
       <Contact />
-
-      <ButtonUp />
 
       <Footer />
 

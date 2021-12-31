@@ -15,9 +15,13 @@ export const Container = styled.section`
   min-width: 320px;
   overflow: hidden;
   padding: 1.5rem ;
-  padding-top: 4rem;
+  padding-top: 2rem;
   position: relative;
   width: 100%;
+
+  h2 {
+    padding-bottom: 1rem;
+  }
 
   article {
     align-items: center;
@@ -44,7 +48,7 @@ export const Center = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
-  max-width: 1000px;
+  max-width: 1400px;
 
   @media (min-width: 870px) {
     padding: 0 2rem;
@@ -58,7 +62,6 @@ export const ContactInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 3rem;
   z-index:1;
 
   h3{
@@ -140,7 +143,7 @@ export const FormTitle = styled.div`
   font-size: 33px;
   font-weight: 700;
   line-height: 48px;
-  padding-top: 6rem;
+  padding-top: 3rem;
 `;
 
 export const FormDescription = styled.div`

@@ -46,7 +46,7 @@ const Menu = function MenuPage({
               className={activeMenuItem === '#' || activeMenuItem === '' ? 'menu-item-active' : ''}
               onClick={() => handleActive('#')}
             >
-              Home
+              Início
             </button>
           </Link>
         </ListItem>
@@ -58,7 +58,7 @@ const Menu = function MenuPage({
               className={activeMenuItem === '#servicos' ? 'menu-item-active' : ''}
               onClick={() => handleActive('#servicos')}
             >
-              Serviços
+              O que oferecemos
             </button>
           </Link>
         </ListItem>

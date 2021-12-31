@@ -5,7 +5,7 @@ export const Container = styled.section`
   background: #f7f7f7;
   padding: 1.5rem;
   position: relative;
-  padding-top: 7rem;
+  padding-top: 2rem;
 
   h3 {
     font-size: 30px;
@@ -58,26 +58,16 @@ export const Box = styled.div`
 
 export const Notes = styled.div`
   box-sizing: border-box;
-  padding: 1.25rem;
-
-  :nth-child(2) {
-    background: #1a3968;
-  }
-  :nth-child(3) {
-    background: #302b2b11;
-  }
-  :nth-child(4) {
-    background: #060606;
-  }
+  padding: 2rem 1.25rem;
 
   @media (min-width: 640px) {
-    padding: 1.5rem;
+    padding: 2.5rem 1.5rem;
     width: 50%;
   }
 
   @media (min-width: 1200px) {
     margin: 0;
-    padding: 2rem;
+    padding: 4rem 2rem;
     width: 25%;
   }
 
@@ -147,6 +137,28 @@ export const Notes = styled.div`
       &:nth-child(1) {
         font-size: 18px;
       }
+    }
+  }
+
+  :nth-child(2) {
+    background: #1a3968;
+
+    p {
+      color: #cfd7e7;
+    }
+  }
+  :nth-child(3) {
+    background: #302b2b11;
+
+    p {
+      color: #6c6c6c;
+    }
+  }
+  :nth-child(4) {
+    background: #060606;
+
+    p {
+      color: #b4b4b4;
     }
   }
 `;

@@ -121,7 +121,7 @@ const Services = function ServicesPage() {
   return (
     <Container id="servicos">
       <Center>
-        <TitleServices>Serviços</TitleServices>
+        <TitleServices>O que oferecemos</TitleServices>
         <Cards>
           <Card animate id="globe">
             <Icon>
