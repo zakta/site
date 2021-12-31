@@ -34,7 +34,7 @@ const Contact = function ContactPage() {
         <article>
           <Card className="contact-card-email">
             <a href="mailto:contato@zakta.com.br">
-              <Icon>
+              <Icon className="contact-icon-email">
                 <AiOutlineMail />
               </Icon>
 
@@ -45,12 +45,12 @@ const Contact = function ContactPage() {
 
           <Card className="contact-card-telephone">
             <a href="tel:+5511933020321">
-              <Icon style={{ color: 'white' }}>
+              <Icon className="contact-icon-telephone">
                 <AiOutlinePhone />
               </Icon>
 
-              <h4 style={{ color: 'white' }}>Telefone</h4>
-              <p style={{ color: 'white' }}>+55 11 93302 0321</p>
+              <h4>Telefone</h4>
+              <p>+55 11 93302 0321</p>
             </a>
           </Card>
 

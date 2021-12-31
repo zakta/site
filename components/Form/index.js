@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 // styles
 import LoaderForm from '../LoaderForm';
 import {
-  Erro, Form, InputForm, Position, Textarea, BtnSubmit,
+  Erro, Form, InputForm, Position, Textarea, BtnSubmit, Row, Column,
 } from './styles';
 
 const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
@@ -75,76 +75,91 @@ const ContactForm = function ContactFormPage({ setFormStatus, setShowPopUp }) {
 
   return (
     <Form onSubmit={formik.handleSubmit}>
-      <div style={{ position: 'relative' }}>
-        <InputForm
-          name="name"
-          type="text"
-          placeholder="Nome"
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.name}
-          error={formik.errors.name}
-          touched={formik.touched.name}
-          readOnly={formik.isSubmitting}
-        />
-        {formik.touched.name && formik.errors.name ? (
-          <Erro>{formik.errors.name}</Erro>
-        ) : null}
-      </div>
+      <Row>
+        <Column>
+          <InputForm
+            name="name"
+            type="text"
+            placeholder="Nome"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.name}
+            error={formik.errors.name}
+            touched={formik.touched.name}
+            readOnly={formik.isSubmitting}
+          />
+          {formik.touched.name && formik.errors.name ? (
+            <Position>
+              <Erro>{formik.errors.name}</Erro>
+            </Position>
+          ) : null}
+        </Column>
 
-      <InputForm
-        name="tel"
-        type="text"
-        maxLength={15}
-        placeholder="Telefone"
-        onChange={(e) => {
-          const { value } = e.target;
+        <Column>
+          <InputForm
+            name="tel"
+            type="text"
+            maxLength={15}
+            placeholder="Telefone"
+            onChange={(e) => {
+              const { value } = e.target;
 
-          formik.setFieldValue('tel', mtel(value));
-        }}
-        onBlur={formik.handleBlur}
-        value={formik.values.tel}
-        error={formik.errors.tel}
-        touched={formik.touched.tel}
-        readOnly={formik.isSubmitting}
-      />
-      {formik.touched.tel && formik.errors.tel ? (
-        <Position>
-          <Erro>{formik.errors.tel}</Erro>
-        </Position>
-      ) : null}
-      <InputForm
-        name="email"
-        type="email"
-        placeholder="E-mail"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.email}
-        error={formik.errors.email}
-        touched={formik.touched.email}
-        readOnly={formik.isSubmitting}
-      />
-      {formik.touched.email && formik.errors.email ? (
-        <Position>
-          <Erro>{formik.errors.email}</Erro>
-        </Position>
-      ) : null}
-      <InputForm
-        name="subject"
-        type="text"
-        placeholder="Assunto"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.subject}
-        error={formik.errors.subject}
-        touched={formik.touched.subject}
-        readOnly={formik.isSubmitting}
-      />
-      {formik.touched.subject && formik.errors.subject ? (
-        <Position>
-          <Erro>{formik.errors.subject}</Erro>
-        </Position>
-      ) : null}
+              formik.setFieldValue('tel', mtel(value));
+            }}
+            onBlur={formik.handleBlur}
+            value={formik.values.tel}
+            error={formik.errors.tel}
+            touched={formik.touched.tel}
+            readOnly={formik.isSubmitting}
+          />
+          {formik.touched.tel && formik.errors.tel ? (
+            <Position>
+              <Erro>{formik.errors.tel}</Erro>
+            </Position>
+          ) : null}
+        </Column>
+      </Row>
+
+      <Row>
+        <Column>
+          <InputForm
+            name="email"
+            type="email"
+            placeholder="E-mail"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.email}
+            error={formik.errors.email}
+            touched={formik.touched.email}
+            readOnly={formik.isSubmitting}
+          />
+          {formik.touched.email && formik.errors.email ? (
+            <Position>
+              <Erro>{formik.errors.email}</Erro>
+            </Position>
+          ) : null}
+        </Column>
+
+        <Column>
+          <InputForm
+            name="subject"
+            type="text"
+            placeholder="Assunto"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.subject}
+            error={formik.errors.subject}
+            touched={formik.touched.subject}
+            readOnly={formik.isSubmitting}
+          />
+          {formik.touched.subject && formik.errors.subject ? (
+            <Position>
+              <Erro>{formik.errors.subject}</Erro>
+            </Position>
+          ) : null}
+        </Column>
+      </Row>
+
       <Textarea
         name="message"
         type="submit"

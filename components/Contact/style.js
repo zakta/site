@@ -14,8 +14,7 @@ export const Container = styled.section`
   margin: 0 auto;
   min-width: 320px;
   overflow: hidden;
-  padding: 1.5rem ;
-  padding-top: 2rem;
+  padding: 2rem 1.5rem 3rem;
   position: relative;
   width: 100%;
 
@@ -28,17 +27,12 @@ export const Container = styled.section`
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 
     @media (min-width: 768px) {
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-evenly;
-    }
-
-    @media (min-width: 1060px) {
-      justify-content: space-between;
     }
   }
 `;
@@ -53,7 +47,6 @@ export const Center = styled.div`
   @media (min-width: 870px) {
     padding: 0 2rem;
   }
-
 `;
 
 export const ContactInfo = styled.div`
@@ -63,7 +56,7 @@ export const ContactInfo = styled.div`
   align-items: flex-start;
   z-index:1;
 
-  h3{
+  h3 {
     font-size: 32px;
     font-weight: 700;
     line-height: 41.3885px;
@@ -73,11 +66,18 @@ export const ContactInfo = styled.div`
     padding: 0;
     width: 100%;
   }
-
 `;
 
 export const Icon = styled(CardIcon)`
-  font-size: 4rem;
+  position: relative;
+
+  &.contact-icon-email {
+    right: 3px;
+  }
+
+  &.contact-icon-telephone {
+    right: 5px;
+  }
 `;
 
 export const Card = styled(CardComp)`
@@ -91,6 +91,7 @@ export const Card = styled(CardComp)`
 
   h4 {
     margin: 0;
+    padding-top: .75rem;
   }
 
   p {
@@ -104,13 +105,7 @@ export const Card = styled(CardComp)`
   }
 
   @media (min-width: 768px) {
-    width: 49%;
-    margin-right: 5px;
-  }
-
-  @media (min-width: 1060px) {
-    width: 31.5%;
-    margin-right: 0;
+    width: 32.5%;
   }
 
   &.contact-card-email {
@@ -160,13 +155,13 @@ export const FormTitle = styled.div`
   font-size: 33px;
   font-weight: 700;
   line-height: 48px;
-  padding-top: 3rem;
+  padding-top: 2rem;
 `;
 
 export const FormDescription = styled.div`
   color: #6c6c6c;
   font-size: 19px;
   line-height: 34px;
-  padding-bottom: 3.158rem;
-  padding-top: 3.158rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 `;

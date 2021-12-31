@@ -64,7 +64,7 @@ const About = function AboutPage() {
           <Check>
             <GoCheck />
           </Check>
-          <p>Melhores práticas do mercado</p>
+          <p>Melhores práticas do mercado internacional</p>
         </li>
 
         <li>

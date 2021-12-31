@@ -109,3 +109,21 @@ export const BtnSubmit = styled.button`
       }
     }
 `;
+
+export const Row = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+`;
+
+export const Column = styled.div`
+  width: 100%;
+
+  @media (min-width: 1000px) {
+    width: 49%;
+  }
+`;
