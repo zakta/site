@@ -31,8 +31,11 @@ const Services = function ServicesPage() {
         <Cards>
           <Card
             animate
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon1: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon1: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon1: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon1: 'hover' }))}
+            aria-haspopup="true"
           >
             <Icon>
               <lord-icon
@@ -63,6 +66,8 @@ const Services = function ServicesPage() {
 
           <Card
             animate
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon2: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon2: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon2: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon2: 'hover' }))}
           >
@@ -96,6 +101,8 @@ const Services = function ServicesPage() {
 
           <Card
             animate
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon3: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon3: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon3: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon3: 'hover' }))}
           >
@@ -128,6 +135,8 @@ const Services = function ServicesPage() {
 
           <Card
             animate
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon4: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon4: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon4: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon4: 'hover' }))}
           >
@@ -160,6 +169,8 @@ const Services = function ServicesPage() {
 
           <Card
             animate
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon5: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon5: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
           >
@@ -192,6 +203,8 @@ const Services = function ServicesPage() {
 
           <Card
             animate
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon6: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon6: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
           >
@@ -224,6 +237,8 @@ const Services = function ServicesPage() {
 
           <Card
             animate
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon7: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon7: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon7: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon7: 'hover' }))}
           >
@@ -256,6 +271,8 @@ const Services = function ServicesPage() {
 
           <Card
             animate
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon8: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon8: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon8: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon8: 'hover' }))}
           >
@@ -289,6 +306,8 @@ const Services = function ServicesPage() {
           <Card
             animate
             className="card-last-center"
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon9: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon9: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon9: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon9: 'hover' }))}
           >
