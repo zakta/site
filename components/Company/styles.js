@@ -45,20 +45,20 @@ export const Box = styled.div`
   overflow: hidden;
   width: 100%;
 
-  @media (min-width: 720px) {
+  @media (min-width: 640px) {
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
   }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     flex-direction: row;
     width: 100%;
   }
 `;
 
 export const Notes = styled.div`
-  padding-left: 1rem;
-  position: relative;
+  box-sizing: border-box;
+  padding: 1.25rem;
 
   :nth-child(2) {
     background: #1a3968;
@@ -70,48 +70,28 @@ export const Notes = styled.div`
     background: #060606;
   }
 
-  @media (max-width: 720px) {
-    &:first-child {
-      padding-bottom: 1rem;
-    }
-  }
-
-  @media (min-width: 720px) {
-    padding: 0;
-    margin: 0;
+  @media (min-width: 640px) {
+    padding: 1.5rem;
     width: 50%;
   }
 
-  @media (min-width: 1000px) {
-    padding: 0;
+  @media (min-width: 1200px) {
     margin: 0;
+    padding: 2rem;
     width: 25%;
   }
 
   h4 {
     color: white;
-    font-size: 25px;
-    padding: 2rem 2rem 0 2rem;
+    font-size: 21px;
     margin: 0;
   }
 
   .title-notes {
     color: black;
-    font-size: 23px;
+    font-size: 21px;
     margin: 0;
     font-weight: 800;
-
-    @media (min-width: 472px) {
-      font-size: 25px;
-    }
-    @media (min-width: 650px) {
-      font-size: 26px;
-    }
-
-    @media (min-width: 768px) {
-      padding-top: 1rem;
-      font-size: 27px;
-    }
   }
 
   .text-grey {
@@ -120,17 +100,53 @@ export const Notes = styled.div`
 
   p {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
-    padding: 2rem;
     margin: 0;
+    padding-top: 1rem;
 
     &:nth-child(1) {
-      font-size: 18px;
+      font-size: 15px;
       font-weight: 800;
-      padding-bottom: 0;
+      padding: 0 0 1rem;
       text-transform: uppercase;
       color: #1a3968;
+    }
+  }
+
+  @media (min-width: 640px) {
+    h4 {
+      font-size: 23px;
+    }
+
+    .title-notes {
+      font-size: 23px;
+    }
+
+    p {
+      font-size: 18px;
+
+      &:nth-child(1) {
+        font-size: 16.5px;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    h4 {
+      font-size: 25px;
+    }
+
+    .title-notes {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 20px;
+
+      &:nth-child(1) {
+        font-size: 18px;
+      }
     }
   }
 `;
