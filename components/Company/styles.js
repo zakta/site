@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   background: #f7f7f7;
-  padding: 1.5rem;
   position: relative;
+  padding: 0;
   padding-top: 2rem;
 
   h3 {
@@ -25,9 +25,11 @@ export const Center = styled.div`
   flex-direction: column;
   margin: auto;
   max-width: 1400px;
+  padding: 1.25rem;
 
-  @media (min-width: 870px) {
-    padding: 0 2rem;
+  @media (min-width: 980px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 `;
 

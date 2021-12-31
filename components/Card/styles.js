@@ -79,7 +79,6 @@ export const Card = styled.div`
   border-top: 4px solid #33afad;
   box-sizing: border-box;
   display: flex;
-  margin: auto;
   margin-bottom: 1.4rem;
   position: relative;
   padding: 1.25rem;
@@ -87,6 +86,18 @@ export const Card = styled.div`
   justify-content: space-between;
   transition: .3s all ease-in-out;
   width: 100%;
+
+  &.card-last-center {
+    @media (min-width: 640px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 1200px) {
+      margin-left: initial;
+      margin-right: initial;
+    }
+  }
 
   h3 {
     color: #060606;

@@ -14,7 +14,7 @@ export const Container = styled.section`
   margin: 0 auto;
   min-width: 320px;
   overflow: hidden;
-  padding: 2rem 1.5rem 3rem;
+  padding: 2rem 0 3rem;
   position: relative;
   width: 100%;
 
@@ -43,9 +43,11 @@ export const Center = styled.div`
   flex-direction: column;
   margin: auto;
   max-width: 1400px;
+  padding: 1.25rem;
 
-  @media (min-width: 870px) {
-    padding: 0 2rem;
+  @media (min-width: 980px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 `;
 

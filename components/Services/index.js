@@ -122,6 +122,7 @@ const Services = function ServicesPage() {
     <Container id="servicos">
       <Center>
         <TitleServices>O que oferecemos</TitleServices>
+
         <Cards>
           <Card animate id="globe">
             <Icon>
@@ -307,7 +308,7 @@ const Services = function ServicesPage() {
             </ArrowRight>
           </Card>
 
-          <Card animate id="wrench" className="aaa">
+          <Card animate id="wrench" className="card-last-center">
             <Icon>
               <BiWrench />
             </Icon>

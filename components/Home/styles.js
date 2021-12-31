@@ -23,7 +23,7 @@ export const Container = styled.section`
     padding-top: 91px;
   }
 
-  @media (min-width: 870px) {
+  @media (min-width: 980px) {
     padding-top: 142px;
   }
 `;
@@ -64,7 +64,7 @@ export const PageTitle = styled(animated.div)`
   width: 100%;
   align-items: flex-start;
 
-  @media (min-width: 870px) {
+  @media (min-width: 980px) {
     padding: 2rem;
   }
 
@@ -87,7 +87,7 @@ export const PageTitle = styled(animated.div)`
       line-height: 65px;
     }
 
-    @media (min-width: 870px) {
+    @media (min-width: 980px) {
       font-size: 65px;
       line-height: 80px;
     }
@@ -118,7 +118,7 @@ export const PageTitle = styled(animated.div)`
       line-height: 33px;
     }
 
-    @media (min-width: 870px) {
+    @media (min-width: 980px) {
       font-size: 19px;
       line-height: 34px;
     }

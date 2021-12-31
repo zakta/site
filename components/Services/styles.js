@@ -26,7 +26,7 @@ export const Cards = styled.div`
   padding: 0 1.25rem;
   position: relative;
 
-  @media (min-width: 870px) {
+  @media (min-width: 980px) {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -35,7 +35,7 @@ export const Cards = styled.div`
 export const TitleServices = styled(TitleSection)`
   padding: 1.5rem 1.25rem;
 
-  @media (min-width: 870px) {
+  @media (min-width: 980px) {
     padding-left: 2rem;
     padding-right: 2rem;
   }
