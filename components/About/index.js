@@ -13,7 +13,7 @@ import {
 const About = function AboutPage() {
   return (
     <Container>
-      <TitleSection>Sobre Nós</TitleSection>
+      <TitleSection>Empresa</TitleSection>
 
       <AboutDivision>
         <AboutInfo>

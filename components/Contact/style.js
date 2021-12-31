@@ -57,7 +57,6 @@ export const Center = styled.div`
 `;
 
 export const ContactInfo = styled.div`
-  min-height: 210px;
   position: relative;
   display: flex;
   flex-direction: column;
