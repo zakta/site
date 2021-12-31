@@ -40,7 +40,7 @@ export const Container = styled.div`
   padding-top: 1.25rem;
   position: fixed;
   top: 0;
-  transition: all .2s ease;
+  transition: padding .2s ease, background-color .2s ease;
   width: 100%;
   z-index: 13;
 
@@ -77,7 +77,7 @@ export const Container = styled.div`
         color: #1a3968;
         opacity: 1;
         padding: 1.407rem 0;
-        transition: all .2s ease;
+        transition: all .15s ease;
       }
     }
   }

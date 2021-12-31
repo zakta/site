@@ -44,6 +44,8 @@ export default class MyDocument extends Document {
             content="Somos experts no desenvolvimento de sites e aplicativos para internet. Entendemos as necessidades do negócio e trabalhamos para construir soluções digitais com agilidade, flexibilidade e precisão."
           />
           <meta name="robots" content="noindex, nofollow" />
+
+          <script async src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js" />
         </Head>
         <body>
           <Main />

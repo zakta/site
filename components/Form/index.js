@@ -185,6 +185,7 @@ const ContactForm = function ContactFormPage({ setFormStatus }) {
         className="loader"
       >
         Enviar Mensagem
+
         <LoaderForm loader={formik.isSubmitting} />
       </BtnSubmit>
     </Form>

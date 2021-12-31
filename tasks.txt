@@ -1,10 +1,7 @@
-- Zerar ajustes responsivos
-  * header
-
-- Trocar as hashs no scroll da página
-- Animar ícones da sessão serviços
-- Efeito slide down na imagem de fundo da home
 - Animações de entrada no scroll da página
 - Animar os ícones do contato
 - Otimização SEO
+
+Pós lançamento
 - Refactor do código
+- Testes unitários

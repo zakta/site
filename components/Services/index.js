@@ -1,17 +1,6 @@
 // 3rd parties
 import Link from 'next/link';
-import { BiWrench } from 'react-icons/bi';
-import {
-  AiOutlineCloudSync,
-  AiOutlineAppstoreAdd,
-} from 'react-icons/ai';
-import {
-  BsMegaphone, BsDiagram3, BsGlobe, BsCart3,
-} from 'react-icons/bs';
-import { SiGoogleads } from 'react-icons/si';
-import { MdOutlineManageSearch } from 'react-icons/md';
-// import { useSpring } from 'react-spring';
-// import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 // Styles
 import {
@@ -22,111 +11,36 @@ import {
 } from '../Card/styles';
 
 const Services = function ServicesPage() {
-  /* const [hover, setHover] = useState(
-    {
-      globe: false,
-      search: false,
-      cloud: false,
-      mkt: false,
-      gad: false,
-      app: false,
-      cart: false,
-      net: false,
-      wrench: false,
-    },
-  );
-  const props = useSpring({
-    cancel: !hover,
-    loop: true,
-    from: {
-      opacity: 0, color: '#33afad', x: -30,
-    },
-    to: [
-      {
-        opacity: 0, color: '#33afad', x: 10,
-      },
-      {
-        opacity: 1, color: '#1a3968', x: 20,
-      },
-      {
-        opacity: 0, color: '#1a3968', x: 30,
-      },
-      {
-        opacity: 1, color: '#33afad', x: 10,
-      },
-      {
-        opacity: 0, color: '#1a3968', x: 0,
-      },
-    ],
-    config: { duration: 800 },
+  const [icons, setIcons] = useState({
+    icon1: 'hover',
+    icon2: 'hover',
+    icon3: 'hover',
+    icon4: 'hover',
+    icon5: 'hover',
+    icon6: 'hover',
+    icon7: 'hover',
+    icon8: 'hover',
+    icon9: 'hover',
   });
 
-   const animateOnScroll = () => {
-    const globe = document.querySelector('#globe').offsetTop;
-    const search = document.querySelector('#search').offsetTop;
-    const cloud = document.querySelector('#cloud').offsetTop;
-    const mkt = document.querySelector('#mkt').offsetTop;
-    const gad = document.querySelector('#gad').offsetTop;
-    const app = document.querySelector('#app').offsetTop;
-    const cart = document.querySelector('#cart').offsetTop;
-    const net = document.querySelector('#net').offsetTop;
-    const wrench = document.querySelector('#wrench').offsetTop;
-    const about = document.querySelector('#empresa').offsetTop;
-    const scroll = window.scrollY;
-
-    if (scroll > globe) {
-      setHover((prevState) => ({ ...prevState, globe: true }));
-    }
-    if (scroll > search) {
-      setHover((prevState) => ({ ...prevState, search: true }));
-    }
-    if (scroll > cloud) {
-      setHover((prevState) => ({ ...prevState, cloud: true }));
-    }
-    if (scroll > mkt) {
-      setHover((prevState) => ({
-        ...prevState, mkt: true, globe: false, search: false, cloud: false,
-      }));
-    }
-    if (scroll > gad) {
-      setHover((prevState) => ({ ...prevState, gad: true }));
-    }
-    if (scroll > app) {
-      setHover((prevState) => ({ ...prevState, app: true }));
-    }
-    if (scroll > cart) {
-      setHover((prevState) => ({
-        ...prevState, cart: true, mkt: false, gad: false, app: false,
-      }));
-    }
-    if (scroll > net) {
-      setHover((prevState) => ({ ...prevState, net: true }));
-    }
-    if (scroll > wrench) {
-      setHover((prevState) => ({ ...prevState, wrench: true }));
-    }
-    if (scroll > about) {
-      setHover((prevState) => ({
-        ...prevState, cart: false, net: false, wrench: false,
-      }));
-    }
-  };
-
-   useEffect(() => {
-    window.addEventListener('scroll', animateOnScroll);
-
-    return () => window.removeEventListener('scroll', animateOnScroll);
-  }, []); */
-  /* style={{ ...(hover.globe ? props : null) }} */
   return (
     <Container id="servicos">
       <Center>
         <TitleServices>O que oferecemos</TitleServices>
 
         <Cards>
-          <Card animate id="globe">
+          <Card
+            animate
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon1: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon1: 'hover' }))}
+          >
             <Icon>
-              <BsGlobe />
+              <lord-icon
+                src="https://cdn.lordicon.com/qhgmphtg.json"
+                trigger={icons.icon1}
+                colors="primary:#121331,secondary:#33afad"
+                style={{ width: 80, height: 80 }}
+              />
             </Icon>
             <h3>Criação de Sites</h3>
             <p>
@@ -147,10 +61,20 @@ const Services = function ServicesPage() {
             </ArrowRight>
           </Card>
 
-          <Card animate id="search">
+          <Card
+            animate
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon2: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon2: 'hover' }))}
+          >
             <Icon>
-              <MdOutlineManageSearch />
+              <lord-icon
+                src="https://cdn.lordicon.com/msoeawqm.json"
+                trigger={icons.icon2}
+                colors="primary:#121331,secondary:#33afad"
+                style={{ width: 80, height: 80 }}
+              />
             </Icon>
+
             <h3>Otimização de Sites - SEO</h3>
             <p>
               Otimização de sites para destaque no Google. Palavras-chave
@@ -170,9 +94,18 @@ const Services = function ServicesPage() {
             </ArrowRight>
           </Card>
 
-          <Card animate id="cloud">
+          <Card
+            animate
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon3: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon3: 'hover' }))}
+          >
             <Icon>
-              <AiOutlineCloudSync />
+              <lord-icon
+                src="https://cdn.lordicon.com/wcjauznf.json"
+                trigger={icons.icon3}
+                colors="primary:#121331,secondary:#33afad"
+                style={{ width: 80, height: 80 }}
+              />
             </Icon>
             <h3>Sistemas em Nuvem</h3>
             <p>
@@ -193,9 +126,18 @@ const Services = function ServicesPage() {
             </ArrowRight>
           </Card>
 
-          <Card animate id="mkt">
+          <Card
+            animate
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon4: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon4: 'hover' }))}
+          >
             <Icon>
-              <BsMegaphone />
+              <lord-icon
+                src="https://cdn.lordicon.com/jvucoldz.json"
+                trigger={icons.icon4}
+                colors="primary:#121331,secondary:#33afad"
+                style={{ width: 80, height: 80 }}
+              />
             </Icon>
             <h3>Marketing de Conteúdo - SEM</h3>
             <p>
@@ -216,9 +158,18 @@ const Services = function ServicesPage() {
             </ArrowRight>
           </Card>
 
-          <Card animate id="gad">
+          <Card
+            animate
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon5: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
+          >
             <Icon>
-              <SiGoogleads />
+              <lord-icon
+                src="https://cdn.lordicon.com/iltqorsz.json"
+                trigger={icons.icon5}
+                colors="primary:#121331,secondary:#33afad"
+                style={{ width: 80, height: 80 }}
+              />
             </Icon>
             <h3>Campanha Google Adwords</h3>
             <p>
@@ -239,9 +190,18 @@ const Services = function ServicesPage() {
             </ArrowRight>
           </Card>
 
-          <Card animate id="app">
+          <Card
+            animate
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon6: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
+          >
             <Icon>
-              <AiOutlineAppstoreAdd />
+              <lord-icon
+                src="https://cdn.lordicon.com/jqeuwnmb.json"
+                trigger={icons.icon6}
+                colors="primary:#121331,secondary:#33afad"
+                style={{ width: 80, height: 80 }}
+              />
             </Icon>
             <h3>Criação de Aplicativos</h3>
             <p>
@@ -262,9 +222,18 @@ const Services = function ServicesPage() {
             </ArrowRight>
           </Card>
 
-          <Card animate id="cart">
+          <Card
+            animate
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon7: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon7: 'hover' }))}
+          >
             <Icon>
-              <BsCart3 />
+              <lord-icon
+                src="https://cdn.lordicon.com/slkvcfos.json"
+                trigger={icons.icon7}
+                colors="primary:#121331,secondary:#33afad"
+                style={{ width: 80, height: 80 }}
+              />
             </Icon>
             <h3>Lojas Virtuais</h3>
             <p>
@@ -285,9 +254,18 @@ const Services = function ServicesPage() {
             </ArrowRight>
           </Card>
 
-          <Card animate id="net">
+          <Card
+            animate
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon8: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon8: 'hover' }))}
+          >
             <Icon>
-              <BsDiagram3 />
+              <lord-icon
+                src="https://cdn.lordicon.com/gqzfzudq.json"
+                trigger={icons.icon8}
+                colors="primary:#121331,secondary:#33afad"
+                style={{ width: 80, height: 80 }}
+              />
             </Icon>
             <h3>Intranet e Extranet</h3>
             <p>
@@ -308,9 +286,19 @@ const Services = function ServicesPage() {
             </ArrowRight>
           </Card>
 
-          <Card animate id="wrench" className="card-last-center">
+          <Card
+            animate
+            className="card-last-center"
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon9: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon9: 'hover' }))}
+          >
             <Icon>
-              <BiWrench />
+              <lord-icon
+                src="https://cdn.lordicon.com/sbiheqdr.json"
+                trigger={icons.icon9}
+                colors="primary:#121331,secondary:#33afad"
+                style={{ width: 80, height: 80 }}
+              />
             </Icon>
             <h3>Manutenção de Sites</h3>
             <p>
