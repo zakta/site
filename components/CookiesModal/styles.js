@@ -73,13 +73,20 @@ export const CookieNotice = styled.div`
     transition: all .3s ease;
     width: 100%;
 
+    :active {
+      background: #122746;
+      border-color: #122746;
+    }
+
     @media (min-width: 480px) {
       max-width: 257px;
     }
 
-    :hover {
-      background: #122746;
-      border-color: #122746;
+    @media (min-width: 870px){
+      :hover {
+        background: #122746;
+        border-color: #122746;
+      }
     }
 
   }

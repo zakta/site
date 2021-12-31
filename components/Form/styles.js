@@ -91,9 +91,10 @@ export const BtnSubmit = styled.button`
     margin: 1rem 0;
     transition: all .15s ease;
 
-    &:active{
-      background:  ${({ loader }) => (loader ? 'inherit' : '#1a3968')};
+    :active{
+      background:  ${({ loader }) => (loader ? 'inherit' : '#122746')};
       color: ${({ loader }) => (loader ? 'inherit' : 'white')};
+      border-color: ${({ loader }) => (loader ? 'none' : '#122746')};
     }
 
     @media (min-width: 480px) {
@@ -102,8 +103,9 @@ export const BtnSubmit = styled.button`
 
     @media (min-width: 870px) {
       :hover {
-        background:  ${({ loader }) => (loader ? 'inherit' : 'white')};
-        color: ${({ loader }) => (loader ? 'inherit' : '#1a3968')};
+        background:  ${({ loader }) => (loader ? 'inherit' : '#122746')};
+        color: ${({ loader }) => (loader ? 'inherit' : 'white')};
+        border-color: ${({ loader }) => (loader ? 'none' : '#122746')};
       }
     }
 `;
