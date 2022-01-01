@@ -1,9 +1,9 @@
 // 3rd
 import { useSpring } from 'react-spring';
-import ArrowIcon from '../ArrowRedirect/styles';
 
 // Components
 import Header from '../Header';
+import ArrowIcon from '../ArrowRedirect/styles';
 
 // Style
 import {
@@ -20,7 +20,7 @@ const Home = function HomePage() {
   const props = useSpring({
     to: { opacity: 1, x: `${0}px` },
     from: { opacity: 0, x: `${-100}px` },
-    delay: 2000,
+    delay: 400,
   });
 
   return (

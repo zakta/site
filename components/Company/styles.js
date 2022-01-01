@@ -5,7 +5,6 @@ export const Container = styled.section`
   background: #f7f7f7;
   position: relative;
   padding: 0;
-  padding-top: 2rem;
 
   h3 {
     font-size: 26px;

@@ -14,7 +14,7 @@ export const Container = styled.section`
   margin: 0 auto;
   min-width: 320px;
   overflow: hidden;
-  padding: 2rem 0 3rem;
+  padding: 0 0 3rem;
   position: relative;
   width: 100%;
 
