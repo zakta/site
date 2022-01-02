@@ -1,5 +1,4 @@
 - Ajustar header no on resize
-- fix menu início
 - padding bottom
 - Otimização SEO
 

@@ -7,6 +7,9 @@ import PropTypes from 'prop-types';
 import Hamburguer from '../Hamburguer';
 import ContactLink from '../ContactLink/styles';
 
+// Functions
+import scrollTop from '../../functions/scrollTop';
+
 // Styles
 import {
   List, ListItem, MenuToggle, ItemInfo,
@@ -38,7 +41,11 @@ const Menu = function MenuPage({
             <button
               type="button"
               className={activeMenuItem === '#' || activeMenuItem === '' ? 'menu-item-active' : ''}
-              onClick={() => handleActive('#')}
+              onClick={() => {
+                handleActive('#');
+
+                scrollTop();
+              }}
             >
               Início
             </button>

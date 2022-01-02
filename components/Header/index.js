@@ -1,11 +1,13 @@
 // 3rd parties
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-// import { useSpring } from 'react-spring';
 
 // Components
 import Logo from '../Logo';
 import Menu from '../Menu';
+
+// Functions
+import scrollTop from '../../functions/scrollTop';
 
 // Styles
 import { Center, Container, LogoContainer } from './styles';
@@ -15,39 +17,13 @@ const Header = function HeaderPage() {
   const [open, setOpen] = useState(false);
   const [activeMenuItem, setActiveMenuItem] = useState('');
 
-  const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
-
   const handleScroll = () => {
     const header = document.querySelector('#header');
 
     header?.classList.toggle('sticky', window.scrollY > 0);
 
     setSticky(window.scrollY > 0);
-
-    // changeURL();
   };
-
-  /* const changeURL = () => {
-    const servicos = document.querySelector('#servicos').offsetTop;
-    const empresa = document.querySelector('#empresa').offsetTop;
-    const contato = document.querySelector('#contato').offsetTop;
-
-    const scroll = window.scrollY;
-
-    if (scroll >= 0 && scroll < servicos) {
-      return location.hash = '#';
-    }
-    if (scroll > servicos && scroll < empresa) {
-      return location.hash = '#servicos';
-    }
-    if (scroll > empresa && scroll < contato) {
-      return location.hash = '#empresa';
-    }
-    if (scroll >= contato) {
-      return location.hash = '#contato';
-    }
-  }; */
-  // isSticky ? open ? 'white' : 'primary' : 'white'
 
   const ChangeTheme = () => {
     if (isSticky) {
@@ -68,8 +44,8 @@ const Header = function HeaderPage() {
   }, []);
 
   return (
-    <Container id="header" data-aos="fade-down">
-      <Center isSticky={isSticky}>
+    <Container id="header">
+      <Center isSticky={isSticky} data-aos="fade-down">
         <Link href="/#" passHref as={`${process.env.BACKEND_URL}/#`}>
           <LogoContainer onClick={scrollTop}>
             <Logo
