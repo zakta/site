@@ -175,6 +175,7 @@ export const FormTitle = styled.div`
 export const FormDescription = styled.div`
   color: #6c6c6c;
   font-size: 15px;
+  font-weight: 300;
   line-height: 28px;
   padding-bottom: 1rem;
   padding-top: 1rem;

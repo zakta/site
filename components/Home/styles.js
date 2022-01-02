@@ -101,7 +101,7 @@ export const PageTitle = styled(animated.div)`
   p {
     color: #f7f7f7;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 25px;
     margin: 0;
     max-width: 756px;

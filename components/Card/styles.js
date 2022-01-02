@@ -112,7 +112,7 @@ export const Card = styled.div`
 
   p {
     color: #6c6c6c;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 28px;
     margin: 0;

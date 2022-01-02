@@ -96,7 +96,7 @@ export const Notes = styled.div`
   p {
     color: white;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0;
     padding-top: 1rem;
 

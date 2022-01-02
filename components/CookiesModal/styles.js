@@ -53,6 +53,7 @@ export const CookieNotice = styled.div`
   }
 
   p {
+    font-weight: 300;
     line-height: 20px;
     margin: 0;
   }

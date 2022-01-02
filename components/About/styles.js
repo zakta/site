@@ -128,7 +128,7 @@ export const List = styled.ul`
 export const Check = styled.span`
   font-size: 20px;
   font-weight: 800;
-  color: #1a3968;
+  color: #33afad;
   padding: 1rem 0;
   position: relative;
   top: 15px;

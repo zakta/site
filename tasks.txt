@@ -1,5 +1,8 @@
+- Ajustar header no on resize
+- Resize transitions
+- Hovers e Actives
+- Active no menu mobile
 - Animações de entrada no scroll da página
-- Animar os ícones do contato
 - Otimização SEO
 
 Pós lançamento

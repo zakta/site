@@ -40,6 +40,10 @@ export const InputForm = styled.input`
     border-color: ${({ touched, error }) => (touched && error ? '#e92929' : '#1a3968')};
   }
 
+  ::placeholder {
+    font-weight: 300;
+  }
+
   @media (min-width: 640px) {
     padding: 1.5rem;
     font-size: 15px;
@@ -67,6 +71,10 @@ export const Textarea = styled.textarea`
     border-color: ${({ touched, error }) => (touched && error ? '#e92929' : '#1a3968')};
   }
 
+  ::placeholder {
+    font-weight: 300;
+  }
+
   @media (min-width: 640px) {
     padding: 1.5rem;
     font-size: 15px;
@@ -80,7 +88,7 @@ export const Position = styled.div`
 export const Erro = styled.div`
   color: #e92929;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   position: absolute;
   bottom: 0;
 
