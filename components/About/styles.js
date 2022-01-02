@@ -1,8 +1,16 @@
+// 3rd parties
 import styled from 'styled-components';
+
+// Styles
+import TitleSection from '../SectionTitle/styles';
 
 export const Container = styled.div`
   padding: 0;
   width: 100%;
+
+  ${TitleSection} {
+    padding-bottom: 1.5rem;
+  }
 `;
 
 export const AboutDivision = styled.div`
@@ -20,7 +28,7 @@ export const AboutDivision = styled.div`
 export const AboutInfo = styled.article`
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
 
   @media (min-width: 768px){
     width: 50%;
@@ -60,7 +68,6 @@ export const Owners = styled.div`
 export const AboutCompany = styled.article`
   box-sizing: border-box;
   font-size: 15px;
-  text-align: left;
 
   p {
     padding: 1rem 0;
@@ -80,8 +87,7 @@ export const AboutCompany = styled.article`
 
   @media (min-width: 768px){
     width: 50%;
-    text-align: left;
-    padding: 1rem;
+    padding: 0 1rem;
   }
 `;
 

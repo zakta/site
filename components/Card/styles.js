@@ -79,7 +79,7 @@ export const Card = styled.div`
   border-top: 4px solid #33afad;
   box-sizing: border-box;
   display: flex;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.5rem;
   position: relative;
   padding: 1.25rem;
   flex-direction: column;
