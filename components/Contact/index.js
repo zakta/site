@@ -26,12 +26,13 @@ const Contact = function ContactPage() {
     <Container id="contato">
       <Center>
         <ContactInfo>
-          <TitleSection>Contato</TitleSection>
-          <h3>Alguma dúvida? Entre em contato e responderemos em breve.</h3>
+          <TitleSection data-aos="fade-up">Contato</TitleSection>
+
+          <h3 data-aos="fade-up">Alguma dúvida? Entre em contato e responderemos em breve.</h3>
         </ContactInfo>
 
         <article>
-          <Card className="contact-card-email">
+          <Card className="contact-card-email" data-aos="fade-up">
             <a href="mailto:contato@zakta.com.br">
               <Icon className="contact-icon-email">
                 <AiOutlineMail />
@@ -42,7 +43,7 @@ const Contact = function ContactPage() {
             </a>
           </Card>
 
-          <Card className="contact-card-telephone">
+          <Card className="contact-card-telephone" data-aos="fade-up">
             <a href="tel:+5511933020321">
               <Icon className="contact-icon-telephone">
                 <AiOutlinePhone />
@@ -53,7 +54,7 @@ const Contact = function ContactPage() {
             </a>
           </Card>
 
-          <Card className="contact-card-whatsapp">
+          <Card className="contact-card-whatsapp" data-aos="fade-up">
             <a href=" https://wa.me/5511933020321?text=Olá%20gostaria%20de%20um%20orçamento%20dos%20seus%20serviços." target="_blank">
               <Icon>
                 <BsWhatsapp />
@@ -65,9 +66,9 @@ const Contact = function ContactPage() {
           </Card>
         </article>
 
-        <FormTitle>Você pode nos escrever</FormTitle>
+        <FormTitle data-aos="fade-up">Você pode nos escrever</FormTitle>
 
-        <FormDescription>
+        <FormDescription data-aos="fade-up">
           Por favor preencha este formulário. Seus dados serão privados e
           utilizados apenas para entendermos melhor suas necessidades. Em até um
           dia útil, responderemos a sua consulta.

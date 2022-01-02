@@ -1,6 +1,5 @@
 // 3rd parties
 import styled from 'styled-components';
-import { animated } from 'react-spring';
 
 export const Container = styled.section`
   box-sizing: border-box;
@@ -48,7 +47,7 @@ export const CoverMask = styled.div`
   width: 100%;
 `;
 
-export const PageTitle = styled(animated.div)`
+export const PageTitle = styled.div`
   align-items: center;
   box-sizing: border-box;
   color: white;

@@ -1,5 +1,6 @@
 - Ajustar header no on resize
-- Animações de entrada no scroll da página
+- fix menu início
+- padding bottom
 - Otimização SEO
 
 Pós lançamento

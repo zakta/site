@@ -9,9 +9,11 @@
     "lint-fix": "eslint --fix \"**/*.js\"",
     "start": "next start",
     "deploy": "rm -rf node_modules/.cache && next build && next export -o out/hml && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "clean": "rm -rf node_modules yarn lock; yarn cache clean"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "emailjs-com": "^3.2.0",
     "formik": "^2.2.9",
     "js-cookie": "^3.0.1",
@@ -21,7 +23,6 @@
     "react-cookienotice": "^4.0.0",
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
-    "react-spring": "^9.3.3",
     "styled-components": "^5.3.3",
     "yup": "^0.32.11"
   },

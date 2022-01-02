@@ -26,16 +26,15 @@ const Services = function ServicesPage() {
   return (
     <Container id="servicos">
       <Center>
-        <TitleServices>O que oferecemos</TitleServices>
+        <TitleServices data-aos="fade-up">O que oferecemos</TitleServices>
 
         <Cards>
           <Card
-            animate
             onTouchStartCapture={() => setIcons((state) => ({ ...state, icon1: 'loop' }))}
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon1: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon1: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon1: 'hover' }))}
-            aria-haspopup="true"
+            data-aos="fade-up"
           >
             <Icon>
               <lord-icon
@@ -65,11 +64,11 @@ const Services = function ServicesPage() {
           </Card>
 
           <Card
-            animate
             onTouchStartCapture={() => setIcons((state) => ({ ...state, icon2: 'loop' }))}
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon2: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon2: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon2: 'hover' }))}
+            data-aos="fade-up"
           >
             <Icon>
               <lord-icon
@@ -100,11 +99,11 @@ const Services = function ServicesPage() {
           </Card>
 
           <Card
-            animate
             onTouchStartCapture={() => setIcons((state) => ({ ...state, icon3: 'loop' }))}
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon3: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon3: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon3: 'hover' }))}
+            data-aos="fade-up"
           >
             <Icon>
               <lord-icon
@@ -134,11 +133,11 @@ const Services = function ServicesPage() {
           </Card>
 
           <Card
-            animate
             onTouchStartCapture={() => setIcons((state) => ({ ...state, icon4: 'loop' }))}
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon4: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon4: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon4: 'hover' }))}
+            data-aos="fade-up"
           >
             <Icon>
               <lord-icon
@@ -168,11 +167,11 @@ const Services = function ServicesPage() {
           </Card>
 
           <Card
-            animate
             onTouchStartCapture={() => setIcons((state) => ({ ...state, icon5: 'loop' }))}
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon5: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
+            data-aos="fade-up"
           >
             <Icon>
               <lord-icon
@@ -202,11 +201,11 @@ const Services = function ServicesPage() {
           </Card>
 
           <Card
-            animate
             onTouchStartCapture={() => setIcons((state) => ({ ...state, icon6: 'loop' }))}
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon6: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
+            data-aos="fade-up"
           >
             <Icon>
               <lord-icon
@@ -236,11 +235,11 @@ const Services = function ServicesPage() {
           </Card>
 
           <Card
-            animate
             onTouchStartCapture={() => setIcons((state) => ({ ...state, icon7: 'loop' }))}
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon7: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon7: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon7: 'hover' }))}
+            data-aos="fade-up"
           >
             <Icon>
               <lord-icon
@@ -270,11 +269,11 @@ const Services = function ServicesPage() {
           </Card>
 
           <Card
-            animate
             onTouchStartCapture={() => setIcons((state) => ({ ...state, icon8: 'loop' }))}
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon8: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon8: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon8: 'hover' }))}
+            data-aos="fade-up"
           >
             <Icon>
               <lord-icon
@@ -304,12 +303,12 @@ const Services = function ServicesPage() {
           </Card>
 
           <Card
-            animate
             className="card-last-center"
             onTouchStartCapture={() => setIcons((state) => ({ ...state, icon9: 'loop' }))}
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon9: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon9: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon9: 'hover' }))}
+            data-aos="fade-up"
           >
             <Icon>
               <lord-icon

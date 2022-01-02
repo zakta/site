@@ -1,9 +1,8 @@
 // 3rd parties
 import styled from 'styled-components';
-import { animated } from 'react-spring';
 import { BsArrowRight } from 'react-icons/bs';
 
-export const Icon = styled(animated.div)`
+export const Icon = styled.div`
   z-index: 10;
   color: #1a3968;
   font-size: 3.4rem;

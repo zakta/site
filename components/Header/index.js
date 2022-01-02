@@ -68,7 +68,7 @@ const Header = function HeaderPage() {
   }, []);
 
   return (
-    <Container id="header">
+    <Container id="header" data-aos="fade-down">
       <Center isSticky={isSticky}>
         <Link href="/#" passHref as={`${process.env.BACKEND_URL}/#`}>
           <LogoContainer onClick={scrollTop}>

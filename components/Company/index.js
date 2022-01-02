@@ -15,11 +15,13 @@ const Company = function CompanyPage() {
     <Container id="empresa">
       <Center>
         <About />
+
         <Picture
+          data-aos="fade-up"
           src="espaco-de-trabalho-da-zakta.jpg"
           alt="Espaço de trabalho da Zakta"
         />
-        <Box>
+        <Box data-aos="fade-up">
           <Notes>
             <p>Como funciona?</p>
             <h4 className="title-notes">

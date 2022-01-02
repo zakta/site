@@ -13,10 +13,10 @@ import {
 const About = function AboutPage() {
   return (
     <Container>
-      <TitleSection>Empresa</TitleSection>
+      <TitleSection data-aos="fade-up">Empresa</TitleSection>
 
       <AboutDivision>
-        <AboutInfo>
+        <AboutInfo data-aos="fade-up">
           <h3>
             A Zakta existe para facilitar a vida das pessoas e reinventar as
             empresas, através de novos produtos e da tecnologia.
@@ -33,7 +33,7 @@ const About = function AboutPage() {
           </Owners>
         </AboutInfo>
 
-        <AboutCompany>
+        <AboutCompany data-aos="fade-up">
           <p>
             Uma empresa de tecnologia da informação que está envolvida no
             planejamento, desenvolvimento e implementação de aplicações web e
@@ -53,28 +53,28 @@ const About = function AboutPage() {
       </AboutDivision>
 
       <List>
-        <li>
+        <li data-aos="fade-up">
           <Check>
             <GoCheck />
           </Check>
           <p>Equipe humana e altamente qualificada</p>
         </li>
 
-        <li>
+        <li data-aos="fade-up">
           <Check>
             <GoCheck />
           </Check>
           <p>Melhores práticas do mercado internacional</p>
         </li>
 
-        <li>
+        <li data-aos="fade-up">
           <Check>
             <GoCheck />
           </Check>
           <p>Aplicação das mais recentes técnicas de qualidade</p>
         </li>
 
-        <li>
+        <li data-aos="fade-up">
           <Check>
             <GoCheck />
           </Check>
