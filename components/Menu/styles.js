@@ -63,8 +63,9 @@ export const ListItem = styled.li`
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 22px;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.25rem 1rem 1.5rem;
     position: relative;
+    text-align: right;
     text-decoration: none;
     text-transform: uppercase;
     transition: all .2s ease;
@@ -74,12 +75,17 @@ export const ListItem = styled.li`
       background: #33afad;
     }
 
+    &.menu-item-active {
+      border-right: 5px solid #33afad;
+    }
+
     @media (min-width: 980px){
       padding: 1.5rem 0;
       margin-left: 1.5rem;
       margin-right: 1.5rem;
       font-size: 20px;
       font-weight: 800;
+      text-align: initial;
 
       &::before {
         content: "";
@@ -103,7 +109,7 @@ export const ListItem = styled.li`
       }
 
       &.menu-item-active {
-        opacity: 1;
+        border: none;
 
         &::before {
           content: "";

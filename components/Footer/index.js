@@ -55,7 +55,7 @@ const Footer = function FooterPage() {
           <ContactLink href="tel:+5511933020321">+55 11 93302-0321</ContactLink>
         </Contact>
       </Box>
-      <Copyright>© 2021 ZAKTA Tecnologia todos direitos reservados.</Copyright>
+      <Copyright>© 2022 ZAKTA Tecnologia todos direitos reservados.</Copyright>
     </Container>
   );
 };

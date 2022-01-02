@@ -1,7 +1,6 @@
 - Ajustar header no on resize
 - Resize transitions
 - Hovers e Actives
-- Active no menu mobile
 - Animações de entrada no scroll da página
 - Otimização SEO
 
