@@ -13,6 +13,7 @@ import {
   Copyright,
   PositionLogo,
 } from './styles';
+import getFullYear from '../../functions/getFullYear';
 
 const Footer = function FooterPage() {
   return (
@@ -56,7 +57,13 @@ const Footer = function FooterPage() {
         </Contact>
       </Box>
 
-      <Copyright>© 2022 ZAKTA Tecnologia todos direitos reservados.</Copyright>
+      <Copyright>
+        ©
+        {' '}
+        {getFullYear()}
+        {' '}
+        ZAKTA Tecnologia todos direitos reservados.
+      </Copyright>
     </Container>
   );
 };

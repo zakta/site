@@ -3,11 +3,8 @@ import styled from 'styled-components';
 import { BsArrowRight } from 'react-icons/bs';
 
 export const Icon = styled.div`
-  z-index: 10;
-  color: #1a3968;
-  font-size: 3.4rem;
   line-height: .7;
-  position: relative;
+  height: 80px;
 `;
 
 export const ArrowRight = styled.div`
@@ -125,10 +122,6 @@ export const Card = styled.div`
     width: 48.6%;
     padding: 1.5rem;
 
-    ${Icon} {
-      font-size: 3.7rem;
-    }
-
     h3 {
       font-size: 24.5px;
       line-height: 35px;
@@ -153,10 +146,6 @@ export const Card = styled.div`
   @media (min-width: 1200px){
     padding: 2rem;
     width: 32%;
-
-    ${Icon} {
-      font-size: 4rem;
-    }
 
     h3 {
       font-size: 27px;
