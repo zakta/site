@@ -75,6 +75,7 @@ export const ArrowRightIcon = styled(BsArrowRight)`
 
 export const Card = styled.div`
   background: white;
+  border: 1px solid #efefef;
   border-top: 4px solid #33afad;
   box-sizing: border-box;
   display: flex;
@@ -85,6 +86,7 @@ export const Card = styled.div`
   justify-content: space-between;
   transition: .3s all ease-in-out;
   width: 100%;
+  position: relative;
 
   &.card-last-center {
     @media (min-width: 640px) {

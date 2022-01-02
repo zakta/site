@@ -21,10 +21,9 @@ function validationInput({ touched, error }) {
 }
 
 export const InputForm = styled.input`
-  border-color: ${validationInput};
+  border: 1px solid #efefef;
+  border-bottom: 3px solid ${validationInput};
   border-radius: none;
-  border-width: 0;
-  border-bottom-width: 3px;
   box-sizing: border-box;
   display: block;
   font-size: 14px;
@@ -37,7 +36,7 @@ export const InputForm = styled.input`
 
   :focus{
     background: white;
-    border-color: ${({ touched, error }) => (touched && error ? '#e92929' : '#1a3968')};
+    border-bottom-color: ${({ touched, error }) => (touched && error ? '#e92929' : '#1a3968')};
   }
 
   ::placeholder {
@@ -51,9 +50,8 @@ export const InputForm = styled.input`
 `;
 
 export const Textarea = styled.textarea`
-  border-color: ${validationInput};
-  border-width: 0;
-  border-bottom-width: 3px;
+  border: 1px solid #efefef;
+  border-bottom: 3px solid ${validationInput};
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
@@ -68,7 +66,7 @@ export const Textarea = styled.textarea`
 
   :focus{
     background: white;
-    border-color: ${({ touched, error }) => (touched && error ? '#e92929' : '#1a3968')};
+    border-bottom-color: ${({ touched, error }) => (touched && error ? '#e92929' : '#1a3968')};
   }
 
   ::placeholder {

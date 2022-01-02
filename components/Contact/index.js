@@ -31,8 +31,8 @@ const Contact = function ContactPage() {
           <h3 data-aos="fade-up">Alguma dúvida? Entre em contato e responderemos em breve.</h3>
         </ContactInfo>
 
-        <article>
-          <Card className="contact-card-email" data-aos="fade-up">
+        <article data-aos="fade-up">
+          <Card className="contact-card-email">
             <a href="mailto:contato@zakta.com.br">
               <Icon className="contact-icon-email">
                 <AiOutlineMail />
@@ -43,7 +43,7 @@ const Contact = function ContactPage() {
             </a>
           </Card>
 
-          <Card className="contact-card-telephone" data-aos="fade-up">
+          <Card className="contact-card-telephone">
             <a href="tel:+5511933020321">
               <Icon className="contact-icon-telephone">
                 <AiOutlinePhone />
@@ -54,7 +54,7 @@ const Contact = function ContactPage() {
             </a>
           </Card>
 
-          <Card className="contact-card-whatsapp" data-aos="fade-up">
+          <Card className="contact-card-whatsapp">
             <a href=" https://wa.me/5511933020321?text=Olá%20gostaria%20de%20um%20orçamento%20dos%20seus%20serviços." target="_blank">
               <Icon>
                 <BsWhatsapp />
