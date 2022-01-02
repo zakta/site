@@ -12,14 +12,9 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.16",
     "emailjs-com": "^3.2.0",
     "formik": "^2.2.9",
     "js-cookie": "^3.0.1",
-    "lord-icon-element": "^3.3.3",
-    "lottie-web": "^5.8.1",
     "next": "12.0.4",
     "prop-types": "^15.8.0",
     "react": "17.0.2",

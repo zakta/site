@@ -16,8 +16,8 @@ const Company = function CompanyPage() {
       <Center>
         <About />
         <Picture
-          src="united-image.jpg"
-          alt="Grupo de trabalhadores com mãos unidas"
+          src="espaco-de-trabalho-da-zakta.jpg"
+          alt="Espaço de trabalho da Zakta"
         />
         <Box>
           <Notes>
