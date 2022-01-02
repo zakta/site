@@ -89,7 +89,7 @@ export const Icon = styled(CardIcon)`
 `;
 
 export const Card = styled(CardComp)`
-  border: none;
+  border: 3px solid;
   cursor: pointer;
   width: 100%;
 
@@ -119,42 +119,66 @@ export const Card = styled(CardComp)`
 
   &.contact-card-email {
     background: #1a3968;
+    border-color: #1a3968;
 
-    &:active{
+    &:active {
       background: #122746;
+      border-color: #f7f7f7;
     }
 
     @media (min-width: 870px){
       &:hover {
+        background: #26508f;
+        border-color: #26508f;
+      }
+
+      &:active {
         background: #122746;
+        border-color: #f7f7f7;
       }
     }
   }
 
   &.contact-card-telephone {
     background: #33afad;
+    border-color: #33afad;
 
     &:active{
       background: #278987;
+      border-color: #f7f7f7;
     }
 
     @media (min-width: 870px){
       &:hover {
+        background: #3ec9c7;
+        border-color: #3ec9c7;
+      }
+
+      &:active {
         background: #278987;
+        border-color: #f7f7f7;
       }
     }
   }
 
   &.contact-card-whatsapp {
     background: #52BF55;
+    border-color: #52BF55;
 
-    &:active{
+    &:active {
       background: #2e7d31;
+      border-color: #f7f7f7;
     }
 
     @media (min-width: 870px){
       &:hover {
+        background: #5dd560;
+        border-color: #5dd560;
+      }
+
+      &:active {
         background: #2e7d31;
+        border-color: #f7f7f7;
       }
     }
   }

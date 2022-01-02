@@ -147,8 +147,9 @@ export const ButtonLink = styled.a`
   user-select: none;
 
   &:active {
-    background: white;
+    background: #dfdfdf;
     color: #1a3968;
+    border-color: #1a3968;
   }
 
   @media (min-width: 480px) {
@@ -158,6 +159,10 @@ export const ButtonLink = styled.a`
     &:hover {
       background: white;
       color: #1a3968;
+    }
+
+    &:active {
+      background: #bbb;
     }
   }
 `;

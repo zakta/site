@@ -1,6 +1,4 @@
 - Ajustar header no on resize
-- viewport
-- Hovers e Actives
 - Animações de entrada no scroll da página
 - Otimização SEO
 

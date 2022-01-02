@@ -78,7 +78,7 @@ export const CookieNotice = styled.div`
 
     :active {
       background: #278987;
-      border-color: #278987;
+      border-color: #2a2a2a;
     }
 
     @media (min-width: 480px) {
@@ -87,8 +87,8 @@ export const CookieNotice = styled.div`
 
     @media (min-width: 870px){
       :hover {
-        background: #278987;
-        border-color: #278987;
+        background: #3ec9c7;
+        border-color: #3ec9c7;
       }
     }
 
