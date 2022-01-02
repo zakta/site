@@ -136,6 +136,7 @@ export const ItemInfo = styled.li`
   list-style-type: none;
   padding: 1.5rem;
   display: block;
+  text-align: right;
 
   @media (min-width: 980px) {
     display: none;

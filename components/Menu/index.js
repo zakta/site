@@ -21,12 +21,6 @@ const Menu = function MenuPage({
 
   const handleActive = (sectionPage) => setActiveMenuItem(sectionPage);
 
-  /*  const menuAnim = useSpring({
-    to: { opacity: 1, y: `${0}px` },
-    from: { opacity: 0, y: `${-100}px` },
-    delay: 2000,
-  }); */
-
   return (
     <>
       <List
