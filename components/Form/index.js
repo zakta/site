@@ -74,7 +74,7 @@ const ContactForm = function ContactFormPage({ setFormStatus }) {
   });
 
   return (
-    <Form onSubmit={formik.handleSubmit}>
+    <Form onSubmit={formik.handleSubmit} data-aos="fade-up">
       <Row>
         <Column>
           <InputForm

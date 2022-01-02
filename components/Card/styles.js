@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { BsArrowRight } from 'react-icons/bs';
 
 export const Icon = styled.div`
+  font-size: 3rem;
   line-height: .7;
   height: 80px;
 `;

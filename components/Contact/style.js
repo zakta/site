@@ -77,6 +77,7 @@ export const ContactInfo = styled.div`
 `;
 
 export const Icon = styled(CardIcon)`
+  height: initial;
   position: relative;
 
   &.contact-icon-email {
