@@ -88,7 +88,7 @@ export const ListItem = styled.li`
         left: 0px;
         position: absolute;
         transition: width .2s ease-in-out 0s;
-        top: 15px;
+        top: 12px;
         width: 0;
       }
 
@@ -101,12 +101,6 @@ export const ListItem = styled.li`
       :active {
         background: initial;
       }
-    }
-
-    @media (min-width: 980px){
-      padding: 1.5rem 0;
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
 
       &.menu-item-active {
         opacity: 1;
@@ -118,7 +112,7 @@ export const ListItem = styled.li`
           left: 0px;
           position: absolute;
           transition: width .2s ease-in-out 0s;
-          top: 15px;
+          top: 12px;
           width: 100%;
         }
       }
