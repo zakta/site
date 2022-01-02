@@ -74,6 +74,7 @@ export const CookieNotice = styled.div`
     padding: 6px 45px;
     transition: all .3s ease;
     width: 100%;
+    user-select: none;
 
     :active {
       background: #278987;

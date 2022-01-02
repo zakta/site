@@ -41,6 +41,7 @@ export const Picture = styled.img`
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  user-select: none;
 `;
 
 export const Box = styled.div`

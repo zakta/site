@@ -17,6 +17,7 @@ export const List = styled.ul`
   text-align: center;
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
   top: 0;
+  user-select: none;
   width: 100%;
   z-index: ${({ open }) => (open ? '11' : '0')};
 

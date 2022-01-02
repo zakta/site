@@ -101,7 +101,7 @@ export const BtnSubmit = styled.button`
   align-self: end;
   animation-duration: 20s;
   background: #1a3968;
-  border: none;
+  border: 1px solid #1a3968;
   color: white;
   cursor: ${({ loader }) => (loader ? 'not-allowed' : 'pointer')};
   font-size: 14px;
@@ -111,20 +111,33 @@ export const BtnSubmit = styled.button`
   position: relative;
   margin: 1rem 0;
   transition: all .15s ease;
+  user-select: none;
 
   :active{
     background: #122746;
+    border: 1px solid #f7f7f7;
   }
 
   @media (min-width: 640px) {
     padding: 1.25rem;
     font-size: 16px;
     width: 257px;
+
+    :active{
+      background: #122746;
+      border: 1px solid #f7f7f7;
+    }
   }
 
   @media (min-width: 870px) {
     :hover {
-      background:  #122746;
+      background:  #26508f;
+      border-color: #26508f;
+    }
+
+    :active{
+      background: #122746;
+      border: 1px solid #f7f7f7;
     }
   }
 `;

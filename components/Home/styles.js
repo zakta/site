@@ -144,6 +144,7 @@ export const ButtonLink = styled.a`
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
   border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
   opacity 0.15s ease-in-out;
+  user-select: none;
 
   &:active {
     background: white;

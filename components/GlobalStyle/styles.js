@@ -27,6 +27,11 @@ const GlobalStyle = createGlobalStyle`
       line-height: 50px;
     }
   }
+
+  ::selection {
+    background-color: #33afad;
+    color: white;
+  }
 `;
 
 export default GlobalStyle;

@@ -6,6 +6,7 @@ const TitleSection = styled.h2`
   margin:0;
   transition: all .15s ease;
   font-weight: 800;
+  user-select: none;
 `;
 
 export default TitleSection;

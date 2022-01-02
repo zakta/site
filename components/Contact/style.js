@@ -100,6 +100,7 @@ export const Card = styled(CardComp)`
   h4 {
     margin: 0;
     padding-top: .75rem;
+    user-select: none;
   }
 
   p {
