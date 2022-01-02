@@ -84,7 +84,7 @@ export const ListItem = styled.li`
       &::before {
         content: "";
         background-color: #33afad;
-        height: 7px;
+        height: 5px;
         left: 0px;
         position: absolute;
         transition: width .2s ease-in-out 0s;
@@ -108,7 +108,7 @@ export const ListItem = styled.li`
         &::before {
           content: "";
           background-color: #33afad;
-          height: 7px;
+          height: 5px;
           left: 0px;
           position: absolute;
           transition: width .2s ease-in-out 0s;

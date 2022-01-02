@@ -37,10 +37,6 @@ export const Container = styled.section`
     padding: 2rem;
   }
 
-  &.close {
-    //display: none;
-  }
-
   .modalTerms {
     background: white;
     display: flex;
@@ -65,30 +61,23 @@ export const Container = styled.section`
 
   h1 {
     align-self: flex-start;
-    border-top: 7px solid #33afad;
+    border-top: 5px solid #33afad;
     color: #1a3968;
     display: flex;
     font-size: 20px;
     font-weight: 800;
+    line-height: 22px;
     margin: 0;
     margin-bottom: 1rem;
     padding: 0;
     padding-top: 5px;
-    line-height: 22px;
+    text-transform: uppercase;
     white-space: nowrap;
 
-    @media (min-width: 480px) {
-      font-size: 24px;
-      line-height: 26px;
-    }
     @media (min-width: 640px) {
-      font-size: 28px;
-      line-height: 30px;
       margin-bottom: 1.25rem;
     }
     @media (min-width: 870px) {
-      font-size: 32px;
-      line-height: 34px;
       margin-bottom: 1.5rem;
     }
   }

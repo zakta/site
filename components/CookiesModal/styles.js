@@ -30,7 +30,7 @@ export const CookieNotice = styled.div`
 
   a {
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     position: relative;
     text-decoration: none;
 
