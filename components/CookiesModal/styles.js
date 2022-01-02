@@ -10,7 +10,7 @@ export const Container = styled.div`
   display: ${({ hide }) => (hide ? 'none' : 'flex')};
   font-size: 15px;
   justify-content: center;
-  padding: 1rem 1.5rem;
+  padding: .75rem 1.5rem;
   position: fixed;
   width: 100%;
   z-index: 13;
@@ -53,6 +53,7 @@ export const CookieNotice = styled.div`
   }
 
   p {
+    font-size: 14px;
     font-weight: 300;
     line-height: 20px;
     margin: 0;
@@ -65,12 +66,12 @@ export const CookieNotice = styled.div`
     color: white;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 30px;
     margin-top: 1.5rem;
     max-width: 100%;
-    padding: 10px 45px;
+    padding: 6px 45px;
     transition: all .3s ease;
     width: 100%;
 
