@@ -1,5 +1,6 @@
 // 3rd
 import PropTypes from 'prop-types';
+
 // Styles
 import { Container, Burguer } from './styles';
 
@@ -17,4 +18,5 @@ Hamburguer.propTypes = {
   open: PropTypes.bool.isRequired,
   isSticky: PropTypes.bool.isRequired,
 };
+
 export default Hamburguer;

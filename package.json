@@ -8,7 +8,7 @@
     "lint": "next lint",
     "lint-fix": "eslint --fix \"**/*.js\"",
     "start": "next start",
-    "deploy": "rm -rf node_modules/.cache && next build && next export -o out/hml && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages",
+    "deploy": "rm -rf node_modules/.cache && next build && next export -o out/hml && touch out/.nojekyll && git add out/ && git commit -m \"ci: deploy next.js to gh-pages\" && git subtree push --prefix out origin gh-pages",
     "prepare": "husky install",
     "clean": "rm -rf node_modules yarn lock; yarn cache clean"
   },
