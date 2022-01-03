@@ -45,12 +45,13 @@ const Header = function HeaderPage() {
 
   return (
     <Container id="header">
-      <Center isSticky={isSticky} data-aos="fade-down">
+      <Center isSticky={isSticky}>
         <Link href="/#" passHref as={`${process.env.BACKEND_URL}/#`}>
           <LogoContainer onClick={scrollTop}>
             <Logo
               theme={ChangeTheme()}
               height={35}
+              data-aos="fade-down"
             />
           </LogoContainer>
         </Link>
