@@ -3,14 +3,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background: #2a2a2a;
-  border-top: 1px solid #4a4a4a;
   bottom: 0;
   box-sizing: border-box;
   color: #c3c1c1;
   display: ${({ hide }) => (hide ? 'none' : 'flex')};
   font-size: 15px;
   justify-content: center;
-  padding: .75rem 1.5rem;
   position: fixed;
   width: 100%;
   z-index: 13;
@@ -27,6 +25,7 @@ export const CookieNotice = styled.div`
   flex-direction: column;
   margin: auto;
   max-width: 1400px;
+  padding: 1.25rem;
 
   a {
     color: white;
@@ -55,7 +54,6 @@ export const CookieNotice = styled.div`
   p {
     font-size: 14px;
     font-weight: 300;
-    line-height: 20px;
     margin: 0;
   }
 
@@ -94,12 +92,14 @@ export const CookieNotice = styled.div`
 
   }
 
-  @media (min-width: 870px) {
-    padding: 0 2rem;
+  @media (min-width: 980px) {
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
     button {
+      align-self: center;
       margin-left: 1.5rem;
       margin-top: 0;
     }

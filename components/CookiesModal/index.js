@@ -16,7 +16,12 @@ CookiesModalPage({ isAcceptedCookie, setAcceptedCookie }) {
   };
 
   return (
-    <Container id="modal" hide={isAcceptedCookie}>
+    <Container
+      id="modal"
+      hide={isAcceptedCookie}
+      data-aos="fade-up"
+      data-aos-offset="0"
+    >
       <CookieNotice>
         <p>
           Usamos cookies e métodos semelhantes para reconhecer os visitantes e
