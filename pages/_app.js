@@ -12,7 +12,7 @@ import GlobalStyle from '../components/GlobalStyle/styles';
 const App = function App({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
-      offset: 220,
+      offset: 180,
       mirror: true,
     });
   }, []);
