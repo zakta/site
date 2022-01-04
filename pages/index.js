@@ -22,6 +22,8 @@ const Index = function IndexPage() {
     }
   }, []);
 
+  const [cookiesModalHeight, setCookiesModalHeight] = useState(0);
+
   return (
     <>
       <Head>
@@ -38,11 +40,12 @@ const Index = function IndexPage() {
 
       <Contact />
 
-      <Footer />
+      <Footer cookiesModalHeight={cookiesModalHeight} />
 
       <CookiesModal
         isAcceptedCookie={isAcceptedCookie}
         setAcceptedCookie={setAcceptedCookie}
+        setCookiesModalHeight={setCookiesModalHeight}
       />
 
       <GoogleAnalytics />

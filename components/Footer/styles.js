@@ -5,7 +5,9 @@ import ContactLink from '../ContactLink/styles';
 export const Container = styled.footer`
   background-color: #182e4e;
   min-width: 320px;
+  padding-bottom: ${({ cookiesModalHeight }) => cookiesModalHeight}px;
   position: relative;
+  transition: all .15s ease;
 `;
 
 export const Box = styled.div`

@@ -2,25 +2,45 @@
 import Link from 'next/link';
 import cookie from 'js-cookie';
 import PropTypes from 'prop-types';
+import { useRef, useEffect, useCallback } from 'react';
 
 // styles
 import { Container, CookieNotice } from './styles';
 
 const CookiesModal = function
-CookiesModalPage({ isAcceptedCookie, setAcceptedCookie }) {
+CookiesModalPage({ isAcceptedCookie, setAcceptedCookie, setCookiesModalHeight }) {
   const createCookies = () => {
     if (cookie.get('allow-cookies') === undefined) {
       cookie.set('allow-cookies', 'true', { expires: 1 / 192 });
+      setCookiesModalHeight(0);
+
       setAcceptedCookie(true);
     }
   };
 
+  const cookiesModalRef = useRef();
+
+  const getModalHeight = useCallback(() => {
+    const newHeight = cookiesModalRef.current.clientHeight;
+
+    setCookiesModalHeight(newHeight);
+  }, [setCookiesModalHeight]);
+
+  useEffect(() => {
+    setTimeout(getModalHeight, 400);
+  }, [getModalHeight]);
+
+  useEffect(() => {
+    window.addEventListener('resize', getModalHeight);
+  }, [getModalHeight]);
+
   return (
     <Container
-      id="modal"
-      hide={isAcceptedCookie}
       data-aos="fade-up"
       data-aos-offset="0"
+      hide={isAcceptedCookie}
+      id="modal"
+      ref={cookiesModalRef}
     >
       <CookieNotice>
         <p>
@@ -66,6 +86,7 @@ CookiesModalPage({ isAcceptedCookie, setAcceptedCookie }) {
 CookiesModal.propTypes = {
   isAcceptedCookie: PropTypes.bool.isRequired,
   setAcceptedCookie: PropTypes.func.isRequired,
+  setCookiesModalHeight: PropTypes.func.isRequired,
 };
 
 export default CookiesModal;

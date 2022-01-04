@@ -1,5 +1,6 @@
 // 3rd parties
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 
 // Components
 import Logo from '../Logo';
@@ -15,9 +16,9 @@ import {
 } from './styles';
 import getFullYear from '../../functions/getFullYear';
 
-const Footer = function FooterPage() {
+const Footer = function FooterPage({ cookiesModalHeight }) {
   return (
-    <Container>
+    <Container cookiesModalHeight={cookiesModalHeight}>
       <Box>
         <Link passHref href="/#" as={`${process.env.BACKEND_URL}/#`}>
           <PositionLogo
@@ -66,6 +67,10 @@ const Footer = function FooterPage() {
       </Copyright>
     </Container>
   );
+};
+
+Footer.propTypes = {
+  cookiesModalHeight: PropTypes.number.isRequired,
 };
 
 export default Footer;
