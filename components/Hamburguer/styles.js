@@ -22,12 +22,12 @@ export const Burguer = styled.div`
   z-index: 11;
 
   &:nth-child(1){
-    background: ${({ open }) => (open ? '#fff' : '#36afad')};
+    background-color: ${({ open }) => (open ? 'white' : '#36afad')};
     transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
     transition: all .4s linear;
   }
 
-  &:nth-child(2){;
+  &:nth-child(2){
     transform: ${({ open }) => (open ? 'translateX(80%)' : 'translateX(0)')};
     opacity: ${({ open }) => (open ? 0 : 1)};
     transition: all .4s linear;

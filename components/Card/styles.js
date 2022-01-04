@@ -72,7 +72,7 @@ export const ArrowRightIcon = styled(BsArrowRight)`
 `;
 
 export const Card = styled.div`
-  background: white;
+  background-color: white;
   border: 1px solid #efefef;
   border-top: 4px solid #33afad;
   box-sizing: border-box;

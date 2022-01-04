@@ -146,7 +146,7 @@ export const ButtonLink = styled.a`
   user-select: none;
 
   &:active {
-    background: #dfdfdf;
+    background-color: #dfdfdf;
     color: #1a3968;
     border-color: #1a3968;
   }
@@ -156,12 +156,12 @@ export const ButtonLink = styled.a`
     padding: 1.132rem;
 
     &:hover {
-      background: white;
+      background-color: white;
       color: #1a3968;
     }
 
     &:active {
-      background: #bbb;
+      background-color: #bbb;
     }
   }
 `;

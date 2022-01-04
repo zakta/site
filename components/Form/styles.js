@@ -35,7 +35,7 @@ export const InputForm = styled.input`
   outline: none;
 
   :focus{
-    background: white;
+    background-color: white;
     border-bottom-color: ${({ touched, error }) => (touched && error ? '#e92929' : '#1a3968')};
   }
 
@@ -65,7 +65,7 @@ export const Textarea = styled.textarea`
   outline: none;
 
   :focus{
-    background: white;
+    background-color: white;
     border-bottom-color: ${({ touched, error }) => (touched && error ? '#e92929' : '#1a3968')};
   }
 
@@ -98,7 +98,7 @@ export const Erro = styled.div`
 export const BtnSubmit = styled.button`
   align-self: end;
   animation-duration: 20s;
-  background: #1a3968;
+  background-color: #1a3968;
   border: 1px solid #1a3968;
   color: white;
   cursor: ${({ loader }) => (loader ? 'not-allowed' : 'pointer')};
@@ -112,7 +112,7 @@ export const BtnSubmit = styled.button`
   user-select: none;
 
   :active{
-    background: #122746;
+    background-color: #122746;
     border: 1px solid #f7f7f7;
   }
 
@@ -122,19 +122,19 @@ export const BtnSubmit = styled.button`
     width: 257px;
 
     :active{
-      background: #122746;
+      background-color: #122746;
       border: 1px solid #f7f7f7;
     }
   }
 
   @media (min-width: 870px) {
     :hover {
-      background:  #26508f;
+      background-color:  #26508f;
       border-color: #26508f;
     }
 
     :active{
-      background: #122746;
+      background-color: #122746;
       border: 1px solid #f7f7f7;
     }
   }

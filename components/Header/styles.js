@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Center = styled.div`
   align-items: center;
-  background: transparent;
+  background-color: transparent;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -60,7 +60,7 @@ export const Container = styled.div`
   }
 
   &.sticky {
-    background: white;
+    background-color: white;
     border-bottom: 1px solid #efefef;
     height: 75px;
 

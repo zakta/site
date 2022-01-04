@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 export const List = styled.ul`
-  background: #081220;
+  background-color: #081220;
   box-sizing: border-box;
   flex-flow: column nowrap;
   display: flex;
@@ -73,7 +73,7 @@ export const ListItem = styled.li`
     width: 100%;
 
     :active {
-      background: #33afad;
+      background-color: #33afad;
     }
 
     &.menu-item-active {
@@ -106,7 +106,7 @@ export const ListItem = styled.li`
       }
 
       :active {
-        background: initial;
+        background-color: initial;
       }
 
       &.menu-item-active {

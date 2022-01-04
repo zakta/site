@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ContactLink from '../ContactLink/styles';
 
 export const Container = styled.footer`
-  background: #182e4e;
+  background-color: #182e4e;
   min-width: 320px;
   position: relative;
 `;
@@ -70,7 +70,7 @@ export const Contact = styled.div`
 `;
 
 export const Copyright = styled.p`
-  background: #11223a;
+  background-color: #11223a;
   box-sizing: border-box;
   color: white;
   text-align: center;

@@ -15,7 +15,7 @@ const slide = keyframes`
 
 export const Container = styled.section`
   animation: ${slide} .5s ease-in-out both;
-  background: #f7f7f7;
+  background-color: #f7f7f7;
   box-sizing: border-box;
   height: 100%;
   min-height: 320px;
@@ -38,7 +38,7 @@ export const Container = styled.section`
   }
 
   .modalTerms {
-    background: white;
+    background-color: white;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -155,13 +155,13 @@ export const IcClose = styled(IoClose)`
 
   :active {
     color: white;
-    background: #1a3968;
+    background-color: #1a3968;
   }
 
   @media (min-width: 768px) {
     :hover {
       color: white;
-      background: #1a3968;
+      background-color: #1a3968;
     }
   }
 `;

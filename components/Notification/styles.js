@@ -82,7 +82,7 @@ export const Center = styled.div`
 
 export const BtnPopUp = styled.button`
   align-self: end;
-  background: #1a3968;
+  background-color: #1a3968;
   border: none;
   border: 1px solid #1a3968;
   box-sizing: border-box;

@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #2a2a2a;
+  background-color: #2a2a2a;
   bottom: 0;
   box-sizing: border-box;
   color: #c3c1c1;
@@ -59,7 +59,7 @@ export const CookieNotice = styled.div`
 
   button {
     align-self: end;
-    background: #33afad;
+    background-color: #33afad;
     border: 1px solid #33afad;
     color: white;
     cursor: pointer;
@@ -75,7 +75,7 @@ export const CookieNotice = styled.div`
     user-select: none;
 
     :active {
-      background: #278987;
+      background-color: #278987;
       border-color: #2a2a2a;
     }
 
@@ -85,7 +85,7 @@ export const CookieNotice = styled.div`
 
     @media (min-width: 870px){
       :hover {
-        background: #3ec9c7;
+        background-color: #3ec9c7;
         border-color: #3ec9c7;
       }
     }
