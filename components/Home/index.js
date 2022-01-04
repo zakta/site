@@ -33,7 +33,7 @@ const Home = function HomePage() {
           </span>
         </p>
 
-        <ButtonLink href="#empresa">Saiba mais</ButtonLink>
+        <ButtonLink href="#contato">Contate-nos</ButtonLink>
 
         <ArrowAnimation>
           <ArrowLink href="#servicos">

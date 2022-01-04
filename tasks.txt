@@ -1,5 +1,6 @@
 - Ajustar header no on resize
-- padding bottom
+- Favicons
+- trocar # por pages no next
 - Otimização SEO
 
 Pós lançamento
