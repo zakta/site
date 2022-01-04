@@ -25,7 +25,7 @@ const Index = function IndexPage() {
   return (
     <>
       <Head>
-        <title>Tecnologia Aplicada em Soluções Digitais | Zakta</title>
+        <title>Zakta - Tecnologia</title>
       </Head>
 
       { /* <Loader /> */ }

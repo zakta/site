@@ -45,7 +45,6 @@ export const Picture = styled.img`
 `;
 
 export const Box = styled.div`
-  background: #fff;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -146,22 +145,28 @@ export const Notes = styled.div`
     }
   }
 
+  :nth-child(1) {
+    background-color: white;
+  }
+
   :nth-child(2) {
-    background: #1a3968;
+    background-color: #1a3968;
 
     p {
       color: #cfd7e7;
     }
   }
+
   :nth-child(3) {
-    background: #302b2b11;
+    background-color: #302b2b11;
 
     p {
       color: #6c6c6c;
     }
   }
+
   :nth-child(4) {
-    background: #060606;
+    background-color: #060606;
 
     p {
       color: #b4b4b4;
