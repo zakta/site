@@ -18,18 +18,22 @@ const Header = function HeaderPage() {
   const [activeMenuItem, setActiveMenuItem] = useState('');
 
   const handleScroll = () => {
+    const isScrolling = window.scrollY > 0;
     const header = document.querySelector('#header');
 
-    header?.classList.toggle('sticky', window.scrollY > 0);
+    header?.classList.toggle('sticky', isScrolling);
 
-    setSticky(window.scrollY > 0);
+    setSticky(isScrolling);
   };
 
-  const ChangeTheme = () => {
+  const changeTheme = () => {
     if (isSticky) {
-      if (open) {
+      const { clientWidth } = document.documentElement;
+
+      if (open && clientWidth < 980) {
         return 'white';
       }
+
       return 'primary';
     }
     return 'white';
@@ -43,13 +47,23 @@ const Header = function HeaderPage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      const { clientWidth } = document.documentElement;
+
+      if (clientWidth >= 980 && open) {
+        setOpen(false);
+      }
+    });
+  }, [open]);
+
   return (
     <Container id="header">
       <Center isSticky={isSticky}>
         <Link href="/#" passHref as={`${process.env.BACKEND_URL}/#`}>
           <LogoContainer onClick={scrollTop}>
             <Logo
-              theme={ChangeTheme()}
+              theme={changeTheme()}
               height={35}
               data-aos="fade-down"
             />
