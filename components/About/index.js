@@ -4,7 +4,6 @@ import {
   AboutInfo,
   AboutDivision,
   Container,
-  Owners,
   AboutCompany,
   List,
   Check,
@@ -18,36 +17,24 @@ const About = function AboutPage() {
       <AboutDivision>
         <AboutInfo data-aos="fade-up">
           <h3>
-            A Zakta existe para facilitar a vida das pessoas e reinventar as
-            empresas, através de novos produtos e da tecnologia.
+            A Zakta existe para criar soluções que facilitem ações e gerem resultados para
+            pessoas e empresas com tecnologia especializada.
           </h3>
-
-          <Owners>
-            <h4>Fernanda F. Silva</h4>
-            <p>CEO</p>
-          </Owners>
-
-          <Owners>
-            <h4>Nelson Francisco</h4>
-            <p>CTO</p>
-          </Owners>
         </AboutInfo>
 
         <AboutCompany data-aos="fade-up">
           <p>
-            Uma empresa de tecnologia da informação que está envolvida no
-            planejamento, desenvolvimento e implementação de aplicações web e
-            mobile.
+            Uma empresa de tecnologia da informação especializada em análise, desenvolvimento,
+            consultoria e implementação de aplicações web e mobile.
           </p>
           <p>
-            Trabalhamos diretamente com os proprietários na elaboração de um
-            plano de negócios, identificando as necessidades de marketing e
-            desenvolvendo as habilidades necessárias para a propriedade do
-            negócio.
+            Atuamos desde a fase inicial de concepção do plano de negócios até a publicação do
+            projeto. Temos uma equipe especializada que é capaz de criar diversas aplicações e em
+            diferentes linguagens de programação e tecnologias.
           </p>
           <p>
-            Nosso objetivo é entregar o máximo de excelência, a fins de atingir
-            e ou superar o resultado esperado.
+            Nosso objetivo é transformar a nossa experiência e bagagem profissional em meios de
+            atingir o resultado esperado por nossos clientes através de nossas soluções digitais.
           </p>
         </AboutCompany>
       </AboutDivision>
@@ -57,28 +44,28 @@ const About = function AboutPage() {
           <Check>
             <GoCheck />
           </Check>
-          <p>Equipe humana e altamente qualificada</p>
+          <p>Equipe experiente e altamente qualificada</p>
         </li>
 
         <li data-aos="fade-up">
           <Check>
             <GoCheck />
           </Check>
-          <p>Melhores práticas do mercado internacional</p>
+          <p>Expertise em diferentes ferramentas e softwares</p>
         </li>
 
         <li data-aos="fade-up">
           <Check>
             <GoCheck />
           </Check>
-          <p>Aplicação das mais recentes técnicas de qualidade</p>
+          <p>Projetos com resultados comprovados</p>
         </li>
 
         <li data-aos="fade-up">
           <Check>
             <GoCheck />
           </Check>
-          <p>Novas feats, suporte e sustentação contínuos</p>
+          <p>Atendimento técnico ágil e eficaz</p>
         </li>
       </List>
     </Container>

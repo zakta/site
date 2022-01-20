@@ -26,23 +26,34 @@ const Company = function CompanyPage() {
           <Notes data-aos="fade-up">
             <p>Como funciona?</p>
             <h4 className="title-notes">
-              Analisamos as necessidades do seu negócio
+              Entendemos as necessidades do seu negócio
             </h4>
           </Notes>
 
           <Notes data-aos="fade-up">
             <h4>Elaboração do plano e propostas</h4>
-            <p>Pensamos nas melhores soluções e apresentamos um ou mais planos e propostas.</p>
+            <p>
+              Analisamos os requisitos, montamos uma estratégia adequada
+              e apresentamos as propostas
+            </p>
           </Notes>
 
           <Notes data-aos="fade-up">
             <h4 className="text-grey">Desenvolvimento e testes de qualidade</h4>
-            <p className="text-grey">Oferecemos um acompanhamento de perto da execução do plano de negócio.</p>
+            <p className="text-grey">
+              Durante a fase de produção, realizamos constantes reuniões com a
+              equipe e cliente para acompanhamento do andamento e aprovações
+              das principais entregas.
+            </p>
           </Notes>
 
           <Notes data-aos="fade-up">
-            <h4>Pré/pós lançamento e suporte</h4>
-            <p>Fazemos a campanha de lançamento, medição do pós e suporte à atualizações</p>
+            <h4>Publicação e suporte</h4>
+            <p>
+              Após a validação final do projeto, realizamos a publicação, com a
+              medição de acessos, acompanhamento de resultados e suporte
+              imediato.
+            </p>
           </Notes>
         </Box>
       </Center>

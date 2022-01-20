@@ -54,17 +54,6 @@ export const AboutInfo = styled.article`
   }
 `;
 
-export const Owners = styled.div`
-  width: 50%;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem 0;
-
-  @media (min-width: 768px){
-    padding: 0;
-  }
-`;
-
 export const AboutCompany = styled.article`
   box-sizing: border-box;
   font-size: 15px;
