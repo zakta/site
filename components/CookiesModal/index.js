@@ -21,7 +21,7 @@ CookiesModalPage({ isAcceptedCookie, setAcceptedCookie, setCookiesModalHeight })
   const cookiesModalRef = useRef();
 
   const getModalHeight = useCallback(() => {
-    const newHeight = cookiesModalRef.current.clientHeight;
+    const newHeight = cookiesModalRef?.current?.clientHeight;
 
     setCookiesModalHeight(newHeight);
   }, [setCookiesModalHeight]);
@@ -77,7 +77,7 @@ CookiesModalPage({ isAcceptedCookie, setAcceptedCookie, setCookiesModalHeight })
           .
         </p>
 
-        <button type="button" onClick={createCookies}>Aceitar</button>
+        <button type="button" onClick={createCookies}>Continuar</button>
       </CookieNotice>
     </Container>
   );

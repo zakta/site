@@ -12,11 +12,11 @@ import scrollTop from '../../functions/scrollTop';
 
 // Styles
 import {
-  List, ListItem, MenuToggle, ItemInfo,
+  List, ListItem, MenuToggle, ItemInfo, BtnMenu,
 } from './styles';
 
 const Menu = function MenuPage({
-  isSticky, open, setOpen, activeMenuItem, setActiveMenuItem,
+  isSticky, open, setOpen, activeMenuItem, setActiveMenuItem, stat,
 }) {
   const setOverflow = (event) => {
     document.body.classList[event]('hideOverflow');
@@ -38,7 +38,9 @@ const Menu = function MenuPage({
       >
         <ListItem data-aos="fade-down">
           <Link passHref href="/#" as={`${process.env.BACKEND_URL}/#`}>
-            <button
+            <BtnMenu
+              open={open}
+              stat={stat}
               type="button"
               className={activeMenuItem === '#' || activeMenuItem === '' ? 'menu-item-active' : ''}
               onClick={() => {
@@ -48,43 +50,49 @@ const Menu = function MenuPage({
               }}
             >
               Início
-            </button>
+            </BtnMenu>
           </Link>
         </ListItem>
 
         <ListItem data-aos="fade-down">
           <Link passHref href="/#servicos" as={`${process.env.BACKEND_URL}/#servicos`}>
-            <button
+            <BtnMenu
+              open={open}
+              stat={stat}
               type="button"
               className={activeMenuItem === '#servicos' ? 'menu-item-active' : ''}
               onClick={() => handleActive('#servicos')}
             >
               O que oferecemos
-            </button>
+            </BtnMenu>
           </Link>
         </ListItem>
 
         <ListItem data-aos="fade-down">
           <Link passHref href="/#empresa" as={`${process.env.BACKEND_URL}/#empresa`}>
-            <button
+            <BtnMenu
+              open={open}
+              stat={stat}
               type="button"
               className={activeMenuItem === '#empresa' ? 'menu-item-active' : ''}
               onClick={() => handleActive('#empresa')}
             >
               Empresa
-            </button>
+            </BtnMenu>
           </Link>
         </ListItem>
 
         <ListItem data-aos="fade-down">
           <Link passHref href="/#contato" as={`${process.env.BACKEND_URL}/#contato`}>
-            <button
+            <BtnMenu
+              open={open}
+              stat={stat}
               type="button"
               className={activeMenuItem === '#contato' ? 'menu-item-active' : ''}
               onClick={() => handleActive('#contato')}
             >
               Contato
-            </button>
+            </BtnMenu>
           </Link>
         </ListItem>
 
@@ -123,7 +131,7 @@ const Menu = function MenuPage({
         setOverflow(!open ? 'add' : 'remove');
       }}
       >
-        <Hamburguer open={open} isSticky={isSticky} />
+        <Hamburguer open={open} isSticky={isSticky || stat} />
       </MenuToggle>
     </>
   );
@@ -135,6 +143,8 @@ Menu.propTypes = {
   setOpen: PropTypes.func.isRequired,
   activeMenuItem: PropTypes.string.isRequired,
   setActiveMenuItem: PropTypes.func.isRequired,
+  stat: PropTypes.bool.isRequired,
+
 };
 
 export default Menu;

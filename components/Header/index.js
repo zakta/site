@@ -1,6 +1,7 @@
 // 3rd parties
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 // Components
 import Logo from '../Logo';
@@ -12,7 +13,7 @@ import scrollTop from '../../functions/scrollTop';
 // Styles
 import { Center, Container, LogoContainer } from './styles';
 
-const Header = function HeaderPage() {
+const Header = function HeaderPage({ stat }) {
   const [isSticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
   const [activeMenuItem, setActiveMenuItem] = useState('');
@@ -27,7 +28,7 @@ const Header = function HeaderPage() {
   };
 
   const changeTheme = () => {
-    if (isSticky) {
+    if (stat || isSticky) {
       const { clientWidth } = document.documentElement;
 
       if (open && clientWidth < 980) {
@@ -59,11 +60,11 @@ const Header = function HeaderPage() {
 
   return (
     <Container id="header">
-      <Center isSticky={isSticky}>
+      <Center isSticky={stat || isSticky}>
         <Link href="/#" passHref as={`${process.env.BACKEND_URL}/#`}>
           <LogoContainer onClick={scrollTop}>
             <Logo
-              theme={changeTheme()}
+              theme={process.browser && changeTheme()}
               height={35}
               data-aos="fade-down"
             />
@@ -72,6 +73,7 @@ const Header = function HeaderPage() {
 
         <Menu
           isSticky={isSticky}
+          stat={stat}
           open={open}
           setOpen={setOpen}
           activeMenuItem={activeMenuItem}
@@ -80,6 +82,9 @@ const Header = function HeaderPage() {
       </Center>
     </Container>
   );
+};
+Header.propTypes = {
+  stat: PropTypes.bool.isRequired,
 };
 
 export default Header;

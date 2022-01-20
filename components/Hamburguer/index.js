@@ -1,4 +1,4 @@
-// 3rd
+// 3rd parties
 import PropTypes from 'prop-types';
 
 // Styles

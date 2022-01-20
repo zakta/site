@@ -51,11 +51,11 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/criacao"
+                href="/servicos/criacao-de-sites-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/criacao`}
+                as={`${process.env.BACKEND_URL}/servicos/criacao-de-sites-em-santos`}
               >
-                <a href="/criacao">
+                <a href="/servicos/criacao-de-sites-em-santos">
                   <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
@@ -84,11 +84,11 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/lojas"
+                href="/servicos/lojas-virtuais-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/lojas`}
+                as={`${process.env.BACKEND_URL}/servicos/lojas-virtuais-em-santos`}
               >
-                <a href="/lojas">
+                <a href="/servicos/lojas-virtuais-em-santos">
                   <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
@@ -117,11 +117,11 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/redes"
+                href="/servicos/sistemas-web-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/redes`}
+                as={`${process.env.BACKEND_URL}//servicos/sistemas-web-em-santos`}
               >
-                <a href="/redes">
+                <a href="/servicos/sistemas-web-em-santos">
                   <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
@@ -151,11 +151,11 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/seo"
+                href="/servicos/otimizacao-de-sites-seo-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/seo`}
+                as={`${process.env.BACKEND_URL}/servicos/otimizacao-de-sites-seo-em-santos`}
               >
-                <a href="/seo">
+                <a href="/servicos/otimizacao-de-sites-seo-em-santos">
                   <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
@@ -184,11 +184,11 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/app"
+                href="/servicos/criacao-de-aplicativos-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/app`}
+                as={`${process.env.BACKEND_URL}/servicos/criacao-de-aplicativos-em-santos`}
               >
-                <a href="/app">
+                <a href="/servicos/criacao-de-aplicativos-em-santos">
                   <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
@@ -218,11 +218,11 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/manutencao"
+                href="/servicos/manutencao-de-sites-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/manutencao`}
+                as={`${process.env.BACKEND_URL}/servicos/manutencao-de-sites-em-santos`}
               >
-                <a href="/manutencao">
+                <a href="/servicos/manutencao-de-sites-em-santos">
                   <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
@@ -252,11 +252,11 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/sistemas"
+                href="/servicos/landing-pages-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/sistemas`}
+                as={`${process.env.BACKEND_URL}/servicos/landing-pages-em-santos`}
               >
-                <a href="/sistemas">
+                <a href="/servicos/landing-pages-em-santos">
                   <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
@@ -286,11 +286,11 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/marketing"
+                href="/servicos/consultoria-e-analise-de-sistemas-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/marketing`}
+                as={`${process.env.BACKEND_URL}/servicos/consultoria-e-analise-de-sistemas-em-santos`}
               >
-                <a href="marketing">
+                <a href="/servicos/consultoria-e-analise-de-sistemas-em-santos">
                   <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
@@ -319,11 +319,11 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/gad"
+                href="/servicos/marketing-digital-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/gad`}
+                as={`${process.env.BACKEND_URL}/servicos/marketing-digital-em-santos`}
               >
-                <a href="/gad">
+                <a href="/servicos/marketing-digital-em-santos">
                   <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
@@ -351,11 +351,11 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/gad"
+                href="/servicos/criacao-de-blogs-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/gad`}
+                as={`${process.env.BACKEND_URL}/servicos/criacao-de-blogs-em-santos`}
               >
-                <a href="/gad">
+                <a href="/servicos/criacao-de-blogs-em-santos">
                   <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>

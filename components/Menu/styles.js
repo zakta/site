@@ -55,11 +55,12 @@ export const ListItem = styled.li`
     padding: 0;
     display: flex;
   }
+`;
 
-  button {
+export const BtnMenu = styled.button`
     background-color: transparent;
     border: none;
-    color: white;
+    color: ${({ stat, open }) => (stat && !open ? '#1a3968' : 'white')};
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -124,7 +125,6 @@ export const ListItem = styled.li`
         }
       }
     }
-  }
 `;
 
 export const MenuToggle = styled.div`
