@@ -27,13 +27,19 @@ const Home = function HomePage() {
 
         <p>
           <span>
-            Somos experts no desenvolvimento de sites e aplicativos para
-            internet. Entendemos as necessidades do negócio e trabalhamos para
-            construir soluções digitais com agilidade, flexibilidade e precisão.
+            Somos especialistas em desenvolvimento de sites, lojas virtuais,
+            aplicativos, blogs, sistemas, entre outros softwares.
           </span>
+          <p>
+            <span>
+              Temos a experiência necessária para entender o seu negócio, propor
+              ideias e construir um projeto totalmente sob medida para a sua
+              empresa.
+            </span>
+          </p>
         </p>
 
-        <ButtonLink href="#contato">Contate-nos</ButtonLink>
+        <ButtonLink href="#contato">Fale com um consultor</ButtonLink>
 
         <ArrowAnimation>
           <ArrowLink href="#servicos">
