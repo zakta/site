@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { About, Container, Info } from './styles';
 import Header from '../Header';
 import Footer from '../Footer';
+import Form from '../Form';
 
 const ServiceInfo = function ComponentServiceInfo({ children }) {
   return (
@@ -13,6 +14,7 @@ const ServiceInfo = function ComponentServiceInfo({ children }) {
         {children}
         <Info>
           <h3>Ficou Interessado? Entre em contato e solicite um orçamento.</h3>
+          <Form />
         </Info>
       </About>
       <Footer />

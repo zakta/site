@@ -30,6 +30,10 @@ export const Cards = styled.div`
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .last{
+    align-self: center;
+  }
 `;
 
 export const TitleServices = styled(TitleSection)`

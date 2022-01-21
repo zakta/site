@@ -22,18 +22,17 @@ export const About = styled.div`
   }
   p{
     margin: 1.5rem 0;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
   }
 
 
 `;
 export const Info = styled.div`
   border-top: 1px solid #b3b3b3;
-
   h3{
     color: #1a3968;
-    font-size: 18px;
+    font-size: 19px;
 
   }
 `;

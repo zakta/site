@@ -62,10 +62,6 @@ export const AboutCompany = styled.article`
     padding: 1rem 0;
     margin: 0;
 
-    &:first-child {
-      padding-top: 0;
-    }
-
     &:last-child {
       padding-bottom: 0;
     }
@@ -77,6 +73,12 @@ export const AboutCompany = styled.article`
   @media (min-width: 768px){
     width: 50%;
     padding: 0 1rem;
+
+    p{
+      &:first-child {
+        padding-top: 0;
+      }
+    }
   }
 `;
 

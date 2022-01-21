@@ -1,7 +1,6 @@
 // 3rd parties
 import Link from 'next/link';
 import { useState } from 'react';
-
 // Styles
 import {
   Center, Container, Cards, TitleServices,
@@ -21,8 +20,8 @@ const Services = function ServicesPage() {
     icon7: 'hover',
     icon8: 'hover',
     icon9: 'hover',
+    icon10: 'hover',
   });
-
   return (
     <Container id="servicos">
       <Center>
@@ -64,16 +63,16 @@ const Services = function ServicesPage() {
           </Card>
 
           <Card
-            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon7: 'loop' }))}
-            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon7: 'hover' }))}
-            onMouseEnter={() => setIcons((state) => ({ ...state, icon7: 'loop' }))}
-            onMouseLeave={() => setIcons((state) => ({ ...state, icon7: 'hover' }))}
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon2: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon2: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon2: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon2: 'hover' }))}
             data-aos="fade-up"
           >
             <Icon>
               <lord-icon
                 src="https://cdn.lordicon.com/slkvcfos.json"
-                trigger={icons.icon7}
+                trigger={icons.icon2}
                 colors="primary:#121331,secondary:#33afad"
                 style={{ width: 80, height: 80 }}
               />
@@ -97,16 +96,16 @@ const Services = function ServicesPage() {
           </Card>
 
           <Card
-            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon8: 'loop' }))}
-            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon8: 'hover' }))}
-            onMouseEnter={() => setIcons((state) => ({ ...state, icon8: 'loop' }))}
-            onMouseLeave={() => setIcons((state) => ({ ...state, icon8: 'hover' }))}
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon3: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon3: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon3: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon3: 'hover' }))}
             data-aos="fade-up"
           >
             <Icon>
               <lord-icon
                 src="https://cdn.lordicon.com/gqzfzudq.json"
-                trigger={icons.icon8}
+                trigger={icons.icon3}
                 colors="primary:#121331,secondary:#33afad"
                 style={{ width: 80, height: 80 }}
               />
@@ -119,7 +118,7 @@ const Services = function ServicesPage() {
               <Link
                 href="/servicos/sistemas-web-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}//servicos/sistemas-web-em-santos`}
+                as={`${process.env.BACKEND_URL}/servicos/sistemas-web-em-santos`}
               >
                 <a href="/system">
                   <ArrowRightIcon />
@@ -130,16 +129,16 @@ const Services = function ServicesPage() {
           </Card>
 
           <Card
-            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon2: 'loop' }))}
-            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon2: 'hover' }))}
-            onMouseEnter={() => setIcons((state) => ({ ...state, icon2: 'loop' }))}
-            onMouseLeave={() => setIcons((state) => ({ ...state, icon2: 'hover' }))}
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon4: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon4: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon4: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon4: 'hover' }))}
             data-aos="fade-up"
           >
             <Icon>
               <lord-icon
                 src="https://cdn.lordicon.com/msoeawqm.json"
-                trigger={icons.icon2}
+                trigger={icons.icon4}
                 colors="primary:#121331,secondary:#33afad"
                 style={{ width: 80, height: 80 }}
               />
@@ -164,16 +163,16 @@ const Services = function ServicesPage() {
           </Card>
 
           <Card
-            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon6: 'loop' }))}
-            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
-            onMouseEnter={() => setIcons((state) => ({ ...state, icon6: 'loop' }))}
-            onMouseLeave={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon5: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon5: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
             data-aos="fade-up"
           >
             <Icon>
               <lord-icon
                 src="https://cdn.lordicon.com/jqeuwnmb.json"
-                trigger={icons.icon6}
+                trigger={icons.icon5}
                 colors="primary:#121331,secondary:#33afad"
                 style={{ width: 80, height: 80 }}
               />
@@ -198,16 +197,16 @@ const Services = function ServicesPage() {
 
           <Card
             className="card-last-center"
-            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon9: 'loop' }))}
-            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon9: 'hover' }))}
-            onMouseEnter={() => setIcons((state) => ({ ...state, icon9: 'loop' }))}
-            onMouseLeave={() => setIcons((state) => ({ ...state, icon9: 'hover' }))}
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon6: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon6: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
             data-aos="fade-up"
           >
             <Icon>
               <lord-icon
                 src="https://cdn.lordicon.com/sbiheqdr.json"
-                trigger={icons.icon9}
+                trigger={icons.icon6}
                 colors="primary:#121331,secondary:#33afad"
                 style={{ width: 80, height: 80 }}
               />
@@ -229,18 +228,17 @@ const Services = function ServicesPage() {
               </Link>
             </ArrowRight>
           </Card>
-
           <Card
-            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon3: 'loop' }))}
-            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon3: 'hover' }))}
-            onMouseEnter={() => setIcons((state) => ({ ...state, icon3: 'loop' }))}
-            onMouseLeave={() => setIcons((state) => ({ ...state, icon3: 'hover' }))}
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon7: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon7: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon7: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon7: 'hover' }))}
             data-aos="fade-up"
           >
             <Icon>
               <lord-icon
                 src="https://cdn.lordicon.com/anihkfxp.json"
-                trigger={icons.icon3}
+                trigger={icons.icon7}
                 colors="primary:#121331,secondary:#33afad"
                 style={{ width: 80, height: 80 }}
               />
@@ -265,16 +263,16 @@ const Services = function ServicesPage() {
           </Card>
 
           <Card
-            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon4: 'loop' }))}
-            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon4: 'hover' }))}
-            onMouseEnter={() => setIcons((state) => ({ ...state, icon4: 'loop' }))}
-            onMouseLeave={() => setIcons((state) => ({ ...state, icon4: 'hover' }))}
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon8: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon8: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon8: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon8: 'hover' }))}
             data-aos="fade-up"
           >
             <Icon>
               <lord-icon
                 src="https://cdn.lordicon.com/nobciafz.json"
-                trigger={icons.icon4}
+                trigger={icons.icon8}
                 colors="primary:#121331,secondary:#33afad"
                 style={{ width: 80, height: 80 }}
               />
@@ -299,16 +297,16 @@ const Services = function ServicesPage() {
           </Card>
 
           <Card
-            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon5: 'loop' }))}
-            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
-            onMouseEnter={() => setIcons((state) => ({ ...state, icon5: 'loop' }))}
-            onMouseLeave={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon9: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon9: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon9: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon9: 'hover' }))}
             data-aos="fade-up"
           >
             <Icon>
               <lord-icon
                 src="https://cdn.lordicon.com/iltqorsz.json"
-                trigger={icons.icon5}
+                trigger={icons.icon9}
                 colors="primary:#121331,secondary:#33afad"
                 style={{ width: 80, height: 80 }}
               />
@@ -331,16 +329,15 @@ const Services = function ServicesPage() {
             </ArrowRight>
           </Card>
           <Card
-            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon5: 'loop' }))}
-            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
-            onMouseEnter={() => setIcons((state) => ({ ...state, icon5: 'loop' }))}
-            onMouseLeave={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon10: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon10: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon10: 'hover' }))}
             data-aos="fade-up"
           >
             <Icon>
               <lord-icon
                 src="https://cdn.lordicon.com/puvaffet.json"
-                trigger={icons.icon5}
+                trigger={icons.icon10}
                 colors="primary:#121331,secondary:#33afad"
                 style={{ width: 80, height: 80 }}
               />

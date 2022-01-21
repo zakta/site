@@ -119,7 +119,7 @@ export const Card = styled.div`
     z-index: 1;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 740px) {
     width: 48.6%;
     padding: 1.5rem;
 
@@ -146,7 +146,7 @@ export const Card = styled.div`
 
   @media (min-width: 1200px){
     padding: 2rem;
-    width: 32%;
+    width: 49%;
 
     h3 {
       font-size: 27px;
