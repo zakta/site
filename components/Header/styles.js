@@ -55,8 +55,8 @@ export const Container = styled.div`
   }
 
   @media (min-width: 980px) {
-    padding-bottom: ${({ stat }) => (stat ? '0' : '2rem')};
-    padding-top: ${({ stat }) => (stat ? '0' : '2rem')};
+    padding-bottom: 2rem;
+    padding-top: 2rem;
   }
 
   &.sticky {

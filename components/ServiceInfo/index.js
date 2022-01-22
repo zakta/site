@@ -1,20 +1,27 @@
 // 3rd parties
 import PropTypes from 'prop-types';
 
-import { About, Container, Info } from './styles';
+// Application
 import Header from '../Header';
 import Footer from '../Footer';
 import Form from '../Form';
+
+import { About, Container, Info } from './styles';
 
 const ServiceInfo = function ComponentServiceInfo({ children }) {
   return (
     <Container>
       <Header stat />
+
       <About>
         {children}
+
         <Info>Ficou Interessado? Entre em contato e solicite um orçamento.</Info>
-        <Form />
+
+        <Form setFormStatus={() => {}} />
+
       </About>
+
       <Footer />
     </Container>
   );

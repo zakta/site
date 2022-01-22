@@ -13,16 +13,13 @@ import scrollTop from '../../functions/scrollTop';
 // Styles
 import { Center, Container, LogoContainer } from './styles';
 
-const Header = function HeaderPage({ stat }) {
+const Header = function Header({ stat }) {
   const [isSticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
   const [activeMenuItem, setActiveMenuItem] = useState('');
 
   const handleScroll = () => {
     const isScrolling = window.scrollY > 0;
-    const header = document.querySelector('#header');
-
-    header?.classList.toggle('sticky', isScrolling);
 
     setSticky(isScrolling);
   };
@@ -43,10 +40,14 @@ const Header = function HeaderPage({ stat }) {
   useEffect(() => {
     setActiveMenuItem(document.location.hash);
 
+    if (stat) {
+      return undefined;
+    }
+
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [stat]);
 
   useEffect(() => {
     window.addEventListener('resize', () => {
@@ -59,7 +60,7 @@ const Header = function HeaderPage({ stat }) {
   }, [open]);
 
   return (
-    <Container stat={stat} id="header">
+    <Container className={stat || isSticky ? 'sticky' : ''}>
       <Center isSticky={stat || isSticky}>
         <Link href="/#" passHref as={`${process.env.BACKEND_URL}/#`}>
           <LogoContainer onClick={scrollTop}>
@@ -83,8 +84,13 @@ const Header = function HeaderPage({ stat }) {
     </Container>
   );
 };
+
+Header.defaultProps = {
+  stat: false,
+};
+
 Header.propTypes = {
-  stat: PropTypes.bool.isRequired,
+  stat: PropTypes.bool,
 };
 
 export default Header;

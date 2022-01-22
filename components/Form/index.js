@@ -191,7 +191,9 @@ const ContactForm = function ContactFormPage({ setFormStatus }) {
     </Form>
   );
 };
+
 ContactForm.propTypes = {
   setFormStatus: PropTypes.func.isRequired,
 };
+
 export default ContactForm;
