@@ -59,7 +59,7 @@ const Header = function HeaderPage({ stat }) {
   }, [open]);
 
   return (
-    <Container id="header">
+    <Container stat={stat} id="header">
       <Center isSticky={stat || isSticky}>
         <Link href="/#" passHref as={`${process.env.BACKEND_URL}/#`}>
           <LogoContainer onClick={scrollTop}>

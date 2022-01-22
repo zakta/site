@@ -1,4 +1,7 @@
+// 3rd parties
+import Image from 'next/image';
 // styles
+import credit from '../../public/credit-card.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 
@@ -38,6 +41,11 @@ const VirtualStore = function PageServiceStore() {
           em contato e nos diga o que precisa.
         </p>
       </Block>
+      <Image
+        data-aos="fade-up"
+        src={credit}
+        alt="Mulher utilizando cartão de crédito"
+      />
     </ServiceInfo>
   );
 };

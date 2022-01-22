@@ -55,13 +55,13 @@ const Menu = function MenuPage({
         </ListItem>
 
         <ListItem data-aos="fade-down">
-          <Link passHref href="/#servicos" as={`${process.env.BACKEND_URL}/#servicos`}>
+          <Link passHref href="/#o-que-oferecemos" as={`${process.env.BACKEND_URL}/#o-que-oferecemos`}>
             <BtnMenu
               open={open}
               stat={stat}
               type="button"
-              className={activeMenuItem === '#servicos' ? 'menu-item-active' : ''}
-              onClick={() => handleActive('#servicos')}
+              className={activeMenuItem === '#o-que-oferecemos' ? 'menu-item-active' : ''}
+              onClick={() => handleActive('#o-que-oferecemos')}
             >
               O que oferecemos
             </BtnMenu>

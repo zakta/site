@@ -12,10 +12,8 @@ const ServiceInfo = function ComponentServiceInfo({ children }) {
       <Header stat />
       <About>
         {children}
-        <Info>
-          <h3>Ficou Interessado? Entre em contato e solicite um orçamento.</h3>
-          <Form />
-        </Info>
+        <Info>Ficou Interessado? Entre em contato e solicite um orçamento.</Info>
+        <Form />
       </About>
       <Footer />
     </Container>

@@ -23,7 +23,7 @@ const Services = function ServicesPage() {
     icon10: 'hover',
   });
   return (
-    <Container id="servicos">
+    <Container id="o-que-oferecemos">
       <Center>
         <TitleServices data-aos="fade-up">O que oferecemos</TitleServices>
 
@@ -50,9 +50,9 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/servicos/criacao-de-sites-em-santos"
+                href="/o-que-oferecemos/criacao-de-sites-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/servicos/criacao-de-sites-em-santos`}
+                as={`${process.env.BACKEND_URL}/o-que-oferecemos/criacao-de-sites-em-santos`}
               >
                 <a href="/website">
                   <ArrowRightIcon />
@@ -83,9 +83,9 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/servicos/lojas-virtuais-em-santos"
+                href="/o-que-oferecemos/lojas-virtuais-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/servicos/lojas-virtuais-em-santos`}
+                as={`${process.env.BACKEND_URL}/o-que-oferecemos/lojas-virtuais-em-santos`}
               >
                 <a href="/virtual">
                   <ArrowRightIcon />
@@ -116,9 +116,9 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/servicos/sistemas-web-em-santos"
+                href="/o-que-oferecemos/sistemas-web-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/servicos/sistemas-web-em-santos`}
+                as={`${process.env.BACKEND_URL}/o-que-oferecemos/sistemas-web-em-santos`}
               >
                 <a href="/system">
                   <ArrowRightIcon />
@@ -150,9 +150,9 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/servicos/otimizacao-de-sites-seo-em-santos"
+                href="/o-que-oferecemos/otimizacao-de-sites-seo-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/servicos/otimizacao-de-sites-seo-em-santos`}
+                as={`${process.env.BACKEND_URL}/o-que-oferecemos/otimizacao-de-sites-seo-em-santos`}
               >
                 <a href="/seo">
                   <ArrowRightIcon />
@@ -183,9 +183,9 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/servicos/criacao-de-aplicativos-em-santos"
+                href="/o-que-oferecemos/criacao-de-aplicativos-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/servicos/criacao-de-aplicativos-em-santos`}
+                as={`${process.env.BACKEND_URL}/o-que-oferecemos/criacao-de-aplicativos-em-santos`}
               >
                 <a href="/app">
                   <ArrowRightIcon />
@@ -217,9 +217,9 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/servicos/manutencao-de-sites-em-santos"
+                href="/o-que-oferecemos/manutencao-de-sites-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/servicos/manutencao-de-sites-em-santos`}
+                as={`${process.env.BACKEND_URL}/o-que-oferecemos/manutencao-de-sites-em-santos`}
               >
                 <a href="/maint">
                   <ArrowRightIcon />
@@ -250,9 +250,9 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/servicos/landing-pages-em-santos"
+                href="/o-que-oferecemos/landing-pages-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/servicos/landing-pages-em-santos`}
+                as={`${process.env.BACKEND_URL}/o-que-oferecemos/landing-pages-em-santos`}
               >
                 <a href="/landing">
                   <ArrowRightIcon />
@@ -284,9 +284,9 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/servicos/consultoria-e-analise-de-sistemas-em-santos"
+                href="/o-que-oferecemos/consultoria-e-analise-de-sistemas-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/servicos/consultoria-e-analise-de-sistemas-em-santos`}
+                as={`${process.env.BACKEND_URL}/o-que-oferecemos/consultoria-e-analise-de-sistemas-em-santos`}
               >
                 <a href="/consult">
                   <ArrowRightIcon />
@@ -317,11 +317,11 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/servicos/marketing-digital-em-santos"
+                href="/o-que-oferecemos/marketing-digital-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/servicos/marketing-digital-em-santos`}
+                as={`${process.env.BACKEND_URL}/o-que-oferecemos/marketing-digital-em-santos`}
               >
-                <a href="/servicos/mkt">
+                <a href="/o-que-oferecemos/mkt">
                   <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
@@ -348,9 +348,9 @@ const Services = function ServicesPage() {
             </p>
             <ArrowRight>
               <Link
-                href="/servicos/criacao-de-blogs-em-santos"
+                href="/o-que-oferecemos/criacao-de-blogs-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/servicos/criacao-de-blogs-em-santos`}
+                as={`${process.env.BACKEND_URL}/o-que-oferecemos/criacao-de-blogs-em-santos`}
               >
                 <a href="/blog">
                   <ArrowRightIcon />
