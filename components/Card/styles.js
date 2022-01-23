@@ -146,7 +146,7 @@ export const Card = styled.div`
 
   @media (min-width: 1200px){
     padding: 2rem;
-    width: 49%;
+    width: 32%;
 
     h3 {
       font-size: 27px;

@@ -1,4 +1,7 @@
+// 3rd parties
+import Image from 'next/image';
 // styles
+import seo from '../../public/seo.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 
@@ -32,6 +35,11 @@ const WebOptimization = function PageServiceWebOptimization() {
           técnicas de SEO para o seu projeto.
         </p>
       </Block>
+      <Image
+        data-aos="fade-up"
+        src={seo}
+        alt="Página Web"
+      />
     </ServiceInfo>
   );
 };
