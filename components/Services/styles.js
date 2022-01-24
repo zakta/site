@@ -8,8 +8,8 @@ export const Container = styled.section`
   max-width: 100%;
   min-width: 320px;
   margin: 0;
-  margin-top: ${({ pageOffers }) => (pageOffers ? '2rem' : '100vh')};
-  position: ${({ pageOffers }) => (pageOffers ? 'none' : 'relative')};
+  margin-top: ${({ full }) => (full ? '3rem' : '100vh')};
+  position: ${({ full }) => (full ? 'none' : 'relative')};
 `;
 
 export const Center = styled.div`
