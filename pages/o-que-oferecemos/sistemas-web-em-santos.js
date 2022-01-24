@@ -42,7 +42,7 @@ const WebSystems = function PageServiceWebSystem() {
       <Image
         data-aos="fade-up"
         src={webSystem}
-        alt="Página Web"
+        alt="Página Web."
       />
     </ServiceInfo>
   );

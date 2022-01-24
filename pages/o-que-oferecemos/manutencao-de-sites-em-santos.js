@@ -1,4 +1,7 @@
+// 3rd parties
+import Image from 'next/image';
 // styles
+import maintenance from '../../public/maintenance.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 
@@ -28,6 +31,11 @@ const WebMaintenance = function PageServiceWebMaintenance() {
           para o seu projeto.
         </p>
       </Block>
+      <Image
+        data-aos="fade-up"
+        src={maintenance}
+        alt="Código indicando manutenção de sites."
+      />
     </ServiceInfo>
   );
 };

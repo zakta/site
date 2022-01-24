@@ -1,4 +1,7 @@
+// 3rd parties
+import Image from 'next/image';
 // styles
+import blog from '../../public/blog.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 
@@ -27,6 +30,11 @@ const CreateBlog = function PageServiceCreateBlog() {
           blog ideal para o seu projeto.
         </p>
       </Block>
+      <Image
+        data-aos="fade-up"
+        src={blog}
+        alt="Imagem Ilustrando uma Escritório de uma Blogger."
+      />
     </ServiceInfo>
   );
 };
