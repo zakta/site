@@ -108,6 +108,7 @@ export const BtnSubmit = styled.button`
   padding: 1rem;
   position: relative;
   margin: 1rem 0;
+  text-transform: uppercase;
   transition: all .15s ease;
   user-select: none;
 

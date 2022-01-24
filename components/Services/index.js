@@ -4,7 +4,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 // Styles
 import {
-  Center, Container, Cards, TitleServices,
+  Center, Container, Cards, TitleServices, AllServices, AllServicesButton,
 } from './styles';
 import {
   ArrowRight, ArrowRightIcon, Card, Icon,
@@ -197,7 +197,6 @@ const Services = function ServicesPage({ children, pageOffers }) {
           </Card>
 
           <Card
-            className="card-last-center"
             onTouchStartCapture={() => setIcons((state) => ({ ...state, icon6: 'loop' }))}
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon6: 'loop' }))}
@@ -231,6 +230,14 @@ const Services = function ServicesPage({ children, pageOffers }) {
           </Card>
           {children}
         </Cards>
+
+        <AllServices>
+          <Link passHref href="/o-que-oferecemos">
+            <AllServicesButton>
+              Ver todos os serviços
+            </AllServicesButton>
+          </Link>
+        </AllServices>
       </Center>
     </Container>
   );

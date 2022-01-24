@@ -44,3 +44,54 @@ export const TitleServices = styled(TitleSection)`
     padding-right: 2rem;
   }
 `;
+
+export const AllServices = styled.div`
+  display: flex;
+  justify-content: end;
+  padding: 0 1.25rem;
+
+  @media (min-width: 980px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+`;
+
+export const AllServicesButton = styled.button`
+  background-color: #1a3968;
+  border: 1px solid #1a3968;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding: .75rem;
+  text-transform: uppercase;
+  transition: all .15s ease;
+  width: 100%;
+
+  &:active{
+    background-color: #122746;
+    border: 1px solid #f7f7f7;
+  }
+
+  @media (min-width: 740px) {
+    width: 48.6%;
+  }
+
+  @media (min-width: 980px) {
+    &:hover {
+      background-color: #26508f;
+      border-color: #26508f;
+    }
+
+    &:active{
+      background-color: #122746;
+      border: 1px solid #f7f7f7;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    width: 32%;
+  }
+`;
