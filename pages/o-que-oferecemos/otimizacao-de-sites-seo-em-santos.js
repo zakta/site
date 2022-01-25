@@ -4,10 +4,22 @@ import Image from 'next/image';
 import seo from '../../public/seo.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const WebOptimization = function PageServiceWebOptimization() {
   return (
     <ServiceInfo>
+      <Breadcrumb>
+        <Breadcrumb.Link href="/">
+          Inicio
+        </Breadcrumb.Link>
+        <Breadcrumb.Link href="/o-que-oferecemos">
+          O Que Oferecemos
+        </Breadcrumb.Link>
+        <Breadcrumb.Item>
+          Otimização de Sites - SEO
+        </Breadcrumb.Item>
+      </Breadcrumb>
       <Block>
         <h1>Otimização de Sites - SEO</h1>
         <p>

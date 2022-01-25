@@ -1,14 +1,22 @@
 // styles
 import Services from '../../components/Services';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Breadcrumb from '../../components/Breadcrumb';
+import ServiceInfo from '../../components/ServiceInfo';
 
 const OfferedServices = function PageOfferedServices() {
   return (
     <div>
-      <Header stat />
-      <Services full />
-      <Footer />
+      <ServiceInfo>
+        <Breadcrumb>
+          <Breadcrumb.Link href="/">
+            Inicio
+          </Breadcrumb.Link>
+          <Breadcrumb.Item>
+            O Que Oferecemos
+          </Breadcrumb.Item>
+        </Breadcrumb>
+        <Services full />
+      </ServiceInfo>
     </div>
   );
 };

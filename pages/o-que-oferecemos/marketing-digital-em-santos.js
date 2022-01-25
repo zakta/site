@@ -4,10 +4,22 @@ import Image from 'next/image';
 import ads from '../../public/google-ads.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const DigitalMkt = function PageServiceDigitalMkt() {
   return (
     <ServiceInfo>
+      <Breadcrumb>
+        <Breadcrumb.Link href="/">
+          Inicio
+        </Breadcrumb.Link>
+        <Breadcrumb.Link href="/o-que-oferecemos">
+          O Que Oferecemos
+        </Breadcrumb.Link>
+        <Breadcrumb.Item>
+          Marketing Digital
+        </Breadcrumb.Item>
+      </Breadcrumb>
       <Block>
         <h1>Marketing Digital</h1>
         <p>

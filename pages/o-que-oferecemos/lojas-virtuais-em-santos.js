@@ -4,10 +4,22 @@ import Image from 'next/image';
 import credit from '../../public/credit-card.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const VirtualStore = function PageServiceStore() {
   return (
     <ServiceInfo>
+      <Breadcrumb>
+        <Breadcrumb.Link href="/">
+          Inicio
+        </Breadcrumb.Link>
+        <Breadcrumb.Link href="/o-que-oferecemos">
+          O Que Oferecemos
+        </Breadcrumb.Link>
+        <Breadcrumb.Item>
+          Lojas Virtuais
+        </Breadcrumb.Item>
+      </Breadcrumb>
       <Block>
         <h1>Lojas Virtuais</h1>
         <p>

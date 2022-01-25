@@ -4,10 +4,22 @@ import Image from 'next/image';
 import landing from '../../public/landing-page.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const LandingPages = function PageServiceLandingPages() {
   return (
     <ServiceInfo>
+      <Breadcrumb>
+        <Breadcrumb.Link href="/">
+          Inicio
+        </Breadcrumb.Link>
+        <Breadcrumb.Link href="/o-que-oferecemos">
+          O Que Oferecemos
+        </Breadcrumb.Link>
+        <Breadcrumb.Item>
+          Landing Pages
+        </Breadcrumb.Item>
+      </Breadcrumb>
       <Block>
         <h1>Landing Pages</h1>
         <p>

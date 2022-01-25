@@ -4,10 +4,22 @@ import Image from 'next/image';
 import blog from '../../public/blog.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const CreateBlog = function PageServiceCreateBlog() {
   return (
     <ServiceInfo>
+      <Breadcrumb>
+        <Breadcrumb.Link href="/">
+          Inicio
+        </Breadcrumb.Link>
+        <Breadcrumb.Link href="/o-que-oferecemos">
+          O Que Oferecemos
+        </Breadcrumb.Link>
+        <Breadcrumb.Item>
+          Criação de Blogs
+        </Breadcrumb.Item>
+      </Breadcrumb>
       <Block>
         <h1>Criação de Blogs</h1>
         <p>

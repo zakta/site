@@ -43,7 +43,7 @@ const BottomModal = function BottomSheetModal({
               setActiveModal(false);
               setFormStatus('');
             }}
-            >
+          >
             {formStatus === 'success' ? 'Entendido' : 'Tentar mais tarde'}
           </BtnModal>
         </SheetContent>

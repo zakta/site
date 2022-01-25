@@ -4,10 +4,22 @@ import Image from 'next/image';
 import maintenance from '../../public/maintenance.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const WebMaintenance = function PageServiceWebMaintenance() {
   return (
     <ServiceInfo>
+      <Breadcrumb>
+        <Breadcrumb.Link href="/">
+          Inicio
+        </Breadcrumb.Link>
+        <Breadcrumb.Link href="/o-que-oferecemos">
+          O Que Oferecemos
+        </Breadcrumb.Link>
+        <Breadcrumb.Item>
+          Manutenção de Sites
+        </Breadcrumb.Item>
+      </Breadcrumb>
       <Block>
         <h1>Manutenção de Sites</h1>
         <p>

@@ -26,9 +26,9 @@ const Services = function ServicesPage({ full }) {
   return (
     <Container id="o-que-oferecemos" full={full}>
       <Center>
-        <TitleServices data-aos="fade-up">O que oferecemos</TitleServices>
+        <TitleServices data-aos="fade-up" full={full}>O que oferecemos</TitleServices>
 
-        <Cards>
+        <Cards full={full}>
           <Card
             prev
             onTouchStartCapture={() => setIcons((state) => ({ ...state, icon1: 'loop' }))}

@@ -4,10 +4,22 @@ import Image from 'next/image';
 import consultancy from '../../public/consultancy.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const Consultancy = function PageServiceConsultancy() {
   return (
     <ServiceInfo>
+      <Breadcrumb>
+        <Breadcrumb.Link href="/">
+          Inicio
+        </Breadcrumb.Link>
+        <Breadcrumb.Link href="/o-que-oferecemos">
+          O Que Oferecemos
+        </Breadcrumb.Link>
+        <Breadcrumb.Item>
+          Consultoria e Análise de Sistemas
+        </Breadcrumb.Item>
+      </Breadcrumb>
       <Block>
         <h1>Consultoria e Análise de Sistemas em Santos</h1>
         <p>

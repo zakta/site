@@ -4,10 +4,23 @@ import Image from 'next/image';
 import website from '../../public/website.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const CreateWeb = function PageServiceWeb() {
   return (
     <ServiceInfo>
+      <Breadcrumb>
+        <Breadcrumb.Link href="/">
+          Inicio
+        </Breadcrumb.Link>
+        <Breadcrumb.Link href="/o-que-oferecemos">
+          O Que Oferecemos
+        </Breadcrumb.Link>
+        <Breadcrumb.Item>
+          Criação de Sites
+        </Breadcrumb.Item>
+      </Breadcrumb>
+
       <Block>
         <h1>Criação de Sites</h1>
         <p>
