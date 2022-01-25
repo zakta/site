@@ -7,11 +7,23 @@ import contentImage from '../../public/credit-card.jpg';
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const VirtualStore = function PageServiceStore() {
   return (
     <ServiceInfo>
-      <Block>
+      <Breadcrumb>
+        <Breadcrumb.Link href="/">
+          Início
+        </Breadcrumb.Link>
+        <Breadcrumb.Link href="/o-que-oferecemos">
+          O Que Oferecemos
+        </Breadcrumb.Link>
+        <Breadcrumb.Item>
+          Lojas Virtuais
+        </Breadcrumb.Item>
+      </Breadcrumb>
+      <Block data-aos="fade-down">
         <h1>Lojas Virtuais</h1>
         <p>
           Para quem comercializa produtos, ter uma loja virtual é essencial para

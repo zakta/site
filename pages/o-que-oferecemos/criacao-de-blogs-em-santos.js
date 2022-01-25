@@ -7,11 +7,23 @@ import contentImage from '../../public/blog.jpg';
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const CreateBlog = function PageServiceCreateBlog() {
   return (
     <ServiceInfo>
-      <Block>
+      <Breadcrumb>
+        <Breadcrumb.Link href="/">
+          Início
+        </Breadcrumb.Link>
+        <Breadcrumb.Link href="/o-que-oferecemos">
+          O Que Oferecemos
+        </Breadcrumb.Link>
+        <Breadcrumb.Item>
+          Criação de Blogs
+        </Breadcrumb.Item>
+      </Breadcrumb>
+      <Block data-aos="fade-down">
         <h1>Criação de Blogs</h1>
         <p>
           Blogs são páginas de site específicas para a divulgação de conteúdos

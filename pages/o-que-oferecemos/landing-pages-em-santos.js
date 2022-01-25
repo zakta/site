@@ -7,11 +7,23 @@ import contentImage from '../../public/landing-page.jpg';
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const LandingPages = function PageServiceLandingPages() {
   return (
     <ServiceInfo>
-      <Block>
+      <Breadcrumb>
+        <Breadcrumb.Link href="/">
+          Início
+        </Breadcrumb.Link>
+        <Breadcrumb.Link href="/o-que-oferecemos">
+          O Que Oferecemos
+        </Breadcrumb.Link>
+        <Breadcrumb.Item>
+          Landing Pages
+        </Breadcrumb.Item>
+      </Breadcrumb>
+      <Block data-aos="fade-down">
         <h1>Landing Pages</h1>
         <p>
           Landing Pages são sites de uma página única com forte apelo comercial

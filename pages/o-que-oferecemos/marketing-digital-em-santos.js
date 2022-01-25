@@ -7,11 +7,23 @@ import contentImage from '../../public/google-ads.jpg';
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const DigitalMkt = function PageServiceDigitalMkt() {
   return (
     <ServiceInfo>
-      <Block>
+      <Breadcrumb>
+        <Breadcrumb.Link href="/">
+          Início
+        </Breadcrumb.Link>
+        <Breadcrumb.Link href="/o-que-oferecemos">
+          O Que Oferecemos
+        </Breadcrumb.Link>
+        <Breadcrumb.Item>
+          Marketing Digital
+        </Breadcrumb.Item>
+      </Breadcrumb>
+      <Block data-aos="fade-down">
         <h1>Marketing Digital</h1>
         <p>
           Além de marcar presença na web, seja com um site, loja virtual ou sistema, é

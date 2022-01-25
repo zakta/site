@@ -9,7 +9,7 @@ import {
   Erro, Form, InputForm, Position, Textarea, BtnSubmit, Row, Column,
 } from './styles';
 
-const ContactForm = function ContactFormPage({ setFormStatus }) {
+const ContactForm = function ContactFormSection({ setFormStatus, setActiveModal }) {
   function mtel(phoneRaw) {
     let phoneMasked = phoneRaw;
 
@@ -36,7 +36,7 @@ const ContactForm = function ContactFormPage({ setFormStatus }) {
       }),
     };
 
-    return fetch('https://api.emailjs.com/api/v1.0/email/send', config);
+    return fetch('https://api.emailjs.com/api/v1.0/email/senddddd', config);
   }
 
   const formik = useFormik({
@@ -66,6 +66,8 @@ const ContactForm = function ContactFormPage({ setFormStatus }) {
       const response = await submitFormData(values);
 
       setFormStatus(response.ok ? 'success' : 'error');
+
+      setActiveModal(true);
 
       if (response.ok) {
         formik.resetForm();
@@ -194,6 +196,7 @@ const ContactForm = function ContactFormPage({ setFormStatus }) {
 
 ContactForm.propTypes = {
   setFormStatus: PropTypes.func.isRequired,
+  setActiveModal: PropTypes.func.isRequired,
 };
 
 export default ContactForm;

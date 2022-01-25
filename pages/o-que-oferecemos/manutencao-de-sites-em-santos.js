@@ -7,11 +7,23 @@ import contentImage from '../../public/maintenance.jpg';
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const WebMaintenance = function PageServiceWebMaintenance() {
   return (
     <ServiceInfo>
-      <Block>
+      <Breadcrumb>
+        <Breadcrumb.Link href="/">
+          Início
+        </Breadcrumb.Link>
+        <Breadcrumb.Link href="/o-que-oferecemos">
+          O Que Oferecemos
+        </Breadcrumb.Link>
+        <Breadcrumb.Item>
+          Manutenção de Sites
+        </Breadcrumb.Item>
+      </Breadcrumb>
+      <Block data-aos="fade-down">
         <h1>Manutenção de Sites</h1>
         <p>
           A tecnologia está sempre em constante mudança e por esse motivo,

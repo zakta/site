@@ -67,7 +67,7 @@ const Header = function Header({ stat }) {
             <Logo
               theme={process.browser && changeTheme()}
               height={35}
-              data-aos="fade-down"
+              data-aos={stat ? '' : 'fade-down'}
             />
           </LogoContainer>
         </Link>

@@ -7,11 +7,24 @@ import contentImage from '../../public/website.jpg';
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const CreateWeb = function PageServiceWeb() {
   return (
     <ServiceInfo>
-      <Block>
+      <Breadcrumb>
+        <Breadcrumb.Link href="/">
+          Início
+        </Breadcrumb.Link>
+        <Breadcrumb.Link href="/o-que-oferecemos">
+          O Que Oferecemos
+        </Breadcrumb.Link>
+        <Breadcrumb.Item>
+          Criação de Sites
+        </Breadcrumb.Item>
+      </Breadcrumb>
+
+      <Block data-aos="fade-down">
         <h1>Criação de Sites</h1>
         <p>
           Ter presença na internet é de grande importância para quem tem um

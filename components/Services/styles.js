@@ -8,7 +8,7 @@ export const Container = styled.section`
   max-width: 100%;
   min-width: 320px;
   margin: 0;
-  margin-top: ${({ full }) => (full ? '3rem' : '100vh')};
+  margin-top: ${({ full }) => (full ? '1rem' : '100vh')};
   position: ${({ full }) => (full ? 'none' : 'relative')};
 `;
 
@@ -23,25 +23,26 @@ export const Cards = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1400px;
-  padding: 0 1.25rem;
+  padding: ${({ full }) => (full ? '0' : '0 1.25rem')};
   position: relative;
 
   @media (min-width: 980px) {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: ${({ full }) => (full ? '0' : '2rem')};
+    padding-right: ${({ full }) => (full ? '0' : '2rem')};
+    .last{
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
-  .last{
-    align-self: center;
-  }
 `;
 
 export const TitleServices = styled(TitleSection)`
-  padding: 1.5rem 1.25rem;
+  padding: ${({ full }) => (full ? '0' : '1.5rem 1.25rem')};
 
   @media (min-width: 980px) {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: ${({ full }) => (full ? '0' : '2rem')};
+    padding-right: ${({ full }) => (full ? '0' : '2rem')};
   }
 `;
 
