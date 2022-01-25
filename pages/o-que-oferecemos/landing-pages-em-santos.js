@@ -20,7 +20,7 @@ const LandingPages = function PageServiceLandingPages() {
           Landing Pages
         </Breadcrumb.Item>
       </Breadcrumb>
-      <Block>
+      <Block data-aos="fade-down">
         <h1>Landing Pages</h1>
         <p>
           Landing Pages são sites de uma página única com forte apelo comercial

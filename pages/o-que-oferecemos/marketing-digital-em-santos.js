@@ -20,7 +20,7 @@ const DigitalMkt = function PageServiceDigitalMkt() {
           Marketing Digital
         </Breadcrumb.Item>
       </Breadcrumb>
-      <Block>
+      <Block data-aos="fade-down">
         <h1>Marketing Digital</h1>
         <p>
           Além de marcar presença na web, seja com um site, loja virtual ou sistema, é

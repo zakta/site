@@ -20,7 +20,7 @@ const VirtualStore = function PageServiceStore() {
           Lojas Virtuais
         </Breadcrumb.Item>
       </Breadcrumb>
-      <Block>
+      <Block data-aos="fade-down">
         <h1>Lojas Virtuais</h1>
         <p>
           Para quem comercializa produtos, ter uma loja virtual é essencial para

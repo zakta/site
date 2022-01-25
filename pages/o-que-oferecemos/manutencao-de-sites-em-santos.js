@@ -20,7 +20,7 @@ const WebMaintenance = function PageServiceWebMaintenance() {
           Manutenção de Sites
         </Breadcrumb.Item>
       </Breadcrumb>
-      <Block>
+      <Block data-aos="fade-down">
         <h1>Manutenção de Sites</h1>
         <p>
           A tecnologia está sempre em constante mudança e por esse motivo,

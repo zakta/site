@@ -21,7 +21,7 @@ const CreateWeb = function PageServiceWeb() {
         </Breadcrumb.Item>
       </Breadcrumb>
 
-      <Block>
+      <Block data-aos="fade-down">
         <h1>Criação de Sites</h1>
         <p>
           Ter presença na internet é de grande importância para quem tem um

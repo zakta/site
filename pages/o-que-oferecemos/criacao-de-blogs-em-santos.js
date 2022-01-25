@@ -20,7 +20,7 @@ const CreateBlog = function PageServiceCreateBlog() {
           Criação de Blogs
         </Breadcrumb.Item>
       </Breadcrumb>
-      <Block>
+      <Block data-aos="fade-down">
         <h1>Criação de Blogs</h1>
         <p>
           Blogs são páginas de site específicas para a divulgação de conteúdos

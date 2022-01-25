@@ -20,7 +20,7 @@ const WebOptimization = function PageServiceWebOptimization() {
           Otimização de Sites - SEO
         </Breadcrumb.Item>
       </Breadcrumb>
-      <Block>
+      <Block data-aos="fade-down">
         <h1>Otimização de Sites - SEO</h1>
         <p>
           São inúmeras as vantagens de se possuir um site, no entanto, é

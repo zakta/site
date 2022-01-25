@@ -21,7 +21,7 @@ const Consultancy = function PageServiceConsultancy() {
           Consultoria e Análise de Sistemas
         </Breadcrumb.Item>
       </Breadcrumb>
-      <Block>
+      <Block data-aos="fade-down">
         <h1>Consultoria e Análise de Sistemas</h1>
         <p>
           Buscar profissionais de TI qualificados, experientes e especializados é
