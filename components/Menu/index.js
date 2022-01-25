@@ -36,7 +36,7 @@ const Menu = function MenuPage({
           if (open) setOverflow('remove');
         }}
       >
-        <ListItem data-aos="fade-down">
+        <ListItem data-aos={stat ? '' : 'fade-down'}>
           <Link passHref href="/#" as={`${process.env.BACKEND_URL}/#`}>
             <BtnMenu
               open={open}
@@ -54,7 +54,7 @@ const Menu = function MenuPage({
           </Link>
         </ListItem>
 
-        <ListItem data-aos="fade-down">
+        <ListItem data-aos={stat ? '' : 'fade-down'}>
           <Link passHref href="/#o-que-oferecemos" as={`${process.env.BACKEND_URL}/#o-que-oferecemos`}>
             <BtnMenu
               open={open}
@@ -68,7 +68,7 @@ const Menu = function MenuPage({
           </Link>
         </ListItem>
 
-        <ListItem data-aos="fade-down">
+        <ListItem data-aos={stat ? '' : 'fade-down'}>
           <Link passHref href="/#empresa" as={`${process.env.BACKEND_URL}/#empresa`}>
             <BtnMenu
               open={open}
@@ -82,7 +82,7 @@ const Menu = function MenuPage({
           </Link>
         </ListItem>
 
-        <ListItem data-aos="fade-down">
+        <ListItem data-aos={stat ? '' : 'fade-down'}>
           <Link passHref href="/#contato" as={`${process.env.BACKEND_URL}/#contato`}>
             <BtnMenu
               open={open}
