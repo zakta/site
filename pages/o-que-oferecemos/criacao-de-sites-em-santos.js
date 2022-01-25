@@ -1,7 +1,10 @@
 // 3rd parties
 import Image from 'next/image';
-// styles
-import website from '../../public/website.jpg';
+
+// Assets
+import contentImage from '../../public/website.jpg';
+
+// Styles
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 
@@ -37,9 +40,10 @@ const CreateWeb = function PageServiceWeb() {
           negócio.
         </p>
       </Block>
+
       <Image
         data-aos="fade-up"
-        src={website}
+        src={contentImage}
         alt="Página Web"
       />
     </ServiceInfo>

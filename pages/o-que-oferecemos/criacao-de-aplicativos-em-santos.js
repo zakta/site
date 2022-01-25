@@ -1,7 +1,10 @@
 // 3rd parties
 import Image from 'next/image';
-// styles
-import app from '../../public/mobile-app.jpg';
+
+// Assets
+import contentImage from '../../public/mobile-app.jpg';
+
+// Styles
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 
@@ -33,9 +36,10 @@ const CreateApp = function PageServiceCreateApp() {
           para você.
         </p>
       </Block>
+
       <Image
         data-aos="fade-up"
-        src={app}
+        src={contentImage}
         alt="Aplicativos Mobile"
       />
     </ServiceInfo>

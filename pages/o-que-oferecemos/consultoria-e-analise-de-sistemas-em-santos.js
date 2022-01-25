@@ -1,8 +1,10 @@
 // 3rd parties
 import Image from 'next/image';
 
-// styles
-import consultancy from '../../public/consultancy.jpg';
+// Assets
+import contentImage from '../../public/consultancy.jpg';
+
+// Styles
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 
@@ -36,8 +38,8 @@ const Consultancy = function PageServiceConsultancy() {
       </Block>
 
       <Image
+        src={contentImage}
         data-aos="fade-up"
-        src={consultancy}
         alt="Imagem Ilustrando Desenvolvedores."
       />
     </ServiceInfo>

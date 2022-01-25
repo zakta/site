@@ -1,7 +1,10 @@
 // 3rd parties
 import Image from 'next/image';
-// styles
-import ads from '../../public/google-ads.jpg';
+
+// Assets
+import contentImage from '../../public/google-ads.jpg';
+
+// Styles
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 
@@ -40,9 +43,10 @@ const DigitalMkt = function PageServiceDigitalMkt() {
           </li>
         </ul>
       </Block>
+
       <Image
         data-aos="fade-up"
-        src={ads}
+        src={contentImage}
         alt="Imagem Ilustrando o uso do Google analytics."
       />
     </ServiceInfo>

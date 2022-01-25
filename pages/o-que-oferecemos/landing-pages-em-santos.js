@@ -1,7 +1,10 @@
 // 3rd parties
 import Image from 'next/image';
-// styles
-import landing from '../../public/landing-page.jpg';
+
+// Assets
+import contentImage from '../../public/landing-page.jpg';
+
+// Styles
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 
@@ -33,9 +36,10 @@ const LandingPages = function PageServiceLandingPages() {
           Landing Pages.
         </p>
       </Block>
+
       <Image
         data-aos="fade-up"
-        src={landing}
+        src={contentImage}
         alt="Imagem Ilustrando uma Landing Page."
       />
     </ServiceInfo>

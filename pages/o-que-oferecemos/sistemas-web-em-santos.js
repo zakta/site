@@ -1,7 +1,10 @@
 // 3rd parties
 import Image from 'next/image';
-// styles
-import webSystem from '../../public/web-system.jpg';
+
+// Assets
+import contentImage from '../../public/web-system.jpg';
+
+// Styles
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 
@@ -39,9 +42,10 @@ const WebSystems = function PageServiceWebSystem() {
           solução digital para a sua necessidade.
         </p>
       </Block>
+
       <Image
         data-aos="fade-up"
-        src={webSystem}
+        src={contentImage}
         alt="Página Web."
       />
     </ServiceInfo>

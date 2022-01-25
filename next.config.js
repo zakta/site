@@ -8,6 +8,6 @@ module.exports = {
   assetPrefix: !debug ? '/site/hml/' : '',
   images: {
     loader: 'akamai',
-    path: '',
+    path: '/',
   },
 };
