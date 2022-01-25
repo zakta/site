@@ -371,9 +371,9 @@ const Services = function ServicesPage({ full }) {
           </Card>
         </Cards>
 
-        <AllServices>
+        <AllServices style={{ display: full ? 'none' : 'flex' }}>
           <Link passHref href="/o-que-oferecemos">
-            <AllServicesButton style={{ display: full ? 'none' : 'flex' }}>
+            <AllServicesButton>
               Ver todos os serviços
             </AllServicesButton>
           </Link>
