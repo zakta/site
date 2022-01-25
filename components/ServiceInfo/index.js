@@ -13,7 +13,7 @@ const ServiceInfo = function ComponentServiceInfo({ children }) {
     <Container>
       <Header stat />
 
-      <About>
+      <About data-aos="fade-down">
         {children}
 
         <Info>Ficou Interessado? Entre em contato e solicite um orçamento.</Info>
