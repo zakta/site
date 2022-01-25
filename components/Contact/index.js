@@ -5,7 +5,8 @@ import { useState } from 'react';
 
 // Components
 import ContactForm from '../Form';
-import Notification from '../Notification';
+// import Notification from '../Notification';
+import BottomModal from '../BottomModal';
 
 // Styles
 import {
@@ -20,6 +21,7 @@ import {
 import TitleSection from '../SectionTitle/styles';
 
 const Contact = function ContactPage() {
+  const [activeModal, setActiveModal] = useState(false);
   const [formStatus, setFormStatus] = useState('');
 
   return (
@@ -74,10 +76,20 @@ const Contact = function ContactPage() {
           dia útil, responderemos a sua consulta.
         </FormDescription>
 
-        <ContactForm setFormStatus={setFormStatus} />
+        <ContactForm
+          setFormStatus={setFormStatus}
+          setActiveModal={setActiveModal}
+        />
       </Center>
 
-      {formStatus && <Notification formStatus={formStatus} setFormStatus={setFormStatus} />}
+      { formStatus && activeModal && (
+        <BottomModal
+          activeModal={activeModal}
+          setActiveModal={setActiveModal}
+          setFormStatus={setFormStatus}
+          formStatus={formStatus}
+        />
+      )}
     </Container>
   );
 };
