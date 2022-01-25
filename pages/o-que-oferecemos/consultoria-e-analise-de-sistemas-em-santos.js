@@ -1,5 +1,6 @@
 // 3rd parties
 import Image from 'next/image';
+
 // styles
 import consultancy from '../../public/consultancy.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
@@ -33,6 +34,7 @@ const Consultancy = function PageServiceConsultancy() {
           nossa equipe técnica.
         </p>
       </Block>
+
       <Image
         data-aos="fade-up"
         src={consultancy}

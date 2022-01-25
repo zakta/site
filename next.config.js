@@ -6,4 +6,8 @@ const debug = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   assetPrefix: !debug ? '/site/hml/' : '',
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
 };
