@@ -9,7 +9,7 @@ const OfferedServices = function PageOfferedServices() {
       <ServiceInfo>
         <Breadcrumb>
           <Breadcrumb.Link href="/">
-            Inicio
+            Início
           </Breadcrumb.Link>
           <Breadcrumb.Item>
             O Que Oferecemos

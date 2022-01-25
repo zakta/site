@@ -12,7 +12,7 @@ const Consultancy = function PageServiceConsultancy() {
     <ServiceInfo>
       <Breadcrumb>
         <Breadcrumb.Link href="/">
-          Inicio
+          Início
         </Breadcrumb.Link>
         <Breadcrumb.Link href="/o-que-oferecemos">
           O Que Oferecemos
@@ -22,7 +22,7 @@ const Consultancy = function PageServiceConsultancy() {
         </Breadcrumb.Item>
       </Breadcrumb>
       <Block>
-        <h1>Consultoria e Análise de Sistemas em Santos</h1>
+        <h1>Consultoria e Análise de Sistemas</h1>
         <p>
           Buscar profissionais de TI qualificados, experientes e especializados é
           essencial para o sucesso do seu projeto, pois não basta uma boa ideia,

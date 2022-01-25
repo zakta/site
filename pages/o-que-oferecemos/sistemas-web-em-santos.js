@@ -11,7 +11,7 @@ const WebSystems = function PageServiceWebSystem() {
     <ServiceInfo>
       <Breadcrumb>
         <Breadcrumb.Link href="/">
-          Inicio
+          Início
         </Breadcrumb.Link>
         <Breadcrumb.Link href="/o-que-oferecemos">
           O Que Oferecemos

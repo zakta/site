@@ -11,7 +11,7 @@ const WebOptimization = function PageServiceWebOptimization() {
     <ServiceInfo>
       <Breadcrumb>
         <Breadcrumb.Link href="/">
-          Inicio
+          Início
         </Breadcrumb.Link>
         <Breadcrumb.Link href="/o-que-oferecemos">
           O Que Oferecemos
