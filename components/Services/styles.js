@@ -8,7 +8,7 @@ export const Container = styled.section`
   max-width: 100%;
   min-width: 320px;
   margin: 0;
-  margin-top: ${({ full }) => (full ? '3rem' : '100vh')};
+  margin-top: ${({ full }) => (full ? '1rem' : '100vh')};
   position: ${({ full }) => (full ? 'none' : 'relative')};
 `;
 

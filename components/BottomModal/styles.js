@@ -11,6 +11,10 @@ export const ModalBottom = styled(BottomSheet)`
     display: flex;
     flex-direction: column;
   }
+  [data-rsbs-header]{
+    padding-top: 0 !important;
+    padding: 0;
+  }
 `;
 const slideUp = keyframes`
   0%{

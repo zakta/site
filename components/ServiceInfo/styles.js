@@ -45,10 +45,7 @@ export const Info = styled.h3`
 export const Block = styled.div`
   background: white;
   padding: 1rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
 
-  @media (min-width: 980px){
-    margin-top: 5rem;
-  }
 `;
