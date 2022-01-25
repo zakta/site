@@ -29,11 +29,12 @@ export const Cards = styled.div`
   @media (min-width: 980px) {
     padding-left: ${({ full }) => (full ? '0' : '2rem')};
     padding-right: ${({ full }) => (full ? '0' : '2rem')};
+    .last{
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
-  .last{
-    align-self: center;
-  }
 `;
 
 export const TitleServices = styled(TitleSection)`

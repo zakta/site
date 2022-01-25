@@ -343,6 +343,7 @@ const Services = function ServicesPage({ full }) {
             onMouseEnter={() => setIcons((state) => ({ ...state, icon10: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon10: 'hover' }))}
             data-aos="fade-up"
+            className="last"
           >
             <Icon>
               <lord-icon
