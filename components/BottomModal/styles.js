@@ -8,6 +8,7 @@ export const Container = styled.div`
 
 export const ModalBottom = styled(BottomSheet)`
   [data-rsbs-content]{
+    background: white;
     display: flex;
     flex-direction: column;
   }
@@ -96,4 +97,4 @@ export const BtnModal = styled.button`
       border-color: #122746;
     }
   }
-`;
+  `;
