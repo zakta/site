@@ -17,8 +17,8 @@ const CreateBlog = function PageServiceCreateBlog() {
         <Breadcrumb.Link href="/">
           Início
         </Breadcrumb.Link>
-        <Breadcrumb.Link href="/o-que-oferecemos">
-          O que oferecemos
+        <Breadcrumb.Link href="/servicos">
+          Serviços
         </Breadcrumb.Link>
         <Breadcrumb.Item>
           Criação de Blogs

@@ -19,7 +19,6 @@ const ServiceInfo = function ComponentServiceInfo({ children }) {
         <Info>Ficou Interessado? Entre em contato e solicite um orçamento.</Info>
 
         <Form setFormStatus={() => {}} />
-
       </About>
 
       <Footer />

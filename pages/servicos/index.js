@@ -12,9 +12,10 @@ const OfferedServices = function PageOfferedServices() {
             Início
           </Breadcrumb.Link>
           <Breadcrumb.Item>
-            O que oferecemos
+            Serviços
           </Breadcrumb.Item>
         </Breadcrumb>
+
         <Services full />
       </ServiceInfo>
     </div>

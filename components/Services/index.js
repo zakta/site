@@ -24,9 +24,9 @@ const Services = function ServicesPage({ full }) {
     icon10: 'hover',
   });
   return (
-    <Container id="o-que-oferecemos" full={full}>
+    <Container id="servicos" full={full}>
       <Center>
-        <TitleServices data-aos={full ? '' : 'fade-down'} full={full}>O que oferecemos</TitleServices>
+        <TitleServices data-aos={full ? '' : 'fade-down'} full={full}>Serviços</TitleServices>
 
         <Cards full={full}>
           <Card
@@ -35,7 +35,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon1: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon1: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon1: 'hover' }))}
-            data-aos="fade-up"
+            data-aos={full ? '' : 'fade-down'}
           >
             <Icon>
               <lord-icon
@@ -52,9 +52,9 @@ const Services = function ServicesPage({ full }) {
             </p>
             <ArrowRight>
               <Link
-                href="/o-que-oferecemos/criacao-de-sites-em-santos"
+                href="/servicos/criacao-de-sites-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/o-que-oferecemos/criacao-de-sites-em-santos`}
+                as={`${process.env.BACKEND_URL}/servicos/criacao-de-sites-em-santos`}
               >
                 <a href="/website">
                   <ArrowRightIcon />
@@ -70,7 +70,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon2: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon2: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon2: 'hover' }))}
-            data-aos="fade-up"
+            data-aos={full ? '' : 'fade-down'}
           >
             <Icon>
               <lord-icon
@@ -86,9 +86,9 @@ const Services = function ServicesPage({ full }) {
             </p>
             <ArrowRight>
               <Link
-                href="/o-que-oferecemos/lojas-virtuais-em-santos"
+                href="/servicos/lojas-virtuais-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/o-que-oferecemos/lojas-virtuais-em-santos`}
+                as={`${process.env.BACKEND_URL}/servicos/lojas-virtuais-em-santos`}
               >
                 <a href="/virtual">
                   <ArrowRightIcon />
@@ -104,7 +104,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon3: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon3: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon3: 'hover' }))}
-            data-aos="fade-up"
+            data-aos={full ? '' : 'fade-down'}
           >
             <Icon>
               <lord-icon
@@ -120,9 +120,9 @@ const Services = function ServicesPage({ full }) {
             </p>
             <ArrowRight>
               <Link
-                href="/o-que-oferecemos/sistemas-web-em-santos"
+                href="/servicos/sistemas-web-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/o-que-oferecemos/sistemas-web-em-santos`}
+                as={`${process.env.BACKEND_URL}/servicos/sistemas-web-em-santos`}
               >
                 <a href="/system">
                   <ArrowRightIcon />
@@ -138,7 +138,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon4: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon4: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon4: 'hover' }))}
-            data-aos="fade-up"
+            data-aos={full ? '' : 'fade-down'}
           >
             <Icon>
               <lord-icon
@@ -155,9 +155,9 @@ const Services = function ServicesPage({ full }) {
             </p>
             <ArrowRight>
               <Link
-                href="/o-que-oferecemos/otimizacao-de-sites-seo-em-santos"
+                href="/servicos/otimizacao-de-sites-seo-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/o-que-oferecemos/otimizacao-de-sites-seo-em-santos`}
+                as={`${process.env.BACKEND_URL}/servicos/otimizacao-de-sites-seo-em-santos`}
               >
                 <a href="/seo">
                   <ArrowRightIcon />
@@ -173,7 +173,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon5: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
-            data-aos="fade-up"
+            data-aos={full ? '' : 'fade-down'}
           >
             <Icon>
               <lord-icon
@@ -189,9 +189,9 @@ const Services = function ServicesPage({ full }) {
             </p>
             <ArrowRight>
               <Link
-                href="/o-que-oferecemos/criacao-de-aplicativos-em-santos"
+                href="/servicos/criacao-de-aplicativos-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/o-que-oferecemos/criacao-de-aplicativos-em-santos`}
+                as={`${process.env.BACKEND_URL}/servicos/criacao-de-aplicativos-em-santos`}
               >
                 <a href="/app">
                   <ArrowRightIcon />
@@ -207,7 +207,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon6: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
-            data-aos="fade-up"
+            data-aos={full ? '' : 'fade-down'}
           >
             <Icon>
               <lord-icon
@@ -223,9 +223,9 @@ const Services = function ServicesPage({ full }) {
             </p>
             <ArrowRight>
               <Link
-                href="/o-que-oferecemos/manutencao-de-sites-em-santos"
+                href="/servicos/manutencao-de-sites-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/o-que-oferecemos/manutencao-de-sites-em-santos`}
+                as={`${process.env.BACKEND_URL}/servicos/manutencao-de-sites-em-santos`}
               >
                 <a href="/maint">
                   <ArrowRightIcon />
@@ -240,7 +240,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon7: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon7: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon7: 'hover' }))}
-            data-aos="fade-up"
+            data-aos={full ? '' : 'fade-down'}
           >
             <Icon>
               <lord-icon
@@ -257,9 +257,9 @@ const Services = function ServicesPage({ full }) {
             </p>
             <ArrowRight>
               <Link
-                href="/o-que-oferecemos/landing-pages-em-santos"
+                href="/servicos/landing-pages-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/o-que-oferecemos/landing-pages-em-santos`}
+                as={`${process.env.BACKEND_URL}/servicos/landing-pages-em-santos`}
               >
                 <a href="/landing">
                   <ArrowRightIcon />
@@ -275,7 +275,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon8: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon8: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon8: 'hover' }))}
-            data-aos="fade-up"
+            data-aos={full ? '' : 'fade-down'}
           >
             <Icon>
               <lord-icon
@@ -292,9 +292,9 @@ const Services = function ServicesPage({ full }) {
             </p>
             <ArrowRight>
               <Link
-                href="/o-que-oferecemos/consultoria-e-analise-de-sistemas-em-santos"
+                href="/servicos/consultoria-e-analise-de-sistemas-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/o-que-oferecemos/consultoria-e-analise-de-sistemas-em-santos`}
+                as={`${process.env.BACKEND_URL}/servicos/consultoria-e-analise-de-sistemas-em-santos`}
               >
                 <a href="/consult">
                   <ArrowRightIcon />
@@ -310,7 +310,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon9: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon9: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon9: 'hover' }))}
-            data-aos="fade-up"
+            data-aos={full ? '' : 'fade-down'}
           >
             <Icon>
               <lord-icon
@@ -326,11 +326,11 @@ const Services = function ServicesPage({ full }) {
             </p>
             <ArrowRight>
               <Link
-                href="/o-que-oferecemos/marketing-digital-em-santos"
+                href="/servicos/marketing-digital-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/o-que-oferecemos/marketing-digital-em-santos`}
+                as={`${process.env.BACKEND_URL}/servicos/marketing-digital-em-santos`}
               >
-                <a href="/o-que-oferecemos/mkt">
+                <a href="/servicos/mkt">
                   <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </a>
@@ -342,7 +342,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon10: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon10: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon10: 'hover' }))}
-            data-aos="fade-up"
+            data-aos={full ? '' : 'fade-down'}
             className="last"
           >
             <Icon>
@@ -359,9 +359,9 @@ const Services = function ServicesPage({ full }) {
             </p>
             <ArrowRight>
               <Link
-                href="/o-que-oferecemos/criacao-de-blogs-em-santos"
+                href="/servicos/criacao-de-blogs-em-santos"
                 passHref
-                as={`${process.env.BACKEND_URL}/o-que-oferecemos/criacao-de-blogs-em-santos`}
+                as={`${process.env.BACKEND_URL}/servicos/criacao-de-blogs-em-santos`}
               >
                 <a href="/blog">
                   <ArrowRightIcon />
@@ -376,9 +376,9 @@ const Services = function ServicesPage({ full }) {
           data-aos="fade-in"
           style={{ display: full ? 'none' : 'flex' }}
         >
-          <Link passHref href="/o-que-oferecemos">
+          <Link passHref href="/servicos">
             <AllServicesButton>
-              Ver todos os serviços
+              Conheça todos os serviços
             </AllServicesButton>
           </Link>
         </AllServices>

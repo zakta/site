@@ -17,8 +17,8 @@ const DigitalMkt = function PageServiceDigitalMkt() {
         <Breadcrumb.Link href="/">
           Início
         </Breadcrumb.Link>
-        <Breadcrumb.Link href="/o-que-oferecemos">
-          O que oferecemos
+        <Breadcrumb.Link href="/servicos">
+          Serviços
         </Breadcrumb.Link>
         <Breadcrumb.Item>
           Marketing Digital

@@ -28,7 +28,7 @@ export const Container = styled.section`
 `;
 
 export const Cover = styled.div`
-  background: url("210888.webp") center no-repeat;
+  background: #030406 url("210888.webp") center no-repeat;
   background-size: cover;
   height: 100vh;
   min-height: 493px;
@@ -140,6 +140,7 @@ export const ButtonLink = styled.a`
   padding: .75rem .5rem;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
   border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
   opacity 0.15s ease-in-out;

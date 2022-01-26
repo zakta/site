@@ -9,11 +9,11 @@ export const Container = styled.section`
   `;
 
 export const About = styled.div`
-  border-bottom: 1px solid #b3b3b3;
   box-sizing: border-box;
   margin: auto;
   max-width: 1400px;
   padding: 1.25rem;
+  margin-bottom: 3rem;
 
   @media (min-width: 980px){
     padding-left: 2rem;
@@ -38,12 +38,17 @@ export const About = styled.div`
 
 `;
 export const Info = styled.h3`
+    margin-top: 2rem;
     color: #1a3968;
     font-size: 19px;
 `;
 
 export const Block = styled.div`
   background: white;
-  padding: 1rem;
-  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0 0;
+
+  @media (min-width: 980px) {
+    padding: 1.25rem 1.5rem;
+  }
 `;
