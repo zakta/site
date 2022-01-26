@@ -70,7 +70,7 @@ const Menu = function MenuPage({
               </BtnMenu>
             </Link>
           ) : (
-            <Link passHref href="#servicos" as={`${process.env.BACKEND_URL}#servicos`}>
+            <Link passHref href="/#servicos" as={`${process.env.BACKEND_URL}/#servicos`}>
               <BtnMenu
                 open={open}
                 stat={stat}
