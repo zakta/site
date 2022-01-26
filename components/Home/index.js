@@ -22,7 +22,7 @@ const Home = function HomePage() {
 
       <Header />
 
-      <PageTitle data-aos="fade-right">
+      <PageTitle data-aos="fade-up">
         <h1>Tecnologia Aplicada em Soluções Digitais</h1>
 
         <p>

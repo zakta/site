@@ -17,7 +17,7 @@ const VirtualStore = function PageServiceStore() {
           Início
         </Breadcrumb.Link>
         <Breadcrumb.Link href="/o-que-oferecemos">
-          O Que Oferecemos
+          O que oferecemos
         </Breadcrumb.Link>
         <Breadcrumb.Item>
           Lojas Virtuais

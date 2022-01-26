@@ -17,7 +17,7 @@ const Consultancy = function PageServiceConsultancy() {
           Início
         </Breadcrumb.Link>
         <Breadcrumb.Link href="/o-que-oferecemos">
-          O Que Oferecemos
+          O que oferecemos
         </Breadcrumb.Link>
         <Breadcrumb.Item>
           Consultoria e Análise de Sistemas

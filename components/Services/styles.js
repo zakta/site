@@ -23,7 +23,7 @@ export const Cards = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1400px;
-  padding: ${({ full }) => (full ? '0' : '0 1.25rem')};
+  padding: ${({ full }) => (full ? '1.25rem 0' : '0 1.25rem')};
   position: relative;
 
   @media (min-width: 980px) {

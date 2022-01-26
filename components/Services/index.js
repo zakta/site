@@ -372,7 +372,10 @@ const Services = function ServicesPage({ full }) {
           </Card>
         </Cards>
 
-        <AllServices style={{ display: full ? 'none' : 'flex' }}>
+        <AllServices
+          data-aos="fade-in"
+          style={{ display: full ? 'none' : 'flex' }}
+        >
           <Link passHref href="/o-que-oferecemos">
             <AllServicesButton>
               Ver todos os serviços

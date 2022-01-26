@@ -8,6 +8,7 @@ import contentImage from '../../public/website.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 import Breadcrumb from '../../components/Breadcrumb';
+import { TitleServices } from '../../components/Services/styles';
 
 const CreateWeb = function PageServiceWeb() {
   return (
@@ -17,15 +18,18 @@ const CreateWeb = function PageServiceWeb() {
           Início
         </Breadcrumb.Link>
         <Breadcrumb.Link href="/o-que-oferecemos">
-          O Que Oferecemos
+          O que oferecemos
         </Breadcrumb.Link>
         <Breadcrumb.Item>
           Criação de Sites
         </Breadcrumb.Item>
       </Breadcrumb>
 
+      <TitleServices full data-aos="fade-up">
+        Criação de Sites
+      </TitleServices>
+
       <Block data-aos="fade-down">
-        <h1>Criação de Sites</h1>
         <p>
           Ter presença na internet é de grande importância para quem tem um
           negócio. Além de demonstrar maior profissionalismo, possuir um site

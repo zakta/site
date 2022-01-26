@@ -17,7 +17,7 @@ const WebMaintenance = function PageServiceWebMaintenance() {
           Início
         </Breadcrumb.Link>
         <Breadcrumb.Link href="/o-que-oferecemos">
-          O Que Oferecemos
+          O que oferecemos
         </Breadcrumb.Link>
         <Breadcrumb.Item>
           Manutenção de Sites
