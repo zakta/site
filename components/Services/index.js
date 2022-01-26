@@ -383,7 +383,13 @@ const Services = function ServicesPage({ full }) {
     </Container>
   );
 };
-Services.propTypes = {
-  full: PropTypes.bool.isRequired,
+
+Services.defaultProps = {
+  full: false,
 };
+
+Services.propTypes = {
+  full: PropTypes.bool,
+};
+
 export default Services;

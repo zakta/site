@@ -26,17 +26,14 @@ const Home = function HomePage() {
         <h1>Tecnologia Aplicada em Soluções Digitais</h1>
 
         <p>
-          <span>
-            Somos especialistas em desenvolvimento de sites, lojas virtuais,
-            aplicativos, blogs, sistemas, entre outros softwares.
-          </span>
-          <p>
-            <span>
-              Temos a experiência necessária para entender o seu negócio, propor
-              ideias e construir um projeto totalmente sob medida para a sua
-              empresa.
-            </span>
-          </p>
+          Somos especialistas em desenvolvimento de sites, lojas virtuais,
+          aplicativos, blogs, sistemas, entre outros softwares.
+
+          <br />
+
+          Temos a experiência necessária para entender o seu negócio, propor
+          ideias e construir um projeto totalmente sob medida para a sua
+          empresa.
         </p>
 
         <ButtonLink href="#contato">Fale com um consultor</ButtonLink>
