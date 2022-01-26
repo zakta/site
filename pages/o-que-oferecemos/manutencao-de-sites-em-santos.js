@@ -8,6 +8,7 @@ import contentImage from '../../public/maintenance.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 import Breadcrumb from '../../components/Breadcrumb';
+import { TitleServices } from '../../components/Services/styles';
 
 const WebMaintenance = function PageServiceWebMaintenance() {
   return (
@@ -23,8 +24,12 @@ const WebMaintenance = function PageServiceWebMaintenance() {
           Manutenção de Sites
         </Breadcrumb.Item>
       </Breadcrumb>
+
+      <TitleServices full data-aos="fade-up">
+        Manutenção de Sites
+      </TitleServices>
+
       <Block data-aos="fade-down">
-        <h1>Manutenção de Sites</h1>
         <p>
           A tecnologia está sempre em constante mudança e por esse motivo,
           após criar um site recomenda-se um acompanhamento técnico para

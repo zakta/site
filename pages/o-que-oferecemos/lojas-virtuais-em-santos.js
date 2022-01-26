@@ -8,6 +8,7 @@ import contentImage from '../../public/credit-card.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 import Breadcrumb from '../../components/Breadcrumb';
+import { TitleServices } from '../../components/Services/styles';
 
 const VirtualStore = function PageServiceStore() {
   return (
@@ -23,8 +24,12 @@ const VirtualStore = function PageServiceStore() {
           Lojas Virtuais
         </Breadcrumb.Item>
       </Breadcrumb>
+
+      <TitleServices full data-aos="fade-up">
+        Lojas Virtuais
+      </TitleServices>
+
       <Block data-aos="fade-down">
-        <h1>Lojas Virtuais</h1>
         <p>
           Para quem comercializa produtos, ter uma loja virtual é essencial para
           aumentar as suas vendas!

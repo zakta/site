@@ -8,6 +8,7 @@ import contentImage from '../../public/web-system.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 import Breadcrumb from '../../components/Breadcrumb';
+import { TitleServices } from '../../components/Services/styles';
 
 const WebSystems = function PageServiceWebSystem() {
   return (
@@ -23,8 +24,12 @@ const WebSystems = function PageServiceWebSystem() {
           Sistemas Web
         </Breadcrumb.Item>
       </Breadcrumb>
+
+      <TitleServices full data-aos="fade-up">
+        Sistemas Web
+      </TitleServices>
+
       <Block data-aos="fade-down">
-        <h1>Sistemas Web</h1>
         <p>
           Sistemas web são sistemas desenvolvidos de forma customizada e
           personalizada para diferentes finalidades, sendo acessados pela

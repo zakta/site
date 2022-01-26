@@ -8,6 +8,7 @@ import contentImage from '../../public/consultancy.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 import Breadcrumb from '../../components/Breadcrumb';
+import { TitleServices } from '../../components/Services/styles';
 
 const Consultancy = function PageServiceConsultancy() {
   return (
@@ -23,8 +24,12 @@ const Consultancy = function PageServiceConsultancy() {
           Consultoria e Análise de Sistemas
         </Breadcrumb.Item>
       </Breadcrumb>
+
+      <TitleServices full data-aos="fade-up">
+        Consultoria e Análise de Sistemas
+      </TitleServices>
+
       <Block data-aos="fade-down">
-        <h1>Consultoria e Análise de Sistemas</h1>
         <p>
           Buscar profissionais de TI qualificados, experientes e especializados é
           essencial para o sucesso do seu projeto, pois não basta uma boa ideia,

@@ -8,6 +8,7 @@ import contentImage from '../../public/seo.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 import Breadcrumb from '../../components/Breadcrumb';
+import { TitleServices } from '../../components/Services/styles';
 
 const WebOptimization = function PageServiceWebOptimization() {
   return (
@@ -23,8 +24,12 @@ const WebOptimization = function PageServiceWebOptimization() {
           Otimização de Sites - SEO
         </Breadcrumb.Item>
       </Breadcrumb>
+
+      <TitleServices full data-aos="fade-up">
+        Otimização de Sites - SEO
+      </TitleServices>
+
       <Block data-aos="fade-down">
-        <h1>Otimização de Sites - SEO</h1>
         <p>
           São inúmeras as vantagens de se possuir um site, no entanto, é
           necessário que o projeto seja criado com as melhores técnicas de SEO

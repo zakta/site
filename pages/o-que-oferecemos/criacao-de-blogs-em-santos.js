@@ -8,6 +8,7 @@ import contentImage from '../../public/blog.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 import Breadcrumb from '../../components/Breadcrumb';
+import { TitleServices } from '../../components/Services/styles';
 
 const CreateBlog = function PageServiceCreateBlog() {
   return (
@@ -23,8 +24,12 @@ const CreateBlog = function PageServiceCreateBlog() {
           Criação de Blogs
         </Breadcrumb.Item>
       </Breadcrumb>
+
+      <TitleServices full data-aos="fade-up">
+        Criação de Blogs
+      </TitleServices>
+
       <Block data-aos="fade-down">
-        <h1>Criação de Blogs</h1>
         <p>
           Blogs são páginas de site específicas para a divulgação de conteúdos
           para os visitantes, tais como novidades, artigos, resenhas, notícias,

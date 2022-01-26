@@ -42,7 +42,7 @@ const Menu = function MenuPage({
               open={open}
               stat={stat}
               type="button"
-              className={activeMenuItem === '#' || activeMenuItem === '' ? 'menu-item-active' : ''}
+              className={activeMenuItem === '#' || (!stat && activeMenuItem === '') ? 'menu-item-active' : ''}
               onClick={() => {
                 handleActive('#');
 
@@ -60,7 +60,7 @@ const Menu = function MenuPage({
               open={open}
               stat={stat}
               type="button"
-              className={activeMenuItem === '#o-que-oferecemos' ? 'menu-item-active' : ''}
+              className={activeMenuItem === '#o-que-oferecemos' || stat ? 'menu-item-active' : ''}
               onClick={() => handleActive('#o-que-oferecemos')}
             >
               O que oferecemos

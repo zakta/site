@@ -8,6 +8,7 @@ import contentImage from '../../public/mobile-app.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 import Breadcrumb from '../../components/Breadcrumb';
+import { TitleServices } from '../../components/Services/styles';
 
 const CreateApp = function PageServiceCreateApp() {
   return (
@@ -23,8 +24,10 @@ const CreateApp = function PageServiceCreateApp() {
           Criação de Aplicativos
         </Breadcrumb.Item>
       </Breadcrumb>
+      <TitleServices full data-aos="fade-up">
+        Criação de Aplicativos
+      </TitleServices>
       <Block data-aos="fade-down">
-        <h1>Criação de Aplicativos</h1>
         <p>
           Os aplicativos estão cada vez mais presentes no nosso dia a dia e se
           tornaram essenciais para diferentes finalidades.

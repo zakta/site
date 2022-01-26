@@ -8,6 +8,7 @@ import contentImage from '../../public/google-ads.jpg';
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
 import Breadcrumb from '../../components/Breadcrumb';
+import { TitleServices } from '../../components/Services/styles';
 
 const DigitalMkt = function PageServiceDigitalMkt() {
   return (
@@ -23,8 +24,12 @@ const DigitalMkt = function PageServiceDigitalMkt() {
           Marketing Digital
         </Breadcrumb.Item>
       </Breadcrumb>
+
+      <TitleServices full data-aos="fade-up">
+        Marketing Digital
+      </TitleServices>
+
       <Block data-aos="fade-down">
-        <h1>Marketing Digital</h1>
         <p>
           Além de marcar presença na web, seja com um site, loja virtual ou sistema, é
           necessário também realizar uma adequada divulgação do seu projeto e assim
