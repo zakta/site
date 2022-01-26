@@ -25,11 +25,11 @@ const DigitalMkt = function PageServiceDigitalMkt() {
         </Breadcrumb.Item>
       </Breadcrumb>
 
-      <TitleServices full data-aos="fade-up">
+      <TitleServices full>
         Marketing Digital
       </TitleServices>
 
-      <Block data-aos="fade-down">
+      <Block data-aos="fade-up">
         <p>
           Além de marcar presença na web, seja com um site, loja virtual ou sistema, é
           necessário também realizar uma adequada divulgação do seu projeto e assim

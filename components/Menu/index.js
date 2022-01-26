@@ -23,7 +23,6 @@ const Menu = function MenuPage({
   };
 
   const handleActive = (sectionPage) => setActiveMenuItem(sectionPage);
-
   return (
     <>
       <List
@@ -31,9 +30,7 @@ const Menu = function MenuPage({
         open={open}
         className={isSticky ? 'sticky' : ''}
         onClick={() => {
-          setOpen(false);
 
-          if (open) setOverflow('remove');
         }}
       >
         <ListItem data-aos={stat ? '' : 'fade-down'}>
@@ -45,8 +42,9 @@ const Menu = function MenuPage({
               className={activeMenuItem === '#' || (!stat && activeMenuItem === '') ? 'menu-item-active' : ''}
               onClick={() => {
                 handleActive('#');
-
+                setOpen(false);
                 scrollTop();
+                setOverflow(!open ? 'add' : 'remove');
               }}
             >
               Início
@@ -55,17 +53,40 @@ const Menu = function MenuPage({
         </ListItem>
 
         <ListItem data-aos={stat ? '' : 'fade-down'}>
-          <Link passHref href="/#o-que-oferecemos" as={`${process.env.BACKEND_URL}/#o-que-oferecemos`}>
-            <BtnMenu
-              open={open}
-              stat={stat}
-              type="button"
-              className={activeMenuItem === '#o-que-oferecemos' || stat ? 'menu-item-active' : ''}
-              onClick={() => handleActive('#o-que-oferecemos')}
-            >
-              O que oferecemos
-            </BtnMenu>
-          </Link>
+          {stat ? (
+            <Link passHref href="/o-que-oferecemos" as={`${process.env.BACKEND_URL}/o-que-oferecemos`}>
+              <BtnMenu
+                open={open}
+                stat={stat}
+                type="button"
+                className={activeMenuItem === '#o-que-oferecemos' || stat ? 'menu-item-active' : ''}
+                onClick={() => {
+                  handleActive('/o-que-oferecemos');
+                  setOpen(false);
+                  setOverflow(!open ? 'add' : 'remove');
+                }}
+              >
+                O que oferecemos
+              </BtnMenu>
+            </Link>
+          ) : (
+            <Link passHref href="#o-que-oferecemos" as={`${process.env.BACKEND_URL}#o-que-oferecemos`}>
+              <BtnMenu
+                open={open}
+                stat={stat}
+                type="button"
+                className={activeMenuItem === '#o-que-oferecemos' || stat ? 'menu-item-active' : ''}
+                onClick={() => {
+                  handleActive('#o-que-oferecemos');
+                  setOpen(false);
+                  setOverflow(!open ? 'add' : 'remove');
+                }}
+              >
+                O que oferecemos
+              </BtnMenu>
+            </Link>
+          )}
+
         </ListItem>
 
         <ListItem data-aos={stat ? '' : 'fade-down'}>
@@ -75,7 +96,11 @@ const Menu = function MenuPage({
               stat={stat}
               type="button"
               className={activeMenuItem === '#empresa' ? 'menu-item-active' : ''}
-              onClick={() => handleActive('#empresa')}
+              onClick={() => {
+                handleActive('#empresa');
+                setOpen(false);
+                setOverflow(!open ? 'add' : 'remove');
+              }}
             >
               Empresa
             </BtnMenu>
@@ -89,7 +114,11 @@ const Menu = function MenuPage({
               stat={stat}
               type="button"
               className={activeMenuItem === '#contato' ? 'menu-item-active' : ''}
-              onClick={() => handleActive('#contato')}
+              onClick={() => {
+                handleActive('#contato');
+                setOpen(false);
+                setOverflow(!open ? 'add' : 'remove');
+              }}
             >
               Contato
             </BtnMenu>

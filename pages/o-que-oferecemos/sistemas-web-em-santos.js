@@ -25,11 +25,11 @@ const WebSystems = function PageServiceWebSystem() {
         </Breadcrumb.Item>
       </Breadcrumb>
 
-      <TitleServices full data-aos="fade-up">
+      <TitleServices full>
         Sistemas Web
       </TitleServices>
 
-      <Block data-aos="fade-down">
+      <Block data-aos="fade-up">
         <p>
           Sistemas web são sistemas desenvolvidos de forma customizada e
           personalizada para diferentes finalidades, sendo acessados pela

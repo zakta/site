@@ -45,4 +45,5 @@ export const Info = styled.h3`
 export const Block = styled.div`
   background: white;
   padding: 1rem;
+  margin: 1.25rem 0;
 `;

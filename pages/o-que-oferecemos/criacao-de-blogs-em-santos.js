@@ -25,11 +25,11 @@ const CreateBlog = function PageServiceCreateBlog() {
         </Breadcrumb.Item>
       </Breadcrumb>
 
-      <TitleServices full data-aos="fade-up">
+      <TitleServices full>
         Criação de Blogs
       </TitleServices>
 
-      <Block data-aos="fade-down">
+      <Block data-aos="fade-up">
         <p>
           Blogs são páginas de site específicas para a divulgação de conteúdos
           para os visitantes, tais como novidades, artigos, resenhas, notícias,

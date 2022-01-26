@@ -25,11 +25,11 @@ const Consultancy = function PageServiceConsultancy() {
         </Breadcrumb.Item>
       </Breadcrumb>
 
-      <TitleServices full data-aos="fade-up">
+      <TitleServices full>
         Consultoria e Análise de Sistemas
       </TitleServices>
 
-      <Block data-aos="fade-down">
+      <Block data-aos="fade-up">
         <p>
           Buscar profissionais de TI qualificados, experientes e especializados é
           essencial para o sucesso do seu projeto, pois não basta uma boa ideia,

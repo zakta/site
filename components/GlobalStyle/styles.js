@@ -16,6 +16,10 @@ const GlobalStyle = createGlobalStyle`
 
     &.hideOverflow{
       overflow-y: hidden;
+
+      @media (min-width: 980px){
+        overflow-y: visible;
+      }
     }
 
     h2 {

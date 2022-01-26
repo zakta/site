@@ -25,11 +25,11 @@ const WebOptimization = function PageServiceWebOptimization() {
         </Breadcrumb.Item>
       </Breadcrumb>
 
-      <TitleServices full data-aos="fade-up">
+      <TitleServices full>
         Otimização de Sites - SEO
       </TitleServices>
 
-      <Block data-aos="fade-down">
+      <Block data-aos="fade-up">
         <p>
           São inúmeras as vantagens de se possuir um site, no entanto, é
           necessário que o projeto seja criado com as melhores técnicas de SEO

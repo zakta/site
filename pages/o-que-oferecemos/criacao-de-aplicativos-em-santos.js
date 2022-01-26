@@ -24,10 +24,10 @@ const CreateApp = function PageServiceCreateApp() {
           Criação de Aplicativos
         </Breadcrumb.Item>
       </Breadcrumb>
-      <TitleServices full data-aos="fade-up">
+      <TitleServices full>
         Criação de Aplicativos
       </TitleServices>
-      <Block data-aos="fade-down">
+      <Block data-aos="fade-up">
         <p>
           Os aplicativos estão cada vez mais presentes no nosso dia a dia e se
           tornaram essenciais para diferentes finalidades.

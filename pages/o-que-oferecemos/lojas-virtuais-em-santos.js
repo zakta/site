@@ -25,11 +25,11 @@ const VirtualStore = function PageServiceStore() {
         </Breadcrumb.Item>
       </Breadcrumb>
 
-      <TitleServices full data-aos="fade-up">
+      <TitleServices full>
         Lojas Virtuais
       </TitleServices>
 
-      <Block data-aos="fade-down">
+      <Block data-aos="fade-up">
         <p>
           Para quem comercializa produtos, ter uma loja virtual é essencial para
           aumentar as suas vendas!

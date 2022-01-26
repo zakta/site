@@ -128,6 +128,7 @@ export const BtnMenu = styled.button`
 `;
 
 export const MenuToggle = styled.div`
+  display: flex;
   @media (min-width: 980px) {
     display: none;
   }

@@ -25,11 +25,11 @@ const WebMaintenance = function PageServiceWebMaintenance() {
         </Breadcrumb.Item>
       </Breadcrumb>
 
-      <TitleServices full data-aos="fade-up">
+      <TitleServices full>
         Manutenção de Sites
       </TitleServices>
 
-      <Block data-aos="fade-down">
+      <Block data-aos="fade-up">
         <p>
           A tecnologia está sempre em constante mudança e por esse motivo,
           após criar um site recomenda-se um acompanhamento técnico para

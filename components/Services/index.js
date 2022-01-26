@@ -26,7 +26,7 @@ const Services = function ServicesPage({ full }) {
   return (
     <Container id="o-que-oferecemos" full={full}>
       <Center>
-        <TitleServices data-aos="fade-up" full={full}>O que oferecemos</TitleServices>
+        <TitleServices data-aos={full ? '' : 'fade-down'} full={full}>O que oferecemos</TitleServices>
 
         <Cards full={full}>
           <Card

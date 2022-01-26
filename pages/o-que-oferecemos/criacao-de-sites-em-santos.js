@@ -25,11 +25,11 @@ const CreateWeb = function PageServiceWeb() {
         </Breadcrumb.Item>
       </Breadcrumb>
 
-      <TitleServices full data-aos="fade-up">
+      <TitleServices full>
         Criação de Sites
       </TitleServices>
 
-      <Block data-aos="fade-down">
+      <Block data-aos="fade-up">
         <p>
           Ter presença na internet é de grande importância para quem tem um
           negócio. Além de demonstrar maior profissionalismo, possuir um site
