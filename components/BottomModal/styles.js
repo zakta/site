@@ -26,6 +26,7 @@ const slideUp = keyframes`
 `;
 
 export const SheetContent = styled.div`
+  margin: auto;
   background-color: white;
   box-sizing: border-box;
   padding: 1.25rem;
