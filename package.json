@@ -8,7 +8,7 @@
   "scripts": {
     "build": "next build",
     "clean": "rm -rf node_modules yarn lock; yarn cache clean",
-    "deploy": "rm -rf node_modules/.cache && next build && next export -o out/ && touch out/.nojekyll && echo zakta.com.br > CNAME && git add CNAME && git add out/ && git commit -m \"ci: deploy next.js to gh-pages\" && git subtree push --prefix out origin gh-pages",
+    "deploy": "rm -rf node_modules/.cache; next build; next export -o out/; touch out/.nojekyll; echo zakta.com.br > out/CNAME; git add CNAME; git add out/; git commit -m \"ci: deploy next.js to gh-pages\"; git subtree push --prefix out origin gh-pages",
     "dev": "next dev",
     "export": "next export",
     "lint": "next lint",
