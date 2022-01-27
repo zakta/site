@@ -162,7 +162,7 @@ const ContactForm = function ContactFormSection({
               readOnly={formik.isSubmitting}
               className="arrow"
             >
-              <option hidden>Selecione um Assunto</option>
+              <option className="defaultOption" hidden>Selecione um Assunto</option>
               <option value="Criação de Sites">Criação de Sites</option>
               <option value="Lojas Virtuais">Lojas Virtuais</option>
               <option value="Sistemas Web">Sistemas Web</option>

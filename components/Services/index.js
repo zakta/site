@@ -26,7 +26,7 @@ const Services = function ServicesPage({ full }) {
   return (
     <Container id="servicos" full={full}>
       <Center>
-        <TitleServices data-aos={full ? '' : 'fade-down'} full={full}>Serviços</TitleServices>
+        <TitleServices data-aos={full ? '' : 'fade-up'} full={full}>Serviços</TitleServices>
 
         <Cards full={full}>
           <Card
@@ -35,7 +35,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon1: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon1: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon1: 'hover' }))}
-            data-aos={full ? '' : 'fade-down'}
+            data-aos={full ? '' : 'fade-up'}
           >
             <Icon>
               <lord-icon
@@ -70,7 +70,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon2: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon2: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon2: 'hover' }))}
-            data-aos={full ? '' : 'fade-down'}
+            data-aos={full ? '' : 'fade-up'}
           >
             <Icon>
               <lord-icon
@@ -104,7 +104,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon3: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon3: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon3: 'hover' }))}
-            data-aos={full ? '' : 'fade-down'}
+            data-aos={full ? '' : 'fade-up'}
           >
             <Icon>
               <lord-icon
@@ -138,7 +138,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon4: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon4: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon4: 'hover' }))}
-            data-aos={full ? '' : 'fade-down'}
+            data-aos={full ? '' : 'fade-up'}
           >
             <Icon>
               <lord-icon
@@ -173,7 +173,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon5: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
-            data-aos={full ? '' : 'fade-down'}
+            data-aos={full ? '' : 'fade-up'}
           >
             <Icon>
               <lord-icon
@@ -207,7 +207,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon6: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
-            data-aos={full ? '' : 'fade-down'}
+            data-aos={full ? '' : 'fade-up'}
           >
             <Icon>
               <lord-icon
@@ -240,7 +240,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon7: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon7: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon7: 'hover' }))}
-            data-aos={full ? '' : 'fade-down'}
+            data-aos={full ? '' : 'fade-up'}
           >
             <Icon>
               <lord-icon
@@ -275,7 +275,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon8: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon8: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon8: 'hover' }))}
-            data-aos={full ? '' : 'fade-down'}
+            data-aos={full ? '' : 'fade-up'}
           >
             <Icon>
               <lord-icon
@@ -310,7 +310,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon9: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon9: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon9: 'hover' }))}
-            data-aos={full ? '' : 'fade-down'}
+            data-aos={full ? '' : 'fade-up'}
           >
             <Icon>
               <lord-icon
@@ -342,7 +342,7 @@ const Services = function ServicesPage({ full }) {
             onTouchEndCapture={() => setIcons((state) => ({ ...state, icon10: 'hover' }))}
             onMouseEnter={() => setIcons((state) => ({ ...state, icon10: 'loop' }))}
             onMouseLeave={() => setIcons((state) => ({ ...state, icon10: 'hover' }))}
-            data-aos={full ? '' : 'fade-down'}
+            data-aos={full ? '' : 'fade-up'}
             className="last"
           >
             <Icon>

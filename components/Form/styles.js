@@ -55,9 +55,10 @@ export const DropDown = styled.select`
   border-radius: none;
   box-sizing: border-box;
   display: block;
+  background: #ffff;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
   font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   padding: .75rem;
   margin: 1.2rem 0 1.7rem;
   width: 100%;
@@ -65,12 +66,7 @@ export const DropDown = styled.select`
   appearance: none;
 
   :focus{
-    background-color: white;
-    border-bottom-color: ${({ touched, error }) => (touched && error ? '#e92929' : '#1a3968')};
-  }
-
-  ::placeholder {
-    font-weight: 300;
+    border-bottom: 3px solid ${({ touched, error }) => (touched && error ? '#e92929' : '#1a3968')};
   }
 
   @media (min-width: 640px) {
@@ -82,42 +78,45 @@ export const DropDown = styled.select`
     background-image:
     linear-gradient(45deg, transparent 50%, gray 50%),
     linear-gradient(135deg, gray 50%, transparent 50%);
-  background-position:
-    calc(100% - 20px) calc(1.2em),
-    calc(100% - 15px) calc(1.2em);
-  background-size:
-    5px 5px,
-    5px 5px;
-  background-repeat: no-repeat;
-
-  @media (min-width: 640px){
     background-position:
-    calc(100% - 20px) calc(2em),
-    calc(100% - 15px) calc(2em);
-  }
+      calc(100% - 20px) calc(1.2em),
+      calc(100% - 15px) calc(1.2em);
+    background-size:
+      5px 5px,
+      5px 5px;
+    background-repeat: no-repeat;
+
+    @media (min-width: 640px){
+      background-position:
+      calc(100% - 20px) calc(2em),
+      calc(100% - 15px) calc(2em);
+    }
 
   }
 
   &.arrow:focus {
-  background-image:
-    linear-gradient(45deg, #1a3968 50%, transparent 50%),
-    linear-gradient(135deg, transparent 50%, #1a3968 50%);
-  background-position:
-    calc(100% - 15px) 1.2em,
-    calc(100% - 20px) 1.2em;
-  background-size:
-    5px 5px,
-    5px 5px;
-  background-repeat: no-repeat;
-  border-color: green;
-  outline: 0;
-
-  @media (min-width: 640px){
+    background-image:
+      linear-gradient(45deg, #1a3968 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, #1a3968 50%);
     background-position:
-    calc(100% - 15px) calc(2em),
-    calc(100% - 20px) calc(2em);
+      calc(100% - 15px) 1.2em,
+      calc(100% - 20px) 1.2em;
+    background-size:
+      5px 5px,
+      5px 5px;
+    background-repeat: no-repeat;
+    outline: 0;
+
+    @media (min-width: 640px){
+      background-position:
+      calc(100% - 15px) calc(2em),
+      calc(100% - 20px) calc(2em);
+    }
   }
-}
+  .defaultOption{
+    font-weight: 300;
+    font-size: 12px;
+  }
 `;
 
 export const Textarea = styled.textarea`
