@@ -12,7 +12,7 @@ import { TitleServices } from '../../components/Services/styles';
 
 const WebMaintenance = function PageServiceWebMaintenance() {
   return (
-    <ServiceInfo>
+    <ServiceInfo valueSelect="Manutenção de Sites">
       <Breadcrumb>
         <Breadcrumb.Link href="/">
           Início

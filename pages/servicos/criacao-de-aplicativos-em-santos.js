@@ -12,7 +12,7 @@ import { TitleServices } from '../../components/Services/styles';
 
 const CreateApp = function PageServiceCreateApp() {
   return (
-    <ServiceInfo>
+    <ServiceInfo valueSelect="Criação de Aplicativos">
       <Breadcrumb>
         <Breadcrumb.Link href="/">
           Início

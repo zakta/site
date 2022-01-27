@@ -12,7 +12,7 @@ import { TitleServices } from '../../components/Services/styles';
 
 const CreateWeb = function PageServiceWeb() {
   return (
-    <ServiceInfo>
+    <ServiceInfo valueSelect="Criação de Sites">
       <Breadcrumb>
         <Breadcrumb.Link href="/">
           Início

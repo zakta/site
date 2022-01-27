@@ -2,14 +2,16 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import PropTypes from 'prop-types';
-
+import { useEffect } from 'react';
 // styles
 import LoaderForm from '../LoaderForm';
 import {
-  Erro, Form, InputForm, Position, Textarea, BtnSubmit, Row, Column,
+  Erro, Form, InputForm, Position, Textarea, BtnSubmit, Row, Column, DropDown,
 } from './styles';
 
-const ContactForm = function ContactFormSection({ setFormStatus, setActiveModal }) {
+const ContactForm = function ContactFormSection({
+  setFormStatus, setActiveModal, valueSelect,
+}) {
   function mtel(phoneRaw) {
     let phoneMasked = phoneRaw;
 
@@ -74,6 +76,12 @@ const ContactForm = function ContactFormSection({ setFormStatus, setActiveModal 
       }
     },
   });
+
+  useEffect(() => {
+    if (formik.values.subject === '') {
+      formik.setFieldValue('subject', valueSelect);
+    }
+  }, [formik, valueSelect]);
 
   return (
     <Form onSubmit={formik.handleSubmit} data-aos="fade-up">
@@ -142,18 +150,31 @@ const ContactForm = function ContactFormSection({ setFormStatus, setActiveModal 
         </Column>
 
         <Column>
-          <InputForm
-            name="subject"
-            type="text"
-            placeholder="Assunto"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.subject}
-            error={formik.errors.subject}
-            touched={formik.touched.subject}
-            readOnly={formik.isSubmitting}
-          />
-
+          <div>
+            <DropDown
+              name="subject"
+              type="select"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.subject}
+              error={formik.errors.subject}
+              touched={formik.touched.subject}
+              readOnly={formik.isSubmitting}
+              className="arrow"
+            >
+              <option hidden>Selecione um Assunto</option>
+              <option value="Criação de Sites">Criação de Sites</option>
+              <option value="Lojas Virtuais">Lojas Virtuais</option>
+              <option value="Sistemas Web">Sistemas Web</option>
+              <option value="Otimização de Sites">Otimização de Sites - SEO</option>
+              <option value="Criação de Aplicativos">Criação de Aplicativos</option>
+              <option value="Manutenção de Sites">Manutenção de Sites</option>
+              <option value="Landing Pages">Landing Pages</option>
+              <option value="Consultoria e Análise de Sistemas">Consultoria e Análise de Sistemas</option>
+              <option value="Marketing Digital">Marketing Digital</option>
+              <option value="Criação de Blogs">Criação de Blogs</option>
+            </DropDown>
+          </div>
           {formik.touched.subject && formik.errors.subject && (
             <Position>
               <Erro>{formik.errors.subject}</Erro>
@@ -197,6 +218,7 @@ const ContactForm = function ContactFormSection({ setFormStatus, setActiveModal 
 ContactForm.propTypes = {
   setFormStatus: PropTypes.func.isRequired,
   setActiveModal: PropTypes.func.isRequired,
+  valueSelect: PropTypes.string.isRequired,
 };
 
 export default ContactForm;

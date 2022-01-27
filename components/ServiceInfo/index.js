@@ -8,7 +8,7 @@ import Form from '../Form';
 
 import { About, Container, Info } from './styles';
 
-const ServiceInfo = function ComponentServiceInfo({ children }) {
+const ServiceInfo = function ComponentServiceInfo({ children, valueSelect }) {
   return (
     <Container>
       <Header stat />
@@ -18,7 +18,7 @@ const ServiceInfo = function ComponentServiceInfo({ children }) {
 
         <Info>Ficou Interessado? Entre em contato e solicite um orçamento.</Info>
 
-        <Form setFormStatus={() => {}} />
+        <Form valueSelect={valueSelect} />
       </About>
 
       <Footer />
@@ -28,6 +28,7 @@ const ServiceInfo = function ComponentServiceInfo({ children }) {
 
 ServiceInfo.propTypes = {
   children: PropTypes.node.isRequired,
+  valueSelect: PropTypes.string.isRequired,
 };
 
 export default ServiceInfo;

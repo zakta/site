@@ -12,7 +12,7 @@ import { TitleServices } from '../../components/Services/styles';
 
 const WebOptimization = function PageServiceWebOptimization() {
   return (
-    <ServiceInfo>
+    <ServiceInfo valueSelect="Otimização de Sites">
       <Breadcrumb>
         <Breadcrumb.Link href="/">
           Início

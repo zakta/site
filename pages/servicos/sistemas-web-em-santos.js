@@ -12,7 +12,7 @@ import { TitleServices } from '../../components/Services/styles';
 
 const WebSystems = function PageServiceWebSystem() {
   return (
-    <ServiceInfo>
+    <ServiceInfo valueSelect="Sistemas Web">
       <Breadcrumb>
         <Breadcrumb.Link href="/">
           Início

@@ -12,7 +12,7 @@ import { TitleServices } from '../../components/Services/styles';
 
 const VirtualStore = function PageServiceStore() {
   return (
-    <ServiceInfo>
+    <ServiceInfo valueSelect="Lojas Virtuais">
       <Breadcrumb>
         <Breadcrumb.Link href="/">
           Início

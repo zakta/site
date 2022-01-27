@@ -17,7 +17,7 @@ const BottomModal = function BottomSheetModal({
         snapPoints={({ minHeight }) => minHeight}
         formStatus={formStatus}
       >
-        <SheetContent>
+        <SheetContent formStatus={formStatus}>
           {formStatus === 'success' && (
             <>
               <h3>Obrigado pelo seu contato!</h3>

@@ -12,7 +12,7 @@ import { TitleServices } from '../../components/Services/styles';
 
 const DigitalMkt = function PageServiceDigitalMkt() {
   return (
-    <ServiceInfo>
+    <ServiceInfo valueSelect="Marketing Digital">
       <Breadcrumb>
         <Breadcrumb.Link href="/">
           Início

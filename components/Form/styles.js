@@ -49,6 +49,52 @@ export const InputForm = styled.input`
   }
 `;
 
+export const DropDown = styled.select`
+  border: 1px solid #efefef;
+  border-bottom: 3px solid ${validationInput};
+  border-radius: none;
+  box-sizing: border-box;
+  display: block;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: .75rem;
+  margin: 1.2rem 0 1.7rem;
+  width: 100%;
+  outline: none;
+  appearance: none;
+
+  :focus{
+    background-color: white;
+    border-bottom-color: ${({ touched, error }) => (touched && error ? '#e92929' : '#1a3968')};
+  }
+
+  ::placeholder {
+    font-weight: 300;
+  }
+
+  @media (min-width: 640px) {
+    padding: 1.5rem;
+    font-size: 15px;
+  }
+
+  &.arrow{
+    background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(2em + 2px),
+    calc(100% - 15px) calc(2em + 2px),
+    calc(100% - 2.5em) .1em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 4.6em;
+  background-repeat: no-repeat;
+  }
+`;
+
 export const Textarea = styled.textarea`
   border: 1px solid #efefef;
   border-bottom: 3px solid ${validationInput};

@@ -12,7 +12,7 @@ import { TitleServices } from '../../components/Services/styles';
 
 const LandingPages = function PageServiceLandingPages() {
   return (
-    <ServiceInfo>
+    <ServiceInfo valueSelect="Landing Pages">
       <Breadcrumb>
         <Breadcrumb.Link href="/">
           Início

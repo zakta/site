@@ -12,7 +12,7 @@ import { TitleServices } from '../../components/Services/styles';
 
 const CreateBlog = function PageServiceCreateBlog() {
   return (
-    <ServiceInfo>
+    <ServiceInfo valueSelect="Criação de Blogs">
       <Breadcrumb>
         <Breadcrumb.Link href="/">
           Início

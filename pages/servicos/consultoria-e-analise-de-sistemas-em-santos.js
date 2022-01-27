@@ -12,7 +12,7 @@ import { TitleServices } from '../../components/Services/styles';
 
 const Consultancy = function PageServiceConsultancy() {
   return (
-    <ServiceInfo>
+    <ServiceInfo valueSelect="Consultoria e Análise de Sistemas">
       <Breadcrumb>
         <Breadcrumb.Link href="/">
           Início

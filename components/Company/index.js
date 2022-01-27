@@ -34,7 +34,7 @@ const Company = function CompanyPage() {
             <h4>Elaboração do plano e propostas</h4>
             <p>
               Analisamos os requisitos, montamos uma estratégia adequada
-              e apresentamos as propostas
+              e apresentamos as propostas.
             </p>
           </Notes>
 
