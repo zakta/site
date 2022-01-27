@@ -21,8 +21,6 @@ const ArrowIcon = styled(BsArrowDownRight)`
   animation: ${bounce} 1s linear infinite;
   color: white;
   font-size: 40px;
-  margin-bottom: 10px;
-  margin-top: 30px;
   opacity: .75;
   position: relative;
   right: .6rem;

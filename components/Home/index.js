@@ -38,11 +38,11 @@ const Home = function HomePage() {
 
         <ButtonLink href="#contato">Fale com um consultor</ButtonLink>
 
-        <ArrowAnimation>
-          <ArrowLink href="#servicos">
+        <ArrowLink href="#servicos">
+          <ArrowAnimation>
             <ArrowIcon />
-          </ArrowLink>
-        </ArrowAnimation>
+          </ArrowAnimation>
+        </ArrowLink>
       </PageTitle>
     </Container>
   );

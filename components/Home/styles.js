@@ -177,4 +177,8 @@ export const ArrowAnimation = styled.div`
 
 export const ArrowLink = styled.a`
   align-self: flex-start;
+
+  :visited{
+    color: red;
+  }
 `;
