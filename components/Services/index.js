@@ -374,7 +374,6 @@ const Services = function ServicesPage({ full }) {
 
         <AllServices
           data-aos="fade-in"
-          data-aos-offset="1000"
           style={{ display: full ? 'none' : 'flex' }}
         >
           <Link passHref href="/servicos">
