@@ -11,7 +11,7 @@ const CookiesModal = function
 CookiesModalPage({ isAcceptedCookie, setAcceptedCookie, setCookiesModalHeight }) {
   const createCookies = () => {
     if (cookie.get('allow-cookies') === undefined) {
-      cookie.set('allow-cookies', 'true', { expires: 1 / 192 });
+      cookie.set('allow-cookies', 'true', { expires: 1 });
       setCookiesModalHeight(0);
 
       setAcceptedCookie(true);

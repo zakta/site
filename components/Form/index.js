@@ -173,6 +173,7 @@ const ContactForm = function ContactFormSection({
               <option value="Consultoria e Análise de Sistemas">Consultoria e Análise de Sistemas</option>
               <option value="Marketing Digital">Marketing Digital</option>
               <option value="Criação de Blogs">Criação de Blogs</option>
+              <option value="Outros">Outros</option>
             </DropDown>
           </div>
           {formik.touched.subject && formik.errors.subject && (

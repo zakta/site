@@ -19,17 +19,16 @@ import {
 const Menu = function MenuPage({
   isSticky, open, setOpen, activeMenuItem, setActiveMenuItem, stat,
 }) {
-  console.log('open', open);
   const setOverflow = (event) => {
     document.body.classList[event]('hideOverflow');
   };
 
   useEffect(() => {
     const checkOpen = () => {
-      if (!open) {
-        setOverflow('remove');
-      } else {
+      if (open) {
         setOverflow('add');
+      } else {
+        setOverflow('remove');
       }
     };
     checkOpen();
@@ -42,9 +41,6 @@ const Menu = function MenuPage({
         isSticky={isSticky}
         open={open}
         className={isSticky ? 'sticky' : ''}
-        onClick={() => {
-
-        }}
       >
         <ListItem data-aos={stat ? '' : 'fade-down'}>
           <Link passHref href="/#" as={`${process.env.BACKEND_URL}/#`}>
@@ -57,7 +53,6 @@ const Menu = function MenuPage({
                 handleActive('#');
                 setOpen(false);
                 scrollTop();
-                setOverflow(!open ? 'add' : 'remove');
               }}
             >
               Início
@@ -76,7 +71,6 @@ const Menu = function MenuPage({
                 onClick={() => {
                   handleActive('/servicos');
                   setOpen(false);
-                  setOverflow(!open ? 'add' : 'remove');
                 }}
               >
                 Serviços
@@ -92,7 +86,6 @@ const Menu = function MenuPage({
                 onClick={() => {
                   handleActive('#servicos');
                   setOpen(false);
-                  setOverflow(!open ? 'add' : 'remove');
                 }}
               >
                 Serviços
@@ -112,7 +105,6 @@ const Menu = function MenuPage({
               onClick={() => {
                 handleActive('#empresa');
                 setOpen(false);
-                setOverflow(!open ? 'add' : 'remove');
               }}
             >
               Empresa
@@ -130,7 +122,6 @@ const Menu = function MenuPage({
               onClick={() => {
                 handleActive('#contato');
                 setOpen(false);
-                setOverflow(!open ? 'add' : 'remove');
               }}
             >
               Contato
@@ -167,12 +158,7 @@ const Menu = function MenuPage({
         </ItemInfo>
       </List>
 
-      <MenuToggle onClick={() => {
-        setOpen(!open);
-
-        setOverflow(!open ? 'add' : 'remove');
-      }}
-      >
+      <MenuToggle onClick={() => setOpen(!open)}>
         <Hamburguer open={open} isSticky={isSticky || stat} />
       </MenuToggle>
     </>
