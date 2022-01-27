@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     overflow-x: hidden;
     min-width: 320px;
+    overflow-y: visible;
 
     &.hideOverflow{
       overflow-y: hidden;

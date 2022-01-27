@@ -1,6 +1,7 @@
 // 3rd parties
 import Link from 'next/link';
 import PropTypes from 'prop-types';
+import { useEffect } from 'react';
 // import { useSpring } from 'react-spring';
 
 // Components
@@ -18,9 +19,21 @@ import {
 const Menu = function MenuPage({
   isSticky, open, setOpen, activeMenuItem, setActiveMenuItem, stat,
 }) {
+  console.log('open', open);
   const setOverflow = (event) => {
     document.body.classList[event]('hideOverflow');
   };
+
+  useEffect(() => {
+    const checkOpen = () => {
+      if (!open) {
+        setOverflow('remove');
+      } else {
+        setOverflow('add');
+      }
+    };
+    checkOpen();
+  }, [open]);
 
   const handleActive = (sectionPage) => setActiveMenuItem(sectionPage);
   return (
