@@ -41,7 +41,7 @@ export default class MyDocument extends Document {
           />
           <meta
             name="description"
-            content="Somos experts no desenvolvimento de sites e aplicativos para internet. Entendemos as necessidades do negócio e trabalhamos para construir soluções digitais com agilidade, flexibilidade e precisão."
+            content="Somos especialistas em desenvolvimento de sites, lojas virtuais, aplicativos, blogs, sistemas, entre outros softwares. Temos a experiência necessária para entender o seu negócio, propor ideias e construir um projeto totalmente sob medida para a sua empresa."
           />
           <meta name="robots" content="noindex, nofollow" />
 
