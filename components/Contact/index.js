@@ -46,24 +46,24 @@ const Contact = function ContactPage() {
           </Card>
 
           <Card className="contact-card-telephone">
-            <a href="tel:+5511933020321">
+            <a href="tel:+5513996522199">
               <Icon className="contact-icon-telephone">
                 <AiOutlinePhone />
               </Icon>
 
               <h4>Telefone</h4>
-              <p>+55 11 93302 0321</p>
+              <p>+55 11 99652-2199</p>
             </a>
           </Card>
 
           <Card className="contact-card-whatsapp">
-            <a href=" https://wa.me/5511933020321?text=Olá%20gostaria%20de%20um%20orçamento%20dos%20seus%20serviços." target="_blank">
+            <a href=" https://wa.me/5513996522199?text=Olá%20gostaria%20de%20um%20orçamento%20dos%20seus%20serviços." target="_blank">
               <Icon>
                 <BsWhatsapp />
               </Icon>
 
               <h4>WhatsApp</h4>
-              <p>+55 11 93302 0321</p>
+              <p>+55 11 99652-2199</p>
             </a>
           </Card>
         </article>

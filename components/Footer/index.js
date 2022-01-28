@@ -54,7 +54,7 @@ const Footer = function FooterPage({ cookiesModalHeight }) {
             contato@zakta.com.br
           </ContactLink>
 
-          <ContactLink href="tel:+5511933020321">+55 11 93302-0321</ContactLink>
+          <ContactLink href="tel:+5513996522199">+55 11 99652-2199</ContactLink>
         </Contact>
       </Box>
 
