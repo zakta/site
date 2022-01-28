@@ -8,7 +8,7 @@ import Company from '../components/Company';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Home from '../components/Home';
-// import Loader from '../components/Loader';
+import Loader from '../components/Loader';
 import CookiesModal from '../components/CookiesModal';
 import Services from '../components/Services';
 import GoogleAnalytics from '../components/GoogleAnalytics';
@@ -16,10 +16,17 @@ import GoogleAnalytics from '../components/GoogleAnalytics';
 const Index = function IndexPage() {
   const [isAcceptedCookie, setAcceptedCookie] = useState(false);
 
+  const [animate, setAnimate] = useState(false);
+
   useEffect(() => {
     if (cookie.get('allow-cookies')) {
       setAcceptedCookie(true);
     }
+    if (!sessionStorage.getItem('loader')) {
+      setAnimate(true);
+    }
+
+    sessionStorage.setItem('loader', JSON.stringify(true));
   }, []);
 
   const [cookiesModalHeight, setCookiesModalHeight] = useState(0);
@@ -30,7 +37,7 @@ const Index = function IndexPage() {
         <title>Zakta - Tecnologia</title>
       </Head>
 
-      { /* <Loader /> */ }
+      <Loader animate={animate} />
 
       <Home />
 

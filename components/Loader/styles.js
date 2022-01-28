@@ -18,7 +18,6 @@ to{
   visibility: hidden;
   transform: translate3d(100%,0,0)
 }
-}
 `;
 
 export const Screen = styled.div`
@@ -29,7 +28,7 @@ export const Screen = styled.div`
   left:0;
   z-index: 16;
   background-color: white;
-  display: flex;
+  display: ${({ animate }) => (animate ? 'flex' : 'none')};
   justify-content: center;
   align-items: center;
   animation: ${loader} 1s ease-in-out both 1s;
