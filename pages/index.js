@@ -34,7 +34,7 @@ const Index = function IndexPage() {
   return (
     <>
       <Head>
-        <title>Zakta - Tecnologia</title>
+        <title>Criação de sites em Santos | Zakta Tecnologia</title>
       </Head>
 
       <Loader animate={animate} />

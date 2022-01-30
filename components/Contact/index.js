@@ -52,7 +52,7 @@ const Contact = function ContactPage() {
               </Icon>
 
               <h4>Telefone</h4>
-              <p>+55 11 99652-2199</p>
+              <p>+55 13 99652-2199</p>
             </a>
           </Card>
 
@@ -63,7 +63,7 @@ const Contact = function ContactPage() {
               </Icon>
 
               <h4>WhatsApp</h4>
-              <p>+55 11 99652-2199</p>
+              <p>+55 13 99652-2199</p>
             </a>
           </Card>
         </article>
