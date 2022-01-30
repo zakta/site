@@ -1,8 +1,0 @@
-- Ajustar header no on resize
-- Favicons
-- trocar # por pages no next
-- Otimização SEO
-
-Pós lançamento
-- Refactor do código
-- Testes unitários
