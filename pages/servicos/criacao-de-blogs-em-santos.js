@@ -1,4 +1,5 @@
 // 3rd parties
+import Head from 'next/head';
 import Image from 'next/image';
 
 // Assets
@@ -12,51 +13,59 @@ import { TitleServices } from '../../components/Services/styles';
 
 const CreateBlog = function PageServiceCreateBlog() {
   return (
-    <ServiceInfo valueSelect="Criação de Blogs">
-      <Breadcrumb>
-        <Breadcrumb.Link href="/">
-          Início
-        </Breadcrumb.Link>
-        <Breadcrumb.Link href="/servicos">
-          Serviços
-        </Breadcrumb.Link>
-        <Breadcrumb.Item>
+    <>
+      <Head>
+        <title>
+          Criação de Blogs em Santos | Zakta Tecnologia
+        </title>
+      </Head>
+
+      <ServiceInfo valueSelect="Criação de Blogs">
+        <Breadcrumb>
+          <Breadcrumb.Link href="/">
+            Início
+          </Breadcrumb.Link>
+          <Breadcrumb.Link href="/servicos">
+            Serviços
+          </Breadcrumb.Link>
+          <Breadcrumb.Item>
+            Criação de Blogs
+          </Breadcrumb.Item>
+        </Breadcrumb>
+
+        <TitleServices full>
           Criação de Blogs
-        </Breadcrumb.Item>
-      </Breadcrumb>
+        </TitleServices>
 
-      <TitleServices full>
-        Criação de Blogs
-      </TitleServices>
+        <Block data-aos="fade-up">
+          <p>
+            Blogs são páginas de site específicas para a divulgação de conteúdos
+            para os visitantes, tais como novidades, artigos, resenhas, notícias,
+            entre outros. Ou seja, um blog é uma página atualizada com conteúdo
+            de forma frequente.
+          </p>
+          <p>
+            Possuir um blog dentro do site ajuda a atrair mais acessos de usuários
+            interessados nos conteúdos, além de colaborar com uma melhor
+            indexação no Google, de acordo com os termos inseridos nas postagens.
+          </p>
+          <p>
+            A Zakta desenvolve blogs modernos, profissionais, customizados e
+            personalizados para diferentes tipos de sites, temas e segmentos.
+          </p>
+          <p>
+            Solicite um orçamento e conheça as nossas ideias para desenvolver o
+            blog ideal para o seu projeto.
+          </p>
+        </Block>
 
-      <Block data-aos="fade-up">
-        <p>
-          Blogs são páginas de site específicas para a divulgação de conteúdos
-          para os visitantes, tais como novidades, artigos, resenhas, notícias,
-          entre outros. Ou seja, um blog é uma página atualizada com conteúdo
-          de forma frequente.
-        </p>
-        <p>
-          Possuir um blog dentro do site ajuda a atrair mais acessos de usuários
-          interessados nos conteúdos, além de colaborar com uma melhor
-          indexação no Google, de acordo com os termos inseridos nas postagens.
-        </p>
-        <p>
-          A Zakta desenvolve blogs modernos, profissionais, customizados e
-          personalizados para diferentes tipos de sites, temas e segmentos.
-        </p>
-        <p>
-          Solicite um orçamento e conheça as nossas ideias para desenvolver o
-          blog ideal para o seu projeto.
-        </p>
-      </Block>
-
-      <Image
-        data-aos="fade-up"
-        src={contentImage}
-        alt="Imagem Ilustrando uma Escritório de uma Blogger."
-      />
-    </ServiceInfo>
+        <Image
+          data-aos="fade-up"
+          src={contentImage}
+          alt="Imagem Ilustrando uma Escritório de uma Blogger."
+        />
+      </ServiceInfo>
+    </>
   );
 };
 export default CreateBlog;

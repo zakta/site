@@ -7,22 +7,27 @@ import Footer from '../Footer';
 import Form from '../Form';
 
 import { About, Container, Info } from './styles';
+import GoogleAnalytics from '../GoogleAnalytics';
 
 const ServiceInfo = function ComponentServiceInfo({ children, valueSelect }) {
   return (
-    <Container>
-      <Header stat />
+    <>
+      <Container>
+        <Header stat />
 
-      <About>
-        {children}
+        <About>
+          {children}
 
-        <Info>Ficou Interessado? Entre em contato e solicite um orçamento.</Info>
+          <Info>Ficou Interessado? Entre em contato e solicite um orçamento.</Info>
 
-        <Form valueSelect={valueSelect} />
-      </About>
+          <Form valueSelect={valueSelect} />
+        </About>
 
-      <Footer />
-    </Container>
+        <Footer />
+      </Container>
+
+      <GoogleAnalytics />
+    </>
   );
 };
 

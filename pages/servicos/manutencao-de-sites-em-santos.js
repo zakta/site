@@ -1,4 +1,5 @@
 // 3rd parties
+import Head from 'next/head';
 import Image from 'next/image';
 
 // Assets
@@ -12,52 +13,60 @@ import { TitleServices } from '../../components/Services/styles';
 
 const WebMaintenance = function PageServiceWebMaintenance() {
   return (
-    <ServiceInfo valueSelect="Manutenção de Sites">
-      <Breadcrumb>
-        <Breadcrumb.Link href="/">
-          Início
-        </Breadcrumb.Link>
-        <Breadcrumb.Link href="/servicos">
-          Serviços
-        </Breadcrumb.Link>
-        <Breadcrumb.Item>
+    <>
+      <Head>
+        <title>
+          Manutenção de Sites | Zakta Tecnologia
+        </title>
+      </Head>
+
+      <ServiceInfo valueSelect="Manutenção de Sites">
+        <Breadcrumb>
+          <Breadcrumb.Link href="/">
+            Início
+          </Breadcrumb.Link>
+          <Breadcrumb.Link href="/servicos">
+            Serviços
+          </Breadcrumb.Link>
+          <Breadcrumb.Item>
+            Manutenção de Sites
+          </Breadcrumb.Item>
+        </Breadcrumb>
+
+        <TitleServices full>
           Manutenção de Sites
-        </Breadcrumb.Item>
-      </Breadcrumb>
+        </TitleServices>
 
-      <TitleServices full>
-        Manutenção de Sites
-      </TitleServices>
+        <Block data-aos="fade-up">
+          <p>
+            A tecnologia está sempre em constante mudança e por esse motivo,
+            após criar um site recomenda-se um acompanhamento técnico para
+            mantê-lo em perfeito funcionamento.
+          </p>
+          <p>
+            A Zakta possui um plano de manutenção e suporte técnico com
+            atendimento eficaz e ações programadas para a sustentação de seu
+            projeto.
+          </p>
+          <p>
+            Oferecemos o plano de manutenção tanto para sites que criamos,
+            quanto para sites externos. Temos experiência com diferentes tipos de
+            linguagens de programação e frameworks.
+          </p>
+          <p>
+            Entre em contato para avaliarmos o seu projeto e apresentarmos os
+            nossos diferentes planos de manutenção e atendimento técnico mensal
+            para o seu projeto.
+          </p>
+        </Block>
 
-      <Block data-aos="fade-up">
-        <p>
-          A tecnologia está sempre em constante mudança e por esse motivo,
-          após criar um site recomenda-se um acompanhamento técnico para
-          mantê-lo em perfeito funcionamento.
-        </p>
-        <p>
-          A Zakta possui um plano de manutenção e suporte técnico com
-          atendimento eficaz e ações programadas para a sustentação de seu
-          projeto.
-        </p>
-        <p>
-          Oferecemos o plano de manutenção tanto para sites que criamos,
-          quanto para sites externos. Temos experiência com diferentes tipos de
-          linguagens de programação e frameworks.
-        </p>
-        <p>
-          Entre em contato para avaliarmos o seu projeto e apresentarmos os
-          nossos diferentes planos de manutenção e atendimento técnico mensal
-          para o seu projeto.
-        </p>
-      </Block>
-
-      <Image
-        data-aos="fade-up"
-        src={contentImage}
-        alt="Código indicando manutenção de sites."
-      />
-    </ServiceInfo>
+        <Image
+          data-aos="fade-up"
+          src={contentImage}
+          alt="Código indicando manutenção de sites."
+        />
+      </ServiceInfo>
+    </>
   );
 };
 export default WebMaintenance;

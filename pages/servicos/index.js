@@ -1,3 +1,6 @@
+// 3rd parties
+import Head from 'next/head';
+
 // styles
 import Services from '../../components/Services';
 import Breadcrumb from '../../components/Breadcrumb';
@@ -5,7 +8,11 @@ import ServiceInfo from '../../components/ServiceInfo';
 
 const OfferedServices = function PageOfferedServices() {
   return (
-    <div>
+    <>
+      <Head>
+        <title>Serviços em Santos | Zakta Tecnologia</title>
+      </Head>
+
       <ServiceInfo>
         <Breadcrumb>
           <Breadcrumb.Link href="/">
@@ -18,7 +25,7 @@ const OfferedServices = function PageOfferedServices() {
 
         <Services full />
       </ServiceInfo>
-    </div>
+    </>
   );
 };
 

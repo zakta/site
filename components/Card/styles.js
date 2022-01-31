@@ -12,38 +12,12 @@ export const ArrowRight = styled.div`
   align-items: center;
   color: black;
   display: flex;
-  padding-top: .5rem;
+  margin-top: .5rem;
+  position: relative;
   white-space: nowrap;
 
-  a {
-    color: black;
-    display: flex;
-    position: relative;
-    text-decoration: none;
-
-    :active{
-        color: #1a3968;
-        span {
-          color: #1a3968;
-          cursor: pointer;
-          opacity: 1;
-          transform: translate(60%, 0);
-          z-index: 1;
-        }
-    }
-    @media (min-width: 768px){
-      :hover{
-        color: #1a3968;
-          span {
-            color: #1a3968;
-            cursor: pointer;
-            opacity: 1;
-            transform: translate(60%, 0);
-            z-index: 1;
-          }
-        }
-      }
-
+  :active{
+    color: #1a3968;
   }
 
   span {
@@ -79,12 +53,50 @@ export const Card = styled.div`
   display: flex;
   margin-bottom: 1.5rem;
   position: relative;
-  padding: 1.25rem;
   flex-direction: column;
   justify-content: space-between;
   transition: .3s all ease-in-out;
   width: 100%;
   position: relative;
+
+  .card-link {
+    padding: 1.25rem;
+    text-decoration: none;
+
+    :active{
+      color: #1a3968;
+
+      span {
+        color: #1a3968;
+        cursor: pointer;
+        opacity: 1;
+        transform: translate(60%, 0);
+        z-index: 1;
+      }
+    }
+
+    @media (min-width: 740px) {
+      padding: 1.5rem;
+    }
+
+    @media (min-width: 1200px){
+      padding: 2rem;
+    }
+
+    @media (min-width: 768px){
+      :hover{
+        color: #1a3968;
+
+        span {
+          color: #1a3968;
+          cursor: pointer;
+          opacity: 1;
+          transform: translate(60%, 0);
+          z-index: 1;
+        }
+      }
+    }
+  }
 
   &.card-last-center {
     @media (min-width: 640px) {
@@ -121,7 +133,6 @@ export const Card = styled.div`
 
   @media (min-width: 740px) {
     width: 48.6%;
-    padding: 1.5rem;
 
     h3 {
       font-size: 24.5px;
@@ -136,7 +147,7 @@ export const Card = styled.div`
     }
 
     ${ArrowRight} {
-      padding-top: 1rem;
+      margin-top: 1rem;
     }
 
     ${ArrowRightIcon} {
@@ -145,7 +156,6 @@ export const Card = styled.div`
   }
 
   @media (min-width: 1200px){
-    padding: 2rem;
     width: 32%;
 
     h3 {
@@ -161,7 +171,7 @@ export const Card = styled.div`
     }
 
     ${ArrowRight} {
-      padding-top: 1rem;
+      margin-top: 1rem;
     }
 
     ${ArrowRightIcon} {

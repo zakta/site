@@ -1,8 +1,6 @@
 // 3rd parties
 import styled from 'styled-components';
 
-import { Card as CardComp, Icon as CardIcon } from '../Card/styles';
-
 export const Container = styled.section`
   align-items: center;
   background-color: #f7f7f7;
@@ -76,8 +74,9 @@ export const ContactInfo = styled.div`
   }
 `;
 
-export const Icon = styled(CardIcon)`
-  height: initial;
+export const Icon = styled.div`
+  font-size: 3rem;
+  line-height: .7;
   position: relative;
 
   &.contact-icon-email {
@@ -89,10 +88,87 @@ export const Icon = styled(CardIcon)`
   }
 `;
 
-export const Card = styled(CardComp)`
+export const Card = styled.div`
   border: 3px solid;
   cursor: pointer;
   width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  margin-bottom: 1.5rem;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: .3s all ease-in-out;
+  position: relative;
+  padding: 1.25rem;
+
+  &.card-last-center {
+    @media (min-width: 640px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 1200px) {
+      margin-left: initial;
+      margin-right: initial;
+    }
+  }
+
+  h3 {
+    color: #060606;
+    z-index: 1;
+    font-weight: 700;
+    position: relative;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: .75rem;
+    margin-top: 1.25rem;
+  }
+
+  p {
+    color: #6c6c6c;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: 740px) {
+    padding: 1.5rem;
+    width: 48.6%;
+
+    h3 {
+      font-size: 24.5px;
+      line-height: 35px;
+      margin-bottom: 1.06rem;
+      margin-top: 1.579rem;
+    }
+
+    p {
+      font-size: 17.5px;
+      line-height: 31px;
+    }
+  }
+
+  @media (min-width: 1200px){
+    padding: 2rem;
+    width: 32%;
+
+    h3 {
+      font-size: 27px;
+      line-height: 40px;
+      margin-bottom: 1.06rem;
+      margin-top: 1.579rem;
+    }
+
+    p {
+      font-size: 19px;
+      line-height: 34px;
+    }
+  }
 
   a {
     text-decoration: none;
