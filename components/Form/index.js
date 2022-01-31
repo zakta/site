@@ -38,7 +38,7 @@ const ContactForm = function ContactFormSection({
       }),
     };
 
-    return fetch('https://api.emailjs.com/api/v1.0/email/send', config);
+    return fetch('https://api.emailjs.com/api/v1.0/email/senddd', config);
   }
 
   const formik = useFormik({
@@ -49,7 +49,7 @@ const ContactForm = function ContactFormSection({
       subject: '',
       message: '',
     },
-    validationSchema: Yup.object({
+    validationSchema: Yup.object().shape({
       name: Yup.string()
         .min(3, 'Mínimo 3 letras')
         .required('Preencha o nome'),
@@ -60,7 +60,7 @@ const ContactForm = function ContactFormSection({
         .email('E-mail inválido')
         .required('Preencha o e-mail'),
       subject: Yup.string()
-        .required('Preencha o assunto'),
+        .required('Selecione o assunto'),
       message: Yup.string()
         .required('Preencha a mensagem'),
     }),
@@ -78,7 +78,7 @@ const ContactForm = function ContactFormSection({
   });
 
   useEffect(() => {
-    if (formik.values.subject === '') {
+    if (formik.values.subject === '' && valueSelect) {
       formik.setFieldValue('subject', valueSelect);
     }
   }, [formik, valueSelect]);
@@ -154,6 +154,7 @@ const ContactForm = function ContactFormSection({
             <DropDown
               name="subject"
               type="select"
+              placeholder="Selecione um Assunto"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.subject}
@@ -161,8 +162,9 @@ const ContactForm = function ContactFormSection({
               touched={formik.touched.subject}
               readOnly={formik.isSubmitting}
               className="arrow"
+              defaultValue="Selecione um Assunto"
             >
-              <option className="defaultOption" hidden>Selecione um Assunto</option>
+              <option value="" disabled label="Selecione um Assunto" />
               <option value="Criação de Sites">Criação de Sites</option>
               <option value="Lojas Virtuais">Lojas Virtuais</option>
               <option value="Sistemas Web">Sistemas Web</option>
