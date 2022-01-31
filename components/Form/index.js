@@ -38,7 +38,7 @@ const ContactForm = function ContactFormSection({
       }),
     };
 
-    return fetch('https://api.emailjs.com/api/v1.0/email/senddd', config);
+    return fetch('https://api.emailjs.com/api/v1.0/email/send', config);
   }
 
   const formik = useFormik({
