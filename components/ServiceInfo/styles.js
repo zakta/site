@@ -28,14 +28,21 @@ export const About = styled.div`
     font-size: 30px;
     margin: 0;
   }
+
   p{
-    margin: .3rem 0;
     font-size: 16px;
     line-height: 2;
-    font-weight: 400;
+    font-weight: 300;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
-
-
+  }
 `;
 export const Info = styled.h3`
     margin-top: 2rem;
