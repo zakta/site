@@ -47,8 +47,8 @@ export const ArrowRightIcon = styled(BsArrowRight)`
 
 export const Card = styled.div`
   background-color: white;
-  border: 1px solid #efefef;
   border-top: 4px solid #33afad;
+  box-shadow: 0 1px 1px 0 rgb(6 6 6 / 12%);
   box-sizing: border-box;
   display: flex;
   margin-bottom: 1.5rem;
@@ -60,6 +60,10 @@ export const Card = styled.div`
   position: relative;
 
   .card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
     padding: 1.25rem;
     text-decoration: none;
 
