@@ -60,6 +60,10 @@ export const Card = styled.div`
   position: relative;
 
   .card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
     padding: 1.25rem;
     text-decoration: none;
 
