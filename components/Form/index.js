@@ -81,6 +81,11 @@ const ContactForm = function ContactFormSection({
     if (formik.values.subject === '' && valueSelect) {
       formik.setFieldValue('subject', valueSelect);
     }
+
+    if (!formik.isSubmitting) return;
+    if (Object.keys(formik.errors).length > 0) {
+      document.getElementsByName(Object.keys(formik.errors)[0])[0].focus();
+    }
   }, [formik, valueSelect]);
 
   return (
