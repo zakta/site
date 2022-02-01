@@ -1,5 +1,6 @@
 // 3rd parties
 import PropTypes from 'prop-types';
+import React, { useState, useEffect } from 'react';
 
 // Application
 import Header from '../Header';
@@ -10,13 +11,30 @@ import { About, Container, Info } from './styles';
 import GoogleAnalytics from '../GoogleAnalytics';
 
 const ServiceInfo = function ComponentServiceInfo({ children, valueSelect }) {
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    function handleScroll() {
+      setOffset(window.scrollY);
+    }
+    window.addEventListener('scroll', handleScroll);
+    return window.addEventListener('scroll', handleScroll);
+  }, []);
+
+  const childrenWithProps = React.Children.map(children, (child) => {
+    if (React.isValidElement(child)) {
+      return React.cloneElement(child, { offset });
+    }
+    return child;
+  });
+
   return (
     <>
       <Container>
         <Header stat />
 
         <About>
-          {children}
+          {childrenWithProps}
 
           <Info>Ficou Interessado? Entre em contato e solicite um orçamento.</Info>
 

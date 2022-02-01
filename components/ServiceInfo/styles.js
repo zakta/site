@@ -42,8 +42,19 @@ export const About = styled.div`
       margin-bottom: 0;
     }
   }
+  .container-parallax{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  .parallax{
+    position: sticky;
+    width: 100%;
+    object-fit: cover;
   }
 `;
+
 export const Info = styled.h3`
     margin-top: 2rem;
     color: #1a3968;
