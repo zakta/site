@@ -30,20 +30,13 @@ const ServiceInfo = function ComponentServiceInfo({
     return setOffset(0);
   }, [offset]);
 
-  const childrenWithProps = React.Children.map(children, (child) => {
-    if (React.isValidElement(child)) {
-      return React.cloneElement(child, { offset });
-    }
-    return child;
-  });
-
   return (
     <>
       <Container>
         <Header stat />
 
         <About>
-          {childrenWithProps}
+          {children}
           <ImageContainer className="container-parallax" none={none}>
             <img
               offset={offset}
@@ -52,7 +45,7 @@ const ServiceInfo = function ComponentServiceInfo({
               alt={`${valueSelect} em Santos`}
               className="parallax"
               style={{
-                transform: `translateY(${offset * -0.6}px)`,
+                transform: `translateY(${offset * -0.3}px)`,
               }}
             />
           </ImageContainer>

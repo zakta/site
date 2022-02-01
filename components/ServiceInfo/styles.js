@@ -58,7 +58,6 @@ export const Block = styled.div`
   background: white;
   padding: 1rem 1.25rem;
   margin: 1.25rem 0 0;
-  margin-bottom: 2rem;
 
   @media (min-width: 980px) {
     padding: 1.25rem 1.5rem;
