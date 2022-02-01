@@ -1,9 +1,5 @@
 // 3rd parties
 import Head from 'next/head';
-import Image from 'next/image';
-
-// Assets
-import contentImage from '../../public/consultancy.jpg';
 
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
@@ -20,7 +16,7 @@ const Consultancy = function PageServiceConsultancy() {
         </title>
       </Head>
 
-      <ServiceInfo valueSelect="Consultoria e Análise de Sistemas">
+      <ServiceInfo valueSelect="Consultoria e Análise de Sistemas" source="consultoria-e-analise-de-sistemas-em-santos">
         <Breadcrumb>
           <Breadcrumb.Link href="/">
             Início
@@ -61,12 +57,6 @@ const Consultancy = function PageServiceConsultancy() {
             nossa equipe técnica.
           </p>
         </Block>
-
-        <Image
-          src={contentImage}
-          data-aos="fade-up"
-          alt="Imagem Ilustrando Desenvolvedores."
-        />
       </ServiceInfo>
     </>
   );

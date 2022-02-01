@@ -13,7 +13,7 @@ const OfferedServices = function PageOfferedServices() {
         <title>Serviços em Santos | Zakta Tecnologia</title>
       </Head>
 
-      <ServiceInfo>
+      <ServiceInfo none>
         <Breadcrumb>
           <Breadcrumb.Link href="/">
             Início

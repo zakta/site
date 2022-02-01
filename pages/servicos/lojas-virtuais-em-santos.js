@@ -1,10 +1,5 @@
 // 3rd parties
 import Head from 'next/head';
-import Image from 'next/image';
-
-// Assets
-import contentImage from '../../public/credit-card.jpg';
-
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
@@ -20,7 +15,7 @@ const VirtualStore = function PageServiceStore() {
         </title>
       </Head>
 
-      <ServiceInfo valueSelect="Lojas Virtuais">
+      <ServiceInfo valueSelect="Lojas Virtuais" source="lojas-virtuais-em-santos">
         <Breadcrumb>
           <Breadcrumb.Link href="/">
             Início
@@ -69,14 +64,9 @@ const VirtualStore = function PageServiceStore() {
             em contato e nos diga o que precisa.
           </p>
         </Block>
-
-        <Image
-          data-aos="fade-up"
-          src={contentImage}
-          alt="Mulher utilizando cartão de crédito"
-        />
       </ServiceInfo>
     </>
   );
 };
+
 export default VirtualStore;

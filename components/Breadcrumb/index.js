@@ -1,7 +1,9 @@
 // 3rd parties
 import NextLink from 'next/link';
 import PropTypes from 'prop-types';
-import { Container, LinkTo, Actual } from './styles';
+import {
+  Container, LinkTo, Actual, Cover,
+} from './styles';
 
 const Breadcrumb = function BreadcrumbComponent({ children }) {
   return (
@@ -16,11 +18,15 @@ Breadcrumb.propTypes = {
 
 const Link = function LinkComponent({ children, href }) {
   return (
-    <NextLink href={href}>
-      <LinkTo href={href}>
-        {children}
-      </LinkTo>
-    </NextLink>
+    <Cover>
+      <NextLink href={href}>
+        <LinkTo href={href}>
+          <span>
+            {children}
+          </span>
+        </LinkTo>
+      </NextLink>
+    </Cover>
   );
 };
 

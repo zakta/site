@@ -1,10 +1,5 @@
 // 3rd parties
 import Head from 'next/head';
-import { useState, useEffect } from 'react';
-// import Image from 'next/image';
-
-// Assets
-// import contentImage from '../../public/website.jpg';
 
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
@@ -13,16 +8,6 @@ import Breadcrumb from '../../components/Breadcrumb';
 import { TitleServices } from '../../components/Services/styles';
 
 const CreateWeb = function PageServiceWeb() {
-  const [offset, setOffset] = useState(0);
-
-  useEffect(() => {
-    function handleScroll() {
-      setOffset(window.scrollY);
-    }
-    window.addEventListener('scroll', handleScroll);
-    return window.addEventListener('scroll', handleScroll);
-  }, []);
-  console.log('scroll', offset);
   return (
     <>
       <Head>
@@ -31,7 +16,7 @@ const CreateWeb = function PageServiceWeb() {
         </title>
       </Head>
 
-      <ServiceInfo valueSelect="Criação de Sites">
+      <ServiceInfo valueSelect="Criação de Sites" source="criacao-de-sites-em-santos">
         <Breadcrumb>
           <Breadcrumb.Link href="/">
             Início
@@ -76,17 +61,6 @@ const CreateWeb = function PageServiceWeb() {
             negócio.
           </p>
         </Block>
-        <div className="container-parallax">
-          <img
-            data-aos="fade-up"
-            src="/website.jpg"
-            alt="Página Web"
-            className="parallax"
-            style={{
-              transform: `translateY(${offset * -1}px)`,
-            }}
-          />
-        </div>
       </ServiceInfo>
     </>
   );

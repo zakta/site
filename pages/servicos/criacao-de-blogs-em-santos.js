@@ -1,9 +1,5 @@
 // 3rd parties
 import Head from 'next/head';
-import Image from 'next/image';
-
-// Assets
-import contentImage from '../../public/blog.jpg';
 
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
@@ -20,7 +16,7 @@ const CreateBlog = function PageServiceCreateBlog() {
         </title>
       </Head>
 
-      <ServiceInfo valueSelect="Criação de Blogs">
+      <ServiceInfo valueSelect="Criação de Blogs" source="criacao-de-blogs-em-santos">
         <Breadcrumb>
           <Breadcrumb.Link href="/">
             Início
@@ -58,12 +54,6 @@ const CreateBlog = function PageServiceCreateBlog() {
             blog ideal para o seu projeto.
           </p>
         </Block>
-
-        <Image
-          data-aos="fade-up"
-          src={contentImage}
-          alt="Imagem Ilustrando uma Escritório de uma Blogger."
-        />
       </ServiceInfo>
     </>
   );

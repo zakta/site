@@ -1,10 +1,5 @@
 // 3rd parties
 import Head from 'next/head';
-import Image from 'next/image';
-
-// Assets
-import contentImage from '../../public/seo.jpg';
-
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
@@ -20,7 +15,7 @@ const WebOptimization = function PageServiceWebOptimization() {
         </title>
       </Head>
 
-      <ServiceInfo valueSelect="Otimização de Sites">
+      <ServiceInfo valueSelect="Otimização de Sites" source="otimizacao-de-sites-seo-em-santos">
         <Breadcrumb>
           <Breadcrumb.Link href="/">
             Início
@@ -63,12 +58,6 @@ const WebOptimization = function PageServiceWebOptimization() {
             técnicas de SEO para o seu projeto.
           </p>
         </Block>
-
-        <Image
-          data-aos="fade-up"
-          src={contentImage}
-          alt="Página Web"
-        />
       </ServiceInfo>
     </>
   );

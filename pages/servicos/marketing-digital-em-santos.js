@@ -1,9 +1,5 @@
 // 3rd parties
 import Head from 'next/head';
-import Image from 'next/image';
-
-// Assets
-import contentImage from '../../public/google-ads.jpg';
 
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
@@ -20,7 +16,7 @@ const DigitalMkt = function PageServiceDigitalMkt() {
         </title>
       </Head>
 
-      <ServiceInfo valueSelect="Marketing Digital">
+      <ServiceInfo valueSelect="Marketing Digital" source="marketing-digital-em-santos">
         <Breadcrumb>
           <Breadcrumb.Link href="/">
             Início
@@ -68,12 +64,6 @@ const DigitalMkt = function PageServiceDigitalMkt() {
             </li>
           </ul>
         </Block>
-
-        <Image
-          data-aos="fade-up"
-          src={contentImage}
-          alt="Imagem Ilustrando o uso do Google analytics."
-        />
       </ServiceInfo>
     </>
   );

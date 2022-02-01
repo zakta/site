@@ -1,9 +1,5 @@
 // 3rd parties
 import Head from 'next/head';
-import Image from 'next/image';
-
-// Assets
-import contentImage from '../../public/landing-page.jpg';
 
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
@@ -20,7 +16,7 @@ const LandingPages = function PageServiceLandingPages() {
         </title>
       </Head>
 
-      <ServiceInfo valueSelect="Landing Pages">
+      <ServiceInfo valueSelect="Landing Pages" source="landing-pages-em-santos">
         <Breadcrumb>
           <Breadcrumb.Link href="/">
             Início
@@ -61,12 +57,6 @@ const LandingPages = function PageServiceLandingPages() {
             Landing Pages.
           </p>
         </Block>
-
-        <Image
-          data-aos="fade-up"
-          src={contentImage}
-          alt="Imagem Ilustrando uma Landing Page."
-        />
       </ServiceInfo>
     </>
   );
