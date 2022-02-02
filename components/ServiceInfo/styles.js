@@ -42,12 +42,16 @@ export const About = styled.div`
       margin-bottom: 0;
     }
   }
-  }
 `;
+
 export const Info = styled.h3`
-    margin-top: 2rem;
+    margin: 0;
     color: #1a3968;
     font-size: 19px;
+
+    @media (min-width: 500px){
+      margin-top: 2rem;
+    }
 `;
 
 export const Block = styled.div`
@@ -57,5 +61,22 @@ export const Block = styled.div`
 
   @media (min-width: 980px) {
     padding: 1.25rem 1.5rem;
+  }
+`;
+export const ImageContainer = styled.div`
+  display: ${({ none }) => (none ? 'none' : 'block')};
+
+
+  &.container-parallax{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  .parallax{
+    position: sticky;
+    width: 100%;
+    min-width: 400px;
+    object-fit: cover;
   }
 `;

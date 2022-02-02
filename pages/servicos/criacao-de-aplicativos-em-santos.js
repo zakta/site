@@ -1,9 +1,5 @@
 // 3rd parties
 import Head from 'next/head';
-import Image from 'next/image';
-
-// Assets
-import contentImage from '../../public/mobile-app.jpg';
 
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
@@ -20,7 +16,7 @@ const CreateApp = function PageServiceCreateApp() {
         </title>
       </Head>
 
-      <ServiceInfo valueSelect="Criação de Aplicativos">
+      <ServiceInfo valueSelect="Criação de Aplicativos" source="criacao-de-aplicativos-em-santos">
         <Breadcrumb>
           <Breadcrumb.Link href="/">
             Início
@@ -59,12 +55,6 @@ const CreateApp = function PageServiceCreateApp() {
             para você.
           </p>
         </Block>
-
-        <Image
-          data-aos="fade-up"
-          src={contentImage}
-          alt="Aplicativos Mobile"
-        />
       </ServiceInfo>
     </>
   );

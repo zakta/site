@@ -1,10 +1,5 @@
 // 3rd parties
 import Head from 'next/head';
-import Image from 'next/image';
-
-// Assets
-import contentImage from '../../public/web-system.jpg';
-
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
 import { Block } from '../../components/ServiceInfo/styles';
@@ -20,7 +15,7 @@ const WebSystems = function PageServiceWebSystem() {
         </title>
       </Head>
 
-      <ServiceInfo valueSelect="Sistemas Web">
+      <ServiceInfo valueSelect="Sistemas Web" source="sistemas-web-em-santos">
         <Breadcrumb>
           <Breadcrumb.Link href="/">
             Início
@@ -67,12 +62,6 @@ const WebSystems = function PageServiceWebSystem() {
             solução digital para a sua necessidade.
           </p>
         </Block>
-
-        <Image
-          data-aos="fade-up"
-          src={contentImage}
-          alt="Página Web."
-        />
       </ServiceInfo>
     </>
   );

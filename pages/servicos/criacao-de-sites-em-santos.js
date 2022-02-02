@@ -1,9 +1,5 @@
 // 3rd parties
 import Head from 'next/head';
-import Image from 'next/image';
-
-// Assets
-import contentImage from '../../public/website.jpg';
 
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
@@ -20,7 +16,7 @@ const CreateWeb = function PageServiceWeb() {
         </title>
       </Head>
 
-      <ServiceInfo valueSelect="Criação de Sites">
+      <ServiceInfo valueSelect="Criação de Sites" source="criacao-de-sites-em-santos">
         <Breadcrumb>
           <Breadcrumb.Link href="/">
             Início
@@ -65,12 +61,6 @@ const CreateWeb = function PageServiceWeb() {
             negócio.
           </p>
         </Block>
-
-        <Image
-          data-aos="fade-up"
-          src={contentImage}
-          alt="Página Web"
-        />
       </ServiceInfo>
     </>
   );

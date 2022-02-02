@@ -89,7 +89,7 @@ const ContactForm = function ContactFormSection({
   }, [formik, valueSelect]);
 
   return (
-    <Form onSubmit={formik.handleSubmit} data-aos="fade-up">
+    <Form onSubmit={formik.handleSubmit} data-aos="fade-in">
       <Row>
         <Column>
           <InputForm

@@ -1,9 +1,5 @@
 // 3rd parties
 import Head from 'next/head';
-import Image from 'next/image';
-
-// Assets
-import contentImage from '../../public/maintenance.jpg';
 
 // Styles
 import ServiceInfo from '../../components/ServiceInfo';
@@ -20,7 +16,7 @@ const WebMaintenance = function PageServiceWebMaintenance() {
         </title>
       </Head>
 
-      <ServiceInfo valueSelect="Manutenção de Sites">
+      <ServiceInfo valueSelect="Manutenção de Sites" source="manutencao-de-sites-em-santos">
         <Breadcrumb>
           <Breadcrumb.Link href="/">
             Início
@@ -59,12 +55,6 @@ const WebMaintenance = function PageServiceWebMaintenance() {
             para o seu projeto.
           </p>
         </Block>
-
-        <Image
-          data-aos="fade-up"
-          src={contentImage}
-          alt="Código indicando manutenção de sites."
-        />
       </ServiceInfo>
     </>
   );
