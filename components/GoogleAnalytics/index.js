@@ -10,7 +10,7 @@ const GoogleAnalytics = function GoogleAnalyticsPage() {
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'G-D2JC86KHFF', 'auto');
+          ga('create', 'G-369L1KB8QR', 'auto');
           ga('send', 'pageview');
         `}
     </Script>
