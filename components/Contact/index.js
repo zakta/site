@@ -2,7 +2,7 @@
 import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
 import { BsWhatsapp } from 'react-icons/bs';
 import { useState } from 'react';
-
+import { useTranslation } from 'next-i18next';
 // Components
 import ContactForm from '../Form';
 // import Notification from '../Notification';
@@ -24,13 +24,14 @@ const Contact = function ContactPage() {
   const [activeModal, setActiveModal] = useState(false);
   const [formStatus, setFormStatus] = useState('');
 
+  const { t } = useTranslation('common');
   return (
     <Container id="contato">
       <Center>
         <ContactInfo>
-          <TitleSection data-aos="fade-up">Contato</TitleSection>
+          <TitleSection data-aos="fade-up">{t('title-contact')}</TitleSection>
 
-          <h3 data-aos="fade-up">Alguma dúvida? Entre em contato e responderemos em breve.</h3>
+          <h3 data-aos="fade-up">{t('contact-subtitle')}</h3>
         </ContactInfo>
 
         <article data-aos="fade-up">
@@ -51,7 +52,7 @@ const Contact = function ContactPage() {
                 <AiOutlinePhone />
               </Icon>
 
-              <h4>Telefone</h4>
+              <h4>{t('contact-phone')}</h4>
               <p>+55 13 99652-2199</p>
             </a>
           </Card>
@@ -68,12 +69,10 @@ const Contact = function ContactPage() {
           </Card>
         </article>
 
-        <FormTitle data-aos="fade-up">Você pode nos escrever</FormTitle>
+        <FormTitle data-aos="fade-up">{t('form-title')}</FormTitle>
 
         <FormDescription data-aos="fade-up">
-          Por favor preencha este formulário. Seus dados serão privados e
-          utilizados apenas para entendermos melhor suas necessidades. Em até um
-          dia útil, responderemos a sua consulta.
+          {t('form-description')}
         </FormDescription>
 
         <ContactForm

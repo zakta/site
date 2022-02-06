@@ -1,3 +1,6 @@
+// 3rd parties
+import { useTranslation } from 'next-i18next';
+
 // Components
 import Header from '../Header';
 import ArrowIcon from '../ArrowRedirect/styles';
@@ -14,6 +17,8 @@ import {
 } from './styles';
 
 const Home = function HomePage() {
+  const { t } = useTranslation('common');
+
   return (
     <Container>
       <Cover />
@@ -23,20 +28,15 @@ const Home = function HomePage() {
       <Header />
 
       <PageTitle data-aos="fade-up">
-        <h1>Tecnologia Aplicada em Soluções Digitais</h1>
+        <h1>{t('title-home')}</h1>
 
         <p>
-          Somos especialistas em desenvolvimento de sites, lojas virtuais,
-          aplicativos, blogs, sistemas, entre outros softwares.
-
+          {t('home-p1')}
           <br />
-
-          Temos a experiência necessária para entender o seu negócio, propor
-          ideias e construir um projeto totalmente sob medida para a sua
-          empresa.
+          {t('home-p2')}
         </p>
 
-        <ButtonLink href="#contato">Fale com um consultor</ButtonLink>
+        <ButtonLink href="#contato">{t('home-link')}</ButtonLink>
 
         <ArrowLink href="#servicos">
           <ArrowAnimation>

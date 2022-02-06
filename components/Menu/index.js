@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
-// import { useSpring } from 'react-spring';
+import { useTranslation } from 'next-i18next';
 
 // Components
 import Hamburguer from '../Hamburguer';
@@ -19,6 +19,8 @@ import {
 const Menu = function MenuPage({
   isSticky, open, setOpen, activeMenuItem, setActiveMenuItem, stat,
 }) {
+  const { t } = useTranslation('common');
+
   const setOverflow = (event) => {
     document.body.classList[event]('hideOverflow');
   };
@@ -35,6 +37,7 @@ const Menu = function MenuPage({
   }, [open]);
 
   const handleActive = (sectionPage) => setActiveMenuItem(sectionPage);
+
   return (
     <>
       <List
@@ -55,7 +58,7 @@ const Menu = function MenuPage({
                 scrollTop();
               }}
             >
-              Início
+              {t('menu-home')}
             </BtnMenu>
           </Link>
         </ListItem>
@@ -73,7 +76,7 @@ const Menu = function MenuPage({
                   setOpen(false);
                 }}
               >
-                Serviços
+                {t('menu-services')}
               </BtnMenu>
             </Link>
           ) : (
@@ -88,7 +91,7 @@ const Menu = function MenuPage({
                   setOpen(false);
                 }}
               >
-                Serviços
+                {t('menu-services')}
               </BtnMenu>
             </Link>
           )}
@@ -107,7 +110,7 @@ const Menu = function MenuPage({
                 setOpen(false);
               }}
             >
-              Empresa
+              {t('company')}
             </BtnMenu>
           </Link>
         </ListItem>
@@ -124,7 +127,7 @@ const Menu = function MenuPage({
                 setOpen(false);
               }}
             >
-              Contato
+              {t('contact')}
             </BtnMenu>
           </Link>
         </ListItem>
@@ -136,7 +139,7 @@ const Menu = function MenuPage({
             as={`${process.env.BACKEND_URL}/termos-de-servico`}
           >
             <ContactLink>
-              Política de Cookies
+              {t('cookies-policy')}
             </ContactLink>
           </Link>
 
@@ -146,7 +149,7 @@ const Menu = function MenuPage({
             as={`${process.env.BACKEND_URL}/politica-de-privacidade`}
           >
             <ContactLink>
-              Política de Privacidade
+              {t('privacy-policy')}
             </ContactLink>
           </Link>
 

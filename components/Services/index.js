@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'next-i18next';
 
 // Styles
 import {
@@ -12,6 +13,8 @@ import {
 } from '../Card/styles';
 
 const Services = function ServicesPage({ full }) {
+  const { t } = useTranslation('common');
+
   const [icons, setIcons] = useState({
     icon1: 'hover',
     icon2: 'hover',
@@ -28,7 +31,7 @@ const Services = function ServicesPage({ full }) {
   return (
     <Container id="servicos" full={full}>
       <Center>
-        <TitleServices data-aos={full ? '' : 'fade-up'} full={full}>Serviços</TitleServices>
+        <TitleServices data-aos={full ? '' : 'fade-up'} full={full}>{t('title-services')}</TitleServices>
 
         <Cards full={full}>
           <Card
@@ -54,17 +57,14 @@ const Services = function ServicesPage({ full }) {
                   />
                 </Icon>
 
-                <h3>Criação de Sites</h3>
+                <h3>{t('subtitle-services-1')}</h3>
 
-                <p>
-                  Sites modernos, responsivos, com design personalizado e
-                  totalmente profissional.
-                </p>
+                <p>{t('text-services-1')}</p>
 
                 <ArrowRight>
                   <ArrowRightIcon />
 
-                  <span>Ver Mais</span>
+                  <span>{t('arrow-services')}</span>
                 </ArrowRight>
               </a>
             </Link>
@@ -93,15 +93,13 @@ const Services = function ServicesPage({ full }) {
                   />
                 </Icon>
 
-                <h3>Lojas Virtuais</h3>
+                <h3>{t('subtitle-services-2')}</h3>
 
-                <p>
-                  Criação de lojas virtuais adequadas ao seu negócio.
-                </p>
+                <p>{t('text-services-2')}</p>
 
                 <ArrowRight>
                   <ArrowRightIcon />
-                  <span>Ver Mais</span>
+                  <span>{t('arrow-services')}</span>
                 </ArrowRight>
               </a>
             </Link>
@@ -130,15 +128,13 @@ const Services = function ServicesPage({ full }) {
                   />
                 </Icon>
 
-                <h3>Sistemas Web</h3>
+                <h3>{t('subtitle-services-3')}</h3>
 
-                <p>
-                  Sistemas acessados pela web totalmente personalizados.
-                </p>
+                <p>{t('text-services-3')}</p>
 
                 <ArrowRight>
                   <ArrowRightIcon />
-                  <span>Ver Mais</span>
+                  <span>{t('arrow-services')}</span>
                 </ArrowRight>
               </a>
             </Link>
@@ -167,13 +163,13 @@ const Services = function ServicesPage({ full }) {
                   />
                 </Icon>
 
-                <h3>Otimização de Sites - SEO</h3>
+                <h3>{t('subtitle-services-4')}</h3>
 
-                <p>Seu site em destaque no Google através de SEO.</p>
+                <p>{t('text-services-4')}</p>
 
                 <ArrowRight>
                   <ArrowRightIcon />
-                  <span>Ver Mais</span>
+                  <span>{t('arrow-services')}</span>
                 </ArrowRight>
               </a>
             </Link>
@@ -202,13 +198,13 @@ const Services = function ServicesPage({ full }) {
                   />
                 </Icon>
 
-                <h3>Criação de Aplicativos</h3>
+                <h3>{t('subtitle-services-5')}</h3>
 
-                <p>Desenvolvimento de aplicativos para Android e Iphone.</p>
+                <p>{t('text-services-5')}</p>
 
                 <ArrowRight>
                   <ArrowRightIcon />
-                  <span>Ver Mais</span>
+                  <span>{t('arrow-services')}</span>
                 </ArrowRight>
               </a>
             </Link>
@@ -237,13 +233,13 @@ const Services = function ServicesPage({ full }) {
                   />
                 </Icon>
 
-                <h3>Manutenção de Sites</h3>
+                <h3>{t('subtitle-services-6')}</h3>
 
-                <p>Sustentação de sites e atendimento técnico.</p>
+                <p>{t('text-services-6')}</p>
 
                 <ArrowRight>
                   <ArrowRightIcon />
-                  <span>Ver Mais</span>
+                  <span>{t('arrow-services')}</span>
                 </ArrowRight>
               </a>
             </Link>
@@ -272,16 +268,13 @@ const Services = function ServicesPage({ full }) {
                   />
                 </Icon>
 
-                <h3>Landing Pages</h3>
+                <h3>{t('subtitle-services-7')}</h3>
 
-                <p>
-                  Página única com forte apelo comercial e eficiente para a coleta de
-                  leads.
-                </p>
+                <p>{t('text-services-7')}</p>
 
                 <ArrowRight>
                   <ArrowRightIcon />
-                  <span>Ver Mais</span>
+                  <span>{t('arrow-services')}</span>
                 </ArrowRight>
               </a>
             </Link>
@@ -310,16 +303,13 @@ const Services = function ServicesPage({ full }) {
                   />
                 </Icon>
 
-                <h3>Consultoria e Análise de Sistemas</h3>
+                <h3>{t('subtitle-services-8')}</h3>
 
-                <p>
-                  Profissionais especializados para desenvolvimento e análise de
-                  sistemas.
-                </p>
+                <p>{t('text-services-8')}</p>
 
                 <ArrowRight>
                   <ArrowRightIcon />
-                  <span>Ver Mais</span>
+                  <span>{t('arrow-services')}</span>
                 </ArrowRight>
               </a>
             </Link>
@@ -348,15 +338,13 @@ const Services = function ServicesPage({ full }) {
                   />
                 </Icon>
 
-                <h3>Marketing Digital</h3>
+                <h3>{t('subtitle-services-9')}</h3>
 
-                <p>
-                  Análise de palavras-chaves e campanhas Google Adwords.
-                </p>
+                <p>{t('text-services-9')}</p>
 
                 <ArrowRight>
                   <ArrowRightIcon />
-                  <span>Ver Mais</span>
+                  <span>{t('arrow-services')}</span>
                 </ArrowRight>
               </a>
             </Link>
@@ -385,13 +373,13 @@ const Services = function ServicesPage({ full }) {
                   />
                 </Icon>
 
-                <h3>Criação de Blogs</h3>
+                <h3>{t('subtitle-services-10')}</h3>
 
-                <p>Blogs modernos, profissionais e totalmente sob medida.</p>
+                <p>{t('text-services-10')}</p>
 
                 <ArrowRight>
                   <ArrowRightIcon />
-                  <span>Ver Mais</span>
+                  <span>{t('arrow-services')}</span>
                 </ArrowRight>
               </a>
             </Link>
@@ -404,7 +392,7 @@ const Services = function ServicesPage({ full }) {
         >
           <Link passHref href="/servicos">
             <AllServicesButton>
-              Conheça todos os serviços
+              {t('button-services')}
             </AllServicesButton>
           </Link>
         </AllServices>

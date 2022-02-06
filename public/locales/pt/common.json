@@ -1,0 +1,111 @@
+{
+  "title": "Criação de sites em Santos | Zakta Tecnologia",
+  "menu-home": "Início",
+  "menu-services": "Serviços",
+  "company": "Empresa",
+  "contact": "Contato",
+  "cookies-policy": "Política de Cookies",
+  "privacy-policy": "Política de Privacidade",
+
+  "title-home": "Tecnologia Aplicada em Soluções Digitais",
+  "home-p1": "Somos especialistas em desenvolvimento de sites, lojas virtuais, aplicativos, blogs, sistemas, entre outros softwares.",
+  "home-p2": "Temos a experiência necessária para entender o seu negócio, propor ideias e construir um projeto totalmente sob medida para a sua empresa.",
+  "home-link": "Fale com um consultor",
+
+  "title-services": "Serviços",
+  "subtitle-services-1": "Criação de Sites",
+  "text-services-1": "Sites modernos, responsivos, com design personalizado e totalmente profissional.",
+
+  "subtitle-services-2": "Lojas Virtuais",
+  "text-services-2": "Criação de lojas virtuais adequadas ao seu negócio.",
+
+  "subtitle-services-3": "Sistemas Web",
+  "text-services-3": " Sistemas acessados pela web totalmente personalizados.",
+
+  "subtitle-services-4": "Otimização de Sites - SEO",
+  "text-services-4": " Seu site em destaque no Google através de SEO.",
+
+  "subtitle-services-5": "Criação de Aplicativos",
+  "text-services-5": " Desenvolvimento de aplicativos para Android e Iphone.",
+
+  "subtitle-services-6": "Manutenção de Sites",
+  "text-services-6": " Sustentação de sites e atendimento técnico.",
+
+  "subtitle-services-7": "Landing Pages",
+  "text-services-7": " Página única com forte apelo comercial e eficiente para a coleta de leads.",
+
+  "subtitle-services-8": "Consultoria e Análise de Sistemas",
+  "text-services-8": " Profissionais especializados para desenvolvimento e análise de sistemas.",
+
+  "subtitle-services-9": "Marketing Digital",
+  "text-services-9": " Análise de palavras-chave e campanhas Google Adwords.",
+
+  "subtitle-services-10": "Criação de Blogs",
+  "text-services-10": " Blogs modernos, profissionais e totalmente sob medida.",
+
+   "arrow-services": "Ver mais",
+   "button-services": "Conheça todos os serviços",
+
+  "title-about": "Empresa",
+  "about-info": "A Zakta existe para criar soluções que facilitem ações e gerem resultados para pessoas e empresas com tecnologia especializada.",
+  "about-company-p1": "Uma empresa de tecnologia da informação especializada em análise, desenvolvimento, consultoria e implementação de aplicações web e mobile.",
+  "about-company-p2": "Atuamos desde a fase inicial de concepção do plano de negócios até a publicação do projeto. Temos uma equipe especializada que é capaz de criar diversas aplicações e em diferentes linguagens de programação e tecnologias.",
+  "about-company-p3": "Nosso objetivo é transformar a nossa experiência e bagagem profissional em meios de atingir o resultado esperado por nossos clientes através de nossas soluções digitais.",
+  "about-list-p1": "Equipe experiente e altamente qualificada",
+  "about-list-p2": "Expertise em diferentes ferramentas e softwares",
+  "about-list-p3": "Projetos com resultados comprovados",
+  "about-list-p4": "Atendimento técnico ágil e eficaz ",
+
+  "company-title-1": "Entendemos as necessidades do seu negócio",
+  "company-text-1": "Como funciona?",
+
+  "company-title-2": "Elaboração de plano e propostas",
+  "company-text-2": "Analisamos os requisitos, montamos uma estratégia adequada e apresentamos as propostas.",
+
+  "company-title-3": "Desenvolvimento e testes de qualidade",
+  "company-text-3": "Durante a fase de produção, realizamos constantes reuniões com a equipe e cliente para acompanhamento do andamento e aprovações das principais entregas.",
+
+  "company-title-4": "Publicação e suporte",
+  "company-text-4": "Após a validação final do projeto, realizamos a publicação, com a medição de acessos, acompanhamento de resultados e suporte imediato.",
+
+  "title-contact" : "Contato",
+  "contact-subtitle" : "Alguma dúvida? Entre em contato e responderemos em breve.",
+  "contact-phone" : "Telefone",
+  "form-title" : "Você pode nos escrever",
+  "form-description" : "Por favor preencha este formulário. Seus dados serão privados e utilizados apenas para entendermos melhor suas necessidades. Em até um dia útil, responderemos a sua consulta.",
+
+  "validate-name": "Mínimo 3 letras",
+  "validate-name-1": "Preencha o nome",
+  "validate-phone": "No mínimo 11 números",
+  "validate-phone-1": "Preencha o número",
+  "validate-email": "E-mail inválido",
+  "validate-email-1": "Preencha o e-mail",
+  "validate-subject": "Selecione o assunto",
+  "validate-message": "Preencha a mensagem",
+
+  "form-name-placeholder" : "Nome",
+  "form-phone-placeholder" : "Telefone",
+  "form-mail-placeholder" : "E-mail",
+  "form-subject-placeholder" : "Selecione um assunto",
+
+  "form-subject-label" : "Selecione um assunto",
+  "form-subject-option-1" : "Criação de Sites",
+  "form-subject-option-2" : "Lojas Virtuais",
+  "form-subject-option-3" : "Sistemas Web",
+  "form-subject-option-4" : "Otimização de Sites - SEO",
+  "form-subject-option-5" : "Criação de Aplicativos",
+  "form-subject-option-6" : "Manutenção de Sites",
+  "form-subject-option-7" : "Landing Pages",
+  "form-subject-option-8" : "Consultoria e Análise de Sistemas",
+  "form-subject-option-9" : "Marketing Digital",
+  "form-subject-option-10" : "Criação de Blogs",
+  "form-subject-option-11" : "Outros",
+
+
+
+
+  "form-message-placeholder" : "Mensagem",
+  "form-submit" : "Enviar Mensagem",
+
+  "footer-copyright" : "ZAKTA Tecnologia todos direitos reservados."
+}

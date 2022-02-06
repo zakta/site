@@ -1,4 +1,7 @@
+// 3rd parties
 import { GoCheck } from 'react-icons/go';
+import { useTranslation } from 'next-i18next';
+// styles
 import TitleSection from '../SectionTitle/styles';
 import {
   AboutInfo,
@@ -10,32 +13,25 @@ import {
 } from './styles';
 
 const About = function AboutPage() {
+  const { t } = useTranslation('common');
+
   return (
     <Container>
-      <TitleSection data-aos="fade-up">Empresa</TitleSection>
+      <TitleSection data-aos="fade-up">{t('title-about')}</TitleSection>
 
       <AboutDivision>
         <AboutInfo data-aos="fade-up">
           <h3>
-            A Zakta existe para criar soluções que facilitem ações e gerem resultados para
-            pessoas e empresas com tecnologia especializada.
+            {t('about-info')}
           </h3>
         </AboutInfo>
 
         <AboutCompany data-aos="fade-up">
-          <p>
-            Uma empresa de tecnologia da informação especializada em análise, desenvolvimento,
-            consultoria e implementação de aplicações web e mobile.
-          </p>
-          <p>
-            Atuamos desde a fase inicial de concepção do plano de negócios até a publicação do
-            projeto. Temos uma equipe especializada que é capaz de criar diversas aplicações e em
-            diferentes linguagens de programação e tecnologias.
-          </p>
-          <p>
-            Nosso objetivo é transformar a nossa experiência e bagagem profissional em meios de
-            atingir o resultado esperado por nossos clientes através de nossas soluções digitais.
-          </p>
+          <p>{t('about-company-p1')}</p>
+
+          <p>{t('about-company-p2')}</p>
+
+          <p>{t('about-company-p3')}</p>
         </AboutCompany>
       </AboutDivision>
 
@@ -44,28 +40,28 @@ const About = function AboutPage() {
           <Check>
             <GoCheck />
           </Check>
-          <p>Equipe experiente e altamente qualificada</p>
+          <p>{t('about-list-p1')}</p>
         </li>
 
         <li data-aos="fade-up">
           <Check>
             <GoCheck />
           </Check>
-          <p>Expertise em diferentes ferramentas e softwares</p>
+          <p>{t('about-list-p2')}</p>
         </li>
 
         <li data-aos="fade-up">
           <Check>
             <GoCheck />
           </Check>
-          <p>Projetos com resultados comprovados</p>
+          <p>{t('about-list-p3')}</p>
         </li>
 
         <li data-aos="fade-up">
           <Check>
             <GoCheck />
           </Check>
-          <p>Atendimento técnico ágil e eficaz</p>
+          <p>{t('about-list-p4')}</p>
         </li>
       </List>
     </Container>

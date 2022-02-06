@@ -1,3 +1,6 @@
+// 3rd parties
+import { useTranslation } from 'next-i18next';
+
 // Components
 import About from '../About';
 
@@ -11,6 +14,8 @@ import {
 } from './styles';
 
 const Company = function CompanyPage() {
+  const { t } = useTranslation('common');
+
   return (
     <Container id="empresa">
       <Center>
@@ -24,36 +29,23 @@ const Company = function CompanyPage() {
 
         <Box>
           <Notes data-aos="fade-up">
-            <p>Como funciona?</p>
-            <h4 className="title-notes">
-              Entendemos as necessidades do seu negócio
-            </h4>
+            <p>{t('company-text-1')}</p>
+            <h4 className="title-notes">{t('company-title-1')}</h4>
           </Notes>
 
           <Notes data-aos="fade-up">
-            <h4>Elaboração do plano e propostas</h4>
-            <p>
-              Analisamos os requisitos, montamos uma estratégia adequada
-              e apresentamos as propostas.
-            </p>
+            <h4>{t('company-title-2')}</h4>
+            <p>{t('company-text-2')}</p>
           </Notes>
 
           <Notes data-aos="fade-up">
-            <h4 className="text-grey">Desenvolvimento e testes de qualidade</h4>
-            <p className="text-grey">
-              Durante a fase de produção, realizamos constantes reuniões com a
-              equipe e cliente para acompanhamento do andamento e aprovações
-              das principais entregas.
-            </p>
+            <h4 className="text-grey">{t('company-title-3')}</h4>
+            <p className="text-grey">{t('company-text-3')}</p>
           </Notes>
 
           <Notes data-aos="fade-up">
-            <h4>Publicação e suporte</h4>
-            <p>
-              Após a validação final do projeto, realizamos a publicação, com a
-              medição de acessos, acompanhamento de resultados e suporte
-              imediato.
-            </p>
+            <h4>{t('company-title-4')}</h4>
+            <p>{t('company-text-4')}</p>
           </Notes>
         </Box>
       </Center>

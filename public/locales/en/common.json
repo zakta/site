@@ -1,0 +1,108 @@
+{
+  "title": "Building websites in Santos | Zakta Technology",
+  "menu-home": "Home",
+  "menu-services": "Services",
+  "company": "Company",
+  "contact": "Contact",
+  "cookies-policy": "Cookies Policy",
+  "privacy-policy": "Privacy Policy",
+  "title-home": "Applied Technology in Digital Solutions ",
+  "home-p1" : "We are specialist in websites development, virtual stores, applications, blogs, systems, among other software.",
+  "home-p2" : "We have the required experience to understand your business, offer ideas and built a project totally custom-made for your company.",
+  "home-link": "Talk to a consultant",
+
+  "title-services": "Services",
+  "subtitle-services-1": "Website Creation",
+  "text-services-1": "Modern websites, responsive, with personalized design and totally professional.",
+
+  "subtitle-services-2": "Virtual Stores",
+  "text-services-2": "Creation of virtual stores suitable to your business.",
+
+  "subtitle-services-3": "Web Systems",
+  "text-services-3": "Systems accessed by web totally personalized.",
+
+  "subtitle-services-4": "Website optimization - SEO",
+  "text-services-4": "Your website highlighted on Google through SEO.",
+
+  "subtitle-services-5": "App Creation",
+  "text-services-5": "Application development for Android and iPhone.",
+
+  "subtitle-services-6": "Website Maintenance",
+  "text-services-6": "Websites support and technical attendance.",
+
+  "subtitle-services-7": "Landing Pages",
+  "text-services-7": "Single page with strong commercial appeal and efficient for collection of leads.",
+
+  "subtitle-services-8": "Consultancy and System Analysis",
+  "text-services-8": "Professionals specialized to development and system analysis",
+
+  "subtitle-services-9": "Digital Marketing",
+  "text-services-9": "Analysis of key words and campaigns Google AdWords",
+
+  "subtitle-services-10": "Blog Creation",
+  "text-services-10": "Modern blogs, professional and totally custom-made.",
+
+  "arrow-services": "See more",
+  "button-services": "See all services",
+
+  "title-about": "Company",
+  "about-info": "Zakta exists to create solutions that facilitate actions and generate results to peaple and companies with specialized technology.",
+  "about-company-p1": "A information technology company specialized on analysis, development, consultancy and implementation of applications web and mobile.",
+  "about-company-p2": "We act since the initial phase of the business plan conception to the project publication. We have a team specialized capable of creating diverse applications in different programming languages and technologies. ",
+  "about-company-p3": "Our goal is to transform our experience and professional baggage in means to achieve the outcome expected by our clients through our digital solutions.",
+  "about-list-p1": "Experienced and highly qualified team",
+  "about-list-p2": "Expertise in multiple tools and software",
+  "about-list-p3": "Projects with proven results",
+  "about-list-p4": "Technical attendance agile and effective",
+
+  "company-title-1": "We understand the needs of your business",
+  "company-text-1": "How does it work?",
+
+  "company-title-2": "Elaborate plan and proposals",
+  "company-text-2": "We analyze the requisites, assemble an adequate strategy and present the proposals.",
+
+  "company-title-3": "Development and quality tests",
+  "company-text-3": "During the production phase, we perform constant meetings with the team and client to follow through the progress and approve the main deliveries.",
+
+  "company-title-4": "Publication and support",
+  "company-text-4": "After the final validation of the project, we perform the publication, measuring the access, follow through the results and immediate support.",
+
+  "title-contact" : "Contact",
+  "contact-subtitle" : "Any doubt? Reach out to us and we will reply soon.",
+  "contact-phone" : "Phone",
+  "form-title": "You can write us",
+  "form-description" : "Please fill out this form. Your data will remain private and will only be used to better understand your needs. We will answer you within one business day.",
+
+  "validate-name": "At least 3 letters",
+  "validate-name-1": "Fill out name",
+  "validate-phone": "At least 11 numbers",
+  "validate-phone-1": "Fill out number",
+  "validate-email": "Invalid e-mail ",
+  "validate-email-1": "Fill out e-mail",
+  "validate-subject": "Choose subject",
+  "validate-message": "Fill out message",
+
+  "form-name-placeholder" : "Name",
+  "form-phone-placeholder" : "Phone",
+  "form-mail-placeholder" : "E-mail",
+  "form-subject-placeholder" : "Choose a subject",
+
+
+  "form-subject-label" : "Choose a subject",
+  "form-subject-option-1" : "Website Creation",
+  "form-subject-option-2" : "Virtual Stores",
+  "form-subject-option-3" : "Web system",
+  "form-subject-option-4" : "Website optimization - SEO",
+  "form-subject-option-5" : "App Creation",
+  "form-subject-option-6" : "Website Maintenance",
+  "form-subject-option-7" : "Landing Pages",
+  "form-subject-option-8" : "Consultancy and System Analysis",
+  "form-subject-option-9" : "Digital Marketing",
+  "form-subject-option-10" : "Blog Creation",
+  "form-subject-option-11" : "Other",
+
+  "form-message-placeholder" : "Message",
+  "form-submit" : "Send Message",
+
+  "footer-copyright" : "ZAKTA Technology all rights reserved."
+}

@@ -1,6 +1,7 @@
 // 3rd parties
 import AOS from 'aos';
 import Head from 'next/head';
+import { appWithTranslation } from 'next-i18next';
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 
@@ -35,4 +36,4 @@ App.propTypes = {
   pageProps: PropTypes.shape({}).isRequired,
 };
 
-export default App;
+export default appWithTranslation(App);

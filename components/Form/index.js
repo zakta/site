@@ -3,6 +3,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
+import { useTranslation } from 'next-i18next';
 // styles
 import LoaderForm from '../LoaderForm';
 import {
@@ -12,6 +13,8 @@ import {
 const ContactForm = function ContactFormSection({
   setFormStatus, setActiveModal, valueSelect,
 }) {
+  const { t } = useTranslation('common');
+
   function mtel(phoneRaw) {
     let phoneMasked = phoneRaw;
 
@@ -51,18 +54,18 @@ const ContactForm = function ContactFormSection({
     },
     validationSchema: Yup.object().shape({
       name: Yup.string()
-        .min(3, 'Mínimo 3 letras')
-        .required('Preencha o nome'),
+        .min(3, t('validate-name'))
+        .required(t('validate-name-1')),
       phone: Yup.string()
-        .min(15, 'No mínimo 11 números')
-        .required('Preencha o número'),
+        .min(15, t('validate-phone'))
+        .required(t('validate-phone-1')),
       email: Yup.string()
-        .email('E-mail inválido')
-        .required('Preencha o e-mail'),
+        .email(t('validate-email'))
+        .required(t('validate-email-1')),
       subject: Yup.string()
-        .required('Selecione o assunto'),
+        .required(t('validate-subject')),
       message: Yup.string()
-        .required('Preencha a mensagem'),
+        .required(t('validate-message')),
     }),
     onSubmit: async (values) => {
       const response = await submitFormData(values);
@@ -95,7 +98,7 @@ const ContactForm = function ContactFormSection({
           <InputForm
             name="name"
             type="text"
-            placeholder="Nome"
+            placeholder={t('form-name-placeholder')}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.name}
@@ -116,7 +119,7 @@ const ContactForm = function ContactFormSection({
             name="phone"
             type="text"
             maxLength={15}
-            placeholder="Telefone"
+            placeholder={t('form-phone-placeholder')}
             onChange={(e) => formik.setFieldValue('phone', mtel(e.target.value))}
             onBlur={formik.handleBlur}
             value={formik.values.phone}
@@ -138,7 +141,7 @@ const ContactForm = function ContactFormSection({
           <InputForm
             name="email"
             type="text"
-            placeholder="E-mail"
+            placeholder={t('form-mail-placeholder')}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
@@ -159,7 +162,7 @@ const ContactForm = function ContactFormSection({
             <DropDown
               name="subject"
               type="select"
-              placeholder="Selecione um Assunto"
+              placeholder={t('form-subject-placeholder')}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.subject}
@@ -169,18 +172,40 @@ const ContactForm = function ContactFormSection({
               className="arrow"
               defaultValue="Selecione um Assunto"
             >
-              <option value="" disabled label="Selecione um Assunto" />
-              <option value="Criação de Sites">Criação de Sites</option>
-              <option value="Lojas Virtuais">Lojas Virtuais</option>
-              <option value="Sistemas Web">Sistemas Web</option>
-              <option value="Otimização de Sites">Otimização de Sites - SEO</option>
-              <option value="Criação de Aplicativos">Criação de Aplicativos</option>
-              <option value="Manutenção de Sites">Manutenção de Sites</option>
-              <option value="Landing Pages">Landing Pages</option>
-              <option value="Consultoria e Análise de Sistemas">Consultoria e Análise de Sistemas</option>
-              <option value="Marketing Digital">Marketing Digital</option>
-              <option value="Criação de Blogs">Criação de Blogs</option>
-              <option value="Outros">Outros</option>
+              <option value="" disabled label={t('form-subject-label')} />
+              <option value="Criação de Sites">
+                {t('form-subject-option-1')}
+              </option>
+              <option value="Lojas Virtuais">
+                {t('form-subject-option-2')}
+              </option>
+              <option value="Sistemas Web">
+                {t('form-subject-option-3')}
+              </option>
+              <option value="Otimização de Sites">
+                {t('form-subject-option-4')}
+              </option>
+              <option value="Criação de Aplicativos">
+                {t('form-subject-option-5')}
+              </option>
+              <option value="Manutenção de Sites">
+                {t('form-subject-option-6')}
+              </option>
+              <option value="Landing Pages">
+                {t('form-subject-option-7')}
+              </option>
+              <option value="Consultoria e Análise de Sistemas">
+                {t('form-subject-option-8')}
+              </option>
+              <option value="Marketing Digital">
+                {t('form-subject-option-9')}
+              </option>
+              <option value="Criação de Blogs">
+                {t('form-subject-option-10')}
+              </option>
+              <option value="Outros">
+                {t('form-subject-option-11')}
+              </option>
             </DropDown>
           </div>
           {formik.touched.subject && formik.errors.subject && (
@@ -194,7 +219,7 @@ const ContactForm = function ContactFormSection({
       <Textarea
         name="message"
         type="submit"
-        placeholder="Mensagem"
+        placeholder={t('form-message-placeholder')}
         onChange={formik.handleChange}
         onBlur={formik.handleBlur}
         value={formik.values.message}
@@ -215,7 +240,7 @@ const ContactForm = function ContactFormSection({
         loader={formik.isSubmitting}
         className="loader"
       >
-        Enviar Mensagem
+        {t('form-submit')}
 
         <LoaderForm loader={formik.isSubmitting} />
       </BtnSubmit>

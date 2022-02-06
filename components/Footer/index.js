@@ -1,6 +1,7 @@
 // 3rd parties
 import Link from 'next/link';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'next-i18next';
 
 // Components
 import Logo from '../Logo';
@@ -17,6 +18,8 @@ import {
 import getFullYear from '../../functions/getFullYear';
 
 const Footer = function FooterPage({ cookiesModalHeight }) {
+  const { t } = useTranslation('common');
+
   return (
     <Container cookiesModalHeight={cookiesModalHeight}>
       <Box>
@@ -38,7 +41,7 @@ const Footer = function FooterPage({ cookiesModalHeight }) {
             as={`${process.env.BACKEND_URL}/termos-de-servico`}
           >
             <ContactLink>
-              Política de Cookies
+              {t('cookies-policy')}
             </ContactLink>
           </Link>
           <Link
@@ -47,7 +50,7 @@ const Footer = function FooterPage({ cookiesModalHeight }) {
             as={`${process.env.BACKEND_URL}/politica-de-privacidade`}
           >
             <ContactLink>
-              Política de Privacidade
+              {t('privacy-policy')}
             </ContactLink>
           </Link>
           <ContactLink href="mailto:contato@zakta.com.br" target="_blank">
@@ -63,7 +66,7 @@ const Footer = function FooterPage({ cookiesModalHeight }) {
         {' '}
         {getFullYear()}
         {' '}
-        ZAKTA Tecnologia todos direitos reservados.
+        {t('footer-copyright')}
       </Copyright>
     </Container>
   );
