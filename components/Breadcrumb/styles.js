@@ -58,7 +58,7 @@ export const Actual = styled.div`
   color: #1a3968;
   font-size: 14px;
   font-weight: 400;
-  padding-top: 3px;
+  padding-top: 2px;
 `;
 
 export const Cover = styled.div`
