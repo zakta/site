@@ -67,16 +67,20 @@ export const ImageContainer = styled.div`
   display: ${({ none }) => (none ? 'none' : 'block')};
 
 
-  &.container-parallax{
-    position: relative;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
+    &.container-parallax{
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    .parallax{
+      position: sticky;
+      width: 100%;
+      object-fit: cover;
+    }
+
+  @media (min-width: 420px){
+    &.container-parallax{
+      height: 300px;
+    }
   }
-  .parallax{
-    position: sticky;
-    width: 100%;
-    min-width: 400px;
-    object-fit: cover;
-  }
-`;
+    `;
