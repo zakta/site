@@ -39,19 +39,21 @@ const ServiceInfo = function ComponentServiceInfo({
         <About>
           {children}
 
-          <div data-aos="fade-in" style={{ textAlign: 'center' }}>
-            <ButtonToDown
-              type="button"
-              onClick={() => {
-                window.scrollTo({
-                  behavior: 'smooth',
-                  top: document.body.scrollHeight,
-                });
-              }}
-            >
-              Solicite um orçamento
-            </ButtonToDown>
-          </div>
+          {valueSelect && (
+            <div data-aos="fade-in" style={{ textAlign: 'center' }}>
+              <ButtonToDown
+                type="button"
+                onClick={() => {
+                  window.scrollTo({
+                    behavior: 'smooth',
+                    top: document.body.scrollHeight,
+                  });
+                }}
+              >
+                Solicite um orçamento
+              </ButtonToDown>
+            </div>
+          )}
 
           <ImageContainer className="container-parallax" none={none}>
             <img
