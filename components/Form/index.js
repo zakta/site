@@ -1,117 +1,196 @@
-import { useFormik } from "formik";
-import * as Yup from "yup";
-import { Erro, Form, InputForm, Position, Textarea } from "./styles";
+// 3rd parties
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
+import PropTypes from 'prop-types';
+import { useEffect } from 'react';
+// styles
+import LoaderForm from '../LoaderForm';
+import {
+  Erro, Form, InputForm, Position, Textarea, BtnSubmit, Row, Column, DropDown,
+} from './styles';
 
-export default function ContactForm() {
-  function showPopUp() {
-    const popUp = document.getElementById("popUp");
-    const display = popUp.classList.remove("showPopUp");
+const ContactForm = function ContactFormSection({
+  setFormStatus, setActiveModal, valueSelect,
+}) {
+  function mtel(phoneRaw) {
+    let phoneMasked = phoneRaw;
 
-    return display;
+    phoneMasked = phoneMasked.replace(/\D/g, '');
+    phoneMasked = phoneMasked.replace(/^(\d{2})(\d)/g, '($1) $2');
+    phoneMasked = phoneMasked.replace(/(\d)(\d{4})$/, '$1-$2');
+
+    return phoneMasked;
   }
 
-  function mtel(o) {
-    o = o.replace(/\D/g, "");
-    o = o.replace(/^(\d{2})(\d)/g, "($1) $2");
-    o = o.replace(/(\d)(\d{4})$/, "$1-$2");
+  function submitFormData(dataForm) {
+    const data = {
+      service_id: 'service_mpjyx3g',
+      template_id: 'template_w8vin3g',
+      user_id: 'user_rizvggYkHJhDIQF4MJsbR',
+      template_params: dataForm,
+    };
 
-    return o;
+    const config = {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: new Headers({
+        'Content-type': 'application/json',
+      }),
+    };
+
+    return fetch('https://api.emailjs.com/api/v1.0/email/send', config);
   }
 
   const formik = useFormik({
     initialValues: {
-      name: "",
-      tel: "",
-      email: "",
-      subject: "",
-      message: "",
+      name: '',
+      phone: '',
+      email: '',
+      subject: '',
+      message: '',
     },
-    validationSchema: Yup.object({
+    validationSchema: Yup.object().shape({
       name: Yup.string()
-        .min(3, "O nome precisa ter no mínimo 3 caracteres.")
-        .required("Preencha o nome."),
-      tel: Yup.string()
-        .min(15, "O telefone precisa ter no mínimo 11 números.")
-        .required("Preencha o número."),
+        .min(3, 'Mínimo 3 letras')
+        .required('Preencha o nome'),
+      phone: Yup.string()
+        .min(15, 'No mínimo 11 números')
+        .required('Preencha o número'),
       email: Yup.string()
-        .email("E-mail inválido.")
-        .required("Preencha o e-mail."),
+        .email('E-mail inválido')
+        .required('Preencha o e-mail'),
       subject: Yup.string()
-        .min(10, "O assunto precisa ter no máximo 10 caracteres")
-        .required("Preencha o assunto."),
+        .required('Selecione o assunto'),
       message: Yup.string()
-        .min(20, "A mensagem deve ter no mínimo 20 caracteres.")
-        .required("Preencha a mensagem."),
+        .required('Preencha a mensagem'),
     }),
-    onSubmit: () => {
-      showPopUp();
+    onSubmit: async (values) => {
+      const response = await submitFormData(values);
+
+      setFormStatus(response.ok ? 'success' : 'error');
+
+      setActiveModal(true);
+
+      if (response.ok) {
+        formik.resetForm();
+      }
     },
   });
 
+  useEffect(() => {
+    if (formik.values.subject === '' && valueSelect) {
+      formik.setFieldValue('subject', valueSelect);
+    }
+
+    if (!formik.isSubmitting) return;
+    if (Object.keys(formik.errors).length > 0) {
+      document.getElementsByName(Object.keys(formik.errors)[0])[0].focus();
+    }
+  }, [formik, valueSelect]);
+
   return (
-    <Form onSubmit={formik.handleSubmit}>
-      <div style={{ position: 'relative' }}>
-        <InputForm
-          name="name"
-          type="text"
-          placeholder="Nome"
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.name}
-          error={formik.touched.name && formik.errors.name}
-        />
-        {formik.touched.name && formik.errors.name ? (
-          <Erro>{formik.errors.name}</Erro>
-        ) : null}
-      </div>
+    <Form onSubmit={formik.handleSubmit} data-aos="fade-in">
+      <Row>
+        <Column>
+          <InputForm
+            name="name"
+            type="text"
+            placeholder="Nome"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.name}
+            error={formik.errors.name}
+            touched={formik.touched.name}
+            readOnly={formik.isSubmitting}
+          />
 
-      <InputForm
-        name="tel"
-        type="text"
-        maxLength={15}
-        placeholder="Telefone"
-        onChange={(e) => {
-          const value = e.target.value;
+          {formik.touched.name && formik.errors.name && (
+            <Position>
+              <Erro>{formik.errors.name}</Erro>
+            </Position>
+          )}
+        </Column>
 
-          formik.setFieldValue("tel", mtel(value));
-        }}
-        onBlur={formik.handleBlur}
-        value={formik.values.tel}
-        error={formik.touched.tel && formik.errors.tel}
-      />
-      {formik.touched.tel && formik.errors.tel ? (
-        <Position>
-          <Erro>{formik.errors.tel}</Erro>
-        </Position>
-      ) : null}
-      <InputForm
-        name="email"
-        type="email"
-        placeholder="E-mail"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.email}
-        error={formik.touched.email && formik.errors.email}
-      />
-      {formik.touched.email && formik.errors.email ? (
-        <Position>
-          <Erro>{formik.errors.email}</Erro>
-        </Position>
-      ) : null}
-      <InputForm
-        name="subject"
-        type="text"
-        placeholder="Assunto"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.subject}
-        error={formik.touched.subject && formik.errors.subject}
-      />
-      {formik.touched.subject && formik.errors.subject ? (
-        <Position>
-          <Erro>{formik.errors.subject}</Erro>
-        </Position>
-      ) : null}
+        <Column>
+          <InputForm
+            name="phone"
+            type="text"
+            maxLength={15}
+            placeholder="Telefone"
+            onChange={(e) => formik.setFieldValue('phone', mtel(e.target.value))}
+            onBlur={formik.handleBlur}
+            value={formik.values.phone}
+            error={formik.errors.phone}
+            touched={formik.touched.phone}
+            readOnly={formik.isSubmitting}
+          />
+
+          {formik.touched.phone && formik.errors.phone && (
+            <Position>
+              <Erro>{formik.errors.phone}</Erro>
+            </Position>
+          )}
+        </Column>
+      </Row>
+
+      <Row>
+        <Column>
+          <InputForm
+            name="email"
+            type="text"
+            placeholder="E-mail"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.email}
+            error={formik.errors.email}
+            touched={formik.touched.email}
+            readOnly={formik.isSubmitting}
+          />
+
+          {formik.touched.email && formik.errors.email && (
+            <Position>
+              <Erro>{formik.errors.email}</Erro>
+            </Position>
+          )}
+        </Column>
+
+        <Column>
+          <div>
+            <DropDown
+              name="subject"
+              type="select"
+              placeholder="Selecione um Assunto"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.subject}
+              error={formik.errors.subject}
+              touched={formik.touched.subject}
+              readOnly={formik.isSubmitting}
+              className="arrow"
+              defaultValue="Selecione um Assunto"
+            >
+              <option value="" disabled label="Selecione um Assunto" />
+              <option value="Criação de Sites">Criação de Sites</option>
+              <option value="Lojas Virtuais">Lojas Virtuais</option>
+              <option value="Sistemas Web">Sistemas Web</option>
+              <option value="Otimização de Sites">Otimização de Sites - SEO</option>
+              <option value="Criação de Aplicativos">Criação de Aplicativos</option>
+              <option value="Manutenção de Sites">Manutenção de Sites</option>
+              <option value="Landing Pages">Landing Pages</option>
+              <option value="Consultoria e Análise de Sistemas">Consultoria e Análise de Sistemas</option>
+              <option value="Marketing Digital">Marketing Digital</option>
+              <option value="Criação de Blogs">Criação de Blogs</option>
+              <option value="Outros">Outros</option>
+            </DropDown>
+          </div>
+          {formik.touched.subject && formik.errors.subject && (
+            <Position>
+              <Erro>{formik.errors.subject}</Erro>
+            </Position>
+          )}
+        </Column>
+      </Row>
+
       <Textarea
         name="message"
         type="submit"
@@ -119,14 +198,35 @@ export default function ContactForm() {
         onChange={formik.handleChange}
         onBlur={formik.handleBlur}
         value={formik.values.message}
-        error={formik.touched.message && formik.errors.message}
+        error={formik.errors.message}
+        touched={formik.touched.message}
+        readOnly={formik.isSubmitting}
       />
-      {formik.touched.message && formik.errors.message ? (
+
+      {formik.touched.message && formik.errors.message && (
         <Position>
           <Erro>{formik.errors.message}</Erro>
         </Position>
-      ) : null}
-      <button type="submit">Enviar Mensagem</button>
+      )}
+
+      <BtnSubmit
+        disabled={formik.isSubmitting}
+        type="submit"
+        loader={formik.isSubmitting}
+        className="loader"
+      >
+        Enviar Mensagem
+
+        <LoaderForm loader={formik.isSubmitting} />
+      </BtnSubmit>
     </Form>
   );
-}
+};
+
+ContactForm.propTypes = {
+  setFormStatus: PropTypes.func.isRequired,
+  setActiveModal: PropTypes.func.isRequired,
+  valueSelect: PropTypes.string.isRequired,
+};
+
+export default ContactForm;

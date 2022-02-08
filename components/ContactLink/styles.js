@@ -1,15 +1,17 @@
-import styled from 'styled-components'
+// 3rd parties
+import styled from 'styled-components';
 
-export const ContactLink = styled.a`
+const ContactLink = styled.a`
   color: white;
   display: inline-block;
-  font-size: 15px;
+  font-size: 13px;
   opacity: .75;
-  margin: .5rem;
+  margin: .75rem .5rem;
   position: relative;
   text-decoration: none;
   transition: opacity .15s ease;
   white-space: nowrap;
+
 
   &::before {
     content: "";
@@ -39,5 +41,6 @@ export const ContactLink = styled.a`
       }
     }
   }
-}
 `;
+
+export default ContactLink;

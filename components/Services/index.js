@@ -1,110 +1,424 @@
 // 3rd parties
-import { BiWrench } from "react-icons/bi";
-import { AiOutlineCloudSync, AiOutlineAppstoreAdd } from "react-icons/ai";
-import { BsMegaphone, BsDiagram3 } from "react-icons/bs";
-import { BsGlobe, BsCart3 } from "react-icons/bs";
-import { SiGoogleads } from "react-icons/si";
-import { MdOutlineManageSearch } from "react-icons/md";
+import Link from 'next/link';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 // Styles
-import { Center, Container } from "./styles";
-import { Card, Icon } from "../Card/styles";
+import {
+  Center, Container, Cards, TitleServices, AllServices, AllServicesButton,
+} from './styles';
+import {
+  ArrowRight, ArrowRightIcon, Card, Icon,
+} from '../Card/styles';
 
-export default function Services() {
+const Services = function ServicesPage({ full }) {
+  const [icons, setIcons] = useState({
+    icon1: 'hover',
+    icon2: 'hover',
+    icon3: 'hover',
+    icon4: 'hover',
+    icon5: 'hover',
+    icon6: 'hover',
+    icon7: 'hover',
+    icon8: 'hover',
+    icon9: 'hover',
+    icon10: 'hover',
+  });
+
   return (
-    <Container id="servicos">
+    <Container id="servicos" full={full}>
       <Center>
-        <Card animate={true}>
-          <Icon>
-            <BsGlobe/>
-          </Icon>
-          <h3>Criação de Sites</h3>
-          <p>
-            Sites responsivos, com navegação intuitiva e design profissional.
-            Foco em geração de resultados.
-          </p>
-        </Card>
-        <Card animate={true}>
-          <Icon>
-            <MdOutlineManageSearch />
-          </Icon>
-          <h3>Otimização de Sites - SEO</h3>
-          <p>
-            Otimização de sites para destaque no Google. Palavras-chave
-            que alavancam seus acessos orgânicos.
-          </p>
-        </Card>
-        <Card animate={true}>
-          <Icon>
-            <AiOutlineCloudSync />
-          </Icon>
-          <h3>Sistemas em Nuvem</h3>
-          <p>
-            Programas e serviços de armazenamento online. Acesso 24
-            horas por dia de qualquer lugar.
-          </p>
-        </Card>
-        <Card animate={true}>
-          <Icon>
-            <BsMegaphone />
-          </Icon>
-          <h3>Marketing de Conteúdo - SEM</h3>
-          <p>
-            Produção de conteúdo para Blogs, com foco em atração de visitantes
-            através do Google.
-          </p>
-        </Card>
-        <Card animate={true}>
-          <Icon>
-            <SiGoogleads />
-          </Icon>
-          <h3>Campanha Google Adwords</h3>
-          <p>
-          Planejamento estratégico organizando por categorias, seus produtos e
-          serviços.
-          </p>
-        </Card>
-        <Card animate={true}>
-          <Icon>
-            <AiOutlineAppstoreAdd />
-          </Icon>
-          <h3>Criação de Aplicativos</h3>
-          <p>
-            Criação de aplicativos para Iphone e Android. Desenvolvimento de
-            aplicativos sob medida.
-          </p>
-        </Card>
-        <Card animate={true}>
-          <Icon>
-            <BsCart3 />
-          </Icon>
-          <h3>Lojas Virtuais</h3>
-          <p>
-            Criação de lojas virtuais com alta performance, gestão de pedidos
-            e integração com pagamento online.
-          </p>
-        </Card>
-        <Card animate={true}>
-          <Icon>
-            <BsDiagram3 />
-          </Icon>
-          <h3>Intranet e Extranet</h3>
-          <p>
-            Sistemas de redes para distribuição de informações garantindo
-            a segurança e privacidade.
-          </p>
-        </Card>
-        <Card animate={true}>
-          <Icon>
-            <BiWrench />
-          </Icon>
-          <h3>Manutenção de Sites</h3>
-          <p>
-            Atendimento técnico especializado ágil e eficaz. Mantenha seu site
-            moderno e atualizado.
-          </p>
-        </Card>
+        <TitleServices data-aos={full ? '' : 'fade-up'} full={full}>Serviços</TitleServices>
+
+        <Cards full={full}>
+          <Card
+            prev
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon1: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon1: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon1: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon1: 'hover' }))}
+            data-aos={full ? '' : 'fade-up'}
+          >
+            <Link
+              href="/servicos/criacao-de-sites-em-santos"
+              passHref
+              as={`${process.env.BACKEND_URL}/servicos/criacao-de-sites-em-santos`}
+            >
+              <a className="card-link" href="/website">
+                <Icon>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/qhgmphtg.json"
+                    trigger={icons.icon1}
+                    colors="primary:#121331,secondary:#33afad"
+                    style={{ width: 80, height: 80 }}
+                  />
+                </Icon>
+
+                <h3>Criação de Sites</h3>
+
+                <p>
+                  Sites modernos, responsivos, com design personalizado e
+                  totalmente profissional.
+                </p>
+
+                <ArrowRight>
+                  <ArrowRightIcon />
+
+                  <span>Ver Mais</span>
+                </ArrowRight>
+              </a>
+            </Link>
+          </Card>
+
+          <Card
+            prev
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon2: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon2: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon2: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon2: 'hover' }))}
+            data-aos={full ? '' : 'fade-up'}
+          >
+            <Link
+              href="/servicos/lojas-virtuais-em-santos"
+              passHref
+              as={`${process.env.BACKEND_URL}/servicos/lojas-virtuais-em-santos`}
+            >
+              <a className="card-link" href="/virtual">
+                <Icon>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/slkvcfos.json"
+                    trigger={icons.icon2}
+                    colors="primary:#121331,secondary:#33afad"
+                    style={{ width: 80, height: 80 }}
+                  />
+                </Icon>
+
+                <h3>Lojas Virtuais</h3>
+
+                <p>
+                  Criação de lojas virtuais adequadas ao seu negócio.
+                </p>
+
+                <ArrowRight>
+                  <ArrowRightIcon />
+                  <span>Ver Mais</span>
+                </ArrowRight>
+              </a>
+            </Link>
+          </Card>
+
+          <Card
+            prev
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon3: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon3: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon3: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon3: 'hover' }))}
+            data-aos={full ? '' : 'fade-up'}
+          >
+            <Link
+              href="/servicos/sistemas-web-em-santos"
+              passHref
+              as={`${process.env.BACKEND_URL}/servicos/sistemas-web-em-santos`}
+            >
+              <a className="card-link" href="/system">
+                <Icon>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/gqzfzudq.json"
+                    trigger={icons.icon3}
+                    colors="primary:#121331,secondary:#33afad"
+                    style={{ width: 80, height: 80 }}
+                  />
+                </Icon>
+
+                <h3>Sistemas Web</h3>
+
+                <p>
+                  Sistemas acessados pela web totalmente personalizados.
+                </p>
+
+                <ArrowRight>
+                  <ArrowRightIcon />
+                  <span>Ver Mais</span>
+                </ArrowRight>
+              </a>
+            </Link>
+          </Card>
+
+          <Card
+            prev
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon4: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon4: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon4: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon4: 'hover' }))}
+            data-aos={full ? '' : 'fade-up'}
+          >
+            <Link
+              href="/servicos/otimizacao-de-sites-seo-em-santos"
+              passHref
+              as={`${process.env.BACKEND_URL}/servicos/otimizacao-de-sites-seo-em-santos`}
+            >
+              <a className="card-link" href="/seo">
+                <Icon>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/msoeawqm.json"
+                    trigger={icons.icon4}
+                    colors="primary:#121331,secondary:#33afad"
+                    style={{ width: 80, height: 80 }}
+                  />
+                </Icon>
+
+                <h3>Otimização de Sites - SEO</h3>
+
+                <p>Seu site em destaque no Google através de SEO.</p>
+
+                <ArrowRight>
+                  <ArrowRightIcon />
+                  <span>Ver Mais</span>
+                </ArrowRight>
+              </a>
+            </Link>
+          </Card>
+
+          <Card
+            prev
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon5: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon5: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon5: 'hover' }))}
+            data-aos={full ? '' : 'fade-up'}
+          >
+            <Link
+              href="/servicos/criacao-de-aplicativos-em-santos"
+              passHref
+              as={`${process.env.BACKEND_URL}/servicos/criacao-de-aplicativos-em-santos`}
+            >
+              <a className="card-link" href="/app">
+                <Icon>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/jqeuwnmb.json"
+                    trigger={icons.icon5}
+                    colors="primary:#121331,secondary:#33afad"
+                    style={{ width: 80, height: 80 }}
+                  />
+                </Icon>
+
+                <h3>Criação de Aplicativos</h3>
+
+                <p>Desenvolvimento de aplicativos para Android e Iphone.</p>
+
+                <ArrowRight>
+                  <ArrowRightIcon />
+                  <span>Ver Mais</span>
+                </ArrowRight>
+              </a>
+            </Link>
+          </Card>
+
+          <Card
+            prev
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon6: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon6: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon6: 'hover' }))}
+            data-aos={full ? '' : 'fade-up'}
+          >
+            <Link
+              href="/servicos/manutencao-de-sites-em-santos"
+              passHref
+              as={`${process.env.BACKEND_URL}/servicos/manutencao-de-sites-em-santos`}
+            >
+              <a className="card-link" href="/maint">
+                <Icon>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/sbiheqdr.json"
+                    trigger={icons.icon6}
+                    colors="primary:#121331,secondary:#33afad"
+                    style={{ width: 80, height: 80 }}
+                  />
+                </Icon>
+
+                <h3>Manutenção de Sites</h3>
+
+                <p>Sustentação de sites e atendimento técnico.</p>
+
+                <ArrowRight>
+                  <ArrowRightIcon />
+                  <span>Ver Mais</span>
+                </ArrowRight>
+              </a>
+            </Link>
+          </Card>
+
+          <Card
+            style={{ display: full ? 'flex' : 'none' }}
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon7: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon7: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon7: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon7: 'hover' }))}
+            data-aos={full ? '' : 'fade-up'}
+          >
+            <Link
+              href="/servicos/landing-pages-em-santos"
+              passHref
+              as={`${process.env.BACKEND_URL}/servicos/landing-pages-em-santos`}
+            >
+              <a className="card-link" href="/landing">
+                <Icon>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/anihkfxp.json"
+                    trigger={icons.icon7}
+                    colors="primary:#121331,secondary:#33afad"
+                    style={{ width: 80, height: 80 }}
+                  />
+                </Icon>
+
+                <h3>Landing Pages</h3>
+
+                <p>
+                  Página única com forte apelo comercial e eficiente para a coleta de
+                  leads.
+                </p>
+
+                <ArrowRight>
+                  <ArrowRightIcon />
+                  <span>Ver Mais</span>
+                </ArrowRight>
+              </a>
+            </Link>
+          </Card>
+
+          <Card
+            style={{ display: full ? 'flex' : 'none' }}
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon8: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon8: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon8: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon8: 'hover' }))}
+            data-aos={full ? '' : 'fade-up'}
+          >
+            <Link
+              href="/servicos/consultoria-e-analise-de-sistemas-em-santos"
+              passHref
+              as={`${process.env.BACKEND_URL}/servicos/consultoria-e-analise-de-sistemas-em-santos`}
+            >
+              <a className="card-link" href="/consult">
+                <Icon>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/nobciafz.json"
+                    trigger={icons.icon8}
+                    colors="primary:#121331,secondary:#33afad"
+                    style={{ width: 80, height: 80 }}
+                  />
+                </Icon>
+
+                <h3>Consultoria e Análise de Sistemas</h3>
+
+                <p>
+                  Profissionais especializados para desenvolvimento e análise de
+                  sistemas.
+                </p>
+
+                <ArrowRight>
+                  <ArrowRightIcon />
+                  <span>Ver Mais</span>
+                </ArrowRight>
+              </a>
+            </Link>
+          </Card>
+
+          <Card
+            style={{ display: full ? 'flex' : 'none' }}
+            onTouchStartCapture={() => setIcons((state) => ({ ...state, icon9: 'loop' }))}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon9: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon9: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon9: 'hover' }))}
+            data-aos={full ? '' : 'fade-up'}
+          >
+            <Link
+              href="/servicos/marketing-digital-em-santos"
+              passHref
+              as={`${process.env.BACKEND_URL}/servicos/marketing-digital-em-santos`}
+            >
+              <a className="card-link" href="/servicos/mkt">
+                <Icon>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/iltqorsz.json"
+                    trigger={icons.icon9}
+                    colors="primary:#121331,secondary:#33afad"
+                    style={{ width: 80, height: 80 }}
+                  />
+                </Icon>
+
+                <h3>Marketing Digital</h3>
+
+                <p>
+                  Análise de palavras-chaves e campanhas Google Adwords.
+                </p>
+
+                <ArrowRight>
+                  <ArrowRightIcon />
+                  <span>Ver Mais</span>
+                </ArrowRight>
+              </a>
+            </Link>
+          </Card>
+
+          <Card
+            style={{ display: full ? 'flex' : 'none' }}
+            onTouchEndCapture={() => setIcons((state) => ({ ...state, icon10: 'hover' }))}
+            onMouseEnter={() => setIcons((state) => ({ ...state, icon10: 'loop' }))}
+            onMouseLeave={() => setIcons((state) => ({ ...state, icon10: 'hover' }))}
+            data-aos={full ? '' : 'fade-up'}
+            className="last"
+          >
+            <Link
+              href="/servicos/criacao-de-blogs-em-santos"
+              passHref
+              as={`${process.env.BACKEND_URL}/servicos/criacao-de-blogs-em-santos`}
+            >
+              <a className="card-link" href="/blog">
+                <Icon>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/puvaffet.json"
+                    trigger={icons.icon10}
+                    colors="primary:#121331,secondary:#33afad"
+                    style={{ width: 80, height: 80 }}
+                  />
+                </Icon>
+
+                <h3>Criação de Blogs</h3>
+
+                <p>Blogs modernos, profissionais e totalmente sob medida.</p>
+
+                <ArrowRight>
+                  <ArrowRightIcon />
+                  <span>Ver Mais</span>
+                </ArrowRight>
+              </a>
+            </Link>
+          </Card>
+        </Cards>
+
+        <AllServices
+          data-aos="fade-in"
+          style={{ display: full ? 'none' : 'flex' }}
+        >
+          <Link passHref href="/servicos">
+            <AllServicesButton>
+              Conheça todos os serviços
+            </AllServicesButton>
+          </Link>
+        </AllServices>
       </Center>
     </Container>
   );
-}
+};
+
+Services.defaultProps = {
+  full: false,
+};
+
+Services.propTypes = {
+  full: PropTypes.bool,
+};
+
+export default Services;

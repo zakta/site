@@ -1,64 +1,115 @@
-import styled from "styled-components";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// 3rd parties
+import styled, { keyframes } from 'styled-components';
 
-export const Container= styled.div`
-  width: 92%;
+const fadeInd = keyframes`
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+`;
+
+export const Container = styled.div`
+  background-color: rgba(18, 39, 70, .9);
   z-index: 14;
   position: fixed;
-  bottom: 30%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: ${fadeInd} .15s ease-in-out;
+  transition: all .15s ease;
+  min-width: 320px;
+`;
 
-  @media (min-width: 768px){
-    width: 60%;
+const slideUp = keyframes`
+  0%{
+    bottom: -200px;
   }
-  &.showPopUp{
-    display: none;
+  100%{
+    bottom: 0;
+  }
+`;
+
+export const PopUp = styled.div`
+  background-color: white;
+  box-sizing: border-box;
+  padding: 1.25rem;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  animation: ${slideUp} .15s ease-in-out both;
+  transition: all .15s ease;
+
+  div{
+    display: flex;
+    flex-direction: column;
   }
 
-`
-export const PopUp= styled.div`
+  h3 {
+    font-size: 17px;
+    font-weight: 800;
+    color: ${({ formStatus }) => (formStatus === 'success' ? '#33afad' : '#e92929')};
+    margin: 0;
+  }
+
+  p{
+    font-size: 14px;
+    color: black;
+    margin: 1rem 0 0;
+  }
+
+  @media (min-width: 640px) {
+    padding: 2rem;
+
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+`;
+
+export const Center = styled.div`
   display: flex;
   flex-direction: column;
-  background: #33afad;
-  padding: 2rem;
-  opacity: 0.98;
+  max-width: 360px;
+  margin: auto;
+`;
 
-  h3{
-    font-size: 20px;
-    letter-spacing: .5px;
-    font-weight: 800;
-    text-align: center;
-    color: #ffff;
-    margin: 0;
-    padding: .5rem;
-  }
-  p{
-    font-size: 16px;
-    color: #ffff;
-    text-align: center;
-  }
-`
-export const BtnPopUp= styled.button`
-  align-self: flex-end;
-  background-color: #ffff;
+export const BtnPopUp = styled.button`
+  align-self: end;
+  background-color: #1a3968;
   border: none;
-  border: 1px solid #33afad;
-  color: #33afad;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 1px;
-  width: 24.8px;
-  cursor: pointer;
-
-  :hover{
-    background: #33afad;
-    border: 1px solid white;
-    color: white;
-  }
-`
-export const MailIcon = styled(FontAwesomeIcon)`
+  border: 1px solid #1a3968;
+  box-sizing: border-box;
   color: white;
-  font-size: 100px;
-  align-self: center;
-`
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  animation-duration: 20s;
+  font-size: 14px;
+  font-family: 'Poppins',sans-serif;
+  padding: 1rem;
+  transition: all .15s ease;
+  margin-top: 1.5rem;
 
+  &:active {
+    background-color: #122746;
+    border-color: #122746;
+  }
 
+  @media (min-width: 640px) {
+    padding: 1.25rem;
+    font-size: 16px;
+    margin-top: 2rem;
+
+    &:hover {
+      background-color: #122746;
+      border-color: #122746;
+    }
+  }
+`;

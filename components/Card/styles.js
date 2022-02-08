@@ -1,90 +1,185 @@
-import styled from "styled-components";
+// 3rd parties
+import styled from 'styled-components';
+import { BsArrowRight } from 'react-icons/bs';
 
-export const Card = styled.div`
-  background: white;
-  box-sizing: border-box;
-  box-shadow: 0 5px 40px 0 rgb(6 6 6 / 8%);
+export const Icon = styled.div`
+  font-size: 3rem;
+  line-height: .7;
+  height: 80px;
+`;
+
+export const ArrowRight = styled.div`
+  align-items: center;
+  color: black;
   display: flex;
-  margin-bottom: 1.4rem;
+  margin-top: .5rem;
   position: relative;
-  padding: 2.632rem;
-  flex-direction: column;
-  justify-content: center;
-  transition: .3s all ease-in-out;
-  width: 90%;
+  white-space: nowrap;
 
-  :after{
-    content: "";
-    background: ${({ animate }) =>
-      animate
-        ? "#1a3968"
-        : "white"};
-    transform: scale(0);
-    transition: .3s all ease-in-out;
-    z-index:0;
-    opacity:0;
+  :active{
+    color: #1a3968;
+  }
+
+  span {
+    font-size: 15px;
+    font-weight: 800;
+    width: 80px;
+    text-transform: uppercase;
+    text-align: center;
     position: absolute;
+    transform: translate(0%,0);
+    opacity: 0;
+    z-index: -1;
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out,
+    z-index .3s ease-in-out;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  h3{
-    color: #060606;
-    z-index: 1;
-    font-size: 27px;
-    line-height: 40px;
-    font-weight: 700;
-    position: relative;
-    margin-bottom: 1.06rem;
-    margin-top: 1.579rem;
-
-    @media (min-width: 768px){
-      font-size: 18px;
-    }
-    @media (min-width: 800px){
-      font-size: 20px;
-    }
-  }
-  p{
-    color: #6c6c6c;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 34px;
-    margin: 0;
-    position: relative;
-    z-index: 1;
-
-    @media (min-width: 768px){
-      font-size: 16px;
-    }
-
-    @media (min-width: 800px){
-      font-size: 18px;
-    }
-  }
-
-  @media (min-width: 768px){
-    justify-content: center;
-    width: 45%;
-  }
-  @media (min-width: 980px){
-    justify-content: center;
-    width: 28%;
-  }
-  @media (min-width: 1457px){
-    width: 30%;
+    bottom: 0;
+    margin: auto;
+    height: 22px;
   }
 `;
 
-export const Icon = styled.div`
-  z-index: 10;
-  color: #1a3968;
-  font-size: 4rem;
+export const ArrowRightIcon = styled(BsArrowRight)`
+  font-size: 30px;
+  font-weight: 900;
+  padding-right: 25px;
+`;
+
+export const Card = styled.div`
+  background-color: white;
+  border-top: 4px solid #33afad;
+  box-shadow: 0 1px 1px 0 rgb(6 6 6 / 12%);
+  box-sizing: border-box;
+  display: flex;
+  margin-bottom: 1.5rem;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: .3s all ease-in-out;
+  width: 100%;
   position: relative;
 
-  /* :hover {
-    color: white;
-  } */
+  .card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 1.25rem;
+    text-decoration: none;
+
+    :active{
+      color: #1a3968;
+
+      span {
+        color: #1a3968;
+        cursor: pointer;
+        opacity: 1;
+        transform: translate(60%, 0);
+        z-index: 1;
+      }
+    }
+
+    @media (min-width: 740px) {
+      padding: 1.5rem;
+    }
+
+    @media (min-width: 1200px){
+      padding: 2rem;
+    }
+
+    @media (min-width: 768px){
+      :hover{
+        color: #1a3968;
+
+        span {
+          color: #1a3968;
+          cursor: pointer;
+          opacity: 1;
+          transform: translate(60%, 0);
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+  &.card-last-center {
+    @media (min-width: 640px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 1200px) {
+      margin-left: initial;
+      margin-right: initial;
+    }
+  }
+
+  h3 {
+    color: #060606;
+    z-index: 1;
+    font-weight: 700;
+    position: relative;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: .75rem;
+    margin-top: 1.25rem;
+  }
+
+  p {
+    color: #6c6c6c;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: 740px) {
+    width: 48.6%;
+
+    h3 {
+      font-size: 24.5px;
+      line-height: 35px;
+      margin-bottom: 1.06rem;
+      margin-top: 1.579rem;
+    }
+
+    p {
+      font-size: 17.5px;
+      line-height: 31px;
+    }
+
+    ${ArrowRight} {
+      margin-top: 1rem;
+    }
+
+    ${ArrowRightIcon} {
+      font-size: 35px;
+    }
+  }
+
+  @media (min-width: 1200px){
+    width: 32%;
+
+    h3 {
+      font-size: 27px;
+      line-height: 40px;
+      margin-bottom: 1.06rem;
+      margin-top: 1.579rem;
+    }
+
+    p {
+      font-size: 19px;
+      line-height: 34px;
+    }
+
+    ${ArrowRight} {
+      margin-top: 1rem;
+    }
+
+    ${ArrowRightIcon} {
+      font-size: 40px;
+    }
+  }
 `;

@@ -1,5 +1,6 @@
 // Components
 import Header from '../Header';
+import ArrowIcon from '../ArrowRedirect/styles';
 
 // Style
 import {
@@ -10,11 +11,10 @@ import {
   ButtonLink,
   ArrowAnimation,
   ArrowLink,
-  ArrowIcon
-} from "./styles";
+} from './styles';
 
-export default function Home () {
-  return(
+const Home = function HomePage() {
+  return (
     <Container>
       <Cover />
 
@@ -22,17 +22,30 @@ export default function Home () {
 
       <Header />
 
-      <PageTitle>
+      <PageTitle data-aos="fade-up">
         <h1>Tecnologia Aplicada em Soluções Digitais</h1>
 
-        <p><span>Somos experts no desenvolvimento de sites e aplicativos para internet. Entendemos as necessidades do negócio e trabalhamos para construir soluções digitais com agilidade, flexibilidade e precisão.</span></p>
+        <p>
+          Somos especialistas em desenvolvimento de sites, lojas virtuais,
+          aplicativos, blogs, sistemas, entre outros softwares.
 
-        <ButtonLink href="#servicos">Serviços</ButtonLink>
+          <br />
 
-        <ArrowAnimation>
-          <ArrowLink href="#servicos"><ArrowIcon /></ArrowLink>
-        </ArrowAnimation>
+          Temos a experiência necessária para entender o seu negócio, propor
+          ideias e construir um projeto totalmente sob medida para a sua
+          empresa.
+        </p>
+
+        <ButtonLink href="#contato">Fale com um consultor</ButtonLink>
+
+        <ArrowLink href="#servicos">
+          <ArrowAnimation>
+            <ArrowIcon />
+          </ArrowAnimation>
+        </ArrowLink>
       </PageTitle>
-  </Container>
+    </Container>
   );
 };
+
+export default Home;

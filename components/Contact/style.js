@@ -1,10 +1,9 @@
-import styled from "styled-components";
-import { Card as CardComp, Icon as CardIcon} from "../Card/styles";
+// 3rd parties
+import styled from 'styled-components';
 
 export const Container = styled.section`
   align-items: center;
-  background-color: white;
-  background-image: url("18_img.6703f879.png");
+  background-color: #f7f7f7;
   background-position: center bottom;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -12,22 +11,26 @@ export const Container = styled.section`
   flex-direction: column;
   margin: 0 auto;
   min-width: 320px;
-  padding: 1.5rem ;
+  overflow: hidden;
+  padding: 0 0 8rem;
   position: relative;
   width: 100%;
-  padding-top: 4rem;
+
+  h2 {
+    padding-bottom: 1rem;
+  }
 
   article {
     align-items: center;
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 
-    @media (min-width: 1100px) {
+    @media (min-width: 768px) {
       flex-direction: row;
-      justify-content: space-between;
+      flex-wrap: wrap;
     }
   }
 `;
@@ -37,58 +40,145 @@ export const Center = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
-  max-width: 1000px;
+  max-width: 1400px;
+  padding: 1.25rem;
+  padding-bottom: 0;
 
-  @media (min-width: 870px) {
-    padding: 0 2rem;
+  @media (min-width: 980px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
-
 `;
 
 export const ContactInfo = styled.div`
-    position: relative;
-    height: 210px;
-    z-index:1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index:1;
 
-  h1{
-    position: absolute;
-    z-index: -1;
-    font-size: 320px;
-    font-weight: 800;
-    opacity: .5;
-    color: #f3f3f3;
-    top: -370px;
-    right: -189px;
-  }
-
-
-  h3{
-    font-size: 32px;
+  h3 {
+    font-size: 26px;
     font-weight: 700;
-    line-height: 41.3885px;
+    line-height: 38px;
     margin: 0;
+    margin-bottom: 1.5rem;
     max-width: 39.842rem;
     padding: 0;
     width: 100%;
+
+    @media (min-width: 640px) {
+      font-size: 32px;
+      line-height: 44px;
+      margin-bottom: 2rem;
+    }
+  }
+`;
+
+export const Icon = styled.div`
+  font-size: 3rem;
+  line-height: .7;
+  position: relative;
+
+  &.contact-icon-email {
+    right: 3px;
   }
 
-`
-export const TitleContact = styled.h2`
-    margin-top: 2rem;
+  &.contact-icon-telephone {
+    right: 5px;
+  }
+`;
+
+export const Card = styled.div`
+  border: 3px solid;
+  cursor: pointer;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  margin-bottom: 1.5rem;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: .3s all ease-in-out;
+  position: relative;
+  padding: 1.25rem;
+
+  &.card-last-center {
+    @media (min-width: 640px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 1200px) {
+      margin-left: initial;
+      margin-right: initial;
+    }
+  }
+
+  h3 {
+    color: #060606;
+    z-index: 1;
+    font-weight: 700;
+    position: relative;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: .75rem;
+    margin-top: 1.25rem;
+  }
+
+  p {
+    color: #6c6c6c;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
     margin: 0;
-    padding: 0;
-    font-size: 20px;
-    color: #1a3968;
-`
-export const Card = styled(CardComp)`
-  width: 90%;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: 740px) {
+    padding: 1.5rem;
+    width: 48.6%;
+
+    h3 {
+      font-size: 24.5px;
+      line-height: 35px;
+      margin-bottom: 1.06rem;
+      margin-top: 1.579rem;
+    }
+
+    p {
+      font-size: 17.5px;
+      line-height: 31px;
+    }
+  }
+
+  @media (min-width: 1200px){
+    padding: 2rem;
+    width: 32%;
+
+    h3 {
+      font-size: 27px;
+      line-height: 40px;
+      margin-bottom: 1.06rem;
+      margin-top: 1.579rem;
+    }
+
+    p {
+      font-size: 19px;
+      line-height: 34px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
 
   h4 {
     margin: 0;
+    padding-top: .75rem;
+    user-select: none;
   }
 
   p {
@@ -97,27 +187,106 @@ export const Card = styled(CardComp)`
     margin: 0;
   }
 
-  @media (min-width: 768px){
-    width: 48%;
+  ${Icon}, h4, p {
+    color: white;
+  }
+
+  @media (min-width: 768px) {
+    width: 32.5%;
+  }
+
+  &.contact-card-email {
+    background-color: #1a3968;
+    border-color: #1a3968;
+
+    &:active {
+      background-color: #122746;
+      border-color: #f7f7f7;
+    }
+
+    @media (min-width: 870px){
+      &:hover {
+        background-color: #26508f;
+        border-color: #26508f;
+      }
+
+      &:active {
+        background-color: #122746;
+        border-color: #f7f7f7;
+      }
+    }
+  }
+
+  &.contact-card-telephone {
+    background-color: #33afad;
+    border-color: #33afad;
+
+    &:active{
+      background-color: #278987;
+      border-color: #f7f7f7;
+    }
+
+    @media (min-width: 870px){
+      &:hover {
+        background-color: #3ec9c7;
+        border-color: #3ec9c7;
+      }
+
+      &:active {
+        background-color: #278987;
+        border-color: #f7f7f7;
+      }
+    }
+  }
+
+  &.contact-card-whatsapp {
+    background-color: #52BF55;
+    border-color: #52BF55;
+
+    &:active {
+      background-color: #2e7d31;
+      border-color: #f7f7f7;
+    }
+
+    @media (min-width: 870px){
+      &:hover {
+        background-color: #5dd560;
+        border-color: #5dd560;
+      }
+
+      &:active {
+        background-color: #2e7d31;
+        border-color: #f7f7f7;
+      }
+    }
   }
 `;
 
-export const Icon = styled(CardIcon)`
-  font-size: 4rem;
-`;
-
-
 export const FormTitle = styled.div`
-  font-size: 33px;
+  font-size: 26px;
   font-weight: 700;
-  line-height: 48px;
-  padding-top: 6rem;
+  line-height: 38px;
+  padding-top: 1.5rem;
+
+  @media (min-width: 640px) {
+    font-size: 32px;
+    line-height: 44px;
+    padding-top: 2rem;
+  }
 `;
 
 export const FormDescription = styled.div`
   color: #6c6c6c;
-  font-size: 19px;
-  line-height: 34px;
-  padding-bottom: 3.158rem;
-  padding-top: 3.158rem;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 28px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  @media (min-width: 640px) {
+    font-size: 19px;
+    line-height: 34px;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
 `;

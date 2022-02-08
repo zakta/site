@@ -1,15 +1,14 @@
+// 3rd parties
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #f7f7f7;
-  border-top: 1px solid #efefef;
+  background-color: #2a2a2a;
   bottom: 0;
   box-sizing: border-box;
-  color: #4d4d4d;
-  display: flex;
+  color: #c3c1c1;
+  display: ${({ hide }) => (hide ? 'none' : 'flex')};
   font-size: 15px;
   justify-content: center;
-  padding: 1rem 1.5rem;
   position: fixed;
   width: 100%;
   z-index: 13;
@@ -26,17 +25,18 @@ export const CookieNotice = styled.div`
   flex-direction: column;
   margin: auto;
   max-width: 1400px;
+  padding: 1.25rem;
 
   a {
-    color: #1a3968;
-    font-weight: 600;
+    color: white;
+    font-weight: 500;
     position: relative;
     text-decoration: none;
 
     &::before {
       content: "";
       bottom: 0px;
-      background-color: #1a3968;
+      background-color: white;
       height: 1px;
       left: 0px;
       position: absolute;
@@ -52,38 +52,54 @@ export const CookieNotice = styled.div`
   }
 
   p {
-    line-height: 20px;
+    font-size: 14px;
+    font-weight: 300;
     margin: 0;
   }
 
   button {
     align-self: end;
-    background: #1a3968;
-    border: 1px solid #1a3968;
+    background-color: #33afad;
+    border: 1px solid #33afad;
     color: white;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 30px;
     margin-top: 1.5rem;
-    max-width: 257px;
-    padding: 10px 45px;
+    max-width: 100%;
+    padding: 6px 45px;
     transition: all .3s ease;
     width: 100%;
+    user-select: none;
 
-    :hover {
-      opacity: .75;
+    :active {
+      background-color: #278987;
+      border-color: #2a2a2a;
+    }
+
+    @media (min-width: 480px) {
+      max-width: 257px;
+    }
+
+    @media (min-width: 870px){
+      :hover {
+        background-color: #3ec9c7;
+        border-color: #3ec9c7;
+      }
     }
 
   }
 
-  @media (min-width: 870px) {
-    padding: 0 2rem;
+  @media (min-width: 980px) {
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
     button {
+      align-self: center;
       margin-left: 1.5rem;
       margin-top: 0;
     }

@@ -1,22 +1,44 @@
-import Head from "next/head";
-import ButtonUp from "../components/ButtonUp";
-import Company from "../components/Company";
-import Contact from "../components/Contact";
-import { Footer } from "../components/Footer";
-import Home from "../components/Home";
-import Loader from "../components/Loader";
-import CookiesModal from "../components/CookiesModal";
-import Services from "../components/Services";
-import ModalWhatsapp from "../components/ModalWhatsapp";
+// 3rd parties
+import cookie from 'js-cookie';
+import Head from 'next/head';
+import { useEffect, useState } from 'react';
 
-export default function Index() {
+// Components
+import Company from '../components/Company';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+import Home from '../components/Home';
+import Loader from '../components/Loader';
+import CookiesModal from '../components/CookiesModal';
+import Services from '../components/Services';
+import GoogleAnalytics from '../components/GoogleAnalytics';
+import WhatsAppButton from '../components/WhatsAppButton';
+
+const Index = function IndexPage() {
+  const [isAcceptedCookie, setAcceptedCookie] = useState(false);
+
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    if (cookie.get('allow-cookies')) {
+      setAcceptedCookie(true);
+    }
+    if (!sessionStorage.getItem('loader')) {
+      setAnimate(true);
+    }
+
+    sessionStorage.setItem('loader', JSON.stringify(true));
+  }, []);
+
+  const [cookiesModalHeight, setCookiesModalHeight] = useState(0);
+
   return (
     <>
       <Head>
-        <title>Tecnologia Aplicada em Soluções Digitais | Zakta</title>
+        <title>Criação de sites em Santos | Zakta Tecnologia</title>
       </Head>
 
-      <Loader />
+      <Loader animate={animate} />
 
       <Home />
 
@@ -26,13 +48,19 @@ export default function Index() {
 
       <Contact />
 
-      <ButtonUp />
+      <Footer cookiesModalHeight={cookiesModalHeight} />
 
-      {/* <ModalWhatsapp /> */}
+      <WhatsAppButton />
 
-      <Footer />
+      <CookiesModal
+        isAcceptedCookie={isAcceptedCookie}
+        setAcceptedCookie={setAcceptedCookie}
+        setCookiesModalHeight={setCookiesModalHeight}
+      />
 
-      <CookiesModal />
+      <GoogleAnalytics />
     </>
   );
-}
+};
+
+export default Index;

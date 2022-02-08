@@ -1,66 +1,42 @@
+// 3rd parties
 import styled from 'styled-components';
 
-export const Container= styled.div`
+// Styles
+import TitleSection from '../SectionTitle/styles';
+
+export const Container = styled.div`
   padding: 0;
   width: 100%;
- /*
-    @media (min-width: 768px){
-      width: 97%;
+
+  ${TitleSection} {
+    padding-bottom: 1.5rem;
   }
-    @media (min-width: 900px){
-      width: 95%;
-  }
-    @media (min-width: 980px){
-      width: 99%;
-  }
-    @media (min-width: 1060px){
-      width: 97%;
-  }
-    @media (min-width: 1250px){
-      width: 95%;
-  }
-    @media (min-width: 1463px){
-      width: 100%;
-  }
-    @media (min-width: 1600px){
-      width: 99%;
-  }
-    @media (min-width: 1700px){
-      width: 97%;
-  }
-    @media (min-width: 1900px){
-      width: 96%;
-  }*/
-`
-export const AboutDivision= styled.div`
-    display: flex;
+`;
+
+export const AboutDivision = styled.div`
+  display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #dbd0d0;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 1.5rem;
 
   @media (min-width: 768px){
     flex-direction: row;
     flex-wrap: wrap;
   }
-`
-export const AboutInfo= styled.article`
+`;
+
+export const AboutInfo = styled.article`
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 
   @media (min-width: 768px){
     width: 50%;
   }
 
-  h2{
-    text-align: left;
-    margin:0;
-    padding: 0;
-    font-size: 20px;
-    color: #1a3968;
-  }
   h3{
     font-size: 32px;
     width: 100%;
-    margin-bottom: 1rem;
   }
 
   div{
@@ -76,39 +52,42 @@ export const AboutInfo= styled.article`
       margin: 0;
     }
   }
-`
-export const Owners= styled.div`
-    width: 50%;
-    padding: .5rem 0;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
+`;
 
-    @media (min-width: 768px){
-      align-items: flex-start;
-    }
-`
-export const AboutCompany= styled.article`
+export const AboutCompany = styled.article`
   box-sizing: border-box;
   font-size: 15px;
-  text-align: left;
 
-  p{
+  p {
+    padding: 1rem 0;
+    margin: 0;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
     font-weight: 300;
     line-height: 26px;
   }
 
   @media (min-width: 768px){
-      width: 50%;
-      text-align: left;
-      padding: 1rem;
+    width: 50%;
+    padding: 0 1rem;
+
+    p{
+      &:first-child {
+        padding-top: 0;
+      }
     }
-`
-export const List= styled.ul`
+  }
+`;
+
+export const List = styled.ul`
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
   padding: 0;
   list-style-type: none;
 
@@ -127,21 +106,21 @@ export const List= styled.ul`
       width: 25%;
     }
   }
+
   p{
     display: inline;
     font-size: 16px;
-    padding: 1rem;
     min-width: 100px;
     font-weight: 700;
-
-
+    padding: 1rem;
   }
-`
-export const Check= styled.span`
+`;
+
+export const Check = styled.span`
   font-size: 20px;
   font-weight: 800;
-  color: #1a3968;
+  color: #33afad;
   padding: 1rem 0;
   position: relative;
   top: 15px;
-`
+`;
