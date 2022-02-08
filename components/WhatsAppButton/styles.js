@@ -19,15 +19,23 @@ export const ModalWhats = styled.div`
   position: fixed;
   right: -202px;
   margin: auto;
-  bottom: 10%;
+  bottom: 220px;
   transition: all .5s ease-in-out;
 
-  @media (min-width: 870px){
+  @media (min-width: 617px) {
+    bottom: 177px;
+  }
+
+  @media (min-width: 870px) {
     :hover {
       background: #2e7d31;
       border-color: #2e7d31;
       right: 0;
     }
+  }
+
+  @media (min-width: 980px) {
+    bottom: 133px;
   }
 `;
 

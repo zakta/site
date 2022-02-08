@@ -13,7 +13,7 @@ export const About = styled.div`
   margin: auto;
   max-width: 1400px;
   padding: 1.25rem;
-  margin-bottom: 3rem;
+  margin-bottom: 8rem;
 
   @media (min-width: 980px) {
     padding-left: 2rem;

@@ -63,7 +63,7 @@ const Footer = function FooterPage({ cookiesModalHeight }) {
         {' '}
         {getFullYear()}
         {' '}
-        ZAKTA Tecnologia todos direitos reservados.
+        Zakta todos direitos reservados.
       </Copyright>
     </Container>
   );

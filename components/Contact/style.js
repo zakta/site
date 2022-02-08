@@ -12,7 +12,7 @@ export const Container = styled.section`
   margin: 0 auto;
   min-width: 320px;
   overflow: hidden;
-  padding: 0 0 3rem;
+  padding: 0 0 8rem;
   position: relative;
   width: 100%;
 
@@ -42,6 +42,7 @@ export const Center = styled.div`
   margin: auto;
   max-width: 1400px;
   padding: 1.25rem;
+  padding-bottom: 0;
 
   @media (min-width: 980px) {
     padding-left: 2rem;

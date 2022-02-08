@@ -16,7 +16,7 @@ export const Box = styled.div`
   margin: auto;
   max-width: 1400px;
   justify-content: center;
-  padding: 1rem 1.25rem 0;
+  padding: 1rem 0 0;
   width: 100%;
   transition: all .15s ease;
 
@@ -61,6 +61,13 @@ export const Contact = styled.div`
   margin: .5rem 0;
   flex-wrap: wrap;
   transition: all .15s ease;
+  /* width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 480px) {
+    width: 100%;
+  } */
 
   @media (min-width: 980px) {
     display: flex;
