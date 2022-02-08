@@ -181,6 +181,7 @@ export const BtnSubmit = styled.button`
   text-transform: uppercase;
   transition: all .15s ease;
   user-select: none;
+  width: 100%;
 
   :active{
     background-color: #122746;

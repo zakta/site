@@ -21,6 +21,7 @@ export const ModalWhats = styled.div`
   margin: auto;
   bottom: 10%;
   transition: all .5s ease-in-out;
+
   @media (min-width: 870px){
     :hover {
       background: #2e7d31;

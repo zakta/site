@@ -1,4 +1,5 @@
 // 3rd parties
+import Link from 'next/link';
 import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 
@@ -41,17 +42,11 @@ const ServiceInfo = function ComponentServiceInfo({
 
           {valueSelect && (
             <div data-aos="fade-in" style={{ textAlign: 'center' }}>
-              <ButtonToDown
-                type="button"
-                onClick={() => {
-                  window.scrollTo({
-                    behavior: 'smooth',
-                    top: document.body.scrollHeight,
-                  });
-                }}
-              >
-                Solicite um orçamento
-              </ButtonToDown>
+              <Link passHref href="#solicite-um-orcamento">
+                <ButtonToDown>
+                  Solicite um orçamento
+                </ButtonToDown>
+              </Link>
             </div>
           )}
 
@@ -68,7 +63,9 @@ const ServiceInfo = function ComponentServiceInfo({
             />
           </ImageContainer>
 
-          <Info>Ficou Interessado? Entre em contato e solicite um orçamento.</Info>
+          <Info id="solicite-um-orcamento">
+            Ficou Interessado? Entre em contato e solicite um orçamento.
+          </Info>
 
           <Form valueSelect={valueSelect} />
         </About>
