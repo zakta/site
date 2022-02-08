@@ -47,13 +47,9 @@ export const About = styled.div`
 `;
 
 export const Info = styled.h3`
-  margin: 0;
+  margin-top: 2rem;
   color: #1a3968;
   font-size: 19px;
-
-  @media (min-width: 500px){
-    margin-top: 2rem;
-  }
 `;
 
 export const Block = styled.div`
@@ -78,7 +74,7 @@ export const ButtonToDown = styled.button`
   font-weight: 700;
   padding: 1rem;
   position: relative;
-  margin: 1.25rem 0;
+  margin: 2rem 0;
   text-transform: uppercase;
   transition: all .15s ease;
   user-select: none;
