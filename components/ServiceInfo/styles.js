@@ -67,17 +67,22 @@ export const Block = styled.div`
 `;
 
 export const ButtonToDown = styled.button`
-  background: #1a3968;
+  align-self: end;
+  animation-duration: 20s;
+  background-color: #1a3968;
   border: 1px solid #1a3968;
   color: white;
   cursor: pointer;
+  font-size: 14px;
   font-family: 'Poppins', sans-serif;
-  margin: 2rem;
-  padding: 1rem;
-  text-transform: uppercase;
   font-weight: 700;
+  padding: 1rem;
+  position: relative;
+  margin: 1.25rem 0;
+  text-transform: uppercase;
   transition: all .15s ease;
   user-select: none;
+  width: 100%;
 
   :active{
     background-color: #122746;
@@ -85,6 +90,10 @@ export const ButtonToDown = styled.button`
   }
 
   @media (min-width: 640px) {
+    padding: 1.25rem;
+    font-size: 16px;
+    width: 257px;
+
     :active{
       background-color: #122746;
       border: 1px solid #f7f7f7;

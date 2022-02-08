@@ -6,6 +6,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 import Form from '../Form';
+import WhatsAppButton from '../WhatsAppButton';
 
 import {
   About, ButtonToDown, Container, Info, ImageContainer,
@@ -72,6 +73,8 @@ const ServiceInfo = function ComponentServiceInfo({
 
         <Footer />
       </Container>
+
+      <WhatsAppButton />
 
       <GoogleAnalytics />
     </>

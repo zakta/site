@@ -12,6 +12,7 @@ import Loader from '../components/Loader';
 import CookiesModal from '../components/CookiesModal';
 import Services from '../components/Services';
 import GoogleAnalytics from '../components/GoogleAnalytics';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 const Index = function IndexPage() {
   const [isAcceptedCookie, setAcceptedCookie] = useState(false);
@@ -48,6 +49,8 @@ const Index = function IndexPage() {
       <Contact />
 
       <Footer cookiesModalHeight={cookiesModalHeight} />
+
+      <WhatsAppButton />
 
       <CookiesModal
         isAcceptedCookie={isAcceptedCookie}
