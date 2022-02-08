@@ -15,21 +15,23 @@ export const About = styled.div`
   padding: 1.25rem;
   margin-bottom: 3rem;
 
-  @media (min-width: 980px){
+  @media (min-width: 980px) {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  @media (min-width: 980px){
+
+  @media (min-width: 980px) {
     padding: 0 2rem;
   }
-  h1{
+
+  h1 {
     color: #1a3968;
     font-weight: 800;
     font-size: 30px;
     margin: 0;
   }
 
-  p{
+  p {
     font-size: 16px;
     line-height: 2;
     font-weight: 300;
@@ -45,13 +47,13 @@ export const About = styled.div`
 `;
 
 export const Info = styled.h3`
-    margin: 0;
-    color: #1a3968;
-    font-size: 19px;
+  margin: 0;
+  color: #1a3968;
+  font-size: 19px;
 
-    @media (min-width: 500px){
-      margin-top: 2rem;
-    }
+  @media (min-width: 500px){
+    margin-top: 2rem;
+  }
 `;
 
 export const Block = styled.div`
@@ -63,24 +65,62 @@ export const Block = styled.div`
     padding: 1.25rem 1.5rem;
   }
 `;
+
+export const ButtonToDown = styled.button`
+  background: #1a3968;
+  border: 1px solid #1a3968;
+  color: white;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  margin: 2rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all .15s ease;
+  user-select: none;
+
+  :active{
+    background-color: #122746;
+    border: 1px solid #f7f7f7;
+  }
+
+  @media (min-width: 640px) {
+    :active{
+      background-color: #122746;
+      border: 1px solid #f7f7f7;
+    }
+  }
+
+  @media (min-width: 870px) {
+    :hover {
+      background-color:  #26508f;
+      border-color: #26508f;
+    }
+
+    :active{
+      background-color: #122746;
+      border: 1px solid #f7f7f7;
+    }
+  }
+`;
+
 export const ImageContainer = styled.div`
   display: ${({ none }) => (none ? 'none' : 'block')};
 
-
-    &.container-parallax{
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-    }
-    .parallax{
-      position: sticky;
-      width: 100%;
-      object-fit: cover;
-    }
+  &.container-parallax{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .parallax{
+    position: sticky;
+    width: 100%;
+    object-fit: cover;
+  }
 
   @media (min-width: 420px){
     &.container-parallax{
       height: 300px;
     }
   }
-    `;
+`;

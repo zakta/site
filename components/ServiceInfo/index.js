@@ -8,7 +8,7 @@ import Footer from '../Footer';
 import Form from '../Form';
 
 import {
-  About, Container, Info, ImageContainer,
+  About, ButtonToDown, Container, Info, ImageContainer,
 } from './styles';
 import GoogleAnalytics from '../GoogleAnalytics';
 
@@ -37,6 +37,21 @@ const ServiceInfo = function ComponentServiceInfo({
 
         <About>
           {children}
+
+          <div data-aos="fade-in" style={{ textAlign: 'center' }}>
+            <ButtonToDown
+              type="button"
+              onClick={() => {
+                window.scrollTo({
+                  behavior: 'smooth',
+                  top: document.body.scrollHeight,
+                });
+              }}
+            >
+              Solicite um orçamento
+            </ButtonToDown>
+          </div>
+
           <ImageContainer className="container-parallax" none={none}>
             <img
               offset={offset}
@@ -49,6 +64,7 @@ const ServiceInfo = function ComponentServiceInfo({
               }}
             />
           </ImageContainer>
+
           <Info>Ficou Interessado? Entre em contato e solicite um orçamento.</Info>
 
           <Form valueSelect={valueSelect} />
