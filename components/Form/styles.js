@@ -21,9 +21,10 @@ function validationInput({ touched, error }) {
 }
 
 export const InputForm = styled.input`
-  border: 1px solid #efefef;
+  border: none;
   border-bottom: 3px solid ${validationInput};
   border-radius: none;
+  box-shadow: 0 1px 1px 0 rgb(6 6 6 / 12%);
   box-sizing: border-box;
   display: block;
   font-size: 14px;
@@ -50,9 +51,11 @@ export const InputForm = styled.input`
 `;
 
 export const DropDown = styled.select`
-  border: 1px solid #efefef;
+  border: none;
   border-bottom: 3px solid ${validationInput};
+  border-top: 1px solid white;
   border-radius: none;
+  box-shadow: 0 1px 1px 0 rgb(6 6 6 / 12%);
   box-sizing: border-box;
   display: block;
   background: #ffff;
@@ -120,8 +123,9 @@ export const DropDown = styled.select`
 `;
 
 export const Textarea = styled.textarea`
-  border: 1px solid #efefef;
+  border: none;
   border-bottom: 3px solid ${validationInput};
+  box-shadow: 0 1px 1px 0 rgb(6 6 6 / 12%);
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;

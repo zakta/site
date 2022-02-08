@@ -23,7 +23,7 @@ export const ModalWhats = styled.div`
   transition: all .5s ease-in-out;
 
   @media (min-width: 617px) {
-    bottom: 177px;
+    bottom: 175px;
   }
 
   @media (min-width: 870px) {
@@ -35,7 +35,7 @@ export const ModalWhats = styled.div`
   }
 
   @media (min-width: 980px) {
-    bottom: 133px;
+    bottom: 132px;
   }
 `;
 
