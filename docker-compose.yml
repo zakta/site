@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  site:
+    build:
+      dockerfile: ./docker/app.dockerfile
+      context: .
+    image: site/app
+    container_name: site
+    ports:
+      - "3000:3000"
