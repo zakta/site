@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "engines": {
     "npm": "please-use-yarn",
-    "yarn": ">=1.22.17"
+    "yarn": ">=1.22.15"
   },
   "scripts": {
     "build": "next build",
