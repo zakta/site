@@ -5,7 +5,6 @@ import { useState } from 'react';
 
 // Components
 import ContactForm from '../Form';
-// import Notification from '../Notification';
 import BottomModal from '../BottomModal';
 
 // Styles

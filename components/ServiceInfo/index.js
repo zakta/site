@@ -8,6 +8,7 @@ import Header from '../Header';
 import Footer from '../Footer';
 import Form from '../Form';
 import WhatsAppButton from '../WhatsAppButton';
+import BottomModal from '../BottomModal';
 
 import {
   About, ButtonToDown, Container, Info, ImageContainer,
@@ -18,6 +19,8 @@ const ServiceInfo = function ComponentServiceInfo({
   children, valueSelect, source, none,
 }) {
   const [offset, setOffset] = useState(0);
+  const [activeModal, setActiveModal] = useState(false);
+  const [formStatus, setFormStatus] = useState('');
 
   useEffect(() => {
     function handleScroll() {
@@ -67,7 +70,11 @@ const ServiceInfo = function ComponentServiceInfo({
             Ficou Interessado? Entre em contato e solicite um orçamento.
           </Info>
 
-          <Form valueSelect={valueSelect} />
+          <Form
+            setFormStatus={setFormStatus}
+            setActiveModal={setActiveModal}
+            valueSelect={valueSelect}
+          />
         </About>
 
         <Footer />
@@ -76,6 +83,15 @@ const ServiceInfo = function ComponentServiceInfo({
       <WhatsAppButton />
 
       <GoogleAnalytics />
+
+      { formStatus && activeModal && (
+        <BottomModal
+          activeModal={activeModal}
+          setActiveModal={setActiveModal}
+          setFormStatus={setFormStatus}
+          formStatus={formStatus}
+        />
+      )}
     </>
   );
 };
