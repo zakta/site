@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.5](https://github.com/zakta/site/compare/v1.1.4...v1.1.5) (2022-02-10)
+
+
+### Bug Fixes
+
+* send email to locaweb ([50392f0](https://github.com/zakta/site/commit/50392f010b2a2d85012d6f00f69e51e5e81dc7a2))
+
 ### [1.1.4](https://github.com/zakta/site/compare/v1.1.3...v1.1.4) (2022-02-10)
 
 ### [1.1.3](https://github.com/zakta/site/compare/v1.1.2...v1.1.3) (2022-02-10)
