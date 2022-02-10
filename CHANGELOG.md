@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.3](https://github.com/zakta/site/compare/v1.1.2...v1.1.3) (2022-02-10)
+
+
+### Bug Fixes
+
+* change whats number ([58f1131](https://github.com/zakta/site/commit/58f1131fef903ce5554bee2146a9b4cab3635e10))
+
 ### [1.1.2](https://github.com/zakta/site/compare/v1.1.1...v1.1.2) (2022-02-10)
 
 ### [1.1.1](https://github.com/zakta/site/compare/v1.1.0...v1.1.1) (2022-02-10)
