@@ -37,4 +37,5 @@ RUN git add out/
 
 RUN git commit -m "ci: deploy next.js to gh-pages"
 
+RUN git push origin :gh-pages
 RUN git subtree push --prefix out origin gh-pages
