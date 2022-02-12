@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.6](https://github.com/zakta/site/compare/v1.1.5...v1.1.6) (2022-02-12)
+
+
+### Bug Fixes
+
+* send email to locaweb with new service id ([edf7f39](https://github.com/zakta/site/commit/edf7f392d4cdac01aa2e1d2ae7dcea432cd145ea))
+
 ### [1.1.5](https://github.com/zakta/site/compare/v1.1.4...v1.1.5) (2022-02-10)
 
 
