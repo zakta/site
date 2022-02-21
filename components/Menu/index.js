@@ -7,6 +7,7 @@ import { useTranslation } from 'next-i18next';
 // Components
 import Hamburguer from '../Hamburguer';
 import ContactLink from '../ContactLink/styles';
+import I18nBtn from '../I18nBtn';
 
 // Functions
 import scrollTop from '../../functions/scrollTop';
@@ -130,6 +131,9 @@ const Menu = function MenuPage({
               {t('contact')}
             </BtnMenu>
           </Link>
+        </ListItem>
+        <ListItem>
+          <I18nBtn isSticky={isSticky} open={open} />
         </ListItem>
 
         <ItemInfo>

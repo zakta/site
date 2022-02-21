@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 // Components
 import Logo from '../Logo';
 import Menu from '../Menu';
-import I18nBtn from '../I18nBtn';
 
 // Functions
 import scrollTop from '../../functions/scrollTop';
@@ -72,7 +71,6 @@ const Header = function Header({ stat }) {
             />
           </LogoContainer>
         </Link>
-
         <Menu
           isSticky={isSticky}
           stat={stat}
@@ -81,7 +79,6 @@ const Header = function Header({ stat }) {
           activeMenuItem={activeMenuItem}
           setActiveMenuItem={setActiveMenuItem}
         />
-        <I18nBtn />
       </Center>
     </Container>
   );
