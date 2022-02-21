@@ -1,0 +1,27 @@
+{
+  "privacy-title" : "Privacy Policy",
+  "privacy-subtitle" : "INTRODUCTION",
+
+  "privacy-text-1": "Personal information. \"Personal information\" is data related to usted and can, only or in combination with other information, identify him as an individual. Personal information does not include data that has been aggregated or anonymized for that it could not be identified using measures reasonably available to us.",
+  "privacy-text-2": "Our services. The services mentioned in this Policy include the services provided by Zakta. You can read more about how the Personal Information that is used by clicking below on the company name of the Zakta services, websites or applications that you use.",
+  "privacy-text-3" : " References to \"you\". In this Policy, \"you\" means anyone who uses our websites, applications or other services. If you are an employee or candidate, Zakta's Privacy Policy for Data Personal Information of an Employee or Candidate, Zakta's Privacy Policy for Personal Data explains how we use Personal Information in the context of our employment relationship with you. If you are an employee or candidate using our services, this Policy explains how we collect, we use and disclose your Personal Information in the context of your use of our Services.",
+  "privacy-text-4" : " Authorized version. When the text of this Policy is available in multiple languages, the English version is the authorized version, except where prohibited by applicable law.",
+
+  "privacy-information" : "INFORMATION WE COLLECT",
+  "privacy-information-text-1": " The Personal Information we collect and our use of that information depends on your relationship with us and the requirements of applicable law as described below",
+  "privacy-information-text-2": "We collect information: that you provide us directly; that your company, your broker, your host, your country or responsible party provides us; about your devices and your location, and your use of our services , including through cookies, pixels, web beacons, logs and other Internet technologies.",
+  "privacy-information-text-3": "You will opt for certain resources or depending on the settings of your device, we will obtain geolocation data and information about your contacts; and that we obtain from other sources.",
+
+  "your-information": "INFORMATION COLLECTED FROM YOU",
+  "your-information-text-1": " Zakta requests different types of Personal Information from you and your company or others, depending on the services you use and your relationship with us. We may collect the following categories of information depending on the services you use:",
+  "your-information-text-2": "Contact Information and other Identifiers, including your name, mailing address, telephone number, email address and other information that allows us to contact you;",
+  "your-information-text-3": "Verification Information, including a photo ID or government-issued ID and date of birth; and Information Related to Your Employment Information.",
+  "your-information-text-4": "Professionals, including company name, title, title, team and other information about their profession;",
+  "your-information-text-5" : "Payment Information, including credit or debit card details, bank and payment account information, or other information required when making a purchase;",
+  "your-information-text-6" : "Email Calendar Information , when we integrate with your corporate email calendar (Gmail or Microsoft Outlook) and collect data regarding the conference rooms you reserve;",
+  "your-information-text-7" : "Office Preferences, including your requests or preferences for temperature, fan speed, table and chair height, table location, phone booth, beverage, snack, and other preferences related to services;"
+
+
+
+
+}

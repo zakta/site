@@ -1,7 +1,3 @@
-import PrivacyModal from '../components/PrivacyTerms';
+import { Redirect } from '../lib/redirect';
 
-const Privacy = function PrivacyPage() {
-  return <PrivacyModal />;
-};
-
-export default Privacy;
+export default Redirect;

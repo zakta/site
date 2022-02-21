@@ -3,12 +3,14 @@ import Link from 'next/link';
 import cookie from 'js-cookie';
 import PropTypes from 'prop-types';
 import { useRef, useEffect, useCallback } from 'react';
+import { useTranslation } from 'next-i18next';
 
 // styles
 import { Container, CookieNotice } from './styles';
 
 const CookiesModal = function
 CookiesModalPage({ isAcceptedCookie, setAcceptedCookie, setCookiesModalHeight }) {
+  const { t } = useTranslation('common');
   const createCookies = () => {
     if (cookie.get('allow-cookies') === undefined) {
       cookie.set('allow-cookies', 'true', { expires: 1 });
@@ -44,13 +46,7 @@ CookiesModalPage({ isAcceptedCookie, setAcceptedCookie, setCookiesModalHeight })
     >
       <CookieNotice>
         <p>
-          Usamos cookies e métodos semelhantes para reconhecer os visitantes e
-          lembrar suas preferências, medir a eficácia da campanha publicitária,
-          direcionar anúncios e analisar o tráfego do site. Saiba mais acessando
-          nossa
-
-          {' '}
-
+          {t('modal-cookie')}
           <span
             aria-hidden
           >
@@ -58,11 +54,11 @@ CookiesModalPage({ isAcceptedCookie, setAcceptedCookie, setCookiesModalHeight })
               href="/termos-de-servico"
               as={`${process.env.BACKEND_URL}/termos-de-servico`}
             >
-              Política de Cookies
+              {t('modal-cookie-cookie')}
             </Link>
           </span>
 
-          {' e '}
+          {t('modal-cookie-text')}
 
           <span
             aria-hidden
@@ -71,13 +67,13 @@ CookiesModalPage({ isAcceptedCookie, setAcceptedCookie, setCookiesModalHeight })
               href="/politica-de-privacidade"
               as={`${process.env.BACKEND_URL}/politica-de-privacidade`}
             >
-              Política de Privacidade
+              {t('modal-cookie-privacy')}
             </Link>
           </span>
           .
         </p>
 
-        <button type="button" onClick={createCookies}>Continuar</button>
+        <button type="button" onClick={createCookies}>{t('modal-cookie-btn')}</button>
       </CookieNotice>
     </Container>
   );

@@ -105,6 +105,14 @@
   "form-message-placeholder" : "Mensaje",
   "form-submit" : "Enviar Mensaje",
 
-  "footer-copyright" : "ZAKTA Tecnología todos los derechos reservados."
+  "footer-copyright" : "ZAKTA Tecnología todos los derechos reservados.",
+
+  "modal-cookie": "Usamos cookies y métodos similares para reconocer a los visitantes y recordar sus preferencias, medir la efectividad de la campaña publicitaria, orientar anuncios y analizar el tráfico del sitio web. Obtenga más información visitando nuestro",
+  "modal-cookie-cookie" : " Política de Cookies",
+  "modal-cookie-text" : " y ",
+  "modal-cookie-privacy" : "Política de Privacidad",
+  "modal-cookie-btn" : "Continuar",
+
+  "text-service-info-form" : "¿Interesado? Contáctenos y solicite una cotización."
 
 }

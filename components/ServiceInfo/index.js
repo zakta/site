@@ -1,6 +1,7 @@
 // 3rd parties
 import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'next-i18next';
 
 // Application
 import Header from '../Header';
@@ -15,6 +16,7 @@ import GoogleAnalytics from '../GoogleAnalytics';
 const ServiceInfo = function ComponentServiceInfo({
   children, valueSelect, source, none,
 }) {
+  const { t } = useTranslation('common');
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
@@ -49,7 +51,7 @@ const ServiceInfo = function ComponentServiceInfo({
               }}
             />
           </ImageContainer>
-          <Info>Ficou Interessado? Entre em contato e solicite um orçamento.</Info>
+          <Info>{t('text-service-info-form')}</Info>
 
           <Form valueSelect={valueSelect} />
         </About>

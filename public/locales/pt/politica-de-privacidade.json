@@ -1,0 +1,24 @@
+{
+  "privacy-title" : "Política de Privacidade",
+  "privacy-subtitle" : "INTRODUÇÃO",
+
+  "privacy-text-1": " Informações pessoais. \"Informações Pessoais\"são dados relacionados a você e podem –– isoladamente ou em combinação com outras informações –– identificar você como um indivíduo. As Informações Pessoais não incluem dados que foram agregados ou tornados anônimos, de modo que você não possa mais ser identificado usando meios razoavelmente disponíveis para nós.",
+  "privacy-text-2": "Nossos serviços. Os serviços mencionados nesta Política incluem os serviços fornecidos pela Zakta. Você pode ler mais sobre como as Informações Pessoais que são usadas clicando abaixo no nome da empresa de serviços, sites ou aplicativos Zakta que você usa.",
+  "privacy-text-3" : "Referências a \"você\". Nesta Política, \"você\" significa qualquer pessoa que use nossos sites, aplicativos ou outros serviços. Se você é um funcionário ou candidato, a Política de Privacidade da Zakta para Dados Pessoais de um funcionário ou um Candidato, a Política de Privacidade da Zakta para Dados Pessoais explica como usamos as Informações Pessoais no contexto de nossa relação empregatícia com você. Se você é um funcionário ou candidato que usa nossos serviços, esta Política explica como coletamos, usamos e divulgamos suas Informações Pessoais no contexto de seu uso de nossos Serviços.",
+  "privacy-text-4" : "Versão autorizada. Quando o texto desta Política está disponível em vários idiomas, a versão em inglês é a versão autorizada, exceto quando proibido pela lei aplicável.",
+
+  "privacy-information" : "INFORMAÇÕES QUE COLETAMOS",
+  "privacy-information-text-1": " As Informações Pessoais que coletamos e nosso uso dessas informações dependem do seu relacionamento conosco e dos requisitos da lei aplicável, conforme descrito abaixo",
+  "privacy-information-text-2": "Nós coletamos informações: que você nos fornece diretamente; que sua empresa, seu corretor, seu host, pai ou responsável nos forneça; sobre seus dispositivos e sua localização, e seu uso de nossos serviços, incluindo por meio de cookies, pixels, web beacons, registros e outras tecnologias da Internet.",
+  "privacy-information-text-3": "Se você optar por determinados recursos ou dependendo das configurações do seu dispositivo, obteremos dados de geolocalização e informações sobre seus contatos; e que obtemos de outras fontes.",
+
+  "your-information": "INFORMAÇÕES COLETADAS DE VOCÊ",
+  "your-information-text-1": " A Zakta solicita diferentes tipos de Informações Pessoais de sua parte e sua empresa ou outros, dependendo dos serviços que você usa e do seu relacionamento conosco. Podemos coletar as seguintes categorias de informações, dependendo dos serviços que você usa:",
+  "your-information-text-2": "Informações de Contato e outros Identificadores, incluindo seu nome, endereço para correspondência, número de telefone, endereço de e-mail e outras informações que nos permitam entrar em contato com você;",
+  "your-information-text-3": "Informações de Verificação, incluindo um documento com foto ou documento de identidade emitido pelo governo e data de nascimento; e Informações Relacionadas ao seu Vínculo Trabalhista Informações.",
+  "your-information-text-4": "Profissionais, incluindo o nome da empresa, título, cargo, equipe e outras informações sobre sua profissão;",
+  "your-information-text-5" : "Informações sobre Pagamentos, incluindo detalhes do cartão de crédito ou débito, informações da conta bancária e pagamento ou outras informações necessárias ao fazer uma compra;",
+  "your-information-text-6" : "Informações de Calendário do E-mail , quando nós nos integramos ao seu calendário de e-mail corporativo (Gmail ou Microsoft Outlook) e coletamos dados referentes às salas de conferência que você reserva;",
+  "your-information-text-7" : "Preferências de Escritório, incluindo suas solicitações ou preferências quanto a temperatura, velocidade do ventilador, altura da mesa e da cadeira, localização da mesa, cabine telefônica, bebida, lanche e outras preferências relacionadas aos serviços;"
+
+}

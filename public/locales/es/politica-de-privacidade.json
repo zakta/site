@@ -1,0 +1,24 @@
+{
+  "privacy-title" : "Política de Privacidad",
+  "privacy-subtitle" : "INTRODUÇÃO",
+
+  "privacy-text-1": " Datos personales. \"Datos personales\" son datos relacionados con usted y pueden, solos o en combinación con otra información, identificarlo como individuo. La información personal no incluye datos que tengan agregado o anonimizado para que ya no pueda ser identificado utilizando medios razonablemente disponibles para nosotros.",
+  "privacy-text-2":"Nuestros servicios. Los servicios mencionados en esta Política incluyen los servicios proporcionados por Zakta. Puede leer más sobre cómo se utiliza la Información personal haciendo clic a continuación en el nombre de la empresa de los servicios, sitios web de Zakta o aplicaciones que usas.",
+  "privacy-text-3" : "Las referencias a \"usted\". En esta Política, \"usted\" significa cualquiera que utilice nuestros sitios web, aplicaciones u otros servicios. Si usted es un empleado o candidato, la Política de privacidad de Zakta para datos de información personal de un empleado o candidato, la Política de privacidad de Zakta para datos personales explica cómo usamos la Información personal en el contexto de nuestra relación laboral con usted. Si usted es un empleado o candidato que utiliza nuestros servicios, esta Política explica cómo recopilamos, usamos y divulgamos su Información personal en el contexto de su uso de nuestros Servicios.",
+  "privacy-text-4" : "Versión autorizada. Cuando el texto de esta Política está disponible en varios idiomas, la versión en inglés es la versión autorizada, excepto donde lo prohíba la ley aplicable.",
+
+  "privacy-information": "INFORMACIÓN QUE RECOPILAMOS",
+  "privacy-information-text-1": " La información personal que recopilamos y nuestro uso de esa información depende de su relación con nosotros y de los requisitos de la ley aplicable, tal como se describe a continuación",
+  "privacy-information-text-2": "Recopilamos información: que usted nos proporciona directamente; que su empresa, su corredor, su anfitrión, padre o tutor nos proporciona; sobre sus dispositivos y su ubicación, y su uso de nuestros servicios, incluso a través de cookies, píxeles, balizas web, registros y otras tecnologías de Internet.",
+  "privacy-information-text-3": "Se você optar por determinados recursos o depender de las configuraciones de su dispositivo, obteremos datos de geolocalización e información sobre seus contatos; y que obtemos de outras fontes.",
+
+  "your-information": "INFORMACIÓN RECOGIDA DE USTED",
+  "your-information-text-1": " Zakta solicita diferentes tipos de información personal de usted y su empresa u otros, según los servicios que utilice y su relación con nosotros. Podemos recopilar las siguientes categorías de información según los servicios tu usas:",
+  "your-information-text-2": "Información de contacto y otros identificadores, incluido su nombre, dirección postal, número de teléfono, dirección de correo electrónico y otra información que nos permita comunicarnos con usted;",
+  "your-information-text-3": "Información de verificación, incluida una identificación con foto o una identificación emitida por el gobierno y la fecha de nacimiento; e información relacionada con su información de empleo.",
+  "your-information-text-4": "Profesionales, incluido el nombre de la empresa, el cargo, el cargo, el equipo y otra información sobre su profesión;",
+  "your-information-text-5" : "Información de pago, incluidos los detalles de la tarjeta de crédito o débito, la información bancaria y de la cuenta de pago, u otra información requerida al realizar una compra;",
+  "your-information-text-6" : "Información del calendario de correo electrónico , cuando nos integramos con su calendario de correo electrónico corporativo (Gmail o Microsoft Outlook) y recopilamos datos sobre las salas de conferencias que reserva;",
+  "your-information-text-7" : "Preferencias de la oficina, incluidas sus solicitudes o preferencias de temperatura, velocidad del ventilador, altura de la mesa y la silla, ubicación de la mesa, cabina telefónica, bebidas, refrigerios y otras preferencias relacionadas con los servicios;"
+
+}

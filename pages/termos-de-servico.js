@@ -1,7 +1,3 @@
-import TermsModal from '../components/Terms';
+import { Redirect } from '../lib/redirect';
 
-const Terms = function TermsPage() {
-  return <TermsModal />;
-};
-
-export default Terms;
+export default Redirect;
