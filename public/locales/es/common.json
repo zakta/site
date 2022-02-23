@@ -7,7 +7,7 @@
   "cookies-policy": "Política de Cookies",
   "privacy-policy": "Política de Privacidad",
   "title-home": "Tecnología Aplicada en Soluciones Digitales",
-  "home-p1" : "Somos especialistas en desarrollo de páginas web, tiendas virtuales, aplicativos, blogs, sistemas, entre otros softwares.",
+  "home-p1" : "Somos especialistas en desarrollo de páginas web, tiendas virtuales, aplicaciones, blogs, sistemas, entre otros softwares.",
   "home-p2" : "Tenemos la experiencia necesaria para entender tu negocio, proponer ideas y construir un proyecto hecho totalmente a medida para tu empresa.",
   "home-link": "Hable con un consultor",
 
@@ -24,8 +24,8 @@
   "subtitle-services-4": "Optimización de sitios web - SEO",
   "text-services-4": "Tu sitio web destacado en Google a través del SEO.",
 
-  "subtitle-services-5": "Creación de aplicativos",
-  "text-services-5": "Desarrollo de aplicativos para Android e iPhone.",
+  "subtitle-services-5": "Creación de aplicaciones",
+  "text-services-5": "Desarrollo de aplicaciones para Android e iPhone.",
 
   "subtitle-services-6": "Manutención de Páginas Web",
   "text-services-6": "Sustentación de sitios web y atendimiento técnico.",
@@ -48,7 +48,7 @@
 
   "title-about": "Empresa",
   "about-info": "La Zakta existe para criar soluciones que faciliten acciones y generen resultados para personas y empresas con tecnología especializada",
-  "about-company-p1": "Una empresa de tecnología de la información especializada en análisis, desarrollo, consultoría y implementación de aplicativos web y móvil. ",
+  "about-company-p1": "Una empresa de tecnología de la información especializada en análisis, desarrollo, consultoría y implementación de aplicaciones web y móvil. ",
   "about-company-p2": "Actuamos desde la fase inicial de la concepción del plan de negocios hasta la publicación del proyecto. Tenemos un equipo especializado que es capaz de criar diversas aplicaciones y en diferentes lenguajes de programación y tecnologías.",
   "about-company-p3": "Nuestro objetivo es transformar nuestra experiencia y bagaje profesional de manera que alcance el resultado esperado por nuestros clientes por medio de nuestras soluciones digitales.",
   "about-list-p1": "Equipo con experiencia y altamente cualificado ",
@@ -93,7 +93,7 @@
   "form-subject-option-2" : "Tiendas Virtuales",
   "form-subject-option-3" : "Sistemas Web",
   "form-subject-option-4" : "Optimización de sitios web - SEO",
-  "form-subject-option-5" : "Creación de aplicativos",
+  "form-subject-option-5" : "Creación de aplicaciones",
   "form-subject-option-6" : "Manutención de Páginas Web",
   "form-subject-option-7" : "Landing Pages",
   "form-subject-option-8" : "Consultoría y Análisis de Sistemas",
