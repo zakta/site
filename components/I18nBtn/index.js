@@ -26,7 +26,7 @@ const I18nBtn = function I18nComponent({ isSticky, open }) {
           style={{ width: 30, height: 30 }}
         />
       </Selector>
-      <Dropdown visible={visible}>
+      <Dropdown visible={visible} isSticky={isSticky}>
         <Language passHref href="/#">Português</Language>
         <Language passHref href="/es#">Español</Language>
         <Language passHref href="/en#">English</Language>

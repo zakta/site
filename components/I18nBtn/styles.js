@@ -12,7 +12,6 @@ export const Container = styled.div`
     padding: 0;
     justify-content: inherit;
     margin: auto 1.25rem;
-    width: 90px;
   }
 `;
 
@@ -26,7 +25,7 @@ export const Selector = styled.div`
 `;
 
 export const Dropdown = styled.div`
-  background: white;
+  background: ${({ isSticky }) => (isSticky ? '#33afadc7' : '#33afad8f')};
   position: absolute;
   top: 45px;
   padding: 0.5rem;
@@ -34,13 +33,14 @@ export const Dropdown = styled.div`
 
   @media(min-width: 980px){
     flex-direction: column;
-    top: 31px;
-    left: 35px;
+    top: ${({ isSticky }) => (isSticky ? '55px' : '41px')};
+    left: -57px;
     margin: 0;
   }
   a{
     text-decoration: none;
-    color: black;
+    color: white;
+    font-weight: 600;
     padding: .5rem;
 
     @media(min-width: 980px){
