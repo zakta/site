@@ -8,58 +8,57 @@ import { Block } from '../../../components/ServiceInfo/styles';
 import Breadcrumb from '../../../components/Breadcrumb';
 import { TitleServices } from '../../../components/Services/styles';
 
-const VirtualStore = function PageServiceStore() {
-  const { t } = useTranslation('lojas-virtuais-em-santos');
+const WebSystems = function PageServiceWebSystem() {
+  const { t } = useTranslation('sistemas-web-em-santos');
   return (
     <>
       <Head>
         <title>
-          {t('services-virtual-page')}
+          {t('services-systems-page')}
         </title>
       </Head>
 
-      <ServiceInfo valueSelect="Lojas Virtuais" source="lojas-virtuais-em-santos">
+      <ServiceInfo valueSelect="Sistemas Web" source="sistemas-web-em-santos">
         <Breadcrumb>
           <Breadcrumb.Link href="/">
-            {t('virtual-breadcrumb-1')}
+            {t('systems-breadcrumb-1')}
           </Breadcrumb.Link>
           <Breadcrumb.Link href="/servicos">
-            {t('virtual-breadcrumb-2')}
+            {t('systems-breadcrumb-2')}
           </Breadcrumb.Link>
           <Breadcrumb.Item>
-            {t('virtual-page-title')}
+            {t('systems-page-title')}
           </Breadcrumb.Item>
         </Breadcrumb>
 
         <TitleServices full>
-          {t('virtual-page-title')}
+          {t('systems-page-title')}
         </TitleServices>
 
         <Block data-aos="fade-up">
           <p>
-            {t('virtual-page-text-1')}
+            {t('systems-page-text-1')}
           </p>
           <p>
-            {t('virtual-page-text-2')}
+            {t('systems-page-text-2')}
           </p>
           <p>
-            {t('virtual-page-text-3')}
+            {t('systems-page-text-3')}
           </p>
           <p>
-            {t('virtual-page-text-4')}
+            {t('systems-page-text-4')}
           </p>
           <p>
-            {t('virtual-page-text-5')}
+            {t('systems-page-text-5')}
           </p>
           <p>
-            {t('virtual-page-text-6')}
+            {t('systems-page-text-6')}
           </p>
         </Block>
       </ServiceInfo>
     </>
   );
 };
-
-export default VirtualStore;
-const getStaticProps = makeStaticProps(['lojas-virtuais-em-santos', 'common']);
+export default WebSystems;
+const getStaticProps = makeStaticProps(['sistemas-web-em-santos', 'common']);
 export { getStaticPaths, getStaticProps };

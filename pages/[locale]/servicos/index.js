@@ -9,7 +9,7 @@ import Breadcrumb from '../../../components/Breadcrumb';
 import ServiceInfo from '../../../components/ServiceInfo';
 
 const OfferedServices = function PageOfferedServices() {
-  const { t } = useTranslation('services');
+  const { t } = useTranslation('servicos');
   return (
     <>
       <Head>
@@ -33,5 +33,5 @@ const OfferedServices = function PageOfferedServices() {
 };
 
 export default OfferedServices;
-const getStaticProps = makeStaticProps(['services']);
+const getStaticProps = makeStaticProps(['servicos', 'common']);
 export { getStaticPaths, getStaticProps };

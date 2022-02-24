@@ -1,6 +1,7 @@
 // 3rd parties
 import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
+import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic';
 
 // Styles
 import ServiceInfo from '../../../components/ServiceInfo';
@@ -55,3 +56,5 @@ const CreateApp = function PageServiceCreateApp() {
   );
 };
 export default CreateApp;
+const getStaticProps = makeStaticProps(['criacao-de-aplicativos-em-santos', 'common']);
+export { getStaticPaths, getStaticProps };

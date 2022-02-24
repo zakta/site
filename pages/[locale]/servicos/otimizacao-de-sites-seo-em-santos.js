@@ -8,58 +8,51 @@ import { Block } from '../../../components/ServiceInfo/styles';
 import Breadcrumb from '../../../components/Breadcrumb';
 import { TitleServices } from '../../../components/Services/styles';
 
-const VirtualStore = function PageServiceStore() {
-  const { t } = useTranslation('lojas-virtuais-em-santos');
+const WebOptimization = function PageServiceWebOptimization() {
+  const { t } = useTranslation('otimizacao-de-sites-seo-em-santos');
   return (
     <>
       <Head>
         <title>
-          {t('services-virtual-page')}
+          {t('services-seo-page')}
         </title>
       </Head>
 
-      <ServiceInfo valueSelect="Lojas Virtuais" source="lojas-virtuais-em-santos">
+      <ServiceInfo valueSelect="Otimização de Sites" source="otimizacao-de-sites-seo-em-santos">
         <Breadcrumb>
           <Breadcrumb.Link href="/">
-            {t('virtual-breadcrumb-1')}
+            {t('seo-breadcrumb-1')}
           </Breadcrumb.Link>
           <Breadcrumb.Link href="/servicos">
-            {t('virtual-breadcrumb-2')}
+            {t('seo-breadcrumb-2')}
           </Breadcrumb.Link>
           <Breadcrumb.Item>
-            {t('virtual-page-title')}
+            {t('seo-page-title')}
           </Breadcrumb.Item>
         </Breadcrumb>
 
         <TitleServices full>
-          {t('virtual-page-title')}
+          {t('seo-page-title')}
         </TitleServices>
 
         <Block data-aos="fade-up">
           <p>
-            {t('virtual-page-text-1')}
+            {t('seo-page-text-1')}
           </p>
           <p>
-            {t('virtual-page-text-2')}
+            {t('seo-page-text-2')}
           </p>
           <p>
-            {t('virtual-page-text-3')}
+            {t('seo-page-text-3')}
           </p>
           <p>
-            {t('virtual-page-text-4')}
-          </p>
-          <p>
-            {t('virtual-page-text-5')}
-          </p>
-          <p>
-            {t('virtual-page-text-6')}
+            {t('seo-page-text-4')}
           </p>
         </Block>
       </ServiceInfo>
     </>
   );
 };
-
-export default VirtualStore;
-const getStaticProps = makeStaticProps(['lojas-virtuais-em-santos', 'common']);
+export default WebOptimization;
+const getStaticProps = makeStaticProps(['otimizacao-de-sites-seo-em-santos', 'common']);
 export { getStaticPaths, getStaticProps };

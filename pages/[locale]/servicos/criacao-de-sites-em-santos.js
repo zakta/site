@@ -1,6 +1,7 @@
 // 3rd parties
 import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
+import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic';
 
 // Styles
 import ServiceInfo from '../../../components/ServiceInfo';
@@ -57,3 +58,5 @@ const CreateWeb = function PageServiceWeb() {
   );
 };
 export default CreateWeb;
+const getStaticProps = makeStaticProps(['criacao-de-sites-em-santos', 'common']);
+export { getStaticPaths, getStaticProps };

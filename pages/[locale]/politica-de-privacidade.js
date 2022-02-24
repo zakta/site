@@ -8,5 +8,5 @@ const Privacy = function PrivacyPage() {
 };
 
 export default Privacy;
-const getStaticProps = makeStaticProps(['politica-de-privacidade']);
+const getStaticProps = makeStaticProps(['politica-de-privacidade', 'common']);
 export { getStaticPaths, getStaticProps };

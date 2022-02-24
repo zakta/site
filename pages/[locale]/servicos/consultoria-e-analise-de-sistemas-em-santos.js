@@ -15,7 +15,7 @@ const Consultancy = function PageServiceConsultancy() {
     <>
       <Head>
         <title>
-          Consultoria e Análise de Sistemas em Santos | Zakta Tecnologia
+          {t('services-consultancy-page')}
         </title>
       </Head>
 
@@ -58,5 +58,5 @@ const Consultancy = function PageServiceConsultancy() {
   );
 };
 export default Consultancy;
-const getStaticProps = makeStaticProps(['consultoria-e-analise-de-sistemas-em-santos']);
+const getStaticProps = makeStaticProps(['consultoria-e-analise-de-sistemas-em-santos', 'common']);
 export { getStaticPaths, getStaticProps };

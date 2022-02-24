@@ -8,5 +8,5 @@ const Terms = function TermsPage() {
 };
 
 export default Terms;
-const getStaticProps = makeStaticProps(['termos-de-servico']);
+const getStaticProps = makeStaticProps(['termos-de-servico', 'common']);
 export { getStaticPaths, getStaticProps };

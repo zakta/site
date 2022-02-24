@@ -1,7 +1,7 @@
 // 3rd parties
 import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
-
+import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic';
 // Styles
 import ServiceInfo from '../../../components/ServiceInfo';
 import { Block } from '../../../components/ServiceInfo/styles';
@@ -57,3 +57,5 @@ const LandingPages = function PageServiceLandingPages() {
   );
 };
 export default LandingPages;
+const getStaticProps = makeStaticProps(['landing-pages-em-santos', 'common']);
+export { getStaticPaths, getStaticProps };

@@ -47,7 +47,7 @@ const Services = function ServicesPage({ full }) {
               passHref
               as={`${process.env.BACKEND_URL}/servicos/criacao-de-sites-em-santos`}
             >
-              <a className="card-link" href="/website">
+              <div className="card-link" href="/website">
                 <Icon>
                   <lord-icon
                     src="https://cdn.lordicon.com/qhgmphtg.json"
@@ -66,7 +66,7 @@ const Services = function ServicesPage({ full }) {
 
                   <span>{t('arrow-services')}</span>
                 </ArrowRight>
-              </a>
+              </div>
             </Link>
           </Card>
 
@@ -83,7 +83,7 @@ const Services = function ServicesPage({ full }) {
               passHref
               as={`${process.env.BACKEND_URL}/servicos/lojas-virtuais-em-santos`}
             >
-              <a className="card-link" href="/virtual">
+              <div className="card-link" href="/virtual">
                 <Icon>
                   <lord-icon
                     src="https://cdn.lordicon.com/slkvcfos.json"
@@ -101,7 +101,7 @@ const Services = function ServicesPage({ full }) {
                   <ArrowRightIcon />
                   <span>{t('arrow-services')}</span>
                 </ArrowRight>
-              </a>
+              </div>
             </Link>
           </Card>
 
@@ -118,7 +118,7 @@ const Services = function ServicesPage({ full }) {
               passHref
               as={`${process.env.BACKEND_URL}/servicos/sistemas-web-em-santos`}
             >
-              <a className="card-link" href="/system">
+              <div className="card-link" href="/system">
                 <Icon>
                   <lord-icon
                     src="https://cdn.lordicon.com/gqzfzudq.json"
@@ -136,7 +136,7 @@ const Services = function ServicesPage({ full }) {
                   <ArrowRightIcon />
                   <span>{t('arrow-services')}</span>
                 </ArrowRight>
-              </a>
+              </div>
             </Link>
           </Card>
 
@@ -153,7 +153,7 @@ const Services = function ServicesPage({ full }) {
               passHref
               as={`${process.env.BACKEND_URL}/servicos/otimizacao-de-sites-seo-em-santos`}
             >
-              <a className="card-link" href="/seo">
+              <div className="card-link" href="/seo">
                 <Icon>
                   <lord-icon
                     src="https://cdn.lordicon.com/msoeawqm.json"
@@ -171,7 +171,7 @@ const Services = function ServicesPage({ full }) {
                   <ArrowRightIcon />
                   <span>{t('arrow-services')}</span>
                 </ArrowRight>
-              </a>
+              </div>
             </Link>
           </Card>
 
@@ -188,7 +188,7 @@ const Services = function ServicesPage({ full }) {
               passHref
               as={`${process.env.BACKEND_URL}/servicos/criacao-de-aplicativos-em-santos`}
             >
-              <a className="card-link" href="/app">
+              <div className="card-link" href="/app">
                 <Icon>
                   <lord-icon
                     src="https://cdn.lordicon.com/jqeuwnmb.json"
@@ -206,7 +206,7 @@ const Services = function ServicesPage({ full }) {
                   <ArrowRightIcon />
                   <span>{t('arrow-services')}</span>
                 </ArrowRight>
-              </a>
+              </div>
             </Link>
           </Card>
 
@@ -223,7 +223,7 @@ const Services = function ServicesPage({ full }) {
               passHref
               as={`${process.env.BACKEND_URL}/servicos/manutencao-de-sites-em-santos`}
             >
-              <a className="card-link" href="/maint">
+              <div className="card-link" href="/maint">
                 <Icon>
                   <lord-icon
                     src="https://cdn.lordicon.com/sbiheqdr.json"
@@ -241,7 +241,7 @@ const Services = function ServicesPage({ full }) {
                   <ArrowRightIcon />
                   <span>{t('arrow-services')}</span>
                 </ArrowRight>
-              </a>
+              </div>
             </Link>
           </Card>
 
@@ -258,7 +258,7 @@ const Services = function ServicesPage({ full }) {
               passHref
               as={`${process.env.BACKEND_URL}/servicos/landing-pages-em-santos`}
             >
-              <a className="card-link" href="/landing">
+              <div className="card-link" href="/landing">
                 <Icon>
                   <lord-icon
                     src="https://cdn.lordicon.com/anihkfxp.json"
@@ -276,7 +276,7 @@ const Services = function ServicesPage({ full }) {
                   <ArrowRightIcon />
                   <span>{t('arrow-services')}</span>
                 </ArrowRight>
-              </a>
+              </div>
             </Link>
           </Card>
 
@@ -293,7 +293,7 @@ const Services = function ServicesPage({ full }) {
               passHref
               as={`${process.env.BACKEND_URL}/servicos/consultoria-e-analise-de-sistemas-em-santos`}
             >
-              <a className="card-link" href="/consult">
+              <div className="card-link" href="/consult">
                 <Icon>
                   <lord-icon
                     src="https://cdn.lordicon.com/nobciafz.json"
@@ -311,7 +311,7 @@ const Services = function ServicesPage({ full }) {
                   <ArrowRightIcon />
                   <span>{t('arrow-services')}</span>
                 </ArrowRight>
-              </a>
+              </div>
             </Link>
           </Card>
 
@@ -328,7 +328,7 @@ const Services = function ServicesPage({ full }) {
               passHref
               as={`${process.env.BACKEND_URL}/servicos/marketing-digital-em-santos`}
             >
-              <a className="card-link" href="/servicos/mkt">
+              <div className="card-link" href="/servicos/mkt">
                 <Icon>
                   <lord-icon
                     src="https://cdn.lordicon.com/iltqorsz.json"
@@ -346,7 +346,7 @@ const Services = function ServicesPage({ full }) {
                   <ArrowRightIcon />
                   <span>{t('arrow-services')}</span>
                 </ArrowRight>
-              </a>
+              </div>
             </Link>
           </Card>
 
@@ -363,7 +363,7 @@ const Services = function ServicesPage({ full }) {
               passHref
               as={`${process.env.BACKEND_URL}/servicos/criacao-de-blogs-em-santos`}
             >
-              <a className="card-link" href="/blog">
+              <div className="card-link" href="/blog">
                 <Icon>
                   <lord-icon
                     src="https://cdn.lordicon.com/puvaffet.json"
@@ -381,7 +381,7 @@ const Services = function ServicesPage({ full }) {
                   <ArrowRightIcon />
                   <span>{t('arrow-services')}</span>
                 </ArrowRight>
-              </a>
+              </div>
             </Link>
           </Card>
         </Cards>

@@ -1,6 +1,7 @@
 // 3rd parties
 import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
+import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic';
 
 // Styles
 import ServiceInfo from '../../../components/ServiceInfo';
@@ -54,3 +55,5 @@ const CreateBlog = function PageServiceCreateBlog() {
   );
 };
 export default CreateBlog;
+const getStaticProps = makeStaticProps(['criacao-de-blogs-em-santos', 'common']);
+export { getStaticPaths, getStaticProps };
