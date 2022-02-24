@@ -17,7 +17,7 @@ export const Container = styled.div`
 
 export const Selector = styled.div`
   z-index: 19;
-  color: ${({ isSticky }) => (isSticky ? '#1a3968' : 'white')};
+  color: ${({ isSticky, stat }) => (isSticky || stat ? '#1a3968' : 'white')};
 
   :after{
     content: '▾'
@@ -25,7 +25,7 @@ export const Selector = styled.div`
 `;
 
 export const Dropdown = styled.div`
-  background: ${({ isSticky }) => (isSticky ? '#33afadc7' : '#33afad8f')};
+  background: ${({ isSticky, stat }) => (isSticky || stat ? '#33afadc7' : '#33afad8f')};
   position: absolute;
   top: 45px;
   padding: 0.5rem;
@@ -33,7 +33,7 @@ export const Dropdown = styled.div`
 
   @media(min-width: 980px){
     flex-direction: column;
-    top: ${({ isSticky }) => (isSticky ? '55px' : '41px')};
+    top: ${({ isSticky, stat }) => (isSticky || stat ? '55px' : '41px')};
     left: -57px;
     margin: 0;
   }

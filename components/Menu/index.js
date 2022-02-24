@@ -133,7 +133,7 @@ const Menu = function MenuPage({
           </Link>
         </ListItem>
         <ListItem>
-          <I18nBtn isSticky={isSticky} open={open} />
+          <I18nBtn isSticky={isSticky} open={open} stat={stat} />
         </ListItem>
 
         <ItemInfo>

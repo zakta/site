@@ -6,10 +6,12 @@ import {
   Container, Selector, Dropdown, Language,
 } from './styles';
 
-const I18nBtn = function I18nComponent({ isSticky, open }) {
+const I18nBtn = function I18nComponent({ isSticky, open, stat }) {
   const [visible, setVisible] = useState(false);
   const switchColor = () => {
     if (isSticky && !open) {
+      return 'primary:#1a3968,secondary:#33afad';
+    } if (stat && !open) {
       return 'primary:#1a3968,secondary:#33afad';
     }
     return 'primary:#ffffff,secondary:#ffffff';
@@ -17,7 +19,7 @@ const I18nBtn = function I18nComponent({ isSticky, open }) {
 
   return (
     <Container open={open} onClick={() => setVisible(!visible)}>
-      <Selector isSticky={isSticky}>
+      <Selector isSticky={isSticky} stat={stat}>
         <lord-icon
           src="https://cdn.lordicon.com/gqzfzudq.json"
           trigger
@@ -26,7 +28,7 @@ const I18nBtn = function I18nComponent({ isSticky, open }) {
           style={{ width: 30, height: 30 }}
         />
       </Selector>
-      <Dropdown visible={visible} isSticky={isSticky}>
+      <Dropdown visible={visible} isSticky={isSticky} stat={stat}>
         <Language passHref href="/#">Português</Language>
         <Language passHref href="/es#">Español</Language>
         <Language passHref href="/en#">English</Language>
@@ -38,4 +40,5 @@ export default I18nBtn;
 I18nBtn.propTypes = {
   isSticky: PropTypes.bool.isRequired,
   open: PropTypes.bool.isRequired,
+  stat: PropTypes.bool.isRequired,
 };
