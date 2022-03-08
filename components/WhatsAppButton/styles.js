@@ -3,9 +3,13 @@ import styled from 'styled-components';
 import { BsWhatsapp } from 'react-icons/bs';
 
 export const Container = styled.div`
-  display: flex;
+  display: none;
   position: relative;
   z-index: 12;
+
+  @media(min-width: 980px){
+    display: flex;
+  }
 `;
 
 export const ModalWhats = styled.div`
