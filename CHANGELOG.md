@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.7](https://github.com/zakta/site/compare/v1.1.6...v1.1.7) (2022-03-09)
+
+
+### Bug Fixes
+
+* add display none to whatsapp button on mobile ([0db63fe](https://github.com/zakta/site/commit/0db63fe064420763200b4af7bab7534b78d2f969))
+
 ### [1.1.6](https://github.com/zakta/site/compare/v1.1.5...v1.1.6) (2022-02-12)
 
 
