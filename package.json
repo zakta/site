@@ -16,7 +16,8 @@
     "lint-fix": "eslint --fix \"**/*.js\"",
     "prepare": "husky install",
     "release": "standard-version",
-    "start": "next start"
+    "start": "next start",
+    "start:static": "npx http-server ./out -c-1"
   },
   "dependencies": {
     "aos": "^2.3.4",

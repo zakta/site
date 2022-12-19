@@ -338,7 +338,7 @@ const Services = function ServicesPage({ full }) {
               passHref
               as={`${process.env.BACKEND_URL}/servicos/marketing-digital-em-santos`}
             >
-              <a className="card-link" href="/servicos/mkt">
+              <div className="card-link">
                 <Icon>
                   <lord-icon
                     src="https://cdn.lordicon.com/iltqorsz.json"
@@ -358,7 +358,7 @@ const Services = function ServicesPage({ full }) {
                   <ArrowRightIcon />
                   <span>Ver Mais</span>
                 </ArrowRight>
-              </a>
+              </div>
             </Link>
           </Card>
 
